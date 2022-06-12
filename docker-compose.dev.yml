@@ -1,0 +1,9 @@
+version: "3"
+services:
+  dashboard:
+    image: danjellz/http-server:latest
+    ports:
+      # DASH in numbers
+      - "9090:8080"
+    volumes:
+      - ./docs:/public

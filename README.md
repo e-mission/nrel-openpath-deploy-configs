@@ -3,6 +3,14 @@
 Publishing them on GitHub allows transparency around how they are configured.
 This may not be the long-term solution, but it allows us to make progress over the short/medium term.
 
+### Reviewing and testing
+
+- If you are here to preview/review/beta test the app functionality, please using the stage environment
+- If you are here to test out the app on your personal phone, please using the open-access environment
+
+In general, if you are planning to keep the app installed for less than a day,
+please use stage so you don't pollute the real dataset.
+
 ### File format
 
 Config format (with default values) is:
@@ -42,3 +50,14 @@ Config format (with default values) is:
     }
 }
 ```
+
+### Development
+
+This repo has some simple GitHub pages in the `docs` repo
+
+If you want to experiment with them (e.g. by changing the format or the URL
+prefix), you can use the attached `docker-compose.yml` to serve the pages
+locally at http://localhost:9090
+
+I found this useful while testing the QR code functionality on the devapp,
+which responds to the `emission` URL prefix, not `nrelopenpath`
