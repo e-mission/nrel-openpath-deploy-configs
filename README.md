@@ -16,8 +16,7 @@ Config format (with default values) is:
     },
     "intro": {
         "program_or_study": "study",
-        "program_admin_name": "K. Shankari",
-        "program_admin_email": "k.shankari@nrel.gov",
+        "program_admin_contact": "K. Shankari",
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
