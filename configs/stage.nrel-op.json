@@ -1,7 +1,8 @@
 {
     "version": 1,
+    "ts": 1655143472,
     "server": {
-        "url": "https://openpath-stage.nrel.gov/api/",
+        "connectUrl": "https://openpath-stage.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
     },
     "intro": {
