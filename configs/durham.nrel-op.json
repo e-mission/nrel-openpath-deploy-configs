@@ -1,5 +1,6 @@
 {
     "version": 1,
+    "ts": 1655143472,
     "server": {
         "url": "https://durham-openpath.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
@@ -24,8 +25,7 @@
                 "summary_line_3": "Los participantes del programa utilizarán esta aplicación para registrar sus viajes. Esta información se utilizará para informar decisiones sobre futuras inversiones en micromovilidad.",
                 "short_textual_description": "La ciudad de Durham quiere aprender más sobre los desafíos que enfrentan los viajeros, especialmente aquellos que trabajan en el centro de la ciudad, más allá de los horarios típicos de nueve a cinco. Se les pedirá a los participantes en el piloto que compartan información sobre su comportamiento de viaje a través de esta aplicación, incluido el propósito de los viajes, los modos utilizados, los modos que habrían utilizado de otra manera, las rutas tomadas y los tiempos.",
                 "why_we_collect_es": "Los datos recopilados se utilizarán para comprender cómo las bicicletas de pie con acceso subsidiado podrían cambiar el comportamiento de viaje, especialmente cómo las bicicletas eléctricas podrían ayudar a mejorar la experiencia de transporte, afectar el uso de automóviles (especialmente en el centro) y cómo la exposición a las bicicletas eléctricas podría tener efectos duraderos. impactos en la elección del modo."
-            },
-            "support_autogen_token": false
+            }
         }
     },
     "display_config": {
