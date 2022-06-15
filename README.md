@@ -5,8 +5,12 @@ This may not be the long-term solution, but it allows us to make progress over t
 
 ### Reviewing and testing
 
-- If you are here to preview/review/beta test the app functionality, please using the stage environment
-- If you are here to test out the app on your personal phone, please using the open-access environment
+- If you are here to preview/review/beta test the app functionality, please use the stage environment
+  - URL: [nrelopenpath://join_study?label=stage&source=github](nrelopenpath://join_study?label=stage&source=github)
+  - QR code: ![join_stage_QR_code](https://user-images.githubusercontent.com/2423263/173748423-7f966576-9ce4-480b-a562-0c376d5114af.png)
+
+
+- If you are here to test out the app on your personal phone, please use the open-access environment
 
 In general, if you are planning to keep the app installed for less than a day,
 please use stage so you don't pollute the real dataset.
