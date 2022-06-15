@@ -53,6 +53,9 @@
     </ion-nav-view>
     <script>
         var app = angular.module('nrelopenpath', ['ionic', 'monospaced.qrcode']);
+        app.config(function($compileProvider) {
+            $compileProvider.aHrefSanitizationWhitelist(/^\s*(http?|https?|nrelopenpath):/);
+        });
         app.controller('NRELOpenPATHCtrl', function($scope) {
           console.log("Initialized the controller");
           $scope.currStudies = [
