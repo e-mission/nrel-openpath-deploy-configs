@@ -59,6 +59,8 @@
         app.controller('NRELOpenPATHCtrl', function($scope) {
           console.log("Initialized the controller");
           $scope.currStudies = [
+            {name: "Devapp Program", joinurl: "emission://join_study?label=dev-emulator-program&source=github" },
+            {name: "Devapp Study", joinurl: "emission://join_study?label=dev-emulator-study&source=github" },
             {name: "Dev Program", joinurl: "nrelopenpath://join_study?label=dev-emulator-program&source=github" },
             {name: "Dev Study", joinurl: "nrelopenpath://join_study?label=dev-emulator-study&source=github" },
             {name: "Testing", joinurl: "nrelopenpath://join_study?label=stage&source=github" },
