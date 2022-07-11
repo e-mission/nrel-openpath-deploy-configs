@@ -54,7 +54,7 @@
     <script>
         var app = angular.module('nrelopenpath', ['ionic', 'monospaced.qrcode']);
         app.config(function($compileProvider) {
-            $compileProvider.aHrefSanitizationWhitelist(/^\s*(http?|https?|nrelopenpath):/);
+            $compileProvider.aHrefSanitizationWhitelist(/^\s*(http?|https?|nrelopenpath|emission):/);
         });
         app.controller('NRELOpenPATHCtrl', function($scope) {
           console.log("Initialized the controller");
