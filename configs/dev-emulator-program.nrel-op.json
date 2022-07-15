@@ -7,10 +7,10 @@
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
-                "deployment_name": "Development environment",
+                "deployment_name": "Development environment (program)",
                 "summary_line_1": "allows developers to work on the OpenPATH app",
                 "summary_line_2": "connect to a local server",
-                "summary_line_3": "and ensure that end-to-end features work.",
+                "summary_line_3": "and ensure that end-to-end program features work.",
                 "short_textual_description": "OpenPATH is the only open source platform for instrumenting mobility patterns. We welcome contributions and pull requests.",
                 "why_we_collect": "So that you can see how OpenPATH works"
             }
