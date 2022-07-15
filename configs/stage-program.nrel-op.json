@@ -6,7 +6,7 @@
         "aggregate_call_auth": "user_only"
     },
     "intro": {
-        "program_or_study": "study",
+        "program_or_study": "program",
         "program_admin_contact": "K. Shankari (k.shankari@nrel.gov)",
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
