@@ -11,7 +11,7 @@
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
-                "deployment_name": "Staging environment for testing studies only",
+                "deployment_name": "Staging environment for testing programs only",
                 "summary_line_1": "allows real-world testing of the app in study mode",
                 "summary_line_2": "before pushing changes to production",
                 "summary_line_3": "without any guarantees about retaining data",
