@@ -45,9 +45,9 @@ Config format (with default values) is:
         "translated_text": {
             "en": {
                 "deployment_name": "Open Access Study",
-                "summary_line_1": "enables people to track their travel modes and <b>measure</b> their associated energy use and emissions",
-                "summary_line_2": "makes <b>aggregated</b> data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
-                "summary_line_3": "serves as a <b>control group</b> while evaluating behavior change of programs.",
+                "summary_line_1": "enables people to track their travel modes and measure their associated energy use and emissions",
+                "summary_line_2": "makes aggregated data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
+                "summary_line_3": "serves as a control group while evaluating behavior change of programs.",
                 "short_textual_description": "Transportation is the largest contributor to ...",
                 "why_we_collect": "NREL can use this information to ....",
             },
