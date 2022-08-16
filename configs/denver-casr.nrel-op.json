@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://denver-casr-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "intro": {
+        "program_or_study": "program",
+        "program_admin_contact": "Mike.Salisbury@denvergov.org",
+        "deployment_partner_name": "Denver Office of Climate Action, Sustainability, & Resiliency",
+        "translated_text": {
+            "en": {
+                "deployment_name": "Denver E-bike Rebate Program Data Collection",
+                "summary_line_1": "The City of Denver wants to evaluate the effectiveness of the e-bike rebate program, especially the potential to reduce energy consumption and environmental emissions.",
+                "summary_line_2": "The City is providing a rebate program for purchased e-bikes, with a focus on improving the emissions and environmental consciousness for those in the City",
+                "summary_line_3": "Participants of the Denver E-bike Rebate Program Data Collection will use this app to log their trips. This information will be used to support longitudinal research and to inform decisions for comparison with future programs.",
+                "short_textual_description": "The City of Denver seeks to reduce the amount of emissions and energy consumption within the city. The use of this app by participants will allow the City of Denver to receive travel survey data quicker to evaluate impacts of new mobility in a timely manner. Participants of the Denver E-bike Rebate Program Data Collection will be asked to share information about their travel behavior through this app including the purpose of trips, modes used, modes they would have used otherwise, routes taken, and times.",
+                "why_we_collect": "The data collected will be used to inform agent-based models that are integral to the program objectives of SMART research work, behavioral response to new mobility options, and perspectives on equity of access to emerging transportation technology within underrepresented population groups."
+            },
+            "es": {
+                "deployment_name": "Recopilación de datos del programa de reembolso de bicicletas eléctricas de Denver",
+                "summary_line_1": "La ciudad de Denver quiere evaluar la efectividad del programa de reembolso de bicicletas eléctricas, especialmente el potencial para reducir el consumo de energía y las emisiones ambientales.",
+                "summary_line_2": "La ciudad está proporcionando un programa de reembolso para bicicletas eléctricas compradas, con un enfoque en mejorar las emisiones y la conciencia ambiental para los habitantes de la ciudad.",
+                "summary_line_3": "Los participantes de la recopilación de datos del programa de reembolso de bicicletas eléctricas de Denver utilizarán esta aplicación para registrar sus viajes. Esta información se utilizará para respaldar la investigación longitudinal y para informar decisiones para la comparación con programas futuros.",
+                "short_textual_description": "La ciudad de Denver busca reducir la cantidad de emisiones y el consumo de energía dentro de la ciudad. El uso de esta aplicación por parte de los participantes permitirá que la ciudad de Denver reciba datos de encuestas de viaje más rápido para evaluar los impactos de la nueva movilidad de manera oportuna. Se les pedirá a los participantes de la recopilación de datos del Programa de reembolso de bicicletas eléctricas de Denver que compartan información sobre su comportamiento de viaje a través de esta aplicación, incluido el propósito de los viajes, los modos utilizados, los modos que habrían utilizado de otra manera, las rutas tomadas y los tiempos.",
+                "why_we_collect_es": "Los datos recopilados se utilizarán para informar los modelos basados ​​en agentes que son parte integral de los objetivos del programa del trabajo de investigación SMART, la respuesta conductual a las nuevas opciones de movilidad y las perspectivas sobre la equidad de acceso a la tecnología de transporte emergente dentro de los grupos de población subrepresentados."
+            }
+        }
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    }
+}
