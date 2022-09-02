@@ -7,6 +7,8 @@
     },
     "intro": {
         "program_or_study": "study",
+        "start_month": "9",
+        "start_year": "2020",
         "program_admin_contact": "Emily Kotz (emily.kotz@nrel.gov).",
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
