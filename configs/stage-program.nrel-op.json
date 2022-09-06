@@ -7,6 +7,9 @@
     },
     "intro": {
         "program_or_study": "program",
+        "start_month": "9",
+        "start_year": "2020",
+        "mode_studied": "e-bike",
         "program_admin_contact": "K. Shankari (k.shankari@nrel.gov)",
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
