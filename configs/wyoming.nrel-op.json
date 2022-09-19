@@ -14,7 +14,7 @@
         "deployment_partner_name": "Yellowstone-Teton Clean Cities",
         "translated_text": {
             "en": {
-                "deployment_name": "Yellowstone-Teton Clean Cities E-Bike Commuter Program",
+                "deployment_name": "E-Bike Commuter Program",
                 "summary_line_1": "Yellowstone-Teton Clean Cities aims to incentivize commuters to adopt energy-efficient, non-polluting modes of transportation and reduce traffic congestion.",
                 "summary_line_2": "In this pilot program, YTCC and partners are providing secure, covered overnight parking for e-bikes and promoting commuter e-bike rental programs, e-bike group buy programs and the use of a personal e-bike for commuting purposes.",
                 "summary_line_3": "If you are a program participant, this app can help you log your trips and compete against others to benefit our environment.",
@@ -22,7 +22,7 @@
                 "why_we_collect": "The information from this study will better inform Yellowstone-Teton Clean Cities, Teton county and associated organizations where best to focus energy and resources when working to reduce single occupancy vehicles and greenhouse gas emissions when traveling popular commuter routes.  The data collected through this app will unlock useful information to understand if the use of e-bikes effectively reduces greenhouse gas emissions and congestion."
             },
             "es": {
-                "deployment_name": "Programa de viajero en bicicleta eléctrica de ciudades limpias de Yellowstone-Teton",
+                "deployment_name": "Programa de viajero en bicicleta eléctrica",
                 "summary_line_1": "Yellowstone-Teton Clean Cities tiene como objetivo incentivar a los viajeros a adoptar modos de transporte eficientes en energía y no contaminantes y reducir la congestión del tráfico.",
                 "summary_line_2": "En este programa piloto, YTCC y sus socios brindan estacionamiento seguro y cubierto durante la noche para bicicletas eléctricas y promueven programas de alquiler de bicicletas eléctricas para pasajeros, programas de compra grupal de bicicletas eléctricas y el uso de una bicicleta eléctrica personal para desplazamientos.",
                 "summary_line_3": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
