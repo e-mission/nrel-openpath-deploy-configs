@@ -7,6 +7,9 @@
     },
     "intro": {
         "program_or_study": "program",
+        "start_month": "10",
+        "start_year": "2022",
+        "mode_studied": "e-bike",
         "program_admin_contact": "mike.salisbury@denvergov.org, 720 413-4271",
         "deployment_partner_name": "Denver Office of Climate Action, Sustainability, & Resiliency",
         "translated_text": {
@@ -32,6 +35,9 @@
     },
     "display_config": {
         "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
     },
     "profile_controls": {
         "support_upload": false,
