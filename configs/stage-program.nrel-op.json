@@ -36,6 +36,9 @@
     "display_config": {
         "use_imperial": false
     },
+    "metrics": {
+        "include_test_users": true
+    },
     "profile_controls": {
         "support_upload": false,
         "trip_end_notification": false
