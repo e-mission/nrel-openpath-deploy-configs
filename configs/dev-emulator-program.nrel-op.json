@@ -16,6 +16,10 @@
             }
         }
     },
+    "survey_paths": {
+        "demographics_survey_path": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/dynamic-surveys/enketo_surveys/data-json/demo-survey-v2.json",
+        "time_use_survey_path": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/dynamic-surveys/enketo_surveys/data-json/time-use-survey-form-v9.json"
+    },
     "display_config": {
         "use_imperial": false
     },
