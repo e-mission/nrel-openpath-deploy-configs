@@ -17,40 +17,9 @@
         }
     },
     "survey-info": {
-      "surveys": {
-        "TripConfirmSurvey": {
-          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/dynamic-surveys/enketo_surveys/data-json/trip-end-survey-multiple-select.json",
-          "version": 1.2,
-          "compatibleWith": 1,
-          "dataKey": "manual/trip_user_input",
-          "not-filled-in-label": {
-            "en": "Add trip details",
-            "es": "Agregar detalles del viaje"
-          },
-          "filled-in-label": {
-            "en": "Submitted",
-            "es": "Enviado"
-          }
-        },
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "not-filled-in-label": {
-            "en": "",
-            "es": ""
-          },
-          "filled-in-label": {
-            "en": "",
-            "es": ""
-          }
-        },
-        "TimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/dynamic-surveys/enketo_surveys/data-json/time-use-survey-form-v9.json",
-          "version": 9,
-          "compatibleWith": 1,
-          "dataKey": "manual/timeuse_survey",
+      "buttons": {
+        "trip-notes": {
+          "survey-name": "TimeUseSurvey",
           "not-filled-in-label": {
             "en": "Add Activity",
             "es": "Añadir actividad"
@@ -59,11 +28,29 @@
             "en": "",
             "es": ""
           }
+        },
+        "place-notes": {
+          "survey-name": "TimeUseSurvey",
+          "not-filled-in-label": {
+            "en": "Add Activity",
+            "es": "Añadir actividad"
+          },
+          "filled-in-label": {
+            "en": "",
+            "es": ""
+          }
+        },
+        "trip-confirm-survey-button": {
+          "survey-name": "TripConfirmSurvey",
+          "not-filled-in-label": {
+            "en": "Add trip details",
+            "es": "Agregar detalles del viaje"
+          },
+          "filled-in-label": {
+            "en": "Submitted",
+            "es": "Enviado"
+          }
         }
-      },
-      "buttons": {
-        "trip-notes": "TimeUseSurvey",
-        "place-notes": "TimeUseSurvey"
       }
     },
     "display_config": {
