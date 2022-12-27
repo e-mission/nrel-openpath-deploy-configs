@@ -19,6 +19,10 @@
             }
         }
     },
+    "survey_info": {
+      "buttons": {
+      }
+    },
     "display_config": {
         "use_imperial": false
     },

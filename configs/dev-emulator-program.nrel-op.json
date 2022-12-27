@@ -20,6 +20,32 @@
             }
         }
     },
+    "survey_info": {
+      "buttons": {
+        "trip-notes": {
+          "surveyName": "TimeUseSurvey",
+          "not-filled-in-label": {
+            "en": "Add Activity",
+            "es": "Añadir actividad"
+          },
+          "filled-in-label": {
+            "en": "",
+            "es": ""
+          }
+        },
+        "place-notes": {
+          "surveyName": "TimeUseSurvey",
+          "not-filled-in-label": {
+            "en": "Add Activity",
+            "es": "Añadir actividad"
+          },
+          "filled-in-label": {
+            "en": "",
+            "es": ""
+          }
+        }
+      }
+    },
     "display_config": {
         "use_imperial": false
     },
