@@ -21,7 +21,8 @@
     },
     "survey_info": {
       "buttons": {
-      }
+      },
+      "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": false

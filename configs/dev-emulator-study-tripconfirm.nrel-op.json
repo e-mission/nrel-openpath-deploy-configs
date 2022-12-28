@@ -21,18 +21,8 @@
     },
     "survey_info": {
       "buttons": {
-        "trip-labels": {
-          "survey-name": "TripConfirmSurvey",
-          "not-filled-in-label": {
-            "en": "Add trip details",
-            "es": "Agregar detalles del viaje"
-          },
-          "filled-in-label": {
-            "en": "Submitted",
-            "es": "Enviado"
-          }
-        }
-      }
+      },
+      "trip-labels": "ENKETO"
     },
     "display_config": {
         "use_imperial": false
