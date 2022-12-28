@@ -14,6 +14,7 @@
         "deployment_partner_name": "Metro Mobility in partnership with MassCEC",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "Metro Mobility in partnership with MassCEC",
                 "deployment_name": "E-bikes for all",
                 "summary_line_1": "The Massachusetts Clean Energy Center in partnership with Metro Mobility aims to increase electric bike adoption in the Commonwealth.",
                 "summary_line_2": "In this pilot program, select qualified individuals are being offered pedal assist e-bikes at subsidized cost in order to study usage",
@@ -23,6 +24,7 @@
                 "research_questions": ["Cost-benefit analysis of programs to subsidize e-bike usage among low-income populations.", "The impact of e-bike access on transportation mode choice and GHG emissions.", "Comparison of e-bike adoption rates for different deployment models, including ownership, ownership with charging station access, and rentals from a shared charging station based fleet."]
             },
             "es": {
+                "deployment_partner_name": "Metro Movilidad en asociación con MassCEC",
                 "deployment_name": "Bicicletas eléctricas para todos",
                 "summary_line_1": "El Centro de Energía Limpia de Massachusetts, en asociación con Metro Mobility, tiene como objetivo aumentar la adopción de bicicletas eléctricas en la Commonwealth.",
                 "summary_line_2": "En este programa piloto, se ofrecen bicicletas eléctricas con asistencia de pedal a personas calificadas selectas a un costo subsidiado para estudiar el uso",

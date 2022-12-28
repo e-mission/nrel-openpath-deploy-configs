@@ -14,6 +14,7 @@
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
                 "deployment_name": "Staging environment for testing programs only",
                 "summary_line_1": "allows real-world testing of the app in study mode",
                 "summary_line_2": "before pushing changes to production",
@@ -23,6 +24,7 @@
                 "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
             },
             "es": {
+                "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)",
                 "deployment_name": "Entorno de ensayo solo para programas de prueba",
                 "summary_line_1": "permite realizar pruebas en el mundo real de la aplicación en modo de programa",
                 "summary_line_2": "antes de impulsar cambios en la producción",

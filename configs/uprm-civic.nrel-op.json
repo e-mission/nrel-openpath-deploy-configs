@@ -13,6 +13,7 @@
         "deployment_partner_name": "University of Puerto Rico at Mayagüez",
         "translated_text": {
             "en": {
+                "deployment_partner_name":"University of Puerto Rico at Mayagüez",
                 "deployment_name": "UPRM CIVIC project",
                 "summary_line_1": "UPRM aims to develop collaborative mobility strategies that address the needs of rural communities.",
                 "summary_line_2": "In this pilot program, it will collect travel data to understand the travel patterns in your community.",
@@ -22,6 +23,7 @@
                 "research_questions": ["How strong is the clustering of trips in rural communities?"]
             },
             "es": {
+                "deployment_partner_name":"Universidad de Puerto Rico Recinto de Mayagüez",
                 "deployment_name": "Proyecto UPRM CIVIC",
                 "summary_line_1": "UPRM tiene como objetivo desarrollar estrategias de movilidad colaborativa que aborden las necesidades de las comunidades rurales.",
                 "summary_line_2": "En este programa piloto, recopilará datos de viaje para comprender los patrones de viaje en su comunidad.",
