@@ -13,6 +13,7 @@
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
                 "deployment_name": "Open Access Study",
                 "summary_line_1": "enables people to track their travel modes and measure their associated energy use and emissions",
                 "summary_line_2": "makes aggregated data on mode shares, trip frequencies, and carbon footprints available via a public dashboard",
@@ -22,6 +23,7 @@
                 "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
             },
             "es": {
+                "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)",
                 "deployment_name": "Estudio de acceso abierto",
                 "summary_line_1": "permite a las personas realizar un seguimiento de sus modos de viaje y medir su uso de energía y emisiones asociadas",
                 "summary_line_2": "hace que los datos agregados sobre modos compartidos, frecuencias de viaje y huellas de carbono estén disponibles a través de un tablero público",

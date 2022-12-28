@@ -14,6 +14,7 @@
         "deployment_partner_name": "City of Durham, North Carolina",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "City of Durham, North Carolina",
                 "deployment_name": "Bull E-Bike Pilot (“the Pilot”)",
                 "summary_line_1": "The City of Durham wants to understand how e-bikes might play into how its citizens get around, especially the potential to reduce car traffic and to improve transportation experience.",
                 "summary_line_2": "In this pilot program, the City is  providing free access to e-bikes, with a focus on downtown workers who work non-traditional schedules and others who might experience difficulties getting around",
@@ -23,6 +24,7 @@
                 "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commute programs.", "Determining the impact of e-bike commuting on transportation energy efficiency and greenhouse gas emissions."]
             },
             "es": {
+                "deployment_partner_name": "Ciudad de Durham, Carolina del Norte",
                 "deployment_name": "Piloto de bicicleta eléctrica Toro",
                 "summary_line_1": "La ciudad de Durham quiere comprender cómo las bicicletas eléctricas pueden afectar la forma en que sus ciudadanos se desplazan, especialmente el potencial para reducir el tráfico de automóviles y mejorar la experiencia de transporte.",
                 "summary_line_2": "En este programa piloto, la ciudad brinda acceso gratuito a bicicletas eléctricas, con un enfoque en los trabajadores del centro de la ciudad que trabajan en horarios no tradicionales y otros que pueden experimentar dificultades para moverse.",

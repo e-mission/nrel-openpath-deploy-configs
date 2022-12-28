@@ -14,6 +14,7 @@
         "deployment_partner_name": "Denver Office of Climate Action, Sustainability, & Resiliency",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "Denver Office of Climate Action, Sustainability, & Resiliency",
                 "deployment_name": "Denver E-bike Rebate Program Data Collection  ",
                 "summary_line_1": "Denver's Office of Climate Action, Sustainability and Resiliency (CASR) is interested in promoting sustainable transportation choices for Denver residents, including e-bikes to reduce greenhouse gas emissions.",
                 "summary_line_2": "As part of the Climate Action Rebate program, CASR is providing incentives to Denver residents to purchase an e-bike.",
@@ -23,6 +24,7 @@
                 "research_questions": ["Travel behavior modeling to support cost-benefit analyses of e-bike incentive programs.", "The GHG emissions impact of an individually owned e-bike.", "Understanding of how e-bikes are being used by program participants."]
             },
             "es": {
+                "deployment_partner_name": "Oficina de Acción Climática, Sostenibilidad y Resiliencia de Denver",
                 "deployment_name": "Recopilación de datos del programa de reembolso de bicicletas eléctricas de Denver",
                 "summary_line_1": "La Oficina de Acción Climática, Sostenibilidad y Resiliencia (CASR) de Denver está interesada en promover opciones de transporte sostenible para los residentes de Denver, incluidas las bicicletas eléctricas para reducir las emisiones de gases de efecto invernadero.",
                 "summary_line_2": "Como parte del programa de Reembolso de Acción Climática, CASR ofrece incentivos a los residentes de Denver para que compren una bicicleta eléctrica.",

@@ -14,6 +14,7 @@
         "deployment_partner_name": "Yellowstone-Teton Clean Cities",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "Yellowstone-Teton Clean Cities",
                 "deployment_name": "E-Bike Commuter Program",
                 "summary_line_1": "Yellowstone-Teton Clean Cities aims to incentivize commuters to adopt energy-efficient, non-polluting modes of transportation and reduce traffic congestion.",
                 "summary_line_2": "In this pilot program, YTCC and partners are providing secure, covered overnight parking for e-bikes and promoting commuter e-bike rental programs, e-bike group buy programs and the use of a personal e-bike for commuting purposes.",
@@ -23,6 +24,7 @@
                 "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commute programs.", "The impact of e-bike commuting on transportion energy offices and GHG emissions."]
             },
             "es": {
+                "deployment_partner_name": "Ciudades limpias de Yellowstone-Teton",
                 "deployment_name": "Programa de viajero en bicicleta eléctrica",
                 "summary_line_1": "Yellowstone-Teton Clean Cities tiene como objetivo incentivar a los viajeros a adoptar modos de transporte eficientes en energía y no contaminantes y reducir la congestión del tráfico.",
                 "summary_line_2": "En este programa piloto, YTCC y sus socios brindan estacionamiento seguro y cubierto durante la noche para bicicletas eléctricas y promueven programas de alquiler de bicicletas eléctricas para pasajeros, programas de compra grupal de bicicletas eléctricas y el uso de una bicicleta eléctrica personal para desplazamientos.",
