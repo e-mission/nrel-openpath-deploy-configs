@@ -20,6 +20,14 @@
         }
     },
     "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey"
+        }
+      },
       "buttons": {
       },
       "trip-labels": "MULTILABEL"
