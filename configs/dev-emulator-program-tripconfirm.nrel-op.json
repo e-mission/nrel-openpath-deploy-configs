@@ -38,7 +38,7 @@
           "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
           "version": 9,
           "compatibleWith": 1,
-          "dataKey": "manual/timeuse_survey"
+          "dataKey": "manual/trip_addition_input"
         }
       },
       "buttons": {
