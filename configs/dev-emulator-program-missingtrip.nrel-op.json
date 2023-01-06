@@ -1,0 +1,60 @@
+{
+    "version": 1,
+    "ts": 1655143472,
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "9",
+        "start_year": "2020",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "K. Shankari (k.shankari@nrel.gov)",
+        "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
+        "translated_text": {
+            "en": {
+                "deployment_name": "Development environment (program)",
+                "summary_line_1": "allows developers to work on the OpenPATH app",
+                "summary_line_2": "connect to a local server",
+                "summary_line_3": "and ensure that end-to-end program features work.",
+                "short_textual_description": "OpenPATH is the only open source platform for instrumenting mobility patterns. We welcome contributions and pull requests.",
+                "why_we_collect": "So that you can see how OpenPATH works",
+                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
+            }
+        }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey"
+        },
+        "MissingTripSurvey": {
+          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/missing-trips-survey/survey-resources/data-json/fake-missing-trip-survey-v1.json",
+          "version": 9,
+          "compatibleWith": 1,
+          "dataKey": "manual/missingtrip-survey"
+        }
+      },
+      "buttons": {
+        "place-notes": {
+          "surveyName": "MissingTripSurvey",
+          "not-filled-in-label": {
+            "en": "Add Missing Trip",
+            "es": "Añadir viaje perdido"
+          },
+          "filled-in-label": {
+            "en": "",
+            "es": ""
+          }
+        }
+      },
+      "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": false
+    },
+    "profile_controls": {
+        "support_upload": true,
+        "trip_end_notification": true
+    }
+}
