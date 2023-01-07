@@ -25,7 +25,14 @@
           "formPath": "json/demo-survey-v2.json",
           "version": 1,
           "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey"
+          "dataKey": "manual/demographic_survey",
+          "labelVars": {
+            
+          },
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
         }
       },
       "buttons": {

@@ -26,19 +26,46 @@
           "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json",
           "version": 1.2,
           "compatibleWith": 1,
-          "dataKey": "manual/trip_user_input"
+          "dataKey": "manual/trip_user_input",
+          "labelVars": {
+            "modes": "travel_mode",
+            "purposes": "destination_purpose"
+          },
+          "labelTemplate": {
+            "en": "${purposes} purpose${purposes > 1 ? 's': ''}, ${modes} mode${modes > 1 ? 's': ''}",
+            "es": "${purposes} propósito${purposes > 1 ? 's': ''}, ${modes} modo${modes > 1 ? 's': ''}"
+          }
         },
         "UserProfileSurvey": {
           "formPath": "json/demo-survey-v2.json",
           "version": 1,
           "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey"
+          "dataKey": "manual/demographic_survey",
+          "labelVars": {
+            
+          },
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
         },
         "TimeUseSurvey": {
           "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
           "version": 9,
           "compatibleWith": 1,
-          "dataKey": "manual/timeuse_survey"
+          "dataKey": "manual/timeuse_survey",
+          "labelVars": {
+            "Personal_Care_activities": "pca",
+            "Employment_related_and_Educati": "erea",
+            "Domestic_activities": "da",
+            "Recreation_and_leisure": "ral",
+            "Voluntary_work_and_care_activi": "vwaca",
+            "Other": "other"
+          },
+          "labelTemplate": {
+            "en": "${pca = '' ? '': ${pca}}${erea = '' ? '': ${erea}}${da = '' ? '': ${da}}${ral = '' ? '': ${ral}}${vwaca = '' ? '': ${vwaca}}${other = '' ? '': ${other}}",
+            "es": "${pca = '' ? '': ${pca}}${erea = '' ? '': ${erea}}${da = '' ? '': ${da}}${ral = '' ? '': ${ral}}${vwaca = '' ? '': ${vwaca}}${other = '' ? '': ${other}}"
+          }
         }
       },
       "buttons": {
