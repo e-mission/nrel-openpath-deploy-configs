@@ -28,12 +28,18 @@
           "compatibleWith": 1,
           "dataKey": "manual/trip_user_input",
           "labelVars": {
-            "modes": "travel_mode",
-            "purposes": "destination_purpose"
+            "modes": {
+              "key": "travel_mode",
+              "type": "length"
+            },
+            "purposes": {
+              "key": "destination_purpose",
+              "type": "length"
+            }
           },
           "labelTemplate": {
-            "en": "${purposes} purpose${purposes > 1 ? 's': ''}, ${modes} mode${modes > 1 ? 's': ''}",
-            "es": "${purposes} propósito${purposes > 1 ? 's': ''}, ${modes} modo${modes > 1 ? 's': ''}"
+            "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+            "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
           }
         },
         "UserProfileSurvey": {
@@ -41,9 +47,6 @@
           "version": 1,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
-          "labelVars": {
-            
-          },
           "labelTemplate": {
             "en": "Answered",
             "es": "Contestada"
@@ -53,18 +56,35 @@
           "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
           "version": 9,
           "compatibleWith": 1,
-          "dataKey": "manual/timeuse_survey",
           "labelVars": {
-            "Personal_Care_activities": "pca",
-            "Employment_related_and_Educati": "erea",
-            "Domestic_activities": "da",
-            "Recreation_and_leisure": "ral",
-            "Voluntary_work_and_care_activi": "vwaca",
-            "Other": "other"
+            "pca": {
+              "key": "Personal_Care_activities",
+              "type": "length"
+            },
+            "erea": {
+              "key": "Employment_related_and_Educati",
+              "type": "length"
+            },
+            "da": {
+              "key": "Domestic_activities",
+              "type": "length"
+            },
+            "ral": {
+              "key": "Recreation_and_leisure",
+              "type": "length"
+            },
+            "vwaca": {
+              "key": "Voluntary_work_and_care_activi",
+              "type": "length"
+            },
+            "other": {
+              "key": "Other",
+              "type": "length"
+            }
           },
           "labelTemplate": {
-            "en": "${pca = '' ? '': ${pca}}${erea = '' ? '': ${erea}}${da = '' ? '': ${da}}${ral = '' ? '': ${ral}}${vwaca = '' ? '': ${vwaca}}${other = '' ? '': ${other}}",
-            "es": "${pca = '' ? '': ${pca}}${erea = '' ? '': ${erea}}${da = '' ? '': ${da}}${ral = '' ? '': ${ral}}${vwaca = '' ? '': ${vwaca}}${other = '' ? '': ${other}}"
+            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Domestic, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+            "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
           }
         }
       },
@@ -74,10 +94,6 @@
           "not-filled-in-label": {
             "en": "Add Activity",
             "es": "Añadir actividad"
-          },
-          "filled-in-label": {
-            "en": "",
-            "es": ""
           }
         },
         "place-notes": {
@@ -85,10 +101,6 @@
           "not-filled-in-label": {
             "en": "Add Activity",
             "es": "Añadir actividad"
-          },
-          "filled-in-label": {
-            "en": "",
-            "es": ""
           }
         }
       },

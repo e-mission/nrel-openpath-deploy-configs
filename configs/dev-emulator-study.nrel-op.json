@@ -26,16 +26,11 @@
           "version": 1,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
-          "labelVars": {
-            
-          },
           "labelTemplate": {
             "en": "Answered",
             "es": "Contestada"
           }
         }
-      },
-      "buttons": {
       },
       "trip-labels": "MULTILABEL"
     },

@@ -27,12 +27,18 @@
           "compatibleWith": 1,
           "dataKey": "manual/trip_user_input",
           "labelVars": {
-            "modes": "travel_mode",
-            "purposes": "destination_purpose"
+            "modes": {
+              "key": "travel_mode",
+              "type": "length"
+            },
+            "purposes": {
+              "key": "destination_purpose",
+              "type": "length"
+            }
           },
           "labelTemplate": {
-            "en": "${purposes} purpose${purposes > 1 ? 's': ''}, ${modes} mode${modes > 1 ? 's': ''}",
-            "es": "${purposes} propósito${purposes > 1 ? 's': ''}, ${modes} modo${modes > 1 ? 's': ''}"
+            "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+            "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
           }
         },
         "UserProfileSurvey": {
@@ -40,16 +46,11 @@
           "version": 1,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
-          "labelVars": {
-            
-          },
           "labelTemplate": {
             "en": "Answered",
             "es": "Contestada"
           }
         }
-      },
-      "buttons": {
       },
       "trip-labels": "ENKETO"
     },
