@@ -62,7 +62,7 @@
               "type": "length"
             },
             "erea": {
-              "key": "Employment_related_and_Educati",
+              "key": "Employment_related_a_Education_activities",
               "type": "length"
             },
             "da": {
@@ -74,7 +74,7 @@
               "type": "length"
             },
             "vwaca": {
-              "key": "Voluntary_work_and_care_activi",
+              "key": "Voluntary_work_and_care_activities",
               "type": "length"
             },
             "other": {
