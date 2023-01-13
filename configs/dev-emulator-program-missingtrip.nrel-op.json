@@ -10,7 +10,6 @@
         "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
         "translated_text": {
             "en": {
-                "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
                 "deployment_name": "Development environment (program)",
                 "summary_line_1": "allows developers to work on the OpenPATH app",
                 "summary_line_2": "connect to a local server",
@@ -18,9 +17,6 @@
                 "short_textual_description": "OpenPATH is the only open source platform for instrumenting mobility patterns. We welcome contributions and pull requests.",
                 "why_we_collect": "So that you can see how OpenPATH works",
                 "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
-            },
-            "es":{
-                "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)"
             }
         }
     },
@@ -32,30 +28,19 @@
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey"
         },
-        "TimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
+        "MissingTripSurvey": {
+          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/missing-trips-survey/survey-resources/data-json/fake-missing-trip-survey-v1.json",
           "version": 9,
           "compatibleWith": 1,
-          "dataKey": "manual/timeuse_survey"
+          "dataKey": "manual/missingtrip-survey"
         }
       },
       "buttons": {
-        "trip-notes": {
-          "surveyName": "TimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          },
-          "filled-in-label": {
-            "en": "",
-            "es": ""
-          }
-        },
         "place-notes": {
-          "surveyName": "TimeUseSurvey",
+          "surveyName": "MissingTripSurvey",
           "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
+            "en": "Add Missing Trip",
+            "es": "Añadir viaje perdido"
           },
           "filled-in-label": {
             "en": "",
