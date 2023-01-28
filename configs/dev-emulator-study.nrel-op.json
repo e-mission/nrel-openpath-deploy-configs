@@ -1,5 +1,6 @@
 {
     "version": 1,
+    "autoRefresh": true,
     "ts": 1655143472,
     "intro": {
         "program_or_study": "study",
