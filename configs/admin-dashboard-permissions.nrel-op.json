@@ -41,7 +41,7 @@
         "data_trips_columns_exclude": [],
         "data_uuids_columns_exclude": [],
         "token_generate": true,
-        "token_prefix": "nrel",
+        "token_prefix": "nrelop",
         "map_heatmap": true,
         "map_bubble": true,
         "map_trip_lines": true,
