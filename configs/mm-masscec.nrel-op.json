@@ -14,6 +14,7 @@
         "deployment_partner_name": "Metro Mobility in partnership with MassCEC",
         "translated_text": {
             "en": {
+                "deployment_partner_name": "Metro Mobility in partnership with MassCEC",
                 "deployment_name": "E-bikes for all",
                 "summary_line_1": "The Massachusetts Clean Energy Center in partnership with Metro Mobility aims to increase electric bike adoption in the Commonwealth.",
                 "summary_line_2": "In this pilot program, select qualified individuals are being offered pedal assist e-bikes at subsidized cost in order to study usage",
@@ -23,12 +24,14 @@
                 "research_questions": ["Cost-benefit analysis of programs to subsidize e-bike usage among low-income populations.", "The impact of e-bike access on transportation mode choice and GHG emissions.", "Comparison of e-bike adoption rates for different deployment models, including ownership, ownership with charging station access, and rentals from a shared charging station based fleet."]
             },
             "es": {
+                "deployment_partner_name": "Metro Movilidad en asociación con MassCEC",
                 "deployment_name": "Bicicletas eléctricas para todos",
                 "summary_line_1": "El Centro de Energía Limpia de Massachusetts, en asociación con Metro Mobility, tiene como objetivo aumentar la adopción de bicicletas eléctricas en la Commonwealth.",
                 "summary_line_2": "En este programa piloto, se ofrecen bicicletas eléctricas con asistencia de pedal a personas calificadas selectas a un costo subsidiado para estudiar el uso",
                 "summary_line_3": "Si usted es un participante del programa, esta aplicación le permitirá registrar sus viajes. La información que proporcione a través de esta aplicación se anonimizará con fines informativos (no estará vinculada a su nombre o información de identificación).",
                 "short_textual_description": "El programa de bicicletas eléctricas ACT4All proporcionará a los participantes bicicletas eléctricas con pedaleo asistido a un costo subsidiado. A Metro Mobility le gustaría utilizar una solución de seguimiento de viajes para comprender cómo se utilizan estas bicicletas eléctricas. Dado que esperamos que los participantes realicen varios viajes al día, una solución de seguimiento mayoritariamente automatizada como la que ofrece la aplicación OpenPATH aliviaría gran parte de la carga de informar a los participantes y garantizaría la información más completa posible.",
                 "why_we_collect_es": "Los datos recopilados durante el programa se utilizarán para comprender cómo los participantes usan sus bicicletas eléctricas, incluido cuándo, dónde, con qué frecuencia y la distancia recorrida. Al combinar estos datos con datos adicionales recopilados a través de encuestas y entrevistas a participantes, Metro Mobility puede determinar qué factores afectan la adopción y el uso de bicicletas eléctricas, y el impacto que tiene el acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.",
+                "why_we_collect": "Los datos recopilados durante el programa se utilizarán para comprender cómo los participantes usan sus bicicletas eléctricas, incluido cuándo, dónde, con qué frecuencia y la distancia recorrida. Al combinar estos datos con datos adicionales recopilados a través de encuestas y entrevistas a participantes, Metro Mobility puede determinar qué factores afectan la adopción y el uso de bicicletas eléctricas, y el impacto que tiene el acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.",
                 "research_questions": ["Análisis costo-beneficio de programas para subsidiar el uso de bicicletas eléctricas en poblaciones de bajos ingresos.", "El impacto del acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.", "Comparación de las tasas de adopción de bicicletas eléctricas para diferentes modelos de implementación, incluida la propiedad, la propiedad con acceso a la estación de carga y el alquiler de una flota basada en una estación de carga compartida."]
             }
         }
