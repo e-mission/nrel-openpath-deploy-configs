@@ -111,6 +111,13 @@
             "en": "Add Activity",
             "es": "Añadir actividad"
           }
+        },
+        "place-notes": {
+          "surveyName": "TimeUseSurvey",
+          "not-filled-in-label": {
+            "en": "Add Activity",
+            "es": "Añadir actividad"
+          }
         }
       },
       "trip-labels": "ENKETO"
