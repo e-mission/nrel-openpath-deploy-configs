@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://uprm-nicr-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "2",
+        "start_year": "2023",
+        "mode_studied": "",
+        "program_admin_contact": "carlosa.delvallegonzalez@upr.edu",
+        "deployment_partner_name": "University of Puerto Rico at Mayagüez",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "University of Puerto Rico at Mayagüez",
+                "deployment_name": "UPRM NICR 3-2 project",
+                "summary_line_1": "UPRM NICR 3-2 aims to incentivize the use of alternative modes of transportation such as transit and micromobility to reduce the vehicle mile traveled of private automobiles and therefore to reduce congestion in urban and rural communities.",
+                "summary_line_2": "In this pilot study, it will collect travel data to understand the travel patterns in the community.",
+                "summary_line_3": "If you are a program Participant, this app can help you log your trips and help the research team understand the travel behavior and needs of your community.",
+                "short_textual_description": "Communities in Puerto Rico have limited transportation alternatives. Most have a single travel option: private gas vehicles. The NICR 3-2 project – a collaboration between NREL and UPRM – will leverage OpenPATH to study the impact of economic incentives on travel behavior.",
+                "why_we_collect": "The data collected through OpenPATH will provide insights into the travel patterns and associated energy consumption of the NICR 3-2 project participants. This data will help researchers identify opportunities for the development of policies that could incentivize the use of clean modes of travel.",
+                "research_questions": ["Can positive financial incentives in an auto-centric community increase the use of transit and micromobility alternatives?"]
+            },
+            "es": {
+                "deployment_partner_name": "Universidad de Puerto Rico en Mayaguez",
+                "deployment_name": "Proyecto UPRM NICR 3-2",
+                "summary_line_1": "UPRM NICR 3-2 tiene como objetivo incentivar el uso de modos alternativos de transporte como el tránsito y la micromovilidad para reducir la milla recorrida por vehículos de automóviles privados y, por lo tanto, reducir la congestión en las comunidades urbanas y rurales.",
+                "summary_line_2": "En este estudio piloto, recopilará datos de viaje para comprender los patrones de viaje en la comunidad.",
+                "summary_line_3": "Si es un participante del programa, esta aplicación puede ayudarlo a registrar sus viajes y ayudar al equipo de investigación a comprender el comportamiento de viaje y las necesidades de su comunidad.",
+                "short_textual_description": "Las comunidades en Puerto Rico tienen alternativas de transporte limitadas. La mayoría tiene una única opción de viaje: vehículos privados a gas. El proyecto NICR 3-2, una colaboración entre NREL y UPRM, aprovechará OpenPATH para estudiar el impacto de los incentivos económicos en el comportamiento de viaje.",
+                "why_we_collect": "Los datos recopilados a través de OpenPATH proporcionarán información sobre los patrones de viaje y el consumo de energía asociado de los participantes del proyecto NICR 3-2. Estos datos ayudarán a los investigadores a identificar oportunidades para el desarrollo de políticas que podrían incentivar el uso de modos de viaje limpios.",
+                "research_questions": ["¿Pueden los incentivos financieros positivos en una comunidad autocéntrica aumentar el uso de alternativas de tránsito y micromovilidad?"]
+            }
+        }
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    }
+}
