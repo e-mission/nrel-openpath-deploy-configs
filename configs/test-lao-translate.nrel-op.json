@@ -14,12 +14,12 @@
         "translated_text": {
             "en": {
                 "deployment_partner_name": "National Renewable Energy Laboratory (NREL)",
-                "deployment_name": "Staging environment for testing studies only",
+                "deployment_name": "Staging environment for testing Lao Translation only",
                 "summary_line_1": "allows real-world testing of the app in study mode",
                 "summary_line_2": "before pushing changes to production",
                 "summary_line_3": "without any guarantees about retaining data",
                 "short_textual_description": "Dev-ops best practices involve setting up a staging environment to test changes in the real world before they are pushed out to production. This environment is designed for use with staging or beta versions of the OpenPATH. NREL makes no guarantees about data retention on this environment. Please use the Open Access environment to understand your carbon footprint.",
-                "why_we_collect": "To ensure that the end-to-end system works properly on a variety of real-world phones",
+                "why_we_collect": "To ensure that the lao translation works correctly",
                 "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
             },
             "es": {
@@ -34,6 +34,20 @@
                 "research_questions": ["Comparando el grupo de acceso abierto (sin intervención) y los programas que brindan intervenciones.", "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."]
             }
         }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey",
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
+        }
+      }
     },
     "display_config": {
         "use_imperial": false
