@@ -60,16 +60,15 @@
           console.log("Initialized the controller");
           $scope.currStudies = [
             {name: "Devapp Program", joinurl: "emission://join_study?label=dev-emulator-program&source=github" },
+            {name: "Devapp Time Use", joinurl: "emission://join_study?label=dev-emulator-timeuse&source=github" },
             {name: "Devapp Study", joinurl: "emission://join_study?label=dev-emulator-study&source=github" },
             {name: "Dev Program", joinurl: "nrelopenpath://join_study?label=dev-emulator-program&source=github" },
             {name: "Dev Study", joinurl: "nrelopenpath://join_study?label=dev-emulator-study&source=github" },
-            {name: "Testing Program (Trip confirm + Time use surveys)", joinurl: "nrelopenpath://join_study?label=stage-program&source=github" },
+            {name: "Testing Trip confirm + Time use surveys", joinurl: "nrelopenpath://join_study?label=stage-timeuse&source=github" },
+            {name: "Testing Program", joinurl: "nrelopenpath://join_study?label=stage-program&source=github" },
             {name: "Testing Study", joinurl: "nrelopenpath://join_study?label=stage-study&source=github" },
-            {name: "Open Access", joinurl: "nrelopenpath://join_study?label=open-access&source=github" },
-            {name: "NREL Commute", joinurl: "nrelopenpath://join_study?label=nrel-commute&source=github" },
-            {name: "Durham", joinurl: "nrelopenpath://join_study?label=durham&source=github" },
-            {name: "Wyoming", joinurl: "nrelopenpath://join_study?label=wyoming&source=github" },
-            {name: "Metro Mobility with MassCEC", joinurl: "nrelopenpath://join_study?label=mm-masscec&source=github" },
+            {name: "Open Access", joinurl: "emission://join_study?label=open-access&source=github" },
+            {name: "NREL Commute", joinurl: "emission://join_study?label=nrel-commute&source=github" },
           ];
           console.log("currStudies = ", $scope.currStudies);
         });
