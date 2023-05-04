@@ -7,3 +7,6 @@ services:
       - "9090:8080"
     volumes:
       - ./docs:/public
+      - ./configs:/public/configs
+    command: [ "http-server", "--cors"]
+        

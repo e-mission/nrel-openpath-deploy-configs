@@ -27,6 +27,16 @@ If you are here to test out the app on your personal phone, please use the open-
 
 In general, if you are planning to keep the app installed for less than a day, please use stage so you don't pollute the real dataset.
 
+#### Testing configs
+
+As we test more config options, we sometimes need to be able to edit and load configs locally without pushing to github
+and waiting for a PR to be approved.
+
+To accomplish this:
+- Change the download URL in `www/js/config/dynamic_config.js` to `"http://localhost:9090/configs/"+label+".nrel-op.json"`
+- Modify one of the existing configs **OR** create a new config and add it to `docs/index.html`
+- In the emulator, go to http://localhost:9090 and click on the appropriate link
+
 ### File format
 
 Config format (with default values) is:
