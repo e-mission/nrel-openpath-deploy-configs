@@ -35,6 +35,7 @@ and waiting for a PR to be approved.
 To accomplish this:
 - Change the download URL in `www/js/config/dynamic_config.js` to `"http://localhost:9090/configs/"+label+".nrel-op.json"`
 - Modify one of the existing configs **OR** create a new config and add it to `docs/index.html`
+- `docker-compose -f docker-compose.dev.yml up -d`
 - In the emulator, go to http://localhost:9090 and click on the appropriate link
 
 ### File format
