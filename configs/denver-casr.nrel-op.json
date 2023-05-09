@@ -7,6 +7,8 @@
     },
     "intro": {
         "program_or_study": "program",
+        "subgroups": ["low-income-regular", "unrestricted-regular",
+            "low-income-cargo", "unrestricted-cargo"],
         "start_month": "10",
         "start_year": "2022",
         "mode_studied": "e-bike",
