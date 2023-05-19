@@ -5,10 +5,13 @@
         "connectUrl": "https://denver-casr-openpath.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
     },
+    "opcode": {
+        "autogen": true,
+        "subgroups": ["low-income-regular", "unrestricted-regular",
+            "low-income-cargo", "unrestricted-cargo"]
+    },
     "intro": {
         "program_or_study": "program",
-        "subgroups": ["low-income-regular", "unrestricted-regular",
-            "low-income-cargo", "unrestricted-cargo"],
         "start_month": "10",
         "start_year": "2022",
         "mode_studied": "e-bike",
