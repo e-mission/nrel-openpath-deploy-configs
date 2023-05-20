@@ -7,8 +7,8 @@
     },
     "opcode": {
         "autogen": true,
-        "subgroups": ["low-income-regular", "unrestricted-regular",
-            "low-income-cargo", "unrestricted-cargo"]
+        "subgroups": ["qualified-cargo", "qualified-regular",
+            "standard-cargo", "standard-regular"]
     },
     "intro": {
         "program_or_study": "program",
