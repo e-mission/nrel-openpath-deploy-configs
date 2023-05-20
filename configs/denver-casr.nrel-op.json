@@ -56,6 +56,34 @@
       },
       "trip-labels": "MULTILABEL"
     },
+    "reminderSchemes": {
+      "weekly": {
+          "title": "{Please take a moment to label your trips}",
+          "text": "{Click here to open the app and view unlabeled trips}",
+          "schedule": [
+              { "start": 0, "end": 13, "intervalInDays": 1 },
+              { "start": 14, "intervalInDays": 8 }
+          ],
+          "defaultTime": "21:00"
+      },
+      "week-quarterly": {
+          "title": "{Please take a moment to label your trips}",
+          "text": "{Click here to open the app and view unlabeled trips}",
+          "schedule": [
+              { "start": 0, "end": 13, "intervalInDays": 1 },
+              { "start": 91, "end": 97, "intervalInDays": 1 },
+              { "start": 182, "end": 188, "intervalInDays": 1 },
+              { "start": 273, "end": 279, "intervalInDays": 1 }
+          ]
+      },
+      "passive": {
+          "title": "{Please take a moment to label your trips}",
+          "text": "{Click here to open the app and view unlabeled trips}",
+          "schedule": [
+              { "start": 0, "end": 13, "intervalInDays": 1 }
+          ]
+      }
+    },
     "display_config": {
         "use_imperial": true
     },
