@@ -1,0 +1,88 @@
+{
+    "version": 1,
+    "name": "choose-your-ride",
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://choose-your-ride-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": false
+    },
+    "intro": {
+        "program_or_study": "program",
+        "app_required": false,
+        "start_month": "06",
+        "start_year": "2023",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Rachel Ruhlen, FC Moves, City of Fort Collins at rruhlen@fcgov.com, call or text 970-685-8955.",
+        "deployment_partner_name": "City of Fort Collins",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "City of Fort Collins",
+                "deployment_name": "Choose Your Ride, Shift Your Ride",
+                "summary_line_1": "The Colorado Energy Office aims to incentivize commuters to adopt energy-efficient, non-polluting modes of transportation and maximize air quality benefits.",
+                "summary_line_2": "In this pilot program, it is providing e-bikes to low-income essential workers in communities around the state.",
+                "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
+                "short_textual_description": "Choose Your Ride, Shift Your Ride is a project toprovide e-bikes or passes for shared micromobility (Spin passes) to people with low incomes, to shift trips from single-occupant vehicles to e-bikes and e-scootersand reduce emissions.A desired outcome of this program is to understand the impact on emissions of providing e-bikes or Spin passes to people with low income.",
+                "why_we_collect": "The data collected during the program will be used to understand how eBikes are usedincluding when and how often as well as distance travelled.",
+                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of various potential commute programs.", "The role of e-bikes to provide transportation access for people with low incomes."]
+            },
+            "es": {
+                "deployment_partner_name": "Ciudad de Fort Collins",
+                "deployment_name": "Elige tu viaje, cambia tu viaje",
+                "summary_line_1": "La Oficina de Energía de Colorado tiene como objetivo incentivar a los viajeros para que adopten modos de transporte que ahorren energía y no contaminen y maximicen los beneficios de la calidad del aire.",
+                "summary_line_2": "En este programa piloto, proporciona bicicletas eléctricas a trabajadores esenciales de bajos ingresos en comunidades de todo el estado.",
+                "summary_line_3": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
+                "short_textual_description": "Choose Your Ride, Shift Your Ride es un proyecto para proporcionar bicicletas eléctricas o pases para micromovilidad compartida (Spin pass) a personas con bajos ingresos, para cambiar los viajes de vehículos de un solo ocupante a bicicletas eléctricas y scooters electrónicos y reducir las emisiones. Un resultado deseado de este programa es comprender el impacto en las emisiones de proporcionar bicicletas eléctricas o pases Spin a personas con bajos ingresos.",
+                "why_we_collect": "Los datos recopilados durante el programa se usarán para comprender cómo se usan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, así como la distancia recorrida.",
+                "research_questions": ["Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de varios programas potenciales de viaje al trabajo.", "El papel de las bicicletas eléctricas para brindar acceso al transporte a personas con bajos ingresos."]
+            }
+        }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey",
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
+        }
+      },
+      "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": true,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": true,
+        "push_send": true,
+        "options_uuids": true,
+        "options_emails": true
+    }
+}

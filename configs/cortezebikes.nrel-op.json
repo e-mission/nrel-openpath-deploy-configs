@@ -1,0 +1,88 @@
+{
+    "version": 1,
+    "name": "cortezebikes",
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://cortezebikes-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": false
+    },
+    "intro": {
+        "program_or_study": "program",
+        "app_required": false,
+        "start_month": "06",
+        "start_year": "2023",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Elijah Fenton: elijah@fourcore.org. 4CORE office: 970-259-1916.",
+        "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
+                "deployment_name": "Cortez 55+ eBike Program",
+                "summary_line_1": "The Colorado Energy Office aims to incentivize commuters to adopt energy-efficient, non-polluting modes of transportation and maximize air quality benefits.",
+                "summary_line_2": "This program is providing e-bikes to low-income older adults in the community of Cortez, CO.",
+                "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
+                "short_textual_description": "As the state of Colorado looks towards alternative modes of transportation besides driving, 4CORE and the state would like to observe the use of an electric bicycle by older adults. This program will give 13 electric bicycles and 10 electric tricycles to income-qualified adults over the age of 55, many of which have physical and financial limitations.",
+                "why_we_collect": "4CORE and the CEO can use the program to understand how often older adults use an electric bicycle,the distance of their trips, and what they use it for (leisure, errands, etc.). This will help us understand the use-case of micro mobility in small, more rural towns in Colorado. It also gives insight to a micro-mobility transportation option for an older demographic - which will provide unique data and observations.",
+                "research_questions": ["How effective are electric bicycles, as a form of micro-mobility transportation, in small, rural towns?", "Are electric bicycles a solution to clean transportation for an older demographic?", "What are the limitations as well as strong points of electric bicycle use for adults over the age of 55?"]
+            },
+            "es": {
+                "deployment_partner_name": "Oficina de Cuatro Esquinas para la Eficiencia de los Recursos (4CORE)",
+                "deployment_name": "Programa de bicicletas eléctricas Cortez 55+",
+                "summary_line_1": "La Oficina de Energía de Colorado tiene como objetivo incentivar a los viajeros para que adopten modos de transporte que ahorren energía y no contaminen y maximicen los beneficios de la calidad del aire.",
+                "summary_line_2": "Este programa proporciona bicicletas eléctricas a adultos mayores de bajos ingresos en la comunidad de Cortez, CO.",
+                "summary_line_3": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
+                "short_textual_description": "Mientras el estado de Colorado busca modos de transporte alternativos además de conducir, 4CORE y el estado quisieran observar el uso de una bicicleta eléctrica por parte de los adultos mayores. Este programa proporcionará 13 bicicletas eléctricas y 10 triciclos eléctricos a los ingresos -adultos calificados mayores de 55 años, muchos de los cuales tienen limitaciones físicas y financieras.",
+                "why_we_collect": "4CORE y el CEO pueden usar el programa para entender con qué frecuencia los adultos mayores usan una bicicleta eléctrica, la distancia de sus viajes y para qué la usan (ocio, mandados, etc.). Esto nos ayudará a entender el caso de uso de la micromovilidad en pueblos pequeños y más rurales de Colorado. También da una idea de una opción de transporte de micromovilidad para un grupo demográfico de mayor edad, que proporcionará datos y observaciones únicos.",
+                "research_questions": ["¿Qué tan efectivas son las bicicletas eléctricas, como una forma de transporte de micromovilidad, en pueblos rurales pequeños?", "¿Son las bicicletas eléctricas una solución para el transporte limpio para un grupo demográfico mayor?", "¿Cuáles son las limitaciones así como puntos fuertes del uso de bicicletas eléctricas para adultos mayores de 55 años?"]
+            }
+        }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey",
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
+        }
+      },
+      "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": true,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": true,
+        "push_send": true,
+        "options_uuids": true,
+        "options_emails": true
+    }
+}

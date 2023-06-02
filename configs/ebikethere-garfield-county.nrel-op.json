@@ -1,0 +1,88 @@
+{
+    "version": 1,
+    "name": "ebikethere-garfield-county",
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://ebikethere-garfield-county-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": false
+    },
+    "intro": {
+        "program_or_study": "program",
+        "app_required": false,
+        "start_month": "06",
+        "start_year": "2023",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Martín Bonzi, Transportation Program Manager at CLEER, at mbonzi@cleanenergyeconomy.netor 970-704-9300, ext. 100.",
+        "deployment_partner_name": "Clean Energy Economy for the Region (CLEER)",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Clean Energy Economy for the Region (CLEER)",
+                "deployment_name": "eBikeThere Garfield County",
+                "summary_line_1": "Clean Energy Economy for the Region (CLEER)aims to incentivize commuters to adoptenergy-efficient, non-polluting modes of transportation and maximize air quality benefits, while saving money on transportation fuel.",
+                "summary_line_2": "eBikeThere Garfield Countyis providing 40 highly-discounted e-bikes to income-qualifiedGarfield County residents that will use them to replace personal vehicle use as much as possible.",
+                "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment!",
+                "short_textual_description": "The eBikeThere program provides eBikes to income-qualified Garfield County residents that live and work within one neighboring municipality and will use them instead of their personal vehicles as much as possible. There are 40 eBikes to be distributed in 2023.",
+                "why_we_collect": "The data collected during the program will be used to understand how eBikes are usedincluding when and how often as well as distance travelled.CLEER will use the data collected to report program impact to the Colorado Energy Office, funder of most of this program. CLEER will also usethis data to better understand how people move in its rural setting to inform future program development and policy recommendations.",
+                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of various potential commute programs.", "How effective areeBikes in reducingVMT in a rural setting with various levels of biking infrastructure?"]
+            },
+            "es": {
+                "deployment_partner_name": "Economía de Energía Limpia para la Región (CLEER)",
+                "deployment_name": "eBikeThere Condado de Garfield",
+                "summary_line_1": "Economía de energía limpia para la región (CLEER) tiene como objetivo incentivar a los viajeros a adoptar modos de transporte no contaminantes y de bajo consumo de energía y maximizar los beneficios de la calidad del aire, mientras ahorran dinero en combustible para el transporte.",
+                "summary_line_2": "eBikeThere El condado de Garfield está proporcionando 40 bicicletas eléctricas con un gran descuento a los residentes del condado de Garfield con ingresos calificados que las usarán para reemplazar el uso de vehículos personales tanto como sea posible.",
+                "summary_line_3": "Si es un participante del programa, esta aplicación puede ayudarlo a registrar sus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
+                "short_textual_description": "El programa eBikeThere proporciona bicicletas eléctricas a los residentes del condado de Garfield con ingresos calificados que viven y trabajan dentro de un municipio vecino y las usarán en lugar de sus vehículos personales tanto como sea posible. Hay 40 eBikes que se distribuirán en 2023.",
+                "why_we_collect" : "Los datos recopilados durante el programa se usarán para comprender cómo se usan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, así como la distancia recorrida. CLEER usará los datos recopilados para informar el impacto del programa a la Oficina de Energía de Colorado, financiador de la mayoría de CLEER también usará estos datos para comprender mejor cómo se mueve la gente en su entorno rural para informar el desarrollo de programas futuros y las recomendaciones de políticas.",
+                "research_questions": ["Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de varios programas potenciales de viaje", "¿Qué tan efectivas son las bicicletas eléctricas para reducir el VMT en un entorno rural con varios niveles de infraestructura para bicicletas?"]
+            }
+        }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey",
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
+        }
+      },
+      "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": true,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": true,
+        "push_send": true,
+        "options_uuids": true,
+        "options_emails": true
+    }
+}
