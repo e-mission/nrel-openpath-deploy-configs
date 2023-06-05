@@ -7,7 +7,8 @@
         "aggregate_call_auth": "user_only"
     },
     "opcode": {
-        "autogen": false
+        "autogen": false,
+        "subgroups": ["test", "default"]
     },
     "intro": {
         "program_or_study": "program",
