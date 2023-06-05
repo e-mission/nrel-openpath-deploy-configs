@@ -44,5 +44,25 @@
     "profile_controls": {
         "support_upload": false,
         "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": false,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "push_send": false,
+        "options_uuids": true,
+        "options_emails": true
     }
 }
