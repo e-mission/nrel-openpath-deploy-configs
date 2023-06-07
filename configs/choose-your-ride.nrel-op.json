@@ -8,7 +8,7 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default"]
+        "subgroups": ["test", "default", "bikebuddy"]
     },
     "intro": {
         "program_or_study": "program",
