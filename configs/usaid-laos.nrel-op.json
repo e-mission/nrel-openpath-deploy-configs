@@ -1,0 +1,98 @@
+{
+    "version": 1,
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://USAID-laos-EV-openpath.nrel.gov",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": true,
+        "subgroups": ["test", "default"]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "05",
+        "start_year": "2023",
+        "mode_studied": "Electric Vehicle",
+        "program_admin_contact": "Kosol.Kiatreungwattana@nrel.gov, 303-517-7674",
+        "deployment_partner_name": "USAID - Laos",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "USAID - Laos",
+                "deployment_name": "USAID-NREL Support for Electric Vehicle Readiness",
+                "summary_line_1": "NREL supports Lao PDR in meeting its target of having 1% of vehicles on the road be electric by 2025 and 30% by 2030.",
+                "summary_line_2": "Meeting Lao EV adoption goals will require adequate EVSE deployment to meet consumer demand and provide confidence that sufficient charging options exist.",
+                "summary_line_3": "This app is used as a trip tracking solution for understanding travel behavior of vehicle usage.",
+                "short_textual_description": "For public electric vehicle supply equipment (EVSE) needs estimate for Lao PDR, NREL will model vehicle travel patterns, EV adoption, and future demand for public charging stations in Lao capital areas and strategically identify potential future EVSE needs and strategies for EVSE siting. NREL would use OPENPATH as a trip tracking solution for understanding travel behavior of vehicle usage.",
+                "why_we_collect": "NREL will use the data from OPENPATH and NREL EVI-Pro, electric vehicle infrastructure project tool to estimate how much electric vehicle (EV) charging infrastructure is needed in a designated area to meet a given demand.",
+                "research_questions": ["Travel behavior patterns to be used to model future EV adoption and infrastructure need to support the adoption.", "Data would be used with NREL EVI-Pro to estimate EVSE needed in a designated area."]
+            },
+            "es": {
+                "deployment_partner_name": "lengua no apoyada en este version",
+                "deployment_name": "lengua no apoyada en este version",
+                "summary_line_1": "lengua no apoyada en este version",
+                "summary_line_2": "lengua no apoyada en este version",
+                "summary_line_3": "lengua no apoyada en este version",
+                "short_textual_description": "lengua no apoyada en este version",
+                "why_we_collect" : "lengua no apoyada en este version",
+                "research_questions": ["lengua no apoyada en este version", "lengua no apoyada en este version"]
+            },
+            "lo": {
+                "deployment_partner_name": "USAID - Laos",
+                "deployment_name": "ການຊ່ວຍເຫລືອທາງດ້ານວິຊາການເພື່ອກຽມຄວາມພ້ອມວຽກງານລົດໄຟຟ້າ ພາຍໄຕ້ການສະໝັບສະໜູນຂອງອົງການພັດທະນາສາກົນຂອງປະເທດສະຫະລັດອາເມລິກາ",
+                "summary_line_1": "ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຊ່ວຍສະໝັບສະໜູນໃຫ້ບັນລຸໃຫ້ໄດ້ 1 ເປີເຊັນ ໃຫ້ມີການນໍາໃຊ້ລົດໄຟຟ້າ ເມື່ອຮອດປີ 2025 ແລະ ໃຫ້ບັນລຸ 30 ເປີເຊັນ ໃຫ້ມີການນໍາໃຊ້ລົດໄຟຟ້າຮອດປີ 2030 ອີງໃສ່ເປົ້າໝາຍຂອງລັດຖະບານ ສ ປປ ລາວ.",
+                "summary_line_2": "ເພື່ອໃຫ້ບັນລຸຕາມເປົ້າໝາຍການສົ່ງເສີມການນໍາໃຊ້ ລົດໄຟຟ້າ ແລະ ໃຫ້ມີສະຖານີສາກໄຟລົດໄຟຟ້າ ທີ່ພຽງພໍ ເພື່ອຕອບສະໜອງຄວາມຕ້ອງການຂອງຜູ້ນໍາໃຊ້ ແລະ ສ້າງຄວາມໝັ້ນໃຈໃຫ້ຜູ້ນໍາໃຊ້ລົດໄຟຟ້າ",
+                "summary_line_3": "ລະບົບນີ້ຈະນໍາໃຊ້ ເພື່ອເປັນການເກັບກໍາຂໍ້ມູນໃນການຕິດຕາມ ການເດີນທາງ ເພື່ອໃຫ້ເຂົ້າເຖີງຮູບແບບການເດີນທາງຂອງການນໍາໃຊ້ພາຫະນະ.",
+                "short_textual_description": "ຄວາມຕ້ອງການສະຖານີສາກສາທາລະນະ ສໍາລັບ ສປປ ລາວ, ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈະສ້າງແບບຈໍາລອງຮູບແບບການເດີນທາງຂອງພາຫະນະ, ການຮອງຮັບລົດໄຟຟ້າ ແລະຄວາມຕ້ອງການສະຖານີສາກໄຟສາທາລະນະໃນອະນາຄົດ ຢູ່ ໃນຕົວເມືອງໃຫ່ຍ ຂອງ ສ ປປ ລາວ ແລະກໍານົດຍຸດທະສາດການຂະຫຍາຍສະຖານີສາກ ແລະ ພື້ນທີ່. ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈະນໍາໃຊ້ ລະບົບ (OPENPATH) ເພື່ອເປັນການເກັບກໍາ ແລະ ຕິດຕາມຂໍ້ມູນການເດີນທາງໃນການນໍາໃຊ້ພາຫະນະ.",
+                "why_we_collect": "ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈະນໍາໃຊ້ຂໍ້ມູນຈາກ OPENPATH ແລະ EVI-Pro ທີ່ເປັນເຄື່ອງມືຂັ້ນພື້ນຖານໃນການປະເມີນ ຄວາມຕ້ອງການການນໍາໃຊ້ ສະຖານີສາກໄຟລົດໄຟຟ້າ ເພື່ອເຮັດໃຫ້ການຂະຫຍາຍສະຖານີສາກສາມາດ ຕອບສະໜອງຄວາມຕ້ອງການຂອງຜູ້ນໍາໃຊ້ລົດໄຟຟ້າ.",
+                "research_questions": ["ຮູບແບບພຶດຕິກໍາການເດີນທາງທີ່ຈະນໍາໃຊ້ເພື່ອເປັນຮູບແບບໃນການຮອງຮັບລົດໄຟຟ້າໃນອະນາຄົດ ແລະ ໂຄງລ່າງພື້ນຖານຈໍາເປັນຕ້ອງສະຫນັບສະຫນູນໃນການນໍາໃຊ້ລົດໄຟຟ້າ.", "ຂໍ້ມູນຈະນໍາໃຊ້ ກັບລະບົບ EVI-Pro ຂອງສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ເພື່ອຄາດຄະເນ ສະຖານີສາກ ທີ່ຕ້ອງການໃນພື້ນທີ່ ທີ່ກຳນົດໄວ້."]
+            }
+
+        }
+    },
+    "survey_info": {
+      "surveys": {
+        "UserProfileSurvey": {
+          "formPath": "json/demo-survey-v2.json",
+          "version": 1,
+          "compatibleWith": 1,
+          "dataKey": "manual/demographic_survey",
+          "labelTemplate": {
+            "en": "Answered",
+            "es": "Contestada"
+          }
+        }
+      },
+      "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": false,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "push_send": false,
+        "options_uuids": true,
+        "options_emails": true
+    }
+}
