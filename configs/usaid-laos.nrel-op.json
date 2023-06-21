@@ -5,15 +5,10 @@
         "connectUrl": "https://USAID-laos-EV-openpath.nrel.gov",
         "aggregate_call_auth": "user_only"
     },
-    "opcode": {
-        "autogen": true,
-        "subgroups": ["test", "default"]
-    },
     "intro": {
         "program_or_study": "study",
         "start_month": "05",
         "start_year": "2023",
-        "mode_studied": "Electric Vehicle",
         "program_admin_contact": "Kosol.Kiatreungwattana@nrel.gov, 303-517-7674",
         "deployment_partner_name": "USAID - Laos",
         "translated_text": {
@@ -26,16 +21,6 @@
                 "short_textual_description": "For public electric vehicle supply equipment (EVSE) needs estimate for Lao PDR, NREL will model vehicle travel patterns, EV adoption, and future demand for public charging stations in Lao capital areas and strategically identify potential future EVSE needs and strategies for EVSE siting. NREL would use OPENPATH as a trip tracking solution for understanding travel behavior of vehicle usage.",
                 "why_we_collect": "NREL will use the data from OPENPATH and NREL EVI-Pro, electric vehicle infrastructure project tool to estimate how much electric vehicle (EV) charging infrastructure is needed in a designated area to meet a given demand.",
                 "research_questions": ["Travel behavior patterns to be used to model future EV adoption and infrastructure need to support the adoption.", "Data would be used with NREL EVI-Pro to estimate EVSE needed in a designated area."]
-            },
-            "es": {
-                "deployment_partner_name": "lengua no apoyada en este version",
-                "deployment_name": "lengua no apoyada en este version",
-                "summary_line_1": "lengua no apoyada en este version",
-                "summary_line_2": "lengua no apoyada en este version",
-                "summary_line_3": "lengua no apoyada en este version",
-                "short_textual_description": "lengua no apoyada en este version",
-                "why_we_collect" : "lengua no apoyada en este version",
-                "research_questions": ["lengua no apoyada en este version", "lengua no apoyada en este version"]
             },
             "lo": {
                 "deployment_partner_name": "USAID - Laos",
