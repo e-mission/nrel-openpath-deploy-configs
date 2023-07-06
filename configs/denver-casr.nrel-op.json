@@ -70,8 +70,8 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                { "start": 0, "end": 13, "intervalInDays": 1 },
+                { "start": 14, "intervalInDays": 8 }
             ],
             "defaultTime": "21:00"
         },
@@ -85,8 +85,10 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                { "start": 0, "end": 13, "intervalInDays": 1 },
+                { "start": 91, "end": 97, "intervalInDays": 1 },
+                { "start": 182, "end": 188, "intervalInDays": 1 },
+                { "start": 273, "end": 279, "intervalInDays": 1 }
             ],
             "defaultTime": "22:00"
         },
@@ -100,8 +102,7 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                { "start": 0, "end": 13, "intervalInDays": 1 }
             ],
             "defaultTime": "23:00"
         }
