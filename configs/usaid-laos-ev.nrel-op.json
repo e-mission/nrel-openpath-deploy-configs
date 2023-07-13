@@ -42,8 +42,8 @@
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
           "labelTemplate": {
-            "en": "Answered",
-            "lo": "ຕອບ"
+            "lo": "ຕອບ",
+            "en": "Answered"
           }
         }
       },
