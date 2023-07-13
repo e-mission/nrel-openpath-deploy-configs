@@ -44,7 +44,7 @@
           "dataKey": "manual/demographic_survey",
           "labelTemplate": {
             "en": "Answered",
-            "es": "Contestada"
+            "lo": "ຕອບ"
           }
         }
       },
