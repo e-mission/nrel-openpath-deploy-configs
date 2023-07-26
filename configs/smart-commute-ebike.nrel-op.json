@@ -60,7 +60,7 @@
         "token_prefix": "nrelop",
         "map_heatmap": true,
         "map_bubble": true,
-        "map_trip_lines": false,
+        "map_trip_lines": true,
         "push_send": false,
         "options_uuids": true,
         "options_emails": true
