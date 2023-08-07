@@ -4,7 +4,7 @@ Publishing them on GitHub allows transparency around how they are configured.
 This may not be the long-term solution, but it allows us to make progress over the short/medium term.
 
 ### Reviewing and testing
-- contact K. Shankari by email at K.Shankari@nrel.gov for access to staging apps (Android or IOS)
+- contact us by email at openpath@nrel.gov for access to staging apps (Android or IOS)
 - also reach out to recieve an OPcode for stage study or stage program
   
 #### Programs vs studies
