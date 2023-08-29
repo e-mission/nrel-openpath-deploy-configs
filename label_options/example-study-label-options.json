@@ -8,7 +8,7 @@
     {"key":"shared_ride", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.11015},
     {"key":"e_car_drove_alone", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.08216},
     {"key":"e_car_shared_ride", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.04108},
-    {"key":"moped"},
+    {"key":"moped", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.05555},
     {"key":"taxi", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.30741},
     {"key":"bus", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.20727},
     {"key":"train", "met_equivalent": "IN_VEHICLE", "kgCo2PerKm": 0.12256},
