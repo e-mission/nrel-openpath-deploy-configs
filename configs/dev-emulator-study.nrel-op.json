@@ -23,6 +23,7 @@
             }
         }
     },
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/example-study-label-options.json",
     "display_config": {
         "use_imperial": false
     },
