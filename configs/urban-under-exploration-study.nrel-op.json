@@ -5,8 +5,12 @@
         "connectUrl": "https://uue-openpath.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
     },
+    "opcode": {
+        "autogen": false,
+        "subgroups": ["test", "default"]
+    },
     "intro": {
-        "program_or_study": "program",
+        "program_or_study": "study",
         "start_month": "08",
         "start_year": "2023",
         "program_admin_contact": "Gabriel Kreindler, Harvard (email: gkreindler@g.harvard.edu, phone: +1 857 284 9675).",
@@ -25,19 +29,19 @@
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered"
+        "surveys": {
+          "UserProfileSurvey": {
+            "formPath": "json/demo-survey-v2.json",
+            "version": 1,
+            "compatibleWith": 1,
+            "dataKey": "manual/demographic_survey",
+            "labelTemplate": {
+              "en": "Answered"
+            }
           }
-        }
+        },
+        "trip-labels": "MULTILABEL"
       },
-      "trip-labels": "MULTILABEL"
-    },
     "display_config": {
         "use_imperial": true
     },
