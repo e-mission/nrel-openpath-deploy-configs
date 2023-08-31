@@ -5,10 +5,6 @@
         "connectUrl": "https://uue-openpath.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
     },
-    "opcode": {
-        "autogen": true,
-        "subgroups": ["test", "default"]
-    },
     "intro": {
         "program_or_study": "study",
         "start_month": "08",
