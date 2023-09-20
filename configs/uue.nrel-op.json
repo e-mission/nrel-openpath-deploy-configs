@@ -71,5 +71,17 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true
+    },
+    "reminderSchemes": {
+        "passive": {
+            "title": {
+                "en": "Please take a moment to label your trips"
+            },
+            "text": {
+                "en": "Click to open the app and view unlabeled trips"
+            },
+            "schedule": [],
+            "defaultTime": "23:00"
+        }
     }
 }
