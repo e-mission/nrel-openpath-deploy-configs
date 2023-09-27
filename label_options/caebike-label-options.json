@@ -1,16 +1,20 @@
 {
   "MODE": [
     {"value":"walk", "baseMode":"WALKING", "met_equivalent":"WALKING", "kgCo2PerKm": 0},
+    {"value":"auto_driver", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
+    {"value":"auto_passenger", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
     {"value":"e-bike", "baseMode":"E_BIKE", "met": {"ALL": {"range": [0, -1], "mets": 4.9}}, "kgCo2PerKm": 0.00728},
     {"value":"bike", "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
+    {"value":"taxi", "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
+    
     {"value":"bikeshare", "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
     {"value":"scootershare", "baseMode":"E_SCOOTER", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.00894},
-    {"value":"drove_alone", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
+    
     {"value":"shared_ride", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.11015},
     {"value":"e_car_drove_alone", "baseMode":"E_CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.08216},
     {"value":"e_car_shared_ride", "baseMode":"E_CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.04108},
     {"value":"moped", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.05555},
-    {"value":"taxi", "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
+   
     {"value":"bus", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
     {"value":"train", "baseMode":"TRAIN", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.12256},
     {"value":"free_shuttle", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
