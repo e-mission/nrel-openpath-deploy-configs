@@ -1,8 +1,8 @@
 {
     "MODE": [
       {"value":"walk", "baseMode":"WALKING", "met_equivalent":"WALKING", "kgCo2PerKm": 0},
-      {"value":"e-tuk_tuk", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.085416859},
-      {"value":"tuk_tuk", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.231943784},
+      {"value":"e-auto_rickshaw", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.085416859},
+      {"value":"auto_rickshaw", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.231943784},
       {"value":"motorcycle", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.113143309},
       {"value":"e-bike", "baseMode":"E_BIKE", "met": {"ALL": {"range": [0, -1], "mets": 4.9}}, "kgCo2PerKm": 0.00728},
       {"value":"bike", "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
@@ -38,8 +38,8 @@
     "translations": {
       "en": {
         "walk": "Walk",
-        "e-tuk_tuk":"E-tuk tuk",
-        "tuk_tuk":"Tuk Tuk",
+        "e-auto_rickshaw":"E-tuk tuk",
+        "auto_rickshaw":"Tuk Tuk",
         "motorcycle":"Motorcycle",
         "e-bike": "E-bike",
         "bike": "Bicycle",
@@ -71,8 +71,8 @@
       },
       "lo": {
         "walk": "ດ້ວຍການຍ່າງ",
-        "e-tuk_tuk":"ລົດ 3 ລໍ້ໄຟຟ້າ ຫລື ຕຸກຕຸກໄຟຟ້າ",
-        "tuk_tuk":"ເດີນທາດ້ວຍ ລົດຕຸກຕຸກ ຫລື ລົດສາມລໍ້",
+        "e-auto_rickshaw":"ລົດ 3 ລໍ້ໄຟຟ້າ ຫລື ຕຸກຕຸກໄຟຟ້າ",
+        "auto_rickshaw":"ເດີນທາດ້ວຍ ລົດຕຸກຕຸກ ຫລື ລົດສາມລໍ້",
         "motorcycle":"ລົດຈັກ",
         "e-bike": "ວຍລົດຈັກໄຟຟ້າ",
         "bike": "ລົດຖີບ",
