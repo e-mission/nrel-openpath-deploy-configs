@@ -46,7 +46,7 @@
         "use_imperial": true
     },
     "metrics": {
-        "include_test_users": true
+        "include_test_users": false
     },
     "profile_controls": {
         "support_upload": false,
