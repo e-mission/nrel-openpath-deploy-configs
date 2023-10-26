@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>OpenPATH Demographics Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation default="true()" lang="English (en)">
+          <text id="/aLjGitYVBdawBrDcV5ip3R/uniqueid:label">
+            <value>Respondent Unique ID</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/uniqueid_confirm:label">
+            <value>Confirm respondent unique ID</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/study_phone_id:label">
+            <value>Study Phone ID</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/study_phone_id:hint">
+            <value>use 999 for respondent personal phone</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25:label">
+            <value>Personal Level Information</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you:label">
+            <value>How old are you?</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/_16_years_old:label">
+            <value>&lt;16 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/16___20_years_old:label">
+            <value>16 ~ 20 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/21___25_years_old:label">
+            <value>21 ~ 25 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/26___30_years_old:label">
+            <value>26 ~ 30 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/31___35_years_old:label">
+            <value>31 ~ 35 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/36___40_years_old:label">
+            <value>36 ~ 40 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/41___45_years_old:label">
+            <value>41 ~ 45 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/46___50_years_old:label">
+            <value>46 ~ 50 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/51___55_years_old:label">
+            <value>51 ~ 55 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/56___60_years_old:label">
+            <value>56 ~ 60 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/61___65_years_old:label">
+            <value>61 ~ 65 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/__65_years_old:label">
+            <value>&gt; 65 years old</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender:label">
+            <value>What is your gender?</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/man:label">
+            <value>Man</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/woman:label">
+            <value>Woman</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/non_binary_genderqueer_gender_non_confor:label">
+            <value>Non-binary/genderqueer/gender non-conforming</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98:label">
+            <value>Household Level Information</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow:label">
+            <value>How many motor vehicles are owned, leased, or available for regular use by the people who currently live in your household?</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow:hint">
+            <value>Include motorcycles, mopeds and RVs.</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/0:label">
+            <value>0</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/1:label">
+            <value>1</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/2:label">
+            <value>2</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/3:label">
+            <value>3</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/more_than_3:label">
+            <value>More than 3</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your:label">
+            <value>If you were unable to use your household motor vehicle(s) (or if none are available to you), which of the following options would be available to you to get from place to place?</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/public_transportation__bus__subway__ligh:label">
+            <value>Public transportation (bus, subway, light rail, etc.)</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/get_a_ride_from_a_friend_or_family_membe:label">
+            <value>Get a ride from a friend or family member</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/rental_car__including_zipcar__car2go:label">
+            <value>Rental car (including Zipcar/ Car2Go)</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/bicycle:label">
+            <value>Bicycle</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/walk:label">
+            <value>Walk</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/taxi__regular_taxi__uber__lyft__etc:label">
+            <value>Taxi (regular taxi, Uber, Lyft, etc)</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/none:label">
+            <value>None</value>
+          </text>
+          <text id="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aLjGitYVBdawBrDcV5ip3R id="aLjGitYVBdawBrDcV5ip3R">
+          <start/>
+          <end/>
+          <uniqueid/>
+          <uniqueid_confirm/>
+          <study_phone_id/>
+          <group_hg4zz25>
+            <How_old_are_you/>
+            <What_is_your_gender/>
+          </group_hg4zz25>
+          <group_pa5ah98>
+            <How_many_motor_vehicles_are_ow/>
+            <If_you_were_unable_to_use_your/>
+          </group_pa5ah98>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aLjGitYVBdawBrDcV5ip3R>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aLjGitYVBdawBrDcV5ip3R/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aLjGitYVBdawBrDcV5ip3R/end" type="dateTime"/>
+      <bind constraint="string-length(.) = 6" nodeset="/aLjGitYVBdawBrDcV5ip3R/uniqueid" required="true()" type="string"/>
+      <bind constraint=". =  /aLjGitYVBdawBrDcV5ip3R/uniqueid " nodeset="/aLjGitYVBdawBrDcV5ip3R/uniqueid_confirm" required="true()" type="string"/>
+      <bind constraint="string-length(.) = 3" nodeset="/aLjGitYVBdawBrDcV5ip3R/study_phone_id" required="true()" type="string"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25" required="false()"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you" required="true()" type="string"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender" required="false()" type="string"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98" required="false()"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow" required="true()" type="string"/>
+      <bind nodeset="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aLjGitYVBdawBrDcV5ip3R/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input ref="/aLjGitYVBdawBrDcV5ip3R/uniqueid">
+      <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/uniqueid:label')"/>
+    </input>
+    <input ref="/aLjGitYVBdawBrDcV5ip3R/uniqueid_confirm">
+      <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/uniqueid_confirm:label')"/>
+    </input>
+    <input ref="/aLjGitYVBdawBrDcV5ip3R/study_phone_id">
+      <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/study_phone_id:label')"/>
+      <hint ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/study_phone_id:hint')"/>
+    </input>
+    <group ref="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25">
+      <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25:label')"/>
+      <select1 ref="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you">
+        <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you:label')"/>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/_16_years_old:label')"/>
+          <value>_16_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/16___20_years_old:label')"/>
+          <value>16___20_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/21___25_years_old:label')"/>
+          <value>21___25_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/26___30_years_old:label')"/>
+          <value>26___30_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/31___35_years_old:label')"/>
+          <value>31___35_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/36___40_years_old:label')"/>
+          <value>36___40_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/41___45_years_old:label')"/>
+          <value>41___45_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/46___50_years_old:label')"/>
+          <value>46___50_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/51___55_years_old:label')"/>
+          <value>51___55_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/56___60_years_old:label')"/>
+          <value>56___60_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/61___65_years_old:label')"/>
+          <value>61___65_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/__65_years_old:label')"/>
+          <value>__65_years_old</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/How_old_are_you/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select1>
+      <select1 ref="/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender">
+        <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender:label')"/>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/man:label')"/>
+          <value>man</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/woman:label')"/>
+          <value>woman</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/non_binary_genderqueer_gender_non_confor:label')"/>
+          <value>non_binary_genderqueer_gender_non_confor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/other:label')"/>
+          <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_hg4zz25/What_is_your_gender/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98">
+      <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98:label')"/>
+      <select1 ref="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow">
+        <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow:label')"/>
+        <hint ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow:hint')"/>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/more_than_3:label')"/>
+          <value>more_than_3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/How_many_motor_vehicles_are_ow/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select1>
+      <select ref="/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your">
+        <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your:label')"/>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/public_transportation__bus__subway__ligh:label')"/>
+          <value>public_transportation__bus__subway__ligh</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/get_a_ride_from_a_friend_or_family_membe:label')"/>
+          <value>get_a_ride_from_a_friend_or_family_membe</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/rental_car__including_zipcar__car2go:label')"/>
+          <value>rental_car__including_zipcar__car2go</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/bicycle:label')"/>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/walk:label')"/>
+          <value>walk</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/taxi__regular_taxi__uber__lyft__etc:label')"/>
+          <value>taxi__regular_taxi__uber__lyft__etc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/none:label')"/>
+          <value>none</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aLjGitYVBdawBrDcV5ip3R/group_pa5ah98/If_you_were_unable_to_use_your/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select>
+    </group>
+  </h:body>
+</h:html>

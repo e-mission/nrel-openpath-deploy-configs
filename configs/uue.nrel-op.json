@@ -31,7 +31,7 @@
     "survey_info": {
         "surveys": {
           "UserProfileSurvey": {
-            "formPath": "json/demo-survey-v2.json",
+            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uue/uue-survey.json",
             "version": 1,
             "compatibleWith": 1,
             "dataKey": "manual/demographic_survey",
@@ -46,7 +46,7 @@
         "use_imperial": true
     },
     "metrics": {
-        "include_test_users": true
+        "include_test_users": false
     },
     "profile_controls": {
         "support_upload": false,
@@ -71,5 +71,17 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true
+    },
+    "reminderSchemes": {
+        "passive": {
+            "title": {
+                "en": "Please take a moment to label your trips"
+            },
+            "text": {
+                "en": "Click to open the app and view unlabeled trips"
+            },
+            "schedule": [],
+            "defaultTime": "23:00"
+        }
     }
 }

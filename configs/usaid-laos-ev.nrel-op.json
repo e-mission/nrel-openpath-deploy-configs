@@ -34,6 +34,7 @@
             }
         }
     },
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/usaid-laos-ev-label-options.json",
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
