@@ -6,9 +6,9 @@
     {"value":"e-bike", "baseMode":"E_BIKE", "met": {"ALL": {"range": [0, -1], "mets": 5}}, "kgCo2PerKm": 0.00728},
     {"value":"bike", "baseMode":"BICYCLING", "met": {"ALL": {"range": [0, -1], "mets": 6}}, "kgCo2PerKm": 0},
     {"value":"taxi", "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
-    {"value":"bike_scooter_share", "baseMode":"BICYCLING_SCOOTER_SHARE", "met": {"ALL": {"range": [0, -1], "mets": 3.5}}, "kgCo2PerKm": 0.00447},
-    {"value":"bus_train_shuttle", "baseMode":"PUBLIC_TRANSIT", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.179033},
-    {"value":"other_mode", "baseMode":"OTHER_MODE", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0},
+    {"value":"bike_scooter_share", "baseMode":"BICYCLING", "met": {"ALL": {"range": [0, -1], "mets": 3.5}}, "kgCo2PerKm": 0.00447},
+    {"value":"bus_train_shuttle", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.179033},
+    {"value":"other_mode", "baseMode":"OTHER", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0},
     {"value":"not_a_trip", "baseMode":"UNKNOWN", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0}   
   ],
   "PURPOSE": [
