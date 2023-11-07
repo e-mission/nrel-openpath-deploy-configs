@@ -535,12 +535,8 @@
         <value>widowed</value>
       </item>
       <item>
-        <label>Option 5</label>
+        <label>Prefer not to say</label>
         <value>option_5</value>
-      </item>
-      <item>
-        <label>Option 6</label>
-        <value>option_6</value>
       </item>
     </select1>
     <select ref="/aTDERCsPrCNS8HKtRon8CL/Which_categories_des_elect_all_that_apply">
