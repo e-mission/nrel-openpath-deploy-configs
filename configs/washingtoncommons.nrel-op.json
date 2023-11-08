@@ -54,11 +54,11 @@
             "dataKey": "manual/trip_user_input",
             "labelVars": {
               "modes": {
-                "key": "question-label",
+                "key": "What_was_the_main_pu_f_this_trip_trip_leg",
                 "type": "length"
               },
               "purposes": {
-                "key": "option-label",
+                "key": "_2_What_was_the_mode_of_transp",
                 "type": "length"
               }
             },
