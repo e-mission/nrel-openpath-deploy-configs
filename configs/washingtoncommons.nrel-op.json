@@ -1,6 +1,10 @@
 {
     "version": 1,
     "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://washingtoncommons-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
     "opcode": {
         "autogen": false,
         "subgroups": ["test", "default"]
@@ -38,7 +42,7 @@
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
-          "formPath": "https://raw.githubusercontent.com/Abby-Wheelis/nrel-openpath-deploy-configs/wash-comms-surveys/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey.json",
+          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey.json",
           "version": 1,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
@@ -48,7 +52,7 @@
           }
         },
         "TripConfirmSurvey": {
-            "formPath": "https://raw.githubusercontent.com/Abby-Wheelis/nrel-openpath-deploy-configs/wash-comms-surveys/survey_resources/washingtoncommons/washingtoncommons-trip-survey.json",
+            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey.json",
             "version": 1.2,
             "compatibleWith": 1,
             "dataKey": "manual/trip_user_input",
