@@ -48,7 +48,7 @@
           }
         },
         "TripConfirmSurvey": {
-            "formPath": "https://raw.githubusercontent.com/Abby-Wheelis/nrel-openpath-deploy-configs/wash-comms-survesy/survey_resources/washingtoncommons/washingtoncommons-trip-survey.json",
+            "formPath": "https://raw.githubusercontent.com/Abby-Wheelis/nrel-openpath-deploy-configs/wash-comms-surveys/survey_resources/washingtoncommons/washingtoncommons-trip-survey.json",
             "version": 1.2,
             "compatibleWith": 1,
             "dataKey": "manual/trip_user_input",
