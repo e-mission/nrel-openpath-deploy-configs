@@ -54,11 +54,11 @@
             "dataKey": "manual/trip_user_input",
             "labelVars": {
               "modes": {
-                "key": "travel_mode",
+                "key": "question-label",
                 "type": "length"
               },
               "purposes": {
-                "key": "destination_purpose",
+                "key": "option-label",
                 "type": "length"
               }
             },
