@@ -42,17 +42,37 @@
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
+          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey-v2.json",
+          "version": 1.2,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
           "labelTemplate": {
             "en": "Answered",
             "es": "Contestada"
           }
-        }
+        },
+        "TripConfirmSurvey": {
+            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey-v2.json",
+            "version": 1.2,
+            "compatibleWith": 1,
+            "dataKey": "manual/trip_user_input",
+            "labelVars": {
+              "modes": {
+                "key": "What_was_the_main_pu_f_this_trip_trip_leg",
+                "type": "length"
+              },
+              "purposes": {
+                "key": "_2_What_was_the_mode_of_transp",
+                "type": "length"
+              }
+            },
+            "labelTemplate": {
+              "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+              "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+            }
+          }
       },
-      "trip-labels": "MULTILABEL"
+      "trip-labels": "ENKETO"
     },
     "display_config": {
         "use_imperial": true
