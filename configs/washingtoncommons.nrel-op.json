@@ -42,8 +42,8 @@
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
-          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey.json",
-          "version": 1,
+          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey-v2.json",
+          "version": 1.2,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
           "labelTemplate": {
@@ -52,7 +52,7 @@
           }
         },
         "TripConfirmSurvey": {
-            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey.json",
+            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey-v2.json",
             "version": 1.2,
             "compatibleWith": 1,
             "dataKey": "manual/trip_user_input",
