@@ -11,6 +11,7 @@ on:
 
 jobs:
   convert_to_config:
+    if: contains( github.event.issue.title, 'New Project Configuration' )
     runs-on: ubuntu-latest
     steps:
       # This step checks out a copy of your repository.
