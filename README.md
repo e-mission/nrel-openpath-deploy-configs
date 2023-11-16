@@ -3,6 +3,10 @@
 Publishing them on GitHub allows transparency around how they are configured.
 This may not be the long-term solution, but it allows us to make progress over the short/medium term.
 
+### Creating a new Config
+
+Automation has been introduced for creating new config files. New deployers can now file a templated issue specifying their configuration, which will launch a GitHub Actions workflow with a pull request to add the new config to this repo. Additional steps may be required if they require additional customization of surveys or labels. 
+
 ### Reviewing and testing
 - contact us by email at openpath@nrel.gov for access to staging apps (Android or IOS)
 - also reach out to recieve an OPcode for stage study or stage program
