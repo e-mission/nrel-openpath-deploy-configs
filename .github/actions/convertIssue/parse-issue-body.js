@@ -33,6 +33,11 @@ function cleanBoolean(str) {
   }
 }
 
+/**
+ * creates a list of fields from the issue template
+ * @param {string} githubIssueTemplateFile file name
+ * @returns {{type: string, id: string, attributes: {}, validations: {}}[]} array of filed objects
+ */
 async function parseFields(githubIssueTemplateFile) {
   try {
     let issueTemplate = await readFile(githubIssueTemplateFile, "utf8");
@@ -52,6 +57,11 @@ async function parseFields(githubIssueTemplateFile) {
   }
 }
 
+/**
+ * converts the body to an array to be matched with the fields
+ * @param {string} body from the issue payload
+ * @returns {string[]} array of the values found in the issue, if no value was inputted and no default configured, will be empty string
+ */
 function parseBodyData(body) {
   // Warning: this will likely not handle new lines in a textarea field input
   try {
@@ -76,6 +86,12 @@ function parseBodyData(body) {
   }
 }
 
+/**
+ * matches field ids to the corresponding body data
+ * @param {{type: string, id: string, attributes: {}, validations: {}}[]} fields
+ * @param {string[]} bodyData
+ * @returns {{[id: string] : [value: string]}} id/value pairs for the issue, ready to be converted into the expected OpenPATH config
+ */
 function parseCombined(fields, bodyData) {
   //map fields and entries to an object, then we map that
   try {
@@ -98,6 +114,11 @@ function parseCombined(fields, bodyData) {
   }
 }
 
+/**
+ * pulls the survey section from the data
+ * @param {{[id: string] : [value: string]}} dataObject id/value pairs for the issue
+ * @returns {{surveys:{}, trip-labels: string}} the survey info section for this config
+ */
 function getSurveyInfo(dataObject) {
   console.log("constructing survey info");
   let surveyInfo = {};
@@ -155,6 +176,12 @@ function getSurveyInfo(dataObject) {
   }
 }
 
+/**
+ * gets the template_text object for a single language
+ * @param {string} language_key either '_lang1' or '_lang2'
+ * @param {{[id: string] : [value: string]}} dataObject id/value pairs for the issue
+ * @returns {{}} object for one language's section in template_text
+ */
 function getTextForLanguage(language_key, dataObject) {
   const textKeys = [
     "deployment_partner_name",
@@ -197,6 +224,11 @@ function getTextForLanguage(language_key, dataObject) {
   }
 }
 
+/**
+ * gets the translated text section from the data
+ * @param {{[id: string] : [value: string]}} dataObject id/value pairs for the issue
+ * @returns {{}} template_text object for this config, will have either 1 or 2 languages
+ */
 function getTranslatedText(dataObject) {
   let translatedText = {};
   try {
@@ -219,7 +251,6 @@ function getTranslatedText(dataObject) {
 }
 
 /**
- * TODO: ensure good error messaging so deployers can fix bugs
  * fields are from the issue template
  * bodyData is from the filled out issue
  * @param {*} githubIssueTemplateFile - the issue template that created this request
@@ -232,6 +263,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
   let bodyData = parseBodyData(body);
   let combinedObject = parseCombined(fields, bodyData);
 
+  //then compose the config object
   let configObject = {};
   try {
     configObject["url_abbreviation"] = combinedObject.url_abbreviation;
