@@ -18,11 +18,18 @@ function splitList(str) {
   return list;
 }
 
+/**
+ * converts strings to their boolean - handles "true" and "True"
+ * @param {string} str string to convert
+ * @returns {boolean}
+ */
 function cleanBoolean(str) {
   if (str === "true" || str === "True") {
     return true;
-  } else {
+  } else if (str === "false" || "False") {
     return false;
+  } else {
+    setFailed("issue parsing booleans" + error.message);
   }
 }
 
