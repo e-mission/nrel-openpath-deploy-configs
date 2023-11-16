@@ -517,20 +517,21 @@ body:
       - "true"
       - "false"
   validations:
-    required: true  #   id: token_generate
-  #   attributes:
-  #     label: Generate tokens
-  #     description:
-  #     default: 0
-  #     options:
-  #       - "true"
-  #       - "false"
-  #   validations:
-  #     required: true
-  # - type: input
-  #   id: token_prefix
-  #   attributes:
-  #     label: Token Prefix
-  #     placeholder: "nrelop"
-  #     description:
-  - type: dropdown
+    required: true  
+# - type: dropdown
+#   id: token_generate
+#   attributes:
+#     label: Generate tokens
+#     description:
+#     default: 0
+#     options:
+#       - "true"
+#       - "false"
+#   validations:
+#     required: true
+# - type: input
+#   id: token_prefix
+#   attributes:
+#     label: Token Prefix
+#     placeholder: "nrelop"
+#     description:
