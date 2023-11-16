@@ -323,8 +323,9 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       data_uuids_columns_exclude: splitList(
         combinedObject.data_uuids_columns_exclude
       ),
-      //TODO: will this ever NOT be nrelop?
+      //unlikely to not be nrelop, could require manual changes
       token_prefix: "nrelop",
+      toekn_generate: combinedObject.autogen, //want to match the autogen above
     };
 
     //list of all the boolean values in the admin dashboard section, add to issue template and list for new value
@@ -336,7 +337,6 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       "overview_trips_trend",
       "data_uuids",
       "data_trips",
-      "token_generate",
       "map_heatmap",
       "map_bubble",
       "map_trip_lines",

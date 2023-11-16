@@ -452,23 +452,6 @@ body:
     label: Data UUIDs Columns Exclude 
     description: Please input columns to exclude, separated by commas
 - type: dropdown
-  id: token_generate
-  attributes:
-    label: Generate tokens
-    description: 
-    default: 0
-    options:  
-      - "true"
-      - "false"
-  validations:
-    required: true
-# - type: input
-#   id: token_prefix
-#   attributes:
-#     label: Token Prefix 
-#     placeholder: "nrelop"
-#     description:
-- type: dropdown
   id: map_heatmap
   attributes:
     label: Map Heatmap 
@@ -533,4 +516,20 @@ body:
       - "true"
       - "false"
   validations:
-    required: true
+    required: true  #   id: token_generate
+  #   attributes:
+  #     label: Generate tokens
+  #     description:
+  #     default: 0
+  #     options:
+  #       - "true"
+  #       - "false"
+  #   validations:
+  #     required: true
+  # - type: input
+  #   id: token_prefix
+  #   attributes:
+  #     label: Token Prefix
+  #     placeholder: "nrelop"
+  #     description:
+  - type: dropdown
