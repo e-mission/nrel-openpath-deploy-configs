@@ -323,12 +323,6 @@ body:
     label: Custom Labels
     description: If you chose false above, and want drowdown style labeling, please provide the file name for your custom labels. You will need to submit a PR to add it to our repo - https://github.com/e-mission/nrel-openpath-deploy-configs/tree/main/label_options
     placeholder: https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/example-program-label-options.json
-- type: textarea
-  id: tripSurveys
-  attributes:
-    label: Trip Surveys
-    description: If you are not using the default labels or providing your own, you can provide survey(s) for the trips. Please describe what your desired labeling survey configuration is. We will need you to provide the surveys.
-    placeholder: Two surveys - one for the trip and one for time between trips
 
 - type: markdown
   attributes:
@@ -344,12 +338,6 @@ body:
       - "false"
   validations:
     required: true
-- type: textarea
-  id: reminderSchemes
-  attributes:
-    label: Reminder Schemes
-    description: If you don't wish to use default reminders, please describe your desired reminder scheme. 
-    placeholder: Reminders every day for two weeks, then once a week after that. 
 
 
 - type: markdown
@@ -535,3 +523,24 @@ body:
 #     label: Token Prefix
 #     placeholder: "nrelop"
 #     description:
+
+
+- type: markdown
+  attributes:
+    value: "## Detailed Survey and Reminder Customization"
+- type: markdown
+  attributes:
+    value: "If you are NOT electing to have custom trip surveys or a custom reminder schecme, you can skip this section and submit the form."
+- type: textarea
+  id: reminderSchemes
+  attributes:
+    label: Reminder Schemes
+    description: If you selected false for "Use default reminder schedule?", please describe your desired reminder scheme. 
+    placeholder: Reminders every day for two weeks, then once a week after that. 
+
+- type: textarea
+  id: tripSurveys
+  attributes:
+    label: Trip Surveys
+    description: If you selected "false" for "Use default mode and purpose labels?", AND did not provide a file for "Custom Labels" you can provide survey(s) for the trips. Please describe what your desired labeling survey configuration is. We will need you to provide the surveys.
+    placeholder: Two surveys - one for the trip and one for time between trips
