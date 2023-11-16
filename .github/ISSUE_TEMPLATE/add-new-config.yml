@@ -538,9 +538,15 @@ body:
     description: If you selected false for "Use default reminder schedule?", please describe your desired reminder scheme. 
     placeholder: Reminders every day for two weeks, then once a week after that. 
 
+
 - type: textarea
   id: tripSurveys
   attributes:
     label: Trip Surveys
     description: If you selected "false" for "Use default mode and purpose labels?", AND did not provide a file for "Custom Labels" you can provide survey(s) for the trips. Please describe what your desired labeling survey configuration is. We will need you to provide the surveys.
-    placeholder: Two surveys - one for the trip and one for time between trips
+    placeholder: I want to ask people for their battery charge level after the trip
+- type: input
+  id: trip_survey_path
+  attributes:
+    label: Custom Trip Survey
+    description: Please add a path to a trip survey, something like "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json"
