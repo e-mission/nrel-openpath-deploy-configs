@@ -5,7 +5,10 @@ This may not be the long-term solution, but it allows us to make progress over t
 
 ### Creating a new Config
 
-Automation has been introduced for creating new config files. New deployers can now file a templated issue specifying their configuration, which will launch a GitHub Actions workflow with a pull request to add the new config to this repo. Additional steps may be required if they require additional customization of surveys or labels. 
+Automation has been introduced for creating new config files. New deployers can now file a [templated issue](https://github.com/e-mission/nrel-openpath-deploy-configs/issues/new?assignees=&labels=new+config&projects=&template=add-new-config.yml&title=New+Project+Configuration+-+%5BPROJECT%5D) specifying their configuration, which will launch a GitHub Actions workflow with a pull request to add the new config to this repo. Additional steps may be required if they require additional customization of surveys or labels. 
+
+Info for parthers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/use/start_a_project.md)
+Info for developers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/dev/future/more_custom_auto_config.md)
 
 ### Reviewing and testing
 - contact us by email at openpath@nrel.gov for access to staging apps (Android or IOS)
