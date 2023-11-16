@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+<h1>Welcome to OpenPATH!</h1>
+<p> Thank you for joining the OpenPATH project.<br>
+<br>
+ <strong>Your admin dashboard can be found at:</strong> <br>
+ <br>
+    <a href='https://<pool_name>-openpath.nrel.gov/admin/'>
+    https://<pool_name>-openpath.nrel.gov/admin/</a>.<br>
+    <br>
+    An account has been created for you with AWS Cognito. Please log in and change your 
+    temporary password:<br>
+    <br>
+    Username: {username}
+    Temporary Password: {####}
+    <br>
+    <br>
+        The login to the admin dashboard uses 2-factor authentication. You will have to install an authenticator app (e.g. Microsoft Authenticator, Google Authenticator) to receive One Time Passcodes (OTP) every time you want to log in. This is a requirement from NREL cyber to ensure that the data access to individual user information is secure.<br>
+      <br>
+    You can download trip and user tables as csv and view aggregate origin-destination points in the maps.<br>
+    <br>
+        Since you indicated that you want to map the data to infrastructure updates, your configuration includes trip start/end in the trip table. Let us know if you would like to exclude those for greater anonymity.
+    We will also support a trajectory table (<a href='https://github.com/e-mission/op-admin-dashboard/issues/55'>
+    https://github.com/e-mission/op-admin-dashboard/issues/55</a>) fairly soon.<br>
+
+    Please let us know if you have any problems with signing in.<br>
+<br>
+    Thank you,<br>
+    <br>
+    NREL's OpenPATH Team
+</p>
+</body>
+</html>

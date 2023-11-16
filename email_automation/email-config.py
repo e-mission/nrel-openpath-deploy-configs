@@ -3,180 +3,63 @@ from botocore.exceptions import ClientError
 import json
 import os
 import logging
+import sys
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-#Get AWS credentials as environment variables 
+#Input the filename as an argument in command line 
+filename_raw = sys.argv[1]
+filename = filename_raw.split(".")[0]
+pool_name = "nrelopenpath-prod-" + filename
+
+current_path = os.path.dirname(__file__)
+config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
+
+#Set up AWS credentials as environment variables + set variables 
 ACCESS = os.environ.get("AWS_ACCESS_KEY_ID")
 SECRET = os.environ.get("AWS_SECRET_ACCESS_KEY")
 TOKEN = os.environ.get("AWS_SESSION_TOKEN")
-AWS_REGION = "us-west-2" 
+AWS_REGION = "us-west-2"
 
-def email_extract():
-    with open ('AWS-test-ebike.nrel-op.json') as config_file:
-        data = json.load(config_file)
-        intro = data['intro']
-        emails = [i.strip() for i in intro['admin_users'].split(",")]
-    return emails
-
-print(email_extract())
-
-filename = ""
-# pool_name = "nrelopenpath-prod-" + filename
-pool_name = "nrelopenpath-stage"
-pool_id = []
+#Set up clients
+cognito_client = boto3.client(
+    'cognito-idp',
+    aws_access_key_id = ACCESS,
+    aws_secret_access_key= SECRET,
+    aws_session_token=TOKEN, 
+    region_name=AWS_REGION
+    )
+sts_client = boto3.client("sts")
 
 
-# def get_userpool_name():
-client = boto3.client(
-'cognito-idp',
-aws_access_key_id = ACCESS,
-aws_secret_access_key= SECRET,
-aws_session_token=TOKEN, 
-region_name=AWS_REGION
-)
-response = client.list_user_pools(MaxResults=60)
-UserPoolExist = False
+def get_userpool_name(pool_name, cognito_client):
+    response = cognito_client.list_user_pools(MaxResults=60)
+    UserPoolExist = False
+    #########One option to set the user pool without breaking (but still stop when condition met)
+    i = 0
+    while response["UserPools"][i]["Name"] != pool_name and i < len(response["UserPools"]) - 1:
+        print("looking for user pool...")
+        i = i + 1
+        if response["UserPools"][i]["Name"] == pool_name:
+            UserPoolExist = True
+            pool_id = response["UserPools"][i]["Id"]
+            print(pool_name + " pool exists! Checking for users...")
+    #########Second option that uses a break when condition is met:
+    # for i in response["UserPools"]:
+    #     if i["Name"] == pool_name and not UserPoolExist:
+    #         pool_id = i["Id"]
+    #         UserPoolExist = True
+    #         print(pool_name + " pool exists! Checking for users...")
+    #         break 
+    #     else:
+    #         print("Looking for pool...")
+    #         continue
 
-for i in response["UserPools"]:
-    if i["Name"] == pool_name:
-        pool_id.append(i["Id"])
-        UserPoolExist = True
-    else:
-        print("Pool DNE! Looking...")
-        continue
+    return UserPoolExist, pool_id
 
-if UserPoolExist:
-    print(pool_name + " pool exists! Adding users...")
-
-#we can create the pool automatically if it does not exist. 
-if not UserPoolExist:
-    print(pool_name + " does not exist! Creating pool...")
-#     response = client.create_user_pool(
-#     PoolName=pool_name,
-#     Policies={
-#         'PasswordPolicy': {
-#             'MinimumLength': 123,
-#             'RequireUppercase': True|False,
-#             'RequireLowercase': True|False,
-#             'RequireNumbers': True|False,
-#             'RequireSymbols': True|False,
-#             'TemporaryPasswordValidityDays': 123
-#         }
-#     },
-#     DeletionProtection='ACTIVE'|'INACTIVE',
-#     LambdaConfig={
-#         'PreSignUp': 'string',
-#         'CustomMessage': 'string',
-#         'PostConfirmation': 'string',
-#         'PreAuthentication': 'string',
-#         'PostAuthentication': 'string',
-#         'DefineAuthChallenge': 'string',
-#         'CreateAuthChallenge': 'string',
-#         'VerifyAuthChallengeResponse': 'string',
-#         'PreTokenGeneration': 'string',
-#         'UserMigration': 'string',
-#         'CustomSMSSender': {
-#             'LambdaVersion': 'V1_0',
-#             'LambdaArn': 'string'
-#         },
-#         'CustomEmailSender': {
-#             'LambdaVersion': 'V1_0',
-#             'LambdaArn': 'string'
-#         },
-#         'KMSKeyID': 'string'
-#     },
-#     AutoVerifiedAttributes=[
-#         'phone_number'|'email',
-#     ],
-#     AliasAttributes=[
-#         'phone_number'|'email'|'preferred_username',
-#     ],
-#     UsernameAttributes=[
-#         'phone_number'|'email',
-#     ],
-#     SmsVerificationMessage='string',
-#     EmailVerificationMessage='string',
-#     EmailVerificationSubject='string',
-#     VerificationMessageTemplate={
-#         'SmsMessage': 'string',
-#         'EmailMessage': 'string',
-#         'EmailSubject': 'string',
-#         'EmailMessageByLink': 'string',
-#         'EmailSubjectByLink': 'string',
-#         'DefaultEmailOption': 'CONFIRM_WITH_LINK'|'CONFIRM_WITH_CODE'
-#     },
-#     SmsAuthenticationMessage='string',
-#     MfaConfiguration='OFF'|'ON'|'OPTIONAL',
-#     UserAttributeUpdateSettings={
-#         'AttributesRequireVerificationBeforeUpdate': [
-#             'phone_number'|'email',
-#         ]
-#     },
-#     DeviceConfiguration={
-#         'ChallengeRequiredOnNewDevice': True|False,
-#         'DeviceOnlyRememberedOnUserPrompt': True|False
-#     },
-#     EmailConfiguration={
-#         'SourceArn': 'string',
-#         'ReplyToEmailAddress': 'string',
-#         'EmailSendingAccount': 'COGNITO_DEFAULT'|'DEVELOPER',
-#         'From': 'string',
-#         'ConfigurationSet': 'string'
-#     },
-#     SmsConfiguration={
-#         'SnsCallerArn': 'string',
-#         'ExternalId': 'string',
-#         'SnsRegion': 'string'
-#     },
-#     UserPoolTags={
-#         'string': 'string'
-#     },
-#     AdminCreateUserConfig={
-#         'AllowAdminCreateUserOnly': True|False,
-#         'UnusedAccountValidityDays': 123,
-#         'InviteMessageTemplate': {
-#             'SMSMessage': 'string',
-#             'EmailMessage': 'string',
-#             'EmailSubject': 'string'
-#         }
-#     },
-#     Schema=[
-#         {
-#             'Name': 'string',
-#             'AttributeDataType': 'String'|'Number'|'DateTime'|'Boolean',
-#             'DeveloperOnlyAttribute': True|False,
-#             'Mutable': True|False,
-#             'Required': True|False,
-#             'NumberAttributeConstraints': {
-#                 'MinValue': 'string',
-#                 'MaxValue': 'string'
-#             },
-#             'StringAttributeConstraints': {
-#                 'MinLength': 'string',
-#                 'MaxLength': 'string'
-#             }
-#         },
-#     ],
-#     UserPoolAddOns={
-#         'AdvancedSecurityMode': 'OFF'|'AUDIT'|'ENFORCED'
-#     },
-#     UsernameConfiguration={
-#         'CaseSensitive': True|False
-#     },
-#     AccountRecoverySetting={
-#         'RecoveryMechanisms': [
-#             {
-#                 'Priority': 123,
-#                 'Name': 'verified_email'|'verified_phone_number'|'admin_only'
-#             },
-#         ]
-#     }
-# )
-
-def user_already_exists(pool_id, email):
+def user_already_exists(pool_id, email, cognito_client):
     try:
-        response = client.list_users(UserPoolId=pool_id)
+        response = cognito_client.list_users(UserPoolId=pool_id)
         users = response["Users"]
         result = False
         for i in users:
@@ -185,10 +68,8 @@ def user_already_exists(pool_id, email):
                     for j in v:
                         if j["Name"] == "email":
                             user_email = str(j["Value"])
-                            # print(user_email)
                             if str(email) == user_email:
                                 result = True
-        # print(result)
         return result
     except ClientError as err:
         logger.error(
@@ -199,130 +80,92 @@ def user_already_exists(pool_id, email):
         )
         raise
 
-for email in email_extract():
-    if not user_already_exists(pool_id[0], email):
-        print(email + " not in user pool! Creating account...")
-        # response = client.admin_create_user(
-        #     #extra info on these params here: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp/client/admin_create_user.html
-        #     UserPoolId=pool_id[0],
-        #     #If user pool only supports phone numbers or email addresses as sign-in attributes, Amazon Cognito automatically generates a username value.
-        #     Username='string',
-        #     UserAttributes=[
-        #         {
-        #             'Name': 'email',
-        #             'Value': email,
-        #         },
-        #     ],
-        #     #The temporary password is valid only once.
-        #     #If you don’t specify a value, Amazon Cognito generates a temp password for you.
-        #     TemporaryPassword='string', 
-        #     ForceAliasCreation=True,
-        #     MessageAction='RESEND',
-        #     DesiredDeliveryMediums=[
-        #         'EMAIL',
-        #     ],
-        #     ClientMetadata={
-        #         'string': 'string'
-        #     }
-        # )
+def get_verified_arn(sts_client):
+    account_num = sts_client.get_caller_identity()["Account"]
+    identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + account_num + ":identity/openpath@nrel.gov"
+    return identity_arn
 
+def email_extract():
+    with open (config_path) as config_file:
+        data = json.load(config_file)
+        intro = data['intro']
+        emails = [i.strip() for i in intro['admin_users'].split(",")]
+        ####This section is in preparation for the next-level goal, which may involve customizing the email further based on the submission form.
+        # admindash_prefs = data['admin_dashboard']
+        # columns_exclude = admin_dash['data_trajectories_columns_exclude']
+        # print("admindash", admindash_prefs)
+    return emails
 
+def create_account(pool_id, email, cognito_client):
+    response = cognito_client.admin_create_user(
+                    UserPoolId = pool_id,
+                    Username=email,
+                    UserAttributes=[
+                        {
+                            'Name': 'email',
+                            'Value': email,
+                        },
+                    ],
+                    ForceAliasCreation=True,
+                    DesiredDeliveryMediums=[
+                        'EMAIL',
+                    ],
+                )
+    return response
+def format_email(pool_name):
+    with open("welcome-template.txt", "r") as f:
+        html = f.read()
+        html = html.replace("<pool_name>", pool_name)
+    return html
 
-#     
+def update_user_pool(pool_id, pool_name, html, identity_arn, cognito_client):
+  response = cognito_client.update_user_pool(
+        UserPoolId= pool_id,
+        AutoVerifiedAttributes=['email'],
 
-# ses = boto3.client(
-#     'ses',
-#     aws_access_key_id = ACCESS,
-#     aws_secret_access_key = SECRET,
-#     aws_session_token = TOKEN)
+        MfaConfiguration='ON',
+        DeviceConfiguration={
+            'ChallengeRequiredOnNewDevice': True,
+            'DeviceOnlyRememberedOnUserPrompt': True
+        },
+        EmailConfiguration={
+            'SourceArn': identity_arn,
+            'EmailSendingAccount': 'DEVELOPER',
+            'From': 'openpath@nrel.gov'
+        },
+        AdminCreateUserConfig={
+            'AllowAdminCreateUserOnly': True,
+            'InviteMessageTemplate': {
+                'EmailMessage': str(html),
+                'EmailSubject': f'Welcome to {pool_name} user pool!'
+            }
+        },
+)
+  
+######################################################################
 
-# response = ses.verify_domain_identity(Domain = 'openpath@nrel.gov')
+UserPoolExist, pool_id = get_userpool_name(pool_name, cognito_client) 
 
-# print(response)
-
-# # Replace sender@example.com with your "From" address.
-# # This address must be verified with Amazon SES.
-# SENDER = "OpenPATH  <openpath@nrel.gov>"
-
-# # Replace recipient@example.com with a "To" address. If your account 
-# # is still in the sandbox, this address must be verified.
-# RECIPIENT = email_extract()
-
-# # Specify a configuration set. If you do not want to use a configuration
-# # set, comment the following variable, and the 
-# # ConfigurationSetName=CONFIGURATION_SET argument below.
-# # CONFIGURATION_SET = "ConfigSet"
-
-# # If necessary, replace us-west-2 with the AWS Region you're using for Amazon SES.
-# AWS_REGION = "us-west-2"
-
-# # The subject line for the email.
-# SUBJECT = "OpenPATH Admin Account Registration"
-
-# # The email body for recipients with non-HTML email clients.
-# BODY_TEXT = ("Amazon SES Test (Python)\r\n"
-#              "This email was sent with Amazon SES using the "
-#              "AWS SDK for Python (Boto). *******"
-#             )
-            
-# # The HTML body of the email.
-# BODY_HTML = """<html>
-# <head></head>
-# <body>
-# #   <h1>Amazon SES Test (SDK for Python)</h1>
-# #   <p>This email was sent with
-# #     <a href='https://aws.amazon.com/ses/'>Amazon SES</a> using the
-# #     <a href='https://aws.amazon.com/sdk-for-python/'>
-# #       AWS SDK for Python (Boto)</a>.</p>
-# # </body>
-# # </html>
-# #             """            
-
-# # The character encoding for the email.
-# CHARSET = "UTF-8"
-
-# # Create a new SES resource and specify a region.
-# client = boto3.client(
-#     'ses',
-#     aws_access_key_id = ACCESS,
-#     aws_secret_access_key = SECRET,
-#     aws_session_token = TOKEN,
-#     region_name = AWS_REGION
-#     )
-
-# # Try to send the email.
-# try:
-#     #Provide the contents of the email.
-#     response = client.send_email(
-#         Destination={
-#             'ToAddresses': [
-#                 RECIPIENT,
-#             ],
-#         },
-#         Message={
-#             'Body': {
-#                 'Html': {
-#                     'Charset': CHARSET,
-#                     'Data': BODY_HTML,
-#                 },
-#                 'Text': {
-#                     'Charset': CHARSET,
-#                     'Data': BODY_TEXT,
-#                 },
-#             },
-#             'Subject': {
-#                 'Charset': CHARSET,
-#                 'Data': SUBJECT,
-#             },
-#         },
-#         Source=SENDER,
-#         # If you are not using a configuration set, comment or delete the
-#         # following line
-#         # ConfigurationSetName=CONFIGURATION_SET,
-#     )
-# # Display an error if something goes wrong.	
-# except ClientError as e:
-#     print(e.response['Error']['Message'])
-# else:
-#     print("Email sent! Message ID:"),
-#     print(response['MessageId'])
+ # Start by checking for the User Pool. If the User Pool does not yet exist, wait until it is set up to add users. 
+if UserPoolExist:
+    #extract email addresses from conf file
+    emails = email_extract()
+    #Loop over each email address. Check if they're in the user pool.
+    for email in emails:
+        if not user_already_exists(pool_id, email, cognito_client):   
+            #If user not in pool, format the email template for their welcome email, update the user pool, and create an account for them.
+            print(email + " not in user pool! Creating account...")
+            html = format_email(pool_name)
+            identity_arn = get_verified_arn(sts_client)
+            update_user_pool(pool_id, pool_name, html, identity_arn, cognito_client)
+            response = create_account(pool_id, email, cognito_client)
+            if response['ResponseMetadata']['HTTPStatusCode'] == 200:
+                print("Account created! Sending welcome email.")
+            else:
+                print("Account creation unsuccessful.")
+                print(response['ResponseMetadata']['HTTPStatusCode'])       
+        else:
+            print(email + " already in user pool!")
+else:
+    print(pool_name + " does not exist! Try again later.")
+  
