@@ -1,3 +1,5 @@
+//adapted from https://github.com/zachleat/github-issue-to-json-file/blob/main/parse-issue-body.js
+
 import { readFile } from "node:fs/promises";
 import { setFailed } from "@actions/core";
 import yaml from "js-yaml";
