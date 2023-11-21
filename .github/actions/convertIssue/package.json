@@ -1,0 +1,14 @@
+{
+  "name": "@emission/create-config-from-issue",
+  "version": "1.0.0",
+  "description": "Convert issue that follows the new config template to a config json file",
+  "type": "module",
+  "main": "issue-to-json.js",
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}
