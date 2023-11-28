@@ -18,11 +18,12 @@
     <br>
         The login to the admin dashboard uses 2-factor authentication. You will have to install an authenticator app (e.g. Microsoft Authenticator, Google Authenticator) to receive One Time Passcodes (OTP) every time you want to log in. This is a requirement from NREL cyber to ensure that the data access to individual user information is secure.<br>
       <br>
-    You can download trip and user tables as csv and view aggregate origin-destination points in the maps.<br>
+    You can download trip and user tables as a csv and view aggregate origin-destination points in the maps. <map_trip_lines> <br>
     <br>
-        Since you indicated that you want to map the data to infrastructure updates, your configuration includes trip start/end in the trip table. Let us know if you would like to exclude those for greater anonymity.
-    We will also support a trajectory table (<a href='https://github.com/e-mission/op-admin-dashboard/issues/55'>
-    https://github.com/e-mission/op-admin-dashboard/issues/55</a>) fairly soon.<br>
+    <columns_exclude> 
+        
+    We also support a trajectory table.
+    https://github.com/e-mission/op-admin-dashboard/issues/55</a>)<br>
 
     Please let us know if you have any problems with signing in.<br>
 <br>
