@@ -352,6 +352,9 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       );
     }
 
+    //list of administrator emails
+    configObject['admin_dashboard'].admin_access = combinedObject.admin_access.split(',');
+
     //TODO: add handling for custom reminder schemes
 
     console.log(configObject);
