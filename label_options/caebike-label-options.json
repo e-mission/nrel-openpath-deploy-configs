@@ -53,24 +53,24 @@
       "to_access_other_activity": "To access all other activities"  
       },
     "es": {
-      "walk_run": "",
-      "auto_driver": "",
-      "auto_passenger": "",
+      "walk_run": "Caminar o correr",
+      "auto_driver": "Vehículo conductor",
+      "auto_passenger": "Vehículo pasajero",
       "e-bike": "e-bicicleta",
       "bike": "Bicicleta",
       "taxi": "Taxi/Uber/Lyft",
       "bike_scooter_share": "Bicicleta compartida/Motoneta compartida",
-      "bus_train": "",
-      "other_mode": "",       
-      "not_a_trip": "",
+      "bus_train": "Autobús /Tren",
+      "other_mode": "Otro modo",       
+      "not_a_trip": "No es un viaje real",
       "no_travel": "No viajar",
-      "to_home": "",
-      "to_work_school": "",
-      "work_related": "",
-      "to_access_bus_train": "",
-      "to_pick_drop_person": "",
-      "for_exercise_recreation": "",
-      "to_access_other_activity": ""
+      "to_home": "A casa",
+      "to_work_school": "A trabajo o escuela",
+      "work_related": "Relacionado con el trabajo",
+      "to_access_bus_train": "Para acceder al autobús/tren",
+      "to_pick_drop_person": "Para recoger/dejar a una persona",
+      "for_exercise_recreation": "Para ejercicio/recreación",
+      "to_access_other_activity": "Para acceder a todas las demás actividades"
     }
   }
 }
