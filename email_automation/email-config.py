@@ -53,7 +53,6 @@ def user_already_exists(pool_id, email, cognito_client):
     try:
         response = cognito_client.list_users(UserPoolId=pool_id)
         users = response["Users"]
-        print('users:' , users)
         result = False
         if str(users).find(email) > 1:
             result = True
