@@ -1,4 +1,5 @@
 # this action is based on the action by zachleat on github (github-issue-to-json-file)
+# https://github.com/zachleat/github-issue-to-json-file/blob/main/action.yml
 
 name: New Config Issue to JSON
 description: Convert GitHub issues for new configs to JSON data files.
