@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Washington Commons</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <aTDERCsPrCNS8HKtRon8CL id="aTDERCsPrCNS8HKtRon8CL">
+          <start/>
+          <end/>
+          <Do_you_have_a_valid_driver_s_license/>
+          <Do_you_have_any_heal_u_from_the_following>
+            <Do_you_have_any_heal_u_from_the_following/>
+            <Driving_during_the_day/>
+            <Driving_during_the_night/>
+            <Talking_public_transit/>
+            <Walking/>
+            <Biking/>
+          </Do_you_have_any_heal_u_from_the_following>
+          <Please_list_the_make_le_at_your_household/>
+          <How_often_is_a_vehicle_available_to_you/>
+          <Which_of_the_followi_vehicles_do_you_have/>
+          <What_is_your_current_employment_status/>
+          <How_many_days_per_we_k_do_you_telecommute/>
+          <How_many_people_incl_re_in_your_household/>
+          <How_many_children_un_re_in_your_household/>
+          <What_is_your_education_background/>
+          <Please_check_the_cat_income_before_taxes/>
+          <How_do_you_describe_your_gender/>
+          <What_is_your_marital_status/>
+          <Which_categories_des_elect_all_that_apply/>
+          <Is_there_anyone_in_y_o_needs_special_care/>
+          <How_many_other_membe_e_a_driver_s_license/>
+          <How_many_current_wor_including_yourself/>
+          <Which_of_the_followi_es_of_transportation>
+            <Which_of_the_followi_es_of_transportation/>
+            <I_enjoy_driving/>
+            <I_enjoy_carpooling/>
+            <I_enjoy_walking/>
+            <I_enjoy_biking/>
+            <I_enjoy_e_biking/>
+            <I_enjoy_riding_public_transit/>
+          </Which_of_the_followi_es_of_transportation>
+          <How_do_you_feel_abou_n_options_in_general/>
+          <Safety/>
+          <Travel_Time/>
+          <Access/>
+          <Experience/>
+          <Cost/>
+          <I_would_guess_that_m_you_agree_with_most/>
+          <How_likely_are_you_t_ic_car_in_the_future/>
+          <How_likely_are_you_t_c_bike_in_the_future/>
+          <Do_you_currently_hav_transportation_pass/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aTDERCsPrCNS8HKtRon8CL>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aTDERCsPrCNS8HKtRon8CL/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aTDERCsPrCNS8HKtRon8CL/end" type="dateTime"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_a_valid_driver_s_license" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Do_you_have_any_heal_u_from_the_following" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Driving_during_the_day" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Driving_during_the_night" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Talking_public_transit" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Walking" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Biking" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Please_list_the_make_le_at_your_household" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_often_is_a_vehicle_available_to_you" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_vehicles_do_you_have" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/What_is_your_current_employment_status" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_many_days_per_we_k_do_you_telecommute" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_many_people_incl_re_in_your_household" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_many_children_un_re_in_your_household" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/What_is_your_education_background" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Please_check_the_cat_income_before_taxes" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_do_you_describe_your_gender" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/What_is_your_marital_status" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_categories_des_elect_all_that_apply" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Is_there_anyone_in_y_o_needs_special_care" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_many_other_membe_e_a_driver_s_license" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_many_current_wor_including_yourself" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/Which_of_the_followi_es_of_transportation" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_driving" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_carpooling" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_walking" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_biking" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_e_biking" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_riding_public_transit" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_do_you_feel_abou_n_options_in_general" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Safety" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Travel_Time" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Access" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Experience" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Cost" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/I_would_guess_that_m_you_agree_with_most" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_likely_are_you_t_ic_car_in_the_future" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/How_likely_are_you_t_c_bike_in_the_future" required="false()" type="string"/>
+      <bind nodeset="/aTDERCsPrCNS8HKtRon8CL/Do_you_currently_hav_transportation_pass" required="false()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aTDERCsPrCNS8HKtRon8CL/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_a_valid_driver_s_license">
+      <label>Do you have a valid driver's license?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No </label>
+        <value>no</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following">
+      <select1 appearance="label" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Do_you_have_any_heal_u_from_the_following">
+        <label>Do you have any health conditions which prevent or limit you from the following.</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Driving_during_the_day">
+        <label>Driving during the day</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Driving_during_the_night">
+        <label>Driving during the night</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Talking_public_transit">
+        <label>Talking public transit</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Walking">
+        <label>Walking</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_have_any_heal_u_from_the_following/Biking">
+        <label>Biking</label>
+        <item>
+          <label>Yes</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>No </label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <input ref="/aTDERCsPrCNS8HKtRon8CL/Please_list_the_make_le_at_your_household">
+      <label>Please list the make and model of the vehicles (cars, vans, trucks) that are available at your household?</label>
+    </input>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_often_is_a_vehicle_available_to_you">
+      <label>How often is a vehicle available to you?</label>
+      <item>
+        <label>Never</label>
+        <value>never</value>
+      </item>
+      <item>
+        <label>Sometimes</label>
+        <value>sometimes</value>
+      </item>
+      <item>
+        <label>Often </label>
+        <value>often</value>
+      </item>
+      <item>
+        <label>Always</label>
+        <value>always</value>
+      </item>
+    </select1>
+    <select ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_vehicles_do_you_have">
+      <label>Which of the following other types of personal vehicles do you have?</label>
+      <item>
+        <label>Motorcycle </label>
+        <value>motorcycle</value>
+      </item>
+      <item>
+        <label>Bike </label>
+        <value>bike</value>
+      </item>
+      <item>
+        <label>E-bike </label>
+        <value>e_bike</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>other</value>
+      </item>
+    </select>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/What_is_your_current_employment_status">
+      <label>What is your current employment status?</label>
+      <item>
+        <label>Full-time employment</label>
+        <value>full_time_employment</value>
+      </item>
+      <item>
+        <label>Part-time employment </label>
+        <value>part_time_employment</value>
+      </item>
+      <item>
+        <label>Retired</label>
+        <value>retired</value>
+      </item>
+      <item>
+        <label>Unemployed</label>
+        <value>unemployed</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_many_days_per_we_k_do_you_telecommute">
+      <label>How many days per week do you telecommute?</label>
+      <item>
+        <label>I don't telecommute</label>
+        <value>i_don_t_telecommute</value>
+      </item>
+      <item>
+        <label>I don't work</label>
+        <value>i_don_t_work</value>
+      </item>
+      <item>
+        <label>One day</label>
+        <value>one_day</value>
+      </item>
+      <item>
+        <label>Two days</label>
+        <value>two_days</value>
+      </item>
+      <item>
+        <label>Three days</label>
+        <value>three_days</value>
+      </item>
+      <item>
+        <label>Four days</label>
+        <value>four_days</value>
+      </item>
+      <item>
+        <label>Five days or more</label>
+        <value>5_days_and_more</value>
+      </item>
+    </select1>
+    <input ref="/aTDERCsPrCNS8HKtRon8CL/How_many_people_incl_re_in_your_household">
+      <label>How many people including you are in your household?</label>
+    </input>
+    <input ref="/aTDERCsPrCNS8HKtRon8CL/How_many_children_un_re_in_your_household">
+      <label>How many children under age of 16 are in your household?</label>
+    </input>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/What_is_your_education_background">
+      <label>What is your education background?</label>
+      <item>
+        <label>Some grade or high school </label>
+        <value>some_grade_or_high_school</value>
+      </item>
+      <item>
+        <label>Four-year college, university, or technical school graduate </label>
+        <value>four_year_college__university__or_techni</value>
+      </item>
+      <item>
+        <label>Some graduate school </label>
+        <value>some_graduate_school</value>
+      </item>
+      <item>
+        <label>Completed graduate degree(s)</label>
+        <value>completed_graduate_degree_s</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Please_check_the_cat_income_before_taxes">
+      <label>Please check the category which best describes your household annual income before taxes?</label>
+      <item>
+        <label>Less than $20,000</label>
+        <value>option_1</value>
+      </item>
+      <item>
+        <label>$20,000 to $34,999</label>
+        <value>option_2</value>
+      </item>
+      <item>
+        <label>$35,000 to $49,999</label>
+        <value>_35_000_to__49_999</value>
+      </item>
+      <item>
+        <label>$50,000 to $74,999</label>
+        <value>_50_000_to__74_999</value>
+      </item>
+      <item>
+        <label>$75,000 to $99,999</label>
+        <value>_75_000_to__99_999</value>
+      </item>
+      <item>
+        <label>$100,000 to $149,9999</label>
+        <value>_100_000_to__149_9999</value>
+      </item>
+      <item>
+        <label>$150,000 to $249,999</label>
+        <value>_150_000_to__249_999</value>
+      </item>
+      <item>
+        <label>$250,000 to $349,999</label>
+        <value>_250_000_to__349_999</value>
+      </item>
+      <item>
+        <label>$350,000 and more</label>
+        <value>_350_000_and_more</value>
+      </item>
+      <item>
+        <label>Prefer not to answer</label>
+        <value>prefer_not_to_answer</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_do_you_describe_your_gender">
+      <label>How do you describe your gender?</label>
+      <item>
+        <label>Woman</label>
+        <value>woman</value>
+      </item>
+      <item>
+        <label>Man</label>
+        <value>man</value>
+      </item>
+      <item>
+        <label>Non-binary</label>
+        <value>non_binary</value>
+      </item>
+      <item>
+        <label>Gender non-confirming</label>
+        <value>gender_non_confirming</value>
+      </item>
+      <item>
+        <label>Prefer not to say</label>
+        <value>prefer_not_to_say</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/What_is_your_marital_status">
+      <label>What is your marital status?</label>
+      <item>
+        <label>Married</label>
+        <value>married</value>
+      </item>
+      <item>
+        <label>Single</label>
+        <value>single</value>
+      </item>
+      <item>
+        <label>In a domestic partnership </label>
+        <value>in_a_domestic_partnership</value>
+      </item>
+      <item>
+        <label>Widowed</label>
+        <value>widowed</value>
+      </item>
+      <item>
+        <label>Prefer not to say</label>
+        <value>option_5</value>
+      </item>
+    </select1>
+    <select ref="/aTDERCsPrCNS8HKtRon8CL/Which_categories_des_elect_all_that_apply">
+      <label>Which categories describe you? Select all that apply.</label>
+      <item>
+        <label>American Indian or Alaska Native </label>
+        <value>american_indian_or_alaska_native</value>
+      </item>
+      <item>
+        <label>Asian </label>
+        <value>asian</value>
+      </item>
+      <item>
+        <label>Black or African American </label>
+        <value>black_or_african_american</value>
+      </item>
+      <item>
+        <label>Hispanic, Latino, or Spanish Origin</label>
+        <value>hispanic__latino__or_spanish_origin</value>
+      </item>
+      <item>
+        <label>Middle Easterner or North Aferican </label>
+        <value>middle_easterner_or_north_aferican</value>
+      </item>
+      <item>
+        <label>Native Hawaiian or other Pacific Islander </label>
+        <value>native_hawaiian_or_other_pacific_islande</value>
+      </item>
+      <item>
+        <label>White </label>
+        <value>white</value>
+      </item>
+      <item>
+        <label>Other </label>
+        <value>other</value>
+      </item>
+    </select>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Is_there_anyone_in_y_o_needs_special_care">
+      <label>Is there anyone in your household who needs special care?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_many_other_membe_e_a_driver_s_license">
+      <label>How many other members of your household have a driver's license?</label>
+      <item>
+        <label>One </label>
+        <value>one</value>
+      </item>
+      <item>
+        <label>Two </label>
+        <value>two</value>
+      </item>
+      <item>
+        <label>Three</label>
+        <value>three</value>
+      </item>
+      <item>
+        <label>Four or more </label>
+        <value>option_4</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_many_current_wor_including_yourself">
+      <label>How many current workers are there in your household (including yourself)?</label>
+      <item>
+        <label>One </label>
+        <value>one</value>
+      </item>
+      <item>
+        <label>Two </label>
+        <value>two</value>
+      </item>
+      <item>
+        <label>Three</label>
+        <value>three</value>
+      </item>
+      <item>
+        <label>Four or more</label>
+        <value>option_4</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation">
+      <select1 appearance="label" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/Which_of_the_followi_es_of_transportation">
+        <label>Which of the following statements best describes your attitude toward the following modes of transportation?</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_driving">
+        <label>I enjoy driving.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_carpooling">
+        <label>I enjoy carpooling.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_walking">
+        <label>I enjoy walking.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_biking">
+        <label>I enjoy biking.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_e_biking">
+        <label>I enjoy e-biking.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation/I_enjoy_riding_public_transit">
+        <label>I enjoy riding public transit.</label>
+        <item>
+          <label>Strongly disagree</label>
+          <value> </value>
+        </item>
+        <item>
+          <label>Disagree</label>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label>Neutral </label>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label>Agree</label>
+          <value>agree</value>
+        </item>
+        <item>
+          <label>Strongly agree </label>
+          <value>strongly_agree</value>
+        </item>
+      </select1>
+    </group>
+    <input ref="/aTDERCsPrCNS8HKtRon8CL/How_do_you_feel_abou_n_options_in_general">
+      <label>How do you feel about your transportation? When answering the following please consider how you feel about your most used transportation options in general.</label>
+    </input>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Safety">
+      <label>Safety</label>
+      <item>
+        <label>I usually feel safe when traveling.</label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Sometimes I feel unsafe when traveling.</label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>I often feel unsafe when traveling.</label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Travel_Time">
+      <label>Travel Time</label>
+      <item>
+        <label>It usually takes me too long to get places.  </label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Sometimes it takes me too long to get places.</label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>I can usually get places quickly.  </label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Access">
+      <label>Access</label>
+      <item>
+        <label>It's always hard for me to get to places I need to go.  </label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Sometimes it's hard for me to get to places I need to go.</label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>It's usually pretty easy for me to get to places I need to go.</label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Experience">
+      <label>Experience</label>
+      <item>
+        <label>The transportation I use is usually pleasant.</label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Sometimes the transportation I use is pleasant.  </label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>The transportation I use is often unpleasant.  </label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Cost">
+      <label>Cost</label>
+      <item>
+        <label>I can usually afford the transportation options I want to use.</label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Sometimes I can't afford the transportation options I want to use.</label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>I can't afford most transportation options I want to use.</label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/I_would_guess_that_m_you_agree_with_most">
+      <label>I would guess that my transportation carbon footprint is... (check the one you agree with most)</label>
+      <item>
+        <label>Average (The average American's carbon footprint for transportation is about 4,000 kg per year) </label>
+        <value>i_usually_feel_safe_when_traveling</value>
+      </item>
+      <item>
+        <label>Smaller than average  </label>
+        <value>sometimes_i_feel_unsafe_when_traveling</value>
+      </item>
+      <item>
+        <label>Larger than average  </label>
+        <value>option_3</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_likely_are_you_t_ic_car_in_the_future">
+      <label>How likely are you to purchase or lease an electric car in the future?</label>
+      <item>
+        <label>Very unlikely</label>
+        <value>very_unlikely</value>
+      </item>
+      <item>
+        <label>Somewhat unlikely</label>
+        <value>somewhat_unlikely</value>
+      </item>
+      <item>
+        <label> Somewhat likely</label>
+        <value>somewhat_likely</value>
+      </item>
+      <item>
+        <label>Very likely</label>
+        <value>very_likely</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_likely_are_you_t_c_bike_in_the_future">
+      <label>How likely are you to purchase or lease an electric bike in the future?</label>
+      <item>
+        <label>Very unlikely</label>
+        <value>very_unlikely</value>
+      </item>
+      <item>
+        <label>Somewhat unlikely</label>
+        <value>somewhat_unlikely</value>
+      </item>
+      <item>
+        <label> Somewhat likely</label>
+        <value>somewhat_likely</value>
+      </item>
+      <item>
+        <label>Very likely</label>
+        <value>very_likely</value>
+      </item>
+    </select1>
+    <select1 ref="/aTDERCsPrCNS8HKtRon8CL/Do_you_currently_hav_transportation_pass">
+      <label>Do you currently have a public transportation pass?</label>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Yes, a weekly pass;</label>
+        <value>yes__a_weekly_pass</value>
+      </item>
+      <item>
+        <label>Yes, a monthly pass</label>
+        <value>yes__a_monthly_pass</value>
+      </item>
+      <item>
+        <label> Yes, an annual pass</label>
+        <value>yes__an_annual_pass</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>other</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>
