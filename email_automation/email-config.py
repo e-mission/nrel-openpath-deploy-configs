@@ -74,10 +74,8 @@ def get_verified_arn(sts_client):
 def email_extract():
     with open (config_path) as config_file:
         data = json.load(config_file)
-        intro = data['intro']
-        emails = [i.strip() for i in intro['admin_users'].split(",")]
         admindash_prefs = data['admin_dashboard']
-        #maybe set a bool and if this is true, then add a section to the HTML. Otherwise leave it. Need to do the same for map trip lines tomorrow.
+        emails = [i.strip() for i in admindash_prefs['admin_access'].split(",")]
         columns_exclude = admindash_prefs['data_trips_columns_exclude']
         map_trip_lines_enabled = admindash_prefs['map_trip_lines']
     return emails, map_trip_lines_enabled, columns_exclude
@@ -104,11 +102,11 @@ def format_email(pool_name, map_trip_lines_enabled, columns_exclude):
         html = f.read()
         html = html.replace('<pool_name>', pool_name)
         if map_trip_lines_enabled:
-            html = html.replace ('<map_trip_lines>', 'Additionally, you can view individual user-origin destination points.')
+            html = html.replace ('<map_trip_lines>', 'Additionally, you can view individual user-origin destination points using the "Map Lines" option from the map page.')
         else:
             html = html.replace ('<map_trip_lines>', '')
         if 'data.start_loc.coordinates' in columns_exclude or 'data.end_loc.coordinates' in columns_exclude:
-            html = html.replace ('<columns_exclude>', 'Your configuration excludes trip start/end in the trip table. Let us know if you would like to include those.')
+            html = html.replace ('<columns_exclude>', 'Per your requested configuration, your trip table excludes trip start/end coordinates for greater anonymity. Let us know if you need them to be enabled for improved analysis.')
         elif columns_exclude == '':
             html = html.replace ('<columns_exclude>', 'Since you indicated that you want to map the data to infrastructure updates, your configuration includes trip start/end in the trip table. Let us know if you would like to exclude those for greater anonymity.')
         return html
