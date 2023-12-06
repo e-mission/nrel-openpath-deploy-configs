@@ -537,7 +537,7 @@ body:
     value: "## Detailed Survey and Reminder Customization"
 - type: markdown
   attributes:
-    value: "If you are NOT electing to have custom trip surveys or a custom reminder schecme, you can skip this section and submit the form."
+    value: "If you are NOT electing to have custom trip surveys or a custom reminder scheme, you can skip this section and submit the form."
 - type: textarea
   id: reminderSchemes
   attributes:
