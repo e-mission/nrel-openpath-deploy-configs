@@ -556,4 +556,4 @@ body:
   id: trip_survey_path
   attributes:
     label: Custom Trip Survey
-    description: Please add a path to a trip survey, something like "https://github.com/e-mission/nrel-openpath-deploy-configs/tree/main/survey_resources/samples/sample_trip-end_multi-select.json"
+    description: Please add a path to a trip survey, something like "sample_trip-end" in "https://github.com/e-mission/nrel-openpath-deploy-configs/tree/main/survey_resources/samples"
