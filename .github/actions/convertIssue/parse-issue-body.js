@@ -1,3 +1,5 @@
+//adapted from https://github.com/zachleat/github-issue-to-json-file/blob/main/parse-issue-body.js
+
 import { readFile } from "node:fs/promises";
 import { setFailed } from "@actions/core";
 import yaml from "js-yaml";
@@ -349,6 +351,9 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
         combinedObject[ADMIN_LIST[i]]
       );
     }
+
+    //list of administrator emails
+    configObject['admin_dashboard'].admin_access = combinedObject.admin_access.split(',');
 
     //TODO: add handling for custom reminder schemes
 

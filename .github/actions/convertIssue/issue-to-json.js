@@ -1,3 +1,5 @@
+// adapted from https://github.com/zachleat/github-issue-to-json-file/blob/main/issue-to-json.js
+
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 
