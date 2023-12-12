@@ -10,9 +10,9 @@ Automation has been introduced for creating new config files. New deployers can 
 Info for parthers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/use/start_a_project.md)
 Info for developers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/dev/future/more_custom_auto_config.md)
 
-Config file submission will begin the process of creating an admin dashboard and associated user pool for the project. In order to log in, users will need to generate an account. This process will be automated, but may occasionally need to be run manually if there are errors in the initial config submission. To generate an account:
+Config file submission will begin the process of creating an admin dashboard and associated user pool for the project. In order to log in, users will need to generate an account. This process will be automated, but may occasionally need to be run manually if there are errors in the initial config submission. To generate an account, users will need to install boto3. Please install boto3 in your virtualenv, conda env, or local machine per your preferences:
 
-#Run the following command in terminal if boto3 is not installed
+#Run the following command in terminal:
 
 `pip install boto3`  
 
