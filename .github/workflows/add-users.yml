@@ -1,0 +1,36 @@
+name: add-users-to-pool
+
+on:
+  push:
+    paths:
+        '**.config'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
+      AWS_ROLE_ARN: arn:aws:iam::${(  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
+      AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Get config name
+      uses: jitterbit/get-changed-files@v1
+      with:  
+        format: 'space-delimited'
+    - id: files
+      run: |
+        for changed_file in ${{ steps.files.outputs.all }}; do
+          echo "The name of the config file is: ${changed_file}."
+          echo '{}'
+        done
+
+    - name: Install Boto3
+      run: pip install boto3
+
+    - name: Run email-config.py
+      run: python email_automation/email-config.py ${changed_file}
+      
