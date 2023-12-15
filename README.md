@@ -16,9 +16,9 @@ Config file submission will begin the process of creating an admin dashboard and
 
 `pip install boto3`  
 
-#Run the email-config.py script, and pass the name of the file in as an argument:
+#Run the email-config.py script, and pass the path to the config file in as an argument:
 
-`python email-config.py configfile.nrel-op.json`
+`python email-config.py -l /path/to/configfile.nrel-op.json`
 
 An email with instructions + admin dashboard link will be sent to all emails listed in the admin access section.
 

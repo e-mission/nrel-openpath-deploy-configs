@@ -4,40 +4,50 @@ import json
 import os
 import logging
 import sys
+import argparse
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 # If you don't have boto3 installed, make sure to `pip install boto3` before running this script. 
 
 #Input the filename as an argument in command line 
 if __name__ == "__main__":
-    filename_raw = sys.argv[1]
-    filename = filename_raw.split(".")[0]
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-l', '--local',
+                       help = 'Running locally. Provide full path to config file + install boto3 prior to running.' )
+    group.add_argument('-g', '--github',
+                       help = 'Must be run on GitHub. To run locally, use -l argument.') 
+    args = parser.parse_args()
+    filepath_raw = sys.argv[2]
+    filename_raw = filepath_raw.split("/")[-1]
+    filename = filename_raw.split('.')[0]
     pool_name = "nrelopenpath-prod-" + filename
-    # pool_name = 'nrelopenpath-stage'
     current_path = os.path.dirname(__file__)
     config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
 
-#Set up AWS credentials as environment variables + set variables 
-ACCESS = os.environ.get("AWS_ACCESS_KEY_ID")
-SECRET = os.environ.get("AWS_SECRET_ACCESS_KEY")
-TOKEN = os.environ.get("AWS_SESSION_TOKEN")
-AWS_REGION = "us-west-2"
+if args.local:
+    #Set up AWS credentials as environment variables + set variables 
+    ACCESS = os.environ.get("AWS_ACCESS_KEY_ID")
+    SECRET = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    TOKEN = os.environ.get("AWS_SESSION_TOKEN")
+    AWS_REGION = "us-west-2"
 
-#Set up clients
-cognito_client = boto3.client(
-    'cognito-idp',
-    aws_access_key_id = ACCESS,
-    aws_secret_access_key= SECRET,
-    aws_session_token=TOKEN, 
-    region_name=AWS_REGION
-    )
-sts_client = boto3.client(
-    'sts',
-    aws_access_key_id = ACCESS,
-    aws_secret_access_key= SECRET,
-    aws_session_token=TOKEN, 
-    region_name=AWS_REGION
-    )
+    #Set up clients
+    cognito_client = boto3.client(
+        'cognito-idp',
+        aws_access_key_id = ACCESS,
+        aws_secret_access_key= SECRET,
+        aws_session_token=TOKEN, 
+        region_name=AWS_REGION
+        )
+
+    sts_client = boto3.client(
+        'sts',
+        aws_access_key_id = ACCESS,
+        aws_secret_access_key= SECRET,
+        aws_session_token=TOKEN, 
+        region_name=AWS_REGION
+        )
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
     response = cognito_client.list_user_pools(MaxResults=60)
@@ -67,8 +77,12 @@ def user_already_exists(pool_id, email, cognito_client):
         raise
 
 def get_verified_arn(sts_client):
-    account_num = sts_client.get_caller_identity()["Account"]
-    identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + account_num + ":identity/openpath@nrel.gov"
+    if args.local:
+        account_num = sts_client.get_caller_identity()["Account"]
+        identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + account_num + ":identity/openpath@nrel.gov"
+    if args.github:
+        AWS_ACCT_ID = os.environ.get("AWS_ACCT_ID")
+        identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + AWS_ACCT_ID + ":identity/openpath@nrel.gov"
     return identity_arn
 
 def email_extract():
@@ -97,10 +111,10 @@ def create_account(pool_id, email, cognito_client):
                 )
     return response
 
-def format_email(pool_name, map_trip_lines_enabled, columns_exclude):
+def format_email(filename, map_trip_lines_enabled, columns_exclude):
     with open('welcome-template.txt', 'r') as f:
         html = f.read()
-        html = html.replace('<pool_name>', pool_name)
+        html = html.replace('<filename>', filename)
         if map_trip_lines_enabled:
             html = html.replace ('<map_trip_lines>', 'Additionally, you can view individual user-origin destination points using the "Map Lines" option from the map page.')
         else:
@@ -116,12 +130,6 @@ def update_user_pool(pool_id, pool_name, html, identity_arn, cognito_client):
   response = cognito_client.update_user_pool(
         UserPoolId= pool_id,
         AutoVerifiedAttributes=['email'],
-
-        MfaConfiguration='ON',
-        DeviceConfiguration={
-            'ChallengeRequiredOnNewDevice': True,
-            'DeviceOnlyRememberedOnUserPrompt': True
-        },
         EmailConfiguration={
             'SourceArn': identity_arn,
             'EmailSendingAccount': 'DEVELOPER',
@@ -140,14 +148,14 @@ is_userpool_exist, pool_id = get_userpool_name(pool_name, cognito_client)
 
  # Start by checking for the User Pool. If the User Pool does not yet exist, wait until it is set up to add users. 
 if is_userpool_exist:
-    #extract email addresses from conf file
+    #extract email addresses from config file
     emails, map_trip_lines_enabled, columns_exclude = email_extract()
     #Loop over each email address. Check if they're in the user pool.
     for email in emails:
         if not user_already_exists(pool_id, email, cognito_client):   
             #If user not in pool, format the email template for their welcome email, update the user pool, and create an account for them.
             print(email + " not in user pool! Creating account...")
-            html = format_email(pool_name, map_trip_lines_enabled, columns_exclude)
+            html = format_email(filename, map_trip_lines_enabled, columns_exclude)
             identity_arn = get_verified_arn(sts_client)
             update_user_pool(pool_id, pool_name, html, identity_arn, cognito_client)
             response = create_account(pool_id, email, cognito_client)
