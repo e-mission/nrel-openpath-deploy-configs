@@ -9,7 +9,7 @@ on:
 
 env:
   AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
-  AWS_REGION : <"us-west-2"> 
+  AWS_REGION : 'us-west-2'
   IAM_ROLE: ${{  secrets.ROLE_NAME  }}
 
 permissions:
