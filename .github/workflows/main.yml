@@ -1,0 +1,61 @@
+name: AWS Auth + Welcome Email
+
+on:
+  push:
+    paths:
+        '**.configs'
+
+env:
+  AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
+  AWS_REGION : <"us-west-2"> 
+  IAM_ROLE: ${{  secrets.ROLE_NAME  }}
+
+permissions:
+      id-token: write
+      contents: read
+jobs:
+  AssumeRoleAndCallIdentity:
+    name: AWS-Auth
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: <arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.AWS_ACCT_ID }}>
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ env.AWS_REGION }}
+      # Hello from AWS: WhoAmI
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity m
+  build:
+    name: Run email-config.py
+    needs: AssumeRoleAndCallIdentity
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
+      AWS_ROLE_ARN: arn:aws:iam::${(  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
+      AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Get config name
+      uses: jitterbit/get-changed-files@v1
+      with:  
+        format: 'space-delimited'
+    - id: files
+      run: |
+        for changed_file in ${{ steps.files.outputs.all }}; do
+          echo "The name of the new config file is: ${changed_file}."
+          echo '{}'
+        done
+
+    - name: Install Boto3
+      run: pip install boto3
+
+    - name: Run email-config.py
+      run: python email_automation/email-config.py -g configs/${changed_file}
+      
