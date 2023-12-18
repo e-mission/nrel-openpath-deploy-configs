@@ -44,7 +44,7 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": "nschultz@nrel.gov",
+        "admin_access": "nschultz@nrel.gov, natalie.schultz@colorado.edu",
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,
