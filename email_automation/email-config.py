@@ -21,10 +21,12 @@ if __name__ == "__main__":
     filepath_raw = sys.argv[2]
     print("filepath_raw", filepath_raw)
     filename_raw = filepath_raw.split("/")[-1]
+    print("filename raw",filename_raw)
     filename = filename_raw.split('.')[0]
     pool_name = "nrelopenpath-prod-" + filename
     print("pool_name", pool_name)
     current_path = os.path.dirname(__file__)
+    print(current_path)
     config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
 
 if args.local:
