@@ -33,7 +33,10 @@ jobs:
       - name: List all changed files
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
+            if [[ "$file" == *nrel-op.json ]]; then
+              echo "The name of the config file is: ${changed_file}."
+              export CONFIG_FILE=${changed_file}
+            fi
           done
           
   AssumeRoleAndCallIdentity:
