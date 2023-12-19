@@ -48,6 +48,8 @@ if args.local:
         aws_session_token=TOKEN, 
         region_name=AWS_REGION
         )
+if args.github:
+    cognito_client = boto3.client('cognito-idp')
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
     response = cognito_client.list_user_pools(MaxResults=60)
@@ -82,6 +84,7 @@ def get_verified_arn(sts_client):
         identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + account_num + ":identity/openpath@nrel.gov"
     if args.github:
         AWS_ACCT_ID = os.environ.get("AWS_ACCT_ID")
+        AWS_REGION = os.environ.get("AWS_REGION")
         identity_arn = "arn:aws:ses:" + AWS_REGION + ":" + AWS_ACCT_ID + ":identity/openpath@nrel.gov"
     return identity_arn
 
