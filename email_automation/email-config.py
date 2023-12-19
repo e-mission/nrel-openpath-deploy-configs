@@ -116,6 +116,9 @@ def create_account(pool_id, email, cognito_client):
     return response
 
 def format_email(filename, map_trip_lines_enabled, columns_exclude):
+    current_working_directory = os.getcwd()
+    print("PWD", current_working_directory)
+
     with open('welcome-template.txt', 'r') as f:
         html = f.read()
         html = html.replace('<filename>', filename)
