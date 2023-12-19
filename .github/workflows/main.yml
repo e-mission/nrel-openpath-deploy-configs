@@ -32,31 +32,30 @@ jobs:
       - name: Sts GetCallerIdentity
         run: |
           aws sts get-caller-identity --debug
-  build:
-    name: Run email-config.py
-    needs: AssumeRoleAndCallIdentity
-    runs-on: ubuntu-latest
+  # build:
+  #   name: Run email-config.py
+  #   needs: AssumeRoleAndCallIdentity
+  #   runs-on: ubuntu-latest
     # env:
     #   AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
     #   AWS_ROLE_ARN: arn:aws:iam::${{  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
     #   AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    # steps:
+    # - name: Checkout
+    #   uses: actions/checkout@v2
     
-    - name: Get config name
-      uses: jitterbit/get-changed-files@v1
-      with:  
-        format: 'space-delimited'
-    - id: files
-      run: |
-        for changed_file in ${{ steps.files.outputs.all }}; do
-          echo "The name of the new config file is: ${changed_file}."
-          echo '{}'
-        done
+      - name: Get config name
+        uses: jitterbit/get-changed-files@v1
+        with:  
+          format: 'space-delimited'
+      - id: files
+        run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "The name of the new config file is: ${changed_file}."
+          done
 
-    - name: Install Boto3
-      run: pip install boto3
+      - name: Install Boto3
+        run: pip install boto3
 
-    - name: Run email-config.py
-      run: python email_automation/email-config.py -g configs/${changed_file}
+      - name: Run email-config.py
+        run: python email_automation/email-config.py -g configs/${changed_file}
