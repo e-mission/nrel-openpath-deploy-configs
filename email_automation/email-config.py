@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print("pool_name", pool_name)
     current_path = os.path.dirname(__file__)
     print(current_path)
-    config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
+    config_path = os.path.relpath('../configs/'+ filename_raw, current_path) if args.local else os.path.relpath('configs/'+ filename_raw, current_path)
     print("config_path", config_path)
 
 if args.local:
