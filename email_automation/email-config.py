@@ -28,6 +28,7 @@ if __name__ == "__main__":
     current_path = os.path.dirname(__file__)
     print(current_path)
     config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
+    print("config_path", config_path)
 
 if args.local:
     #Set up AWS credentials as environment variables + set variables 
