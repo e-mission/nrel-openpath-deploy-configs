@@ -19,23 +19,26 @@ jobs:
   changed_files:
     runs-on: ubuntu-latest  # windows-latest || macos-latest
     name: Test changed-files
+    outputs:
+      config-file-name: ${{ steps.config-file-name.outputs.CONFIG_FILE}}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
       - name: Get changed files
-        id: changed-files
+        id: get-changed-files
         uses: tj-actions/changed-files@v40
 
       # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
 
       - name: List all changed files
+        id: config-file-name
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.get-changed-files.outputs.all_changed_files }}; do
             if [[ "$file" == *nrel-op.json ]]; then
               echo "The name of the config file is: ${file}."
-              export CONFIG_FILE=${file}
+              echo "CONFIG_FILE=${file}" >> "$GITHUB_OUTPUT"
             fi
           done
           
@@ -57,29 +60,9 @@ jobs:
       - name: Sts GetCallerIdentity
         run: |
           aws sts get-caller-identity --debug
-  # build:
-  #   name: Run email-config.py
-  #   needs: AssumeRoleAndCallIdentity
-  #   runs-on: ubuntu-latest
-    # env:
-    #   AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
-    #   AWS_ROLE_ARN: arn:aws:iam::${{  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
-    #   AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
-    # steps:
-    # - name: Checkout
-    #   uses: actions/checkout@v2
-    
-      # - id: files
-      #   uses: jitterbit/get-changed-files@v1
-      #   with:  
-      #     format: 'space-delimited'
-      # -  run: |
-      #     for changed_file in ${{ steps.files.outputs.all }}; do
-      #       echo "The name of the new config file is: ${changed_file}."
-      #     done
 
       - name: Install Boto3
         run: pip install boto3
 
       - name: Run email-config.py
-        run: python email_automation/email-config.py -g ${{ env.CONFIG_FILE }}
+        run: python email_automation/email-config.py -g ${{ needs.changed_files.outputs.config-file-name }}
