@@ -9,7 +9,6 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 # If you don't have boto3 installed, make sure to `pip install boto3` before running this script. 
 
-#Input the filename as an argument in command line 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=True)
@@ -19,15 +18,12 @@ if __name__ == "__main__":
                        help = 'Must be run on GitHub. To run locally, use -l argument.') 
     args = parser.parse_args()
     filepath_raw = sys.argv[2]
-    print("filepath_raw", filepath_raw)
     filename_raw = filepath_raw.split("/")[-1]
-    print("filename raw",filename_raw)
     filename = filename_raw.split('.')[0]
     pool_name = "nrelopenpath-prod-" + filename
-    print("pool_name", pool_name)
     current_path = os.path.dirname(__file__)
-    print(current_path)
-    config_path = os.path.relpath('../configs/'+ filename_raw, current_path) if args.local else f'/home/runner/work/nrel-openpath-deploy-configs/nrel-openpath-deploy-configs/configs/{filename_raw}'
+    maindir = current_path.rsplit("/",1)[0]
+    config_path = os.path.relpath('../configs/'+ filename_raw, current_path) if args.local else maindir + f'/configs/{filename_raw}'
     print("config_path", config_path)
 
 if args.local:
