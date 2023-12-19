@@ -41,6 +41,8 @@ jobs:
           
   AssumeRoleAndCallIdentity:
     name: AWS Authentication + Sending Welcome Email
+    needs: changed_files
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Git clone the repository
