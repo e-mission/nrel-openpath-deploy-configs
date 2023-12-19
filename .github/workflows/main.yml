@@ -31,7 +31,7 @@ jobs:
       # Hello from AWS: WhoAmI
       - name: Sts GetCallerIdentity
         run: |
-          aws sts get-caller-identity m
+          aws sts get-caller-identity --debug
   build:
     name: Run email-config.py
     needs: AssumeRoleAndCallIdentity
