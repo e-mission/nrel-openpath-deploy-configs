@@ -25,7 +25,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1.7.0
         with:
-          role-to-assume: <arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.IAM_ROLE }}>
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.IAM_ROLE }}
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
@@ -36,10 +36,10 @@ jobs:
     name: Run email-config.py
     needs: AssumeRoleAndCallIdentity
     runs-on: ubuntu-latest
-    env:
-      AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
-      AWS_ROLE_ARN: arn:aws:iam::${(  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
-      AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
+    # env:
+    #   AWS_ACCT_ID: ${(  secrets.AWS_ACCT_ID }}
+    #   AWS_ROLE_ARN: arn:aws:iam::${{  secrets.AWS_ACCT_ID }}:role/${{  secrets.ROLE_NAME  }}
+    #   AWS_WEB_IDENTITY_TOKEN_SERVER: GitHub
     steps:
     - name: Checkout
       uses: actions/checkout@v2
