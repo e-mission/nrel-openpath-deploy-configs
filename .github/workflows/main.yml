@@ -80,4 +80,4 @@ jobs:
         run: pip install boto3
 
       - name: Run email-config.py
-        run: python email_automation/email-config.py -g configs/CONFIG_FILE
+        run: python email_automation/email-config.py -g CONFIG_FILE
