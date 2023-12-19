@@ -34,8 +34,8 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             if [[ "$file" == *nrel-op.json ]]; then
-              echo "The name of the config file is: ${changed_file}."
-              export CONFIG_FILE=${changed_file}
+              echo "The name of the config file is: ${file}."
+              export CONFIG_FILE=${file}
             fi
           done
           
@@ -80,4 +80,4 @@ jobs:
         run: pip install boto3
 
       - name: Run email-config.py
-        run: python email_automation/email-config.py -g configs/${changed_file}
+        run: python email_automation/email-config.py -g configs/CONFIG_FILE
