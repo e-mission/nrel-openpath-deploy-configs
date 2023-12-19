@@ -17,7 +17,7 @@ permissions:
       contents: read
 jobs:
   AssumeRoleAndCallIdentity:
-    name: AWS-Auth
+    name: AWS Authentication + Sending Welcome Email
     runs-on: ubuntu-latest
     steps:
       - name: Git clone the repository
@@ -44,12 +44,11 @@ jobs:
     # - name: Checkout
     #   uses: actions/checkout@v2
     
-      - name: Get config name
+      - id: files
         uses: jitterbit/get-changed-files@v1
         with:  
           format: 'space-delimited'
-      - id: files
-        run: |
+      -  run: |
           for changed_file in ${{ steps.files.outputs.all }}; do
             echo "The name of the new config file is: ${changed_file}."
           done
