@@ -53,7 +53,7 @@ if args.local:
 if args.github:
     AWS_REGION = os.environ.get("AWS_REGION")
     cognito_client = boto3.client('cognito-idp', region_name=AWS_REGION)
-    welcome = '/email_automation/welcome-template.txt'
+    welcome = maindir + '/email_automation/welcome-template.txt'
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
     response = cognito_client.list_user_pools(MaxResults=60)
