@@ -9,7 +9,6 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 # If you don't have boto3 installed, make sure to `pip install boto3` before running this script. 
 
-#Input the filename as an argument in command line 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=True)
@@ -23,7 +22,9 @@ if __name__ == "__main__":
     filename = filename_raw.split('.')[0]
     pool_name = "nrelopenpath-prod-" + filename
     current_path = os.path.dirname(__file__)
-    config_path = os.path.relpath('../configs/'+ filename_raw, current_path)
+    maindir = current_path.rsplit("/",1)[0]
+    config_path = os.path.relpath('../configs/'+ filename_raw, current_path) if args.local else maindir + f'/configs/{filename_raw}'
+    print("config_path", config_path)
 
 if args.local:
     #Set up AWS credentials as environment variables + set variables 
@@ -31,6 +32,7 @@ if args.local:
     SECRET = os.environ.get("AWS_SECRET_ACCESS_KEY")
     TOKEN = os.environ.get("AWS_SESSION_TOKEN")
     AWS_REGION = "us-west-2"
+    welcome = 'welcome-template.txt'
 
     #Set up clients
     cognito_client = boto3.client(
@@ -48,6 +50,11 @@ if args.local:
         aws_session_token=TOKEN, 
         region_name=AWS_REGION
         )
+if args.github:
+    AWS_REGION = os.environ.get("AWS_REGION")
+    cognito_client = boto3.client('cognito-idp', region_name=AWS_REGION)
+    welcome = maindir + '/email_automation/welcome-template.txt'
+    sts_client = ''
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
     response = cognito_client.list_user_pools(MaxResults=60)
@@ -112,7 +119,7 @@ def create_account(pool_id, email, cognito_client):
     return response
 
 def format_email(filename, map_trip_lines_enabled, columns_exclude):
-    with open('welcome-template.txt', 'r') as f:
+    with open(welcome, 'r') as f:
         html = f.read()
         html = html.replace('<filename>', filename)
         if map_trip_lines_enabled:
