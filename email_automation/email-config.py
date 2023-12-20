@@ -32,6 +32,7 @@ if args.local:
     SECRET = os.environ.get("AWS_SECRET_ACCESS_KEY")
     TOKEN = os.environ.get("AWS_SESSION_TOKEN")
     AWS_REGION = "us-west-2"
+    welcome = 'welcome-template.txt'
 
     #Set up clients
     cognito_client = boto3.client(
@@ -52,6 +53,7 @@ if args.local:
 if args.github:
     AWS_REGION = os.environ.get("AWS_REGION")
     cognito_client = boto3.client('cognito-idp', region_name=AWS_REGION)
+    welcome = '/email_automation/welcome-template.txt'
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
     response = cognito_client.list_user_pools(MaxResults=60)
@@ -116,10 +118,7 @@ def create_account(pool_id, email, cognito_client):
     return response
 
 def format_email(filename, map_trip_lines_enabled, columns_exclude):
-    current_working_directory = os.getcwd()
-    print("PWD", current_working_directory)
-
-    with open('welcome-template.txt', 'r') as f:
+    with open(welcome, 'r') as f:
         html = f.read()
         html = html.replace('<filename>', filename)
         if map_trip_lines_enabled:
