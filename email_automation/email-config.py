@@ -24,7 +24,6 @@ if __name__ == "__main__":
     current_path = os.path.dirname(__file__)
     maindir = current_path.rsplit("/",1)[0]
     config_path = filepath_raw if args.local else maindir + f'/configs/{filename_raw}'
-    print("config_path", config_path)
 
 if args.local:
     #Set up AWS credentials as environment variables + set variables 
