@@ -92,4 +92,3 @@ prefix), you can use the attached `docker-compose.yml` to serve the pages
 locally at http://localhost:9090
 
 I found this useful while testing the QR code functionality on the devapp,
-which responds to the `emission` URL prefix, not `nrelopenpath`
