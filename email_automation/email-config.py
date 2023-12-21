@@ -23,7 +23,7 @@ if __name__ == "__main__":
     pool_name = "nrelopenpath-prod-" + filename
     current_path = os.path.dirname(__file__)
     maindir = current_path.rsplit("/",1)[0]
-    config_path = os.path.relpath('../configs/'+ filename_raw, current_path) if args.local else maindir + f'/configs/{filename_raw}'
+    config_path = filepath_raw if args.local else maindir + f'/configs/{filename_raw}'
     print("config_path", config_path)
 
 if args.local:
