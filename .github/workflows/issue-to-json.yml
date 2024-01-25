@@ -43,6 +43,8 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
+          add-paths: |
+            configs/
           commit-message: Create or update a new config file
           signoff: false
           branch: new-config
