@@ -78,7 +78,7 @@
     "options_emails": true,
     "admin_access": [
       "awheelis@nrel.gov",
-      " nschultz@nrel.gov"
+      "   nschultz@nrel.gov"
     ]
   }
 }
