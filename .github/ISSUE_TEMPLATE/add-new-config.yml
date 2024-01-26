@@ -510,7 +510,7 @@ body:
   id: admin_access
   attributes:
     label: Admin Access Emails
-    description: Please enter a comman separated list of emails to which we will grant access to the admin dashboard. This will usually be a relatively short list.
+    description: Please enter a comman separated list of emails to which we will grant access to the admin dashboard. [MAX 4]
   validations:
     required: true 
 # - type: dropdown
