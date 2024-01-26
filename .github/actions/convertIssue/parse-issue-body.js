@@ -354,8 +354,8 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
 
     //list of administrator emails
     let email_list = combinedObject.admin_access.split(',');
-    if (email_list.length > 4){
-      setFailed("sorry, admin access is limited to a maximum of 4 emails, please shorten your list of emails"); 
+    if (email_list.length > 5){
+      setFailed("sorry, admin access is limited to a maximum of 5 emails, please shorten your list of emails"); 
     }
     // leading/trailing whitespace will lead to errors
     for (let i = 0; i < email_list.length; i++) {
