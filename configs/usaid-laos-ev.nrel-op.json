@@ -51,7 +51,7 @@
       "trip-labels": "MULTILABEL"
     },
     "display_config": {
-        "use_imperial": true
+        "use_imperial": false
     },
     "metrics": {
         "include_test_users": true
