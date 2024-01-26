@@ -353,7 +353,15 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
     }
 
     //list of administrator emails
-    configObject['admin_dashboard'].admin_access = combinedObject.admin_access.split(',');
+    admin_list = combinedObject.admin_access.split(',');
+    if (admin_list.length > 4){
+      setFailed("sorry, admin access is limited to a maximum of 4 emails, please shorten your list of emails"); 
+    }
+    // leading/trailing whitespace will lead to errors
+    for (let i = 0; i < admin_list.length; i++) {
+      admin_list[i] = admin_list[i].strip();
+    }
+    configObject['admin_dashboard'].admin_access = admin_list;
 
     //TODO: add handling for custom reminder schemes
 
