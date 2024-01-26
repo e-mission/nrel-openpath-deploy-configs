@@ -359,7 +359,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
     }
     // leading/trailing whitespace will lead to errors
     for (let i = 0; i < email_list.length; i++) {
-      email_list[i] = email_list[i].strip();
+      email_list[i] = email_list[i].trim();
     }
     configObject['admin_dashboard'].admin_access = email_list;
 
