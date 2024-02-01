@@ -2,7 +2,7 @@
   "version": 1,
   "ts": 1655143472,
   "server": {
-      "connectUrl": "https://DCebike-openpath.nrel.gov/api/",
+      "connectUrl": "https://dcebike-openpath.nrel.gov/api/",
       "aggregate_call_auth": "user_only"
   },
   "opcode": {
