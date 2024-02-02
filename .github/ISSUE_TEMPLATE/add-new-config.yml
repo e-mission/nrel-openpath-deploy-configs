@@ -322,7 +322,7 @@ body:
   attributes:
     label: Custom Labels
     description: If you chose false above, and want drowdown style labeling, please provide the file name for your custom labels. You will need to submit a PR to add it to our repo - https://github.com/e-mission/nrel-openpath-deploy-configs/tree/main/label_options
-    placeholder: https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/example-program-label-options.json
+    placeholder: example-program-label-options.json
 
 - type: markdown
   attributes:
@@ -510,7 +510,7 @@ body:
   id: admin_access
   attributes:
     label: Admin Access Emails
-    description: Please enter a comman separated list of emails to which we will grant access to the admin dashboard. This will usually be a relatively short list.
+    description: Please enter a comma separated list of emails to which we will grant access to the admin dashboard. [MAX 5]
   validations:
     required: true 
 # - type: dropdown

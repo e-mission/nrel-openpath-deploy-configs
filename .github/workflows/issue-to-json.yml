@@ -43,11 +43,13 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
+          add-paths: |
+            configs/
           commit-message: Create or update a new config file
           signoff: false
-          branch: new-config
+          branch: new-config-#${{ env.IssueNumber }}
           delete-branch: false
-          title: '[Config] create new file'
+          title: '[Config #${{ env.IssueNumber }}] create new file'
           body: |
             Adding a new config file
             - Initialized by creating or updating the coressponding issue

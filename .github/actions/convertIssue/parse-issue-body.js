@@ -145,7 +145,7 @@ function getSurveyInfo(dataObject) {
         UserProfileSurvey: {
           formPath:
             "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/" +
-            dataObject.url_abbreviation +
+            dataObject.url_abbreviation+
             "/" +
             dataObject.custom_dem_survey_path,
           version: 1,
@@ -265,6 +265,9 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
   let bodyData = parseBodyData(body);
   let combinedObject = parseCombined(fields, bodyData);
 
+  // must be lower case
+  combinedObject.url_abbreviation = combinedObject.url_abbreviation.toLowerCase();
+
   //then compose the config object
   let configObject = {};
   try {
@@ -353,7 +356,15 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
     }
 
     //list of administrator emails
-    configObject['admin_dashboard'].admin_access = combinedObject.admin_access.split(',');
+    let email_list = combinedObject.admin_access.split(',');
+    if (email_list.length > 5){
+      setFailed("sorry, admin access is limited to a maximum of 5 emails, please shorten your list of emails"); 
+    }
+    // leading/trailing whitespace will lead to errors
+    for (let i = 0; i < email_list.length; i++) {
+      email_list[i] = email_list[i].trim();
+    }
+    configObject['admin_dashboard'].admin_access = email_list;
 
     //TODO: add handling for custom reminder schemes
 
