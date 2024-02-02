@@ -141,12 +141,11 @@ function getSurveyInfo(dataObject) {
         },
       };
     } else {
-      let lower_url = dataObject.url_abbreviation.toLowerCase();
       surveyInfo.surveys = {
         UserProfileSurvey: {
           formPath:
             "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/" +
-            lower_url+
+            dataObject.url_abbreviation+
             "/" +
             dataObject.custom_dem_survey_path,
           version: 1,
@@ -266,10 +265,13 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
   let bodyData = parseBodyData(body);
   let combinedObject = parseCombined(fields, bodyData);
 
+  // must be lower case
+  combinedObject.url_abbreviation = combinedObject.url_abbreviation.toLowerCase();
+
   //then compose the config object
   let configObject = {};
   try {
-    configObject["url_abbreviation"] = combinedObject.url_abbreviation.toLowerCase();
+    configObject["url_abbreviation"] = combinedObject.url_abbreviation;
     configObject["version"] = 1;
     configObject["ts"] = Date.now();
 
