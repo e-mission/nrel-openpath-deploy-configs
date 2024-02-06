@@ -62,15 +62,10 @@ def get_userpool_name(pool_name, cognito_client):
     pool_id = response["UserPools"][user_pool_index]["Id"]
     return is_userpool_exist, pool_id
 
-def user_already_exists(pool_id, email, cognito_client):
-
+def get_users(pool_id, cognito_client):
     try:
         response = cognito_client.list_users(UserPoolId=pool_id)
-        users = response["Users"]
-        result = False
-        if str(users).find(email) > 1:
-            result = True
-        return result
+        return response["Users"]
     except ClientError as err:
         logger.error(
             "Couldn't list users for %s. Here's why: %s: %s",
@@ -147,6 +142,12 @@ def update_user_pool(pool_id, pool_name, html, identity_arn, cognito_client):
             }
         },
 )
+
+def remove_user(pool_id, user):
+    response = cognito_client.admin_delete_user(
+        UserPoolId= pool_id,
+        Username= str(user)
+)
 ######################################################################
 is_userpool_exist, pool_id = get_userpool_name(pool_name, cognito_client) 
 
@@ -154,9 +155,18 @@ is_userpool_exist, pool_id = get_userpool_name(pool_name, cognito_client)
 if is_userpool_exist:
     #extract email addresses from config file
     emails, map_trip_lines_enabled, columns_exclude = email_extract()
+    users = get_users(pool_id, cognito_client)
+    for user in users:
+        for attr_dict in user["Attributes"]:
+            if attr_dict["Name"] == "email":
+                user_email = attr_dict["Value"]
+                if user_email not in emails:
+                    remove_user(pool_id, user_email)
+                    print(f"{user_email} removed from pool.")
+        
     #Loop over each email address. Check if they're in the user pool.
     for email in emails:
-        if not user_already_exists(pool_id, email, cognito_client):   
+        if not str(users).find(email) > 1:
             #If user not in pool, format the email template for their welcome email, update the user pool, and create an account for them.
             print(email + " not in user pool! Creating account...")
             html = format_email(filename, map_trip_lines_enabled, columns_exclude)
