@@ -1,0 +1,83 @@
+{
+  "url_abbreviation": "dfc-fermata",
+  "version": 1,
+  "ts": 1707334523471,
+  "server": {
+    "connectURL": "https://dfc-fermata-openpath.nrel.gov/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "opcode": {
+    "autogen": false,
+    "subgroups": [
+      ""
+    ]
+  },
+  "intro": {
+    "program_or_study": "study",
+    "start_month": "04",
+    "start_year": "2024",
+    "mode_studied": "",
+    "program_admin_contact": "leidy.boyce@nrel.gov",
+    "deployment_partner_name": "GSA",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "GSA",
+        "deployment_name": "Fermata",
+        "summary_line_1": "Examine the effect of perceived the challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
+        "summary_line_2": "",
+        "summary_line_3": "",
+        "short_textual_description": "EVSE tech validation",
+        "why_we_collect": "Gather user input on EVSE tech adoption",
+        "research_questions": []
+      }
+    }
+  },
+  "survey_info": {
+    "surveys": {
+      "UserProfileSurvey": {
+        "formPath": "json/demo-survey-v2.json",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
+      }
+    },
+    "trip-labels": "MULTILABEL"
+  },
+  "display_config": {
+    "use_imperial": true
+  },
+  "metrics": {
+    "include_test_users": false
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": true
+  },
+  "admin_dashboard": {
+    "data_trips_columns_exclude": [],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_prefix": "nrelop",
+    "toekn_generate": "false",
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "admin_access": [
+      "leidy.boyce@nrel.gov",
+      "christie.edie@gsa.gov"
+    ]
+  }
+}
