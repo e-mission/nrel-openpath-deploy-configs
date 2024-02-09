@@ -1,0 +1,124 @@
+{
+    "MODE": [
+      {"value":"walk", "baseMode":"WALKING", "met_equivalent":"WALKING", "kgCo2PerKm": 0},
+      {"value":"e-auto_rickshaw", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.085416859},
+      {"value":"auto_rickshaw", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.231943784},
+      {"value":"motorcycle", "baseMode":"MOPED", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.113143309},
+      {"value":"e-bike", "baseMode":"E_BIKE", "met": {"ALL": {"range": [0, -1], "mets": 4.9}}, "kgCo2PerKm": 0.00728},
+      {"value":"bike", "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
+      {"value":"drove_alone", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
+      {"value":"shared_ride", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.11015},
+      {"value":"e_car_drove_alone", "baseMode":"E_CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.08216},
+      {"value":"e_car_shared_ride", "baseMode":"E_CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.04108},
+      {"value":"taxi", "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
+      {"value":"bus", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
+      {"value":"train", "baseMode":"TRAIN", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.12256},
+      {"value":"free_shuttle", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
+      {"value":"air", "baseMode":"AIR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.09975},
+      {"value":"not_a_trip", "baseMode":"UNKNOWN", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0},
+      {"value":"other", "baseMode":"OTHER", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0}
+    ],
+    "PURPOSE": [
+      {"value":"home"},
+      {"value":"work"},
+      {"value":"at_work"},
+      {"value":"school"},
+      {"value":"transit_transfer"},
+      {"value":"shopping"},
+      {"value":"meal"},
+      {"value":"pick_drop_person"},
+      {"value":"pick_drop_item"},
+      {"value":"personal_med"},
+      {"value":"access_recreation"},
+      {"value":"exercise"},
+      {"value":"entertainment"},
+      {"value":"religious"},
+      {"value":"other"}
+    ],
+    "translations": {
+      "en": {
+        "walk": "Walk",
+        "e-auto_rickshaw":"E-tuk tuk",
+        "auto_rickshaw":"Tuk Tuk",
+        "motorcycle":"Motorcycle",
+        "e-bike": "E-bike",
+        "bike": "Bicycle",
+        "drove_alone": "Car Drove Alone",
+        "shared_ride": "Car Shared Ride",
+        "e_car_drove_alone": "E-Car Drove Alone",
+        "e_car_shared_ride": "E-Car Shared Ride",
+        "taxi": "Taxi/Loca/inDrive",
+        "bus": "Bus",
+        "train": "Train",
+        "free_shuttle": "Free Shuttle",
+        "air": "Airplane",
+        "not_a_trip": "Not a trip",
+        "home": "Home",
+        "work": "To Work",
+        "at_work": "At Work",
+        "school": "School",
+        "transit_transfer": "Transit transfer",
+        "shopping": "Shopping",
+        "meal": "Meal",
+        "pick_drop_person": "Pick-up/ Drop off Person",
+        "pick_drop_item": "Pick-up/ Drop off Item",
+        "personal_med": "Personal/ Medical",
+        "access_recreation": "Access Recreation",
+        "exercise": "Recreation/ Exercise",
+        "entertainment": "Entertainment/ Social",
+        "religious": "Religious",
+        "other": "Other"
+      },
+      "lo": {
+        "walk": "ດ້ວຍການຍ່າງ",
+        "e-auto_rickshaw":"ລົດ 3 ລໍ້ໄຟຟ້າ ຫລື ຕຸກຕຸກໄຟຟ້າ",
+        "auto_rickshaw":"ເດີນທາດ້ວຍ ລົດຕຸກຕຸກ ຫລື ລົດສາມລໍ້",
+        "motorcycle":"ລົດຈັກ",
+        "e-bike": "ວຍລົດຈັກໄຟຟ້າ",
+        "bike": "ລົດຖີບ",
+        "drove_alone": "ເດີນທາງ ດ້ວຍລົດໃຫ່ຍ ເຊີ່ງເປັນລົດທີ່ຂັບເອງ",
+        "shared_ride": "ເດີນທາງດ້ວຍລົດໃຫ່ຍ ຮ່ວມກັບລົດຄົນອຶ່ນ",
+        "e_car_drove_alone": "ດ້ວຍການຂັບລົດໄຟຟ້າໄປເອງ",
+        "e_car_shared_ride": "ດ້ວຍການຈ້າງລົດໄຟຟ້າໄປ",
+        "taxi": "ແທັກຊີ",
+        "bus": "ລົດເມ",
+        "train": "ລົດໄຟ",
+        "free_shuttle": "ລົດຮັບສົ່ງຟຣີ",
+        "air": "ຍົນ",
+        "not_a_trip": "ບໍ່ແມ່ນການເດີນທາງ",
+        "home": "ບ້ານ",
+        "work": "ໄປເຮັດວຽກ",
+        "at_work": "ຢູ່ບ່ອນເຮັດວຽກ",
+        "school": "ໄປໂຮງຮຽນ",
+        "transit_transfer": "ການຖ່າຍໂອນການເດີນທາງ",
+        "shopping": "ຊອບປິ້ງ",
+        "meal": "ອາຫານ",
+        "pick_drop_person": "ໄປຮັບ ຫລື ສົນ ຄົນ",
+        "pick_drop_item": "ໄປຮັບ ຫລື ສົ່ງສິນຄ້າ",
+        "personal_med": "ໄປຫາໝໍ",
+        "access_recreation": "ເຂົ້າເຖິງການພັກຜ່ອນ",
+        "exercise": "ພັກຜ່ອນ/ອອກກຳລັງກາຍ",
+        "entertainment": "ບັນເທີງ/ສັງຄົມ",
+        "religious": "ຈຸດປະສົງທາງສາດສະໜາ",
+        "other": "ອື່ນໆ"
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

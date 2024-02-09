@@ -34,6 +34,7 @@
             }
         }
     },
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/usaid-laos-ev-label-options.json",
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
@@ -50,7 +51,7 @@
       "trip-labels": "MULTILABEL"
     },
     "display_config": {
-        "use_imperial": true
+        "use_imperial": false
     },
     "metrics": {
         "include_test_users": true

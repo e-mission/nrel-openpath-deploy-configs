@@ -1,0 +1,76 @@
+{
+  "MODE": [
+    {"value":"walk_run", "baseMode":"WALKING", "met": {"ALL": {"range": [0, -1], "mets": 3}}, "kgCo2PerKm": 0},
+    {"value":"auto_driver", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
+    {"value":"auto_passenger", "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.110155},
+    {"value":"e-bike", "baseMode":"E_BIKE", "met": {"ALL": {"range": [0, -1], "mets": 5}}, "kgCo2PerKm": 0.00728},
+    {"value":"bike", "baseMode":"BICYCLING", "met": {"ALL": {"range": [0, -1], "mets": 6}}, "kgCo2PerKm": 0},
+    {"value":"taxi", "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
+    {"value":"bike_scooter_share", "baseMode":"BICYCLING", "met": {"ALL": {"range": [0, -1], "mets": 3.5}}, "kgCo2PerKm": 0.00447},
+    {"value":"bus_train", "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.179033},
+    {"value":"other_mode", "baseMode":"OTHER", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0},
+    {"value":"not_a_trip", "baseMode":"UNKNOWN", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0}   
+  ],
+  "PURPOSE": [
+    {"value":"to_home"},
+    {"value":"to_work_school"},
+    {"value":"work_related"},
+    {"value":"to_access_bus_train"},
+    {"value":"to_pick_drop_person"},
+    {"value":"for_exercise_recreation"},
+    {"value":"to_access_other_activity"}
+  ],
+  "REPLACED_MODE": [
+    {"value":"no_travel"},
+    {"value":"walk_run"},
+    {"value":"auto_driver"},
+    {"value":"auto_passenger"},
+    {"value":"bike"},
+    {"value":"taxi"},
+    {"value":"bike_scooter_share"},
+    {"value":"bus_train"},
+    {"value":"other_mode"}
+  ],
+  "translations": {
+    "en": {
+      "walk_run": "Walk or run",
+      "auto_driver": "Auto driver",
+      "auto_passenger": "Auto passenger",
+      "e-bike": "E-bike",
+      "bike": "Regular bike",
+      "taxi": "Taxi/Uber/Lyft",
+      "bike_scooter_share": "Bike-/scooter-share",
+      "bus_train": "Bus/train",
+      "other_mode": "Other mode",       
+      "not_a_trip": "Not an actual trip",
+      "no_travel": "No travel",
+      "to_home": "To home",
+      "to_work_school": "To work or school",
+      "work_related": "Work-related",
+      "to_access_bus_train": "To access bus/train",
+      "to_pick_drop_person": "To pick up/drop off person",
+      "for_exercise_recreation": "For exercise/recreation",
+      "to_access_other_activity": "To access all other activities"  
+      },
+    "es": {
+      "walk_run": "Caminar o correr",
+      "auto_driver": "Vehículo conductor",
+      "auto_passenger": "Vehículo pasajero",
+      "e-bike": "e-bicicleta",
+      "bike": "Bicicleta",
+      "taxi": "Taxi/Uber/Lyft",
+      "bike_scooter_share": "Bicicleta compartida/Motoneta compartida",
+      "bus_train": "Autobús /Tren",
+      "other_mode": "Otro modo",       
+      "not_a_trip": "No es un viaje real",
+      "no_travel": "No viajar",
+      "to_home": "A casa",
+      "to_work_school": "A trabajo o escuela",
+      "work_related": "Relacionado con el trabajo",
+      "to_access_bus_train": "Para acceder al autobús/tren",
+      "to_pick_drop_person": "Para recoger/dejar a una persona",
+      "for_exercise_recreation": "Para ejercicio/recreación",
+      "to_access_other_activity": "Para acceder a todas las demás actividades"
+    }
+  }
+}

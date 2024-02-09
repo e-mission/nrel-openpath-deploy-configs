@@ -1,0 +1,19 @@
+# this action is based on the action by zachleat on github (github-issue-to-json-file)
+# https://github.com/zachleat/github-issue-to-json-file/blob/main/action.yml
+
+name: New Config Issue to JSON
+description: Convert GitHub issues for new configs to JSON data files.
+runs:
+  using: node16
+  main: issue-to-json.js
+
+inputs:
+  folder:
+    description: The target output directory for the JSON data file.
+    default: _data/
+  issue-template:
+    description: The YAML file for the GitHub issue form template
+    required: true
+  hash-property-name:
+    description: The object property to use to generate the hash for the file name.
+    required: true

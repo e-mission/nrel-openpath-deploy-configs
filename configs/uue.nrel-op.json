@@ -1,0 +1,87 @@
+{
+    "version": 1,
+    "ts": 1655143472,
+    "server": {
+        "connectUrl": "https://uue-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": true,
+        "subgroups": ["test", "default"]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "08",
+        "start_year": "2023",
+        "program_admin_contact": "Gabriel Kreindler, Harvard (email: gkreindler@g.harvard.edu, phone: +1 857 284 9675).",
+        "deployment_partner_name": "Busara/Harvard University",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Busara/Harvard University",
+                "deployment_name": "Urban Under-Exploration Study",
+                "summary_line_1": "This study aims to understand how people in Nairobi travel around the city.",
+                "summary_line_2": "As part of the study, we are collecting data on where participants travel within Nairobi.",
+                "summary_line_3": "As a program participant, you will contribute to this study by using the app to log your trips and travel mode.",
+                "short_textual_description": "The rapid urbanization of low and middle-income countries has created cities that are difficult to navigate, and where exploration may be both financially and mentally costly. This raises the question, to what extent might the potential benefits of these rapidly growing cities be limited by a reluctance to explore? The Urban Under-exploration study will look at how exposure to different neighborhoods changes where respondents choose to explore or travel to, and what modes of transportation they use to get there.",
+                "why_we_collect": "The data collected during the program will be used to study how exposure to different neighborhoods changes where respondents choose to travel to, and what modes of transportation they use to get there.",
+                "research_questions": []
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+          "UserProfileSurvey": {
+            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uue/uue-survey.json",
+            "version": 1,
+            "compatibleWith": 1,
+            "dataKey": "manual/demographic_survey",
+            "labelTemplate": {
+              "en": "Answered"
+            }
+          }
+        },
+        "trip-labels": "MULTILABEL"
+      },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": false
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_generate": true,
+        "token_prefix": "nrelop",
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "push_send": false,
+        "options_uuids": true,
+        "options_emails": true
+    },
+    "reminderSchemes": {
+        "passive": {
+            "title": {
+                "en": "Please take a moment to label your trips"
+            },
+            "text": {
+                "en": "Click to open the app and view unlabeled trips"
+            },
+            "schedule": [],
+            "defaultTime": "23:00"
+        }
+    }
+}
