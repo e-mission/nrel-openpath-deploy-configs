@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>GPG Onboarding Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation default="true()" lang="English (en)">
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46:label">
+            <value>Demographic Information</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/In_which_year_were_you_born:label">
+            <value>In what year were you born?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender:label">
+            <value>What best describes your gender?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/woman:label">
+            <value>Woman</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/man:label">
+            <value>Man</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/trans_woman:label">
+            <value>Transgender Woman</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/trans_man:label">
+            <value>Transgender Man</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/non_binary:label">
+            <value>Non-binary</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity:label">
+            <value>What best describes your race/ethnicity?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity:hint">
+            <value>Please select all that apply.</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/black_or_african_american:label">
+            <value>Black or African American</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/white_or_caucasian:label">
+            <value>White or Caucasian</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/hispanic_latino_a_x_or_spanish:label">
+            <value>Hispanic, Latino/a/x, or Spanish</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/east_asian:label">
+            <value>East Asian</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/south_asian:label">
+            <value>South Asian</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/american_indian_or_alaska_native:label">
+            <value>American Indian or Alaska Native</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/native_hawaiian_or_other_pacific_islande:label">
+            <value>Native Hawaiian or Other Pacific Islander</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/multiracial_multiethnic:label">
+            <value>Multiracial/Multiethnic</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d:label">
+            <value>What is the highest level of education you have completed?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/less_than_a_high_school_graduate:label">
+            <value>Less than a high school graduate</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/high_school_graduate_or_ged:label">
+            <value>High school graduate or GED</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/some_college_or_associates_degree:label">
+            <value>Some college or associates degree</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/bachelor_s_degree:label">
+            <value>Bachelor's degree</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/graduate_degree_or_professional_degree:label">
+            <value>Graduate degree or professional degree</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/prefer_not_to_say:label">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43:label">
+            <value>Employment Information</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/How_many_years_have_you_worked_for_GSA:label">
+            <value>How many years have you worked for GSA?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/In_what_group_or_seg_t_of_GSA_do_you_work:label">
+            <value>In what group or segment of GSA do you work?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel:label">
+            <value>Do you know how far you travel in fleet vehicles on a typical work day?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel/no:label">
+            <value>No</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles:label">
+            <value>Please estimate the distance traveled in miles.</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00:label">
+            <value>Perceptions of EVs and EVSE</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station:label">
+            <value>Have you ever driven an EV and/or use an electrical charging station?</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/no:label">
+            <value>No</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:label">
+            <value>Please rate the following statements:</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:hint">
+            <value>1 = disagree, 2 = somewhat disagree, 3 = neutral, 4 = somewhat agree, 5 = agree</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/5:label">
+            <value>5</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs:label">
+            <value>The information you have about electric vehicles and charging electric infrastructure is enough to fulfill your driving needs</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/5:label">
+            <value>5</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity:label">
+            <value>You are concerned that the electric vehicle would run out of charge before the next charging opportunity</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/5:label">
+            <value>5</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle:label">
+            <value>Concern of running out of charge, or range anxiety, prevents you from choosing an electric fleet vehicle</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/5:label">
+            <value>5</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle:label">
+            <value>You believe that the number of electric vehicles charging stations are few within your area of operation and it is a significant obstacle to driving an electric vehicle</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/5:label">
+            <value>5</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety:label">
+            <value>The use of public rapid-charging infrastructure as a back-up option would minimize range anxiety</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/1:label">
+            <value>1</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/2:label">
+            <value>2</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/3:label">
+            <value>3</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/4:label">
+            <value>4</value>
+          </text>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/5:label">
+            <value>5</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <a9mfWa8xfMComX3zYxdLF5 id="a9mfWa8xfMComX3zYxdLF5">
+          <start/>
+          <end/>
+          <group_dv6ty46>
+            <In_which_year_were_you_born/>
+            <What_is_your_gender/>
+            <What_is_your_race_ethnicity/>
+            <What_is_the_highest_grade_or_d/>
+          </group_dv6ty46>
+          <group_hb4kp43>
+            <How_many_years_have_you_worked_for_GSA/>
+            <In_what_group_or_seg_t_of_GSA_do_you_work/>
+            <Do_you_know_how_far_you_travel/>
+            <Please_estimate_the_ce_traveled_in_miles/>
+          </group_hb4kp43>
+          <group_mf7bp00>
+            <Have_you_ever_driven_cal_charging_station/>
+            <Please_rate_the_following_statements>
+              <Please_rate_the_following_statements/>
+              <The_information_you_l_your_driving_needs/>
+              <You_are_concerned_th_charging_opportunity/>
+              <Concern_of_running_o_ectric_fleet_vehicle/>
+              <You_believe_that_the_an_electric_vehicle/>
+              <The_use_of_public_ra_nimize_range_anxiety/>
+            </Please_rate_the_following_statements>
+          </group_mf7bp00>
+          <meta>
+            <instanceID/>
+          </meta>
+        </a9mfWa8xfMComX3zYxdLF5>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/a9mfWa8xfMComX3zYxdLF5/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/a9mfWa8xfMComX3zYxdLF5/end" type="dateTime"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46" required="false()"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/In_which_year_were_you_born" required="true()" type="int"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43" required="false()"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/How_many_years_have_you_worked_for_GSA" required="true()" type="int"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/In_what_group_or_seg_t_of_GSA_do_you_work" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles" relevant=" /a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel  = 'yes'" required="false()" type="int"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00" required="false()"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/a9mfWa8xfMComX3zYxdLF5/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46:label')"/>
+      <input ref="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/In_which_year_were_you_born">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/In_which_year_were_you_born:label')"/>
+      </input>
+      <select1 ref="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender:label')"/>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/woman:label')"/>
+          <value>woman</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/man:label')"/>
+          <value>man</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/trans_woman:label')"/>
+          <value>trans_woman</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/trans_man:label')"/>
+          <value>trans_man</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/non_binary:label')"/>
+          <value>non_binary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/other:label')"/>
+          <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_gender/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select1>
+      <select ref="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity:label')"/>
+        <hint ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity:hint')"/>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/black_or_african_american:label')"/>
+          <value>black_or_african_american</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/white_or_caucasian:label')"/>
+          <value>white_or_caucasian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/hispanic_latino_a_x_or_spanish:label')"/>
+          <value>hispanic_latino_a_x_or_spanish</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/east_asian:label')"/>
+          <value>east_asian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/south_asian:label')"/>
+          <value>south_asian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/american_indian_or_alaska_native:label')"/>
+          <value>american_indian_or_alaska_native</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/native_hawaiian_or_other_pacific_islande:label')"/>
+          <value>native_hawaiian_or_other_pacific_islande</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/multiracial_multiethnic:label')"/>
+          <value>multiracial_multiethnic</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/other:label')"/>
+          <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_your_race_ethnicity/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select>
+      <select1 ref="/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d:label')"/>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/less_than_a_high_school_graduate:label')"/>
+          <value>less_than_a_high_school_graduate</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/high_school_graduate_or_ged:label')"/>
+          <value>high_school_graduate_or_ged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/some_college_or_associates_degree:label')"/>
+          <value>some_college_or_associates_degree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/bachelor_s_degree:label')"/>
+          <value>bachelor_s_degree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/graduate_degree_or_professional_degree:label')"/>
+          <value>graduate_degree_or_professional_degree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_dv6ty46/What_is_the_highest_grade_or_d/prefer_not_to_say:label')"/>
+          <value>prefer_not_to_say</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43:label')"/>
+      <input ref="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/How_many_years_have_you_worked_for_GSA">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/How_many_years_have_you_worked_for_GSA:label')"/>
+      </input>
+      <input ref="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/In_what_group_or_seg_t_of_GSA_do_you_work">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/In_what_group_or_seg_t_of_GSA_do_you_work:label')"/>
+      </input>
+      <select1 ref="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel:label')"/>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles:label')"/>
+      </input>
+    </group>
+    <group ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00:label')"/>
+      <select1 ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station">
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station:label')"/>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements">
+        <select1 appearance="label" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:label')"/>
+          <hint ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:hint')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs:label')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity:label')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle:label')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle:label')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety">
+          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety:label')"/>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/4:label')"/>
+            <value>4</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/5:label')"/>
+            <value>5</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+  </h:body>
+</h:html>
