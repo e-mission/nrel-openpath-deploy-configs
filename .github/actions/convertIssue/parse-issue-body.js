@@ -282,7 +282,13 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       aggregate_call_auth: "user_only",
     }; //TODO check options for call + add to form?
 
-    let subgroups = combinedObject.subgroups.split(",");
+    let subgroups = combinedObject.subgroups.split(",").map(item => item.trim());
+    if (!subgroups.includes("test")) {
+      subgroups.push("test");
+    }
+    if (!subgroups.includes("default")) {
+      subgroups.push("default");
+    }
     configObject["opcode"] = {
       autogen: cleanBoolean(combinedObject.autogen),
       subgroups: subgroups,
