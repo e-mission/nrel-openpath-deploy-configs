@@ -283,11 +283,8 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
     }; //TODO check options for call + add to form?
 
     let subgroups = combinedObject.subgroups.split(",").map(item => item.trim());
-    if (!subgroups.includes("test")) {
-      subgroups.push("test");
-    }
-    if (!subgroups.includes("default")) {
-      subgroups.push("default");
+    if (subgroups.length == 1 && subgroups[0] == "") {
+      subgroups = ["default", "test"];
     }
     configObject["opcode"] = {
       autogen: cleanBoolean(combinedObject.autogen),
