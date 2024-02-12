@@ -36,17 +36,21 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
+        "formPath": "https://raw.githubusercontent.com/JGreenlee/nrel-openpath-deploy-configs/fermata-demo/survey_resources/dfc-fermata/fermata-onboarding-v0.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
+        "labelTemplate": { "en": "Answered" }
+      },
+      "TripConfirmSurvey": {
+        "formPath": "https://raw.githubusercontent.com/JGreenlee/nrel-openpath-deploy-configs/fermata-demo/survey_resources/dfc-fermata/fermata-ev-return-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
       }
     },
-    "trip-labels": "MULTILABEL"
+    "trip-labels": "ENKETO"
   },
   "display_config": {
     "use_imperial": true

@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>GPG EV Return Trip Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <aCZMbWXnabDqQQMnMT4AQU id="aCZMbWXnabDqQQMnMT4AQU">
+          <start/>
+          <end/>
+          <Please_rate_the_following_statements>
+            <Please_rate_the_following_statements/>
+            <Your_EV_driving_expe_yable_and_uneventful/>
+            <You_were_aware_of_th_e_you_made_this_trip/>
+          </Please_rate_the_following_statements>
+          <Are_you_taking_another_trip_to/>
+          <Is_the_battery_state_lfill_your_next_trip/>
+          <Did_you_plug_the_EV_to_the_Fer/>
+          <Please_rate_the_following_statement>
+            <Please_rate_the_following_statement/>
+            <You_were_able_to_ope_without_any_problems/>
+          </Please_rate_the_following_statement>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aCZMbWXnabDqQQMnMT4AQU>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aCZMbWXnabDqQQMnMT4AQU/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aCZMbWXnabDqQQMnMT4AQU/end" type="dateTime"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/Please_rate_the_following_statements" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/Your_EV_driving_expe_yable_and_uneventful" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/You_were_aware_of_th_e_you_made_this_trip" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Is_the_battery_state_lfill_your_next_trip" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Did_you_plug_the_EV_to_the_Fer" required="false()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Did_you_plug_the_EV_to_the_Fer  = 'yes'"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement/Please_rate_the_following_statement" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement/You_were_able_to_ope_without_any_problems" required="false()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aCZMbWXnabDqQQMnMT4AQU/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements">
+      <select1 appearance="label" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/Please_rate_the_following_statements">
+        <label>Please rate the following statements:</label>
+        <hint>1 = disagree, 2 = somewhat disagree, 3 = neutral, 4 = somewhat agree, 5 = agree</hint>
+        <item>
+          <label>1</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>4</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>5</label>
+          <value>5</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/Your_EV_driving_expe_yable_and_uneventful">
+        <label>Your EV driving experience was enjoyable and uneventful.</label>
+        <item>
+          <label>1</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>4</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>5</label>
+          <value>5</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statements/You_were_aware_of_th_e_you_made_this_trip">
+        <label>You were aware of the available electric range before you made this trip</label>
+        <item>
+          <label>1</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>4</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>5</label>
+          <value>5</value>
+        </item>
+      </select1>
+    </group>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to">
+      <label>Are you taking another trip today?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Is_the_battery_state_lfill_your_next_trip">
+      <label>Is the battery state of charge (displayed in EV dashboard) sufficient to fulfill your next trip?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Unsure</label>
+        <value>unsure</value>
+      </item>
+    </select1>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Did_you_plug_the_EV_to_the_Fer">
+      <label>Did you plug the EV to the Fermata charger?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement">
+      <select1 appearance="label" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement/Please_rate_the_following_statement">
+        <label>Please rate the following statement:</label>
+        <hint>1 = disagree, 2 = somewhat disagree, 3 = neutral, 4 = somewhat agree, 5 = agree</hint>
+        <item>
+          <label>1</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>4</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>5</label>
+          <value>5</value>
+        </item>
+      </select1>
+      <select1 appearance="list-nolabel" ref="/aCZMbWXnabDqQQMnMT4AQU/Please_rate_the_following_statement/You_were_able_to_ope_without_any_problems">
+        <label>You were able to operate the Fermata charger without any problems</label>
+        <item>
+          <label>1</label>
+          <value>1</value>
+        </item>
+        <item>
+          <label>2</label>
+          <value>2</value>
+        </item>
+        <item>
+          <label>3</label>
+          <value>3</value>
+        </item>
+        <item>
+          <label>4</label>
+          <value>4</value>
+        </item>
+        <item>
+          <label>5</label>
+          <value>5</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>
