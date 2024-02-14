@@ -278,11 +278,14 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
     let connect_url =
       "https://" + combinedObject.url_abbreviation + "-openpath.nrel.gov/api/";
     configObject["server"] = {
-      connectURL: connect_url,
+      connectUrl: connect_url,
       aggregate_call_auth: "user_only",
     }; //TODO check options for call + add to form?
 
-    let subgroups = combinedObject.subgroups.split(",");
+    let subgroups = combinedObject.subgroups.split(",").map(item => item.trim());
+    if (subgroups.length == 1 && subgroups[0] == "") {
+      subgroups = ["default", "test"];
+    }
     configObject["opcode"] = {
       autogen: cleanBoolean(combinedObject.autogen),
       subgroups: subgroups,
