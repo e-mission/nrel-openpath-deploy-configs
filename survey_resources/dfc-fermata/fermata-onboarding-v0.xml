@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>GPG Onboarding Survey</h:title>
+    <h:title>DFC Fermata Onboarding Survey</h:title>
     <model odk:xforms-version="1.0.0">
       <itext>
         <translation default="true()" lang="English (en)">
@@ -125,116 +125,101 @@
           <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/no:label">
             <value>No</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:label">
-            <value>Please rate the following statements:</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Acknowledge:label">
+            <value>Acknowledge</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:hint">
-            <value>1 = disagree, 2 = somewhat disagree, 3 = neutral, 4 = somewhat agree, 5 = agree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement:label">
+            <value>For each of the following statements, please indicate the extent to which you agree with the statement.</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/1:label">
-            <value>1</value>
-          </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/2:label">
-            <value>2</value>
-          </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/3:label">
-            <value>3</value>
-          </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/4:label">
-            <value>4</value>
-          </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/5:label">
-            <value>5</value>
-          </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs:label">
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs:label">
             <value>The information you have about electric vehicles and charging electric infrastructure is enough to fulfill your driving needs</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/1:label">
-            <value>1</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/disagree:label">
+            <value>Disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/2:label">
-            <value>2</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/somewhat_disagree:label">
+            <value>Somewhat disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/3:label">
-            <value>3</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/neither_agree_nor_disagree:label">
+            <value>Neither agree nor disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/4:label">
-            <value>4</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/somewhat_agree:label">
+            <value>Somewhat agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/5:label">
-            <value>5</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/agree:label">
+            <value>Agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity:label">
-            <value>You are concerned that the electric vehicle would run out of charge before the next charging opportunity</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity:label">
+            <value>You are concerned that an electric vehicle could run out of charge before the next charging opportunity</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/1:label">
-            <value>1</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/disagree:label">
+            <value>Disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/2:label">
-            <value>2</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/somewhat_disagree:label">
+            <value>Somewhat disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/3:label">
-            <value>3</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/neither_agree_nor_disagree:label">
+            <value>Neither agree nor disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/4:label">
-            <value>4</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/somewhat_agree:label">
+            <value>Somewhat agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/5:label">
-            <value>5</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/agree:label">
+            <value>Agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle:label">
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle:label">
             <value>Concern of running out of charge, or range anxiety, prevents you from choosing an electric fleet vehicle</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/1:label">
-            <value>1</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/disagree:label">
+            <value>Disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/2:label">
-            <value>2</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/somewhat_disagree:label">
+            <value>Somewhat disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/3:label">
-            <value>3</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/neither_agree_nor_disagree:label">
+            <value>Neither agree nor disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/4:label">
-            <value>4</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/somewhat_agree:label">
+            <value>Somewhat agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/5:label">
-            <value>5</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/agree:label">
+            <value>Agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle:label">
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle:label">
             <value>You believe that the number of electric vehicles charging stations are few within your area of operation and it is a significant obstacle to driving an electric vehicle</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/1:label">
-            <value>1</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/disagree:label">
+            <value>Disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/2:label">
-            <value>2</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_disagree:label">
+            <value>Somewhat disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/3:label">
-            <value>3</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/neither_agree_nor_disagree:label">
+            <value>Neither agree nor disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/4:label">
-            <value>4</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_agree:label">
+            <value>Somewhat agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/5:label">
-            <value>5</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/agree:label">
+            <value>Agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety:label">
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety:label">
             <value>The use of public rapid-charging infrastructure as a back-up option would minimize range anxiety</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/1:label">
-            <value>1</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/disagree:label">
+            <value>Disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/2:label">
-            <value>2</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_disagree:label">
+            <value>Somewhat disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/3:label">
-            <value>3</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/neither_agree_nor_disagree:label">
+            <value>Neither agree nor disagree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/4:label">
-            <value>4</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_agree:label">
+            <value>Somewhat agree</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/5:label">
-            <value>5</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/agree:label">
+            <value>Agree</value>
           </text>
         </translation>
       </itext>
@@ -256,15 +241,14 @@
           </group_hb4kp43>
           <group_mf7bp00>
             <Have_you_ever_driven_cal_charging_station/>
-            <Please_rate_the_following_statements>
-              <Please_rate_the_following_statements/>
-              <The_information_you_l_your_driving_needs/>
-              <You_are_concerned_th_charging_opportunity/>
-              <Concern_of_running_o_ectric_fleet_vehicle/>
-              <You_believe_that_the_an_electric_vehicle/>
-              <The_use_of_public_ra_nimize_range_anxiety/>
-            </Please_rate_the_following_statements>
           </group_mf7bp00>
+          <Acknowledge/>
+          <For_each_of_the_foll_e_with_the_statement/>
+          <The_information_you_l_your_driving_needs/>
+          <You_are_concerned_th_charging_opportunity/>
+          <Concern_of_running_o_ectric_fleet_vehicle/>
+          <You_believe_that_the_an_electric_vehicle/>
+          <The_use_of_public_ra_nimize_range_anxiety/>
           <meta>
             <instanceID/>
           </meta>
@@ -284,12 +268,13 @@
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles" relevant=" /a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel  = 'yes'" required="false()" type="int"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00" required="false()"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety" required="true()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/Acknowledge" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle" required="false()" type="string"/>
+      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety" required="false()" type="string"/>
       <bind jr:preload="uid" nodeset="/a9mfWa8xfMComX3zYxdLF5/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -438,147 +423,127 @@
           <value>no</value>
         </item>
       </select1>
-      <group appearance="field-list" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements">
-        <select1 appearance="label" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:label')"/>
-          <hint ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements:hint')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Please_rate_the_following_statements/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs:label')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_information_you_l_your_driving_needs/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity:label')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_are_concerned_th_charging_opportunity/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle:label')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/Concern_of_running_o_ectric_fleet_vehicle/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle:label')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/You_believe_that_the_an_electric_vehicle/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-        <select1 appearance="list-nolabel" ref="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety">
-          <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety:label')"/>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/1:label')"/>
-            <value>1</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/2:label')"/>
-            <value>2</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/3:label')"/>
-            <value>3</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/4:label')"/>
-            <value>4</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Please_rate_the_following_statements/The_use_of_public_ra_nimize_range_anxiety/5:label')"/>
-            <value>5</value>
-          </item>
-        </select1>
-      </group>
     </group>
+    <trigger ref="/a9mfWa8xfMComX3zYxdLF5/Acknowledge">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Acknowledge:label')"/>
+    </trigger>
+    <input ref="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement:label')"/>
+    </input>
+    <select1 ref="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs:label')"/>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/disagree:label')"/>
+        <value>disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/somewhat_disagree:label')"/>
+        <value>somewhat_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/neither_agree_nor_disagree:label')"/>
+        <value>neither_agree_nor_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/somewhat_agree:label')"/>
+        <value>somewhat_agree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs/agree:label')"/>
+        <value>agree</value>
+      </item>
+    </select1>
+    <select1 appearance="horizontal-compact" ref="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity:label')"/>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/disagree:label')"/>
+        <value>disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/somewhat_disagree:label')"/>
+        <value>somewhat_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/neither_agree_nor_disagree:label')"/>
+        <value>neither_agree_nor_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/somewhat_agree:label')"/>
+        <value>somewhat_agree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity/agree:label')"/>
+        <value>agree</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle:label')"/>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/disagree:label')"/>
+        <value>disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/somewhat_disagree:label')"/>
+        <value>somewhat_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/neither_agree_nor_disagree:label')"/>
+        <value>neither_agree_nor_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/somewhat_agree:label')"/>
+        <value>somewhat_agree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Concern_of_running_o_ectric_fleet_vehicle/agree:label')"/>
+        <value>agree</value>
+      </item>
+    </select1>
+    <select1 appearance="compact" ref="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle:label')"/>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/disagree:label')"/>
+        <value>disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_disagree:label')"/>
+        <value>somewhat_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/neither_agree_nor_disagree:label')"/>
+        <value>neither_agree_nor_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_agree:label')"/>
+        <value>somewhat_agree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/agree:label')"/>
+        <value>agree</value>
+      </item>
+    </select1>
+    <select1 appearance="quickcompact" ref="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety">
+      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety:label')"/>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/disagree:label')"/>
+        <value>disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_disagree:label')"/>
+        <value>somewhat_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/neither_agree_nor_disagree:label')"/>
+        <value>neither_agree_nor_disagree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_agree:label')"/>
+        <value>somewhat_agree</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/agree:label')"/>
+        <value>agree</value>
+      </item>
+    </select1>
   </h:body>
 </h:html>
