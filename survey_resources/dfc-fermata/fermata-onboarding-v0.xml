@@ -189,13 +189,13 @@
             <value>Disagree</value>
           </text>
           <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_disagree:label">
-            <value>Somewhat disagree</value>
+            <value>-</value>
           </text>
           <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/neither_agree_nor_disagree:label">
-            <value>Neither agree nor disagree</value>
+            <value>Neutral</value>
           </text>
           <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/somewhat_agree:label">
-            <value>Somewhat agree</value>
+            <value>-</value>
           </text>
           <text id="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/agree:label">
             <value>Agree</value>
@@ -491,7 +491,7 @@
         <value>agree</value>
       </item>
     </select1>
-    <select1 appearance="minimal" ref="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle">
+    <select1 appearance="likert" ref="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle">
       <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle:label')"/>
       <item>
         <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/disagree:label')"/>
