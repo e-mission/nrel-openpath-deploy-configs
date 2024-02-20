@@ -125,9 +125,6 @@
           <text id="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station/no:label">
             <value>No</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/Acknowledge:label">
-            <value>Acknowledge</value>
-          </text>
           <text id="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement:label">
             <value>For each of the following statements, please indicate the extent to which you agree with the statement.</value>
           </text>
@@ -206,20 +203,20 @@
           <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety:label">
             <value>The use of public rapid-charging infrastructure as a back-up option would minimize range anxiety</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/disagree:label">
-            <value>Disagree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/1:label">
+            <value>1 (Disagree)</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_disagree:label">
-            <value>Somewhat disagree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/2:label">
+            <value>2</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/neither_agree_nor_disagree:label">
-            <value>Neither agree nor disagree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/3:label">
+            <value>3 (Neutral)</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_agree:label">
-            <value>Somewhat agree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/4:label">
+            <value>4</value>
           </text>
-          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/agree:label">
-            <value>Agree</value>
+          <text id="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/5:label">
+            <value>5 (Agree)</value>
           </text>
         </translation>
       </itext>
@@ -242,7 +239,6 @@
           <group_mf7bp00>
             <Have_you_ever_driven_cal_charging_station/>
           </group_mf7bp00>
-          <Acknowledge/>
           <For_each_of_the_foll_e_with_the_statement/>
           <The_information_you_l_your_driving_needs/>
           <You_are_concerned_th_charging_opportunity/>
@@ -268,7 +264,6 @@
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Please_estimate_the_ce_traveled_in_miles" relevant=" /a9mfWa8xfMComX3zYxdLF5/group_hb4kp43/Do_you_know_how_far_you_travel  = 'yes'" required="false()" type="int"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00" required="false()"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/group_mf7bp00/Have_you_ever_driven_cal_charging_station" required="true()" type="string"/>
-      <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/Acknowledge" required="false()" type="string"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement" readonly="true()" required="false()" type="string"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/The_information_you_l_your_driving_needs" required="false()" type="string"/>
       <bind nodeset="/a9mfWa8xfMComX3zYxdLF5/You_are_concerned_th_charging_opportunity" required="false()" type="string"/>
@@ -424,9 +419,6 @@
         </item>
       </select1>
     </group>
-    <trigger ref="/a9mfWa8xfMComX3zYxdLF5/Acknowledge">
-      <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/Acknowledge:label')"/>
-    </trigger>
     <input ref="/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement">
       <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/For_each_of_the_foll_e_with_the_statement:label')"/>
     </input>
@@ -499,7 +491,7 @@
         <value>agree</value>
       </item>
     </select1>
-    <select1 appearance="compact" ref="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle">
+    <select1 appearance="minimal" ref="/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle">
       <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle:label')"/>
       <item>
         <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/You_believe_that_the_an_electric_vehicle/disagree:label')"/>
@@ -522,27 +514,27 @@
         <value>agree</value>
       </item>
     </select1>
-    <select1 appearance="quickcompact" ref="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety">
+    <select1 appearance="likert" ref="/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety">
       <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety:label')"/>
       <item>
-        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/disagree:label')"/>
-        <value>disagree</value>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/1:label')"/>
+        <value>1</value>
       </item>
       <item>
-        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_disagree:label')"/>
-        <value>somewhat_disagree</value>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/2:label')"/>
+        <value>2</value>
       </item>
       <item>
-        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/neither_agree_nor_disagree:label')"/>
-        <value>neither_agree_nor_disagree</value>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/3:label')"/>
+        <value>3</value>
       </item>
       <item>
-        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/somewhat_agree:label')"/>
-        <value>somewhat_agree</value>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/4:label')"/>
+        <value>4</value>
       </item>
       <item>
-        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/agree:label')"/>
-        <value>agree</value>
+        <label ref="jr:itext('/a9mfWa8xfMComX3zYxdLF5/The_use_of_public_ra_nimize_range_anxiety/5:label')"/>
+        <value>5</value>
       </item>
     </select1>
   </h:body>
