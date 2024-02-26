@@ -1,10 +1,6 @@
 {
     "version": 1,
     "ts": 1655143472,
-    "server": {
-        "connectUrl": "https://USAID-laos-EV-openpath.nrel.gov/api/",
-        "aggregate_call_auth": "user_only"
-    },
     "intro": {
         "program_or_study": "study",
         "start_month": "05",
