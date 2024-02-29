@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>DFC Fleet Gas Vehicle Trip Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <aKYC6Z2d4qDhnQ69i4jiEc id="aKYC6Z2d4qDhnQ69i4jiEc">
+          <start/>
+          <end/>
+          <Was_there_an_available_electri/>
+          <Select_reason_s_why_you_opted/>
+          <Other_Please_specify/>
+          <You_are_satisfied_wi_ehicle_for_this_trip/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aKYC6Z2d4qDhnQ69i4jiEc>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/end" type="dateTime"/>
+      <bind nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/Was_there_an_available_electri" required="true()" type="string"/>
+      <bind nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/Select_reason_s_why_you_opted" relevant=" /aKYC6Z2d4qDhnQ69i4jiEc/Was_there_an_available_electri  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/Other_Please_specify" relevant="selected( /aKYC6Z2d4qDhnQ69i4jiEc/Select_reason_s_why_you_opted , 'other__specify')" required="true()" type="string"/>
+      <bind nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/You_are_satisfied_wi_ehicle_for_this_trip" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aKYC6Z2d4qDhnQ69i4jiEc/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/aKYC6Z2d4qDhnQ69i4jiEc/Was_there_an_available_electri">
+      <label>Was there an available electric vehicle (EV) that you could have taken for this trip?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Unsure</label>
+        <value>i_don_t_know</value>
+      </item>
+    </select1>
+    <select ref="/aKYC6Z2d4qDhnQ69i4jiEc/Select_reason_s_why_you_opted">
+      <label>Select reason(s) why you opted for a gas vehicle on this trip:</label>
+      <hint>Select all that apply</hint>
+      <item>
+        <label>You were concerned about range / battery life</label>
+        <value>concerns_about_range___battery_life</value>
+      </item>
+      <item>
+        <label>It was more convenient to take a gas vehicle</label>
+        <value>it_was_more_convenient_to_take_a_gas_veh</value>
+      </item>
+      <item>
+        <label>You didn't have time to charge an EV</label>
+        <value>i_didn_t_have_time_to_charge_an_ev</value>
+      </item>
+      <item>
+        <label>You didn't want to deal with charging an EV</label>
+        <value>i_didn_t_want_to_deal_with_charging_an_e</value>
+      </item>
+      <item>
+        <label>You are more comfortable with gas vehicles</label>
+        <value>i_am_used_to_taking_gas_vehicl</value>
+      </item>
+      <item>
+        <label>There is no charging station at the destination</label>
+        <value>there_was_no_charging_station_</value>
+      </item>
+      <item>
+        <label>Other...</label>
+        <value>other__specify</value>
+      </item>
+    </select>
+    <input ref="/aKYC6Z2d4qDhnQ69i4jiEc/Other_Please_specify">
+      <label>Other – Please specify:</label>
+    </input>
+    <select1 ref="/aKYC6Z2d4qDhnQ69i4jiEc/You_are_satisfied_wi_ehicle_for_this_trip">
+      <label>You are satisfied with your choice to take a gas vehicle for this trip.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>
