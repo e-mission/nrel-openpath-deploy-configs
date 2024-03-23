@@ -54,6 +54,7 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
+        "admin_access": ["griffin@weallrisegroup.com", "henry@thestreettrust.org", "burgin@thestreettrust.org", "quincy@weallrisegroup.com", "madi@thestreettrust.org", "k.shankari@nrel.gov"],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,

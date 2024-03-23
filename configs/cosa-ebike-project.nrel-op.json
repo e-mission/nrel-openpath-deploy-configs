@@ -95,8 +95,7 @@
     "options_uuids": true,
     "options_emails": true,
     "admin_access": [
-      "ricardo.ambriz2@sanantonio.gov",
-      ""
+      "ricardo.ambriz2@sanantonio.gov"
     ]
   }
 }
