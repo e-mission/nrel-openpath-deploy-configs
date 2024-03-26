@@ -8,7 +8,7 @@
     },
     "opcode": {
         "autogen": true,
-        "subgroups": ["test", "default"]
+        "subgroups": ["test", "default", "second-cohort"]
     },
     "intro": {
         "program_or_study": "program",
