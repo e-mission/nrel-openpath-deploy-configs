@@ -36,19 +36,52 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/JGreenlee/nrel-openpath-deploy-configs/fermata-demo/survey_resources/dfc-fermata/fermata-onboarding-v0.xml",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v0.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
         "labelTemplate": { "en": "Answered" }
       },
-      "TripConfirmSurvey": {
-        "formPath": "https://raw.githubusercontent.com/JGreenlee/nrel-openpath-deploy-configs/fermata-demo/survey_resources/dfc-fermata/fermata-ev-return-trip-v0.xml",
+      "DfcEvReturnTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
+      },
+      "DfcEvRoamingTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
+      },
+      "DfcGasTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v0.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/trip_user_input",
         "labelTemplate": { "en": "Answered" }
       }
+    },
+    "buttons": {
+      "trip-label": [
+        {
+          "surveyName": "DfcGasTrip",
+          "not-filled-in-label": { "en": "Gas Car Survey" },
+          "showsIf": "sections[0].sensed_mode_str == 'CAR'"
+        },
+        {
+          "surveyName": "DfcEvRoamingTrip",
+          "not-filled-in-label": { "en": "EV Survey" },
+          "showsIf": "sections[0].sensed_mode_str != 'CAR' && !pointIsWithinBounds(end_loc.coordinates, [[-105.153, 39.745], [-105.150, 39.743]])"
+        },
+        {
+          "surveyName": "DfcEvReturnTrip",
+          "not-filled-in-label": { "en": "EV Survey" },
+          "showsIf": "sections[0].sensed_mode_str != 'CAR' && pointIsWithinBounds(end_loc.coordinates, [[-105.153, 39.745], [-105.150, 39.743]])"
+        }
+      ]
     },
     "trip-labels": "ENKETO"
   },
@@ -56,7 +89,19 @@
     "use_imperial": true
   },
   "metrics": {
-    "include_test_users": false
+    "include_test_users": false,
+    "phone_dashboard_ui": {
+      "sections": ["footprint", "summary", "engagement", "surveys"],
+      "footprint_options": {
+        "unlabeled_uncertainty": false
+      },
+      "summary_options": {
+        "metrics_list": ["distance", "count", "duration"]
+      },
+      "engagement_options": {
+        "leaderboard_metric": ["distance", "e_car"]
+      }
+    }
   },
   "profile_controls": {
     "support_upload": false,
