@@ -7,7 +7,7 @@
   },
   "opcode": {
       "autogen": true,
-      "subgroups": ["test", "default"]
+      "subgroups": ["test", "default", "control"]
   },
   "intro": {
       "program_or_study": "program",
