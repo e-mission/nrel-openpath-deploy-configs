@@ -69,17 +69,17 @@
         {
           "surveyName": "DfcGasTrip",
           "not-filled-in-label": { "en": "Gas Car Survey" },
-          "showsIf": "sections[0].sensed_mode_str == 'CAR'"
+          "showsIf": "sections[0]['sensed_mode_str'] == 'CAR'"
         },
         {
           "surveyName": "DfcEvRoamingTrip",
           "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "sections[0].sensed_mode_str != 'CAR' && !pointIsWithinBounds(end_loc.coordinates, [[-105.153, 39.745], [-105.150, 39.743]])"
+          "showsIf": "sections[0]['sensed_mode_str'] != 'CAR' && !pointIsWithinBounds(end_loc['coordinates'], [[-105.153, 39.745], [-105.150, 39.743]])"
         },
         {
           "surveyName": "DfcEvReturnTrip",
           "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "sections[0].sensed_mode_str != 'CAR' && pointIsWithinBounds(end_loc.coordinates, [[-105.153, 39.745], [-105.150, 39.743]])"
+          "showsIf": "sections[0]['sensed_mode_str'] != 'CAR' && pointIsWithinBounds(end_loc['coordinates'], [[-105.153, 39.745], [-105.150, 39.743]])"
         }
       ]
     },
