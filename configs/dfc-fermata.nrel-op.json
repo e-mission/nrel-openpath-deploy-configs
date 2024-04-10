@@ -85,6 +85,28 @@
     },
     "trip-labels": "ENKETO"
   },
+  "vehicle_identities": [
+    {
+      "value": "car_jacks_mazda3",
+      "bluetooth_major_minor": ["dfc0:fff0"],
+      "name": "Jack's Mazda 3",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.22031,
+      "vehicle_info": {
+        "type": "car",
+        "license": "JHK ****",
+        "make": "Mazda",
+        "model": "3",
+        "year": 2014,
+        "color": "red",
+        "engine": "ICE"
+      }
+    }
+  ],
+  "tracking": {
+    "bluetooth_only": true
+  },
   "display_config": {
     "use_imperial": true
   },
