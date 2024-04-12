@@ -102,6 +102,74 @@
         "color": "red",
         "engine": "ICE"
       }
+    },
+    {
+      "value": "car_abbys_prius",
+      "bluetooth_major_minor": ["dfc0:fff1"],
+      "name": "Abby's Prius",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.22031,
+      "vehicle_info": {
+        "type": "car",
+        "license": "ABI 1234",
+        "make": "Toyota",
+        "model": "Prius",
+        "year": 2011,
+        "color": "silver",
+        "engine": "HEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf1",
+      "bluetooth_major_minor": ["dfc0:fff2"],
+      "name": "GSA Leaf 1",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "???",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf2",
+      "bluetooth_major_minor": ["dfc0:fff3"],
+      "name": "GSA Leaf 2",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "???",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_pacifica",
+      "bluetooth_major_minor": ["dfc0:fff4"],
+      "name": "GSA Pacifica",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.127,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 0,
+        "color": "???",
+        "engine": "PHEV"
+      }
     }
   ],
   "tracking": {
