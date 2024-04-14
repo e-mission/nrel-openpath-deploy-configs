@@ -89,7 +89,7 @@
     {
       "value": "car_jacks_mazda3",
       "bluetooth_major_minor": ["dfc0:fff0"],
-      "name": "Jack's Mazda 3",
+      "text": "Jack's Mazda 3",
       "baseMode":"CAR",
       "met_equivalent":"IN_VEHICLE",
       "kgCo2PerKm": 0.22031,
@@ -106,7 +106,7 @@
     {
       "value": "car_abbys_prius",
       "bluetooth_major_minor": ["dfc0:fff1"],
-      "name": "Abby's Prius",
+      "text": "Abby's Prius",
       "baseMode": "CAR",
       "met_equivalent": "IN_VEHICLE",
       "kgCo2PerKm": 0.22031,
@@ -123,7 +123,7 @@
     {
       "value": "ecar_gsa_leaf1",
       "bluetooth_major_minor": ["dfc0:fff2"],
-      "name": "GSA Leaf 1",
+      "text": "GSA Leaf 1",
       "baseMode": "E_CAR",
       "met_equivalent": "IN_VEHICLE",
       "kgCo2PerKm": 0.08216,
@@ -140,7 +140,7 @@
     {
       "value": "ecar_gsa_leaf2",
       "bluetooth_major_minor": ["dfc0:fff3"],
-      "name": "GSA Leaf 2",
+      "text": "GSA Leaf 2",
       "baseMode": "E_CAR",
       "met_equivalent": "IN_VEHICLE",
       "kgCo2PerKm": 0.08216,
@@ -157,7 +157,7 @@
     {
       "value": "ecar_gsa_pacifica",
       "bluetooth_major_minor": ["dfc0:fff4"],
-      "name": "GSA Pacifica",
+      "text": "GSA Pacifica",
       "baseMode": "E_CAR",
       "met_equivalent": "IN_VEHICLE",
       "kgCo2PerKm": 0.127,
