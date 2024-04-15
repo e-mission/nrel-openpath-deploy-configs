@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 2,
+  "version": 3,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -69,17 +69,17 @@
         {
           "surveyName": "DfcGasTrip",
           "not-filled-in-label": { "en": "Gas Car Survey" },
-          "showsIf": "sections[0]['sensed_mode_str'] == 'CAR'"
+          "showsIf": "confirmedMode?.baseMode == 'CAR'"
         },
         {
           "surveyName": "DfcEvRoamingTrip",
           "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "sections[0]['sensed_mode_str'] != 'CAR' && !pointIsWithinBounds(end_loc['coordinates'], [[-105.153, 39.745], [-105.150, 39.743]])"
+          "showsIf": "confirmedMode?.baseMode == 'E_CAR' && !pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]])"
         },
         {
           "surveyName": "DfcEvReturnTrip",
           "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "sections[0]['sensed_mode_str'] != 'CAR' && pointIsWithinBounds(end_loc['coordinates'], [[-105.153, 39.745], [-105.150, 39.743]])"
+          "showsIf": "confirmedMode?.baseMode == 'E_CAR' && pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]])"
         }
       ]
     },
