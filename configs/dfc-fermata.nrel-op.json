@@ -129,11 +129,11 @@
       "kgCo2PerKm": 0.08216,
       "vehicle_info": {
         "type": "car",
-        "license": "??? ????",
+        "license": "G13 1991Z",
         "make": "Nissan",
         "model": "Leaf",
         "year": 0,
-        "color": "???",
+        "color": "silver",
         "engine": "BEV"
       }
     },
@@ -146,11 +146,11 @@
       "kgCo2PerKm": 0.08216,
       "vehicle_info": {
         "type": "car",
-        "license": "??? ????",
+        "license": "G13 1992Z",
         "make": "Nissan",
         "model": "Leaf",
         "year": 0,
-        "color": "???",
+        "color": "silver",
         "engine": "BEV"
       }
     },
@@ -163,12 +163,28 @@
       "kgCo2PerKm": 0.127,
       "vehicle_info": {
         "type": "car",
-        "license": "??? ????",
+        "license": "G41 4259Z",
         "make": "Chrysler",
         "model": "Pacifica",
         "year": 0,
-        "color": "???",
+        "color": "black",
         "engine": "PHEV"
+      },
+      {
+      "value": "ecar_gsa_bolt",
+      "bluetooth_major_minor": ["dfc0:fff5"],
+      "text": "GSA Bolt",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm":0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G13 1361W",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 0,
+        "color": "silver",
+        "engine": "BEV"
       }
     }
   ],
