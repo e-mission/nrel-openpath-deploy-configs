@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 3,
+  "version": 4,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -92,7 +92,7 @@
       "text": "Jack's Mazda 3",
       "baseMode":"CAR",
       "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.22031,
+      "kgCo2PerKm": 0.16777,
       "vehicle_info": {
         "type": "car",
         "license": "JHK ****",
@@ -100,7 +100,8 @@
         "model": "3",
         "year": 2014,
         "color": "red",
-        "engine": "ICE"
+        "engine": "ICE",
+        "mpg": 33
       }
     },
     {
@@ -109,7 +110,7 @@
       "text": "Abby's Prius",
       "baseMode": "CAR",
       "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.22031,
+      "kgCo2PerKm": 0.11534,
       "vehicle_info": {
         "type": "car",
         "license": "ABI 1234",
@@ -117,7 +118,8 @@
         "model": "Prius",
         "year": 2011,
         "color": "silver",
-        "engine": "HEV"
+        "engine": "HEV",
+        "mpg": 48
       }
     },
     {
@@ -186,6 +188,42 @@
         "year": 0,
         "color": "silver",
         "engine": "BEV"
+      }
+    },
+    {
+      "value": "car_katie_solara",
+      "bluetooth_major_minor": ["dfc0:fff6"],
+      "text": "Katie's Solara",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.26364,
+      "vehicle_info": {
+        "type": "car",
+        "license": "K8T IPLT",
+        "make": "Toyota",
+        "model": "Solara",
+        "year": 1999,
+        "color": "red",
+        "engine": "ICE",
+        "mpg": 21
+      }
+    },
+    {
+      "value": "ecar_louis_backpack",
+      "bluetooth_major_minor": ["dfc0:fff7"],
+      "text": "Louis's Backpack",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.05536,
+      "vehicle_info": {
+        "type": "car",
+        "license": "123 ****",
+        "make": "Ace High",
+        "model": "2",
+        "year": 2020,
+        "color": "black",
+        "engine": "PHEV",
+        "mpge": 100
       }
     }
   ],
