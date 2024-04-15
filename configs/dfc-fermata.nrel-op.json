@@ -187,6 +187,40 @@
         "color": "silver",
         "engine": "BEV"
       }
+    },
+    {
+      "value": "car_katie_solara",
+      "bluetooth_major_minor": ["dfc0:fff6"],
+      "text": "Katie's Solara",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.22031,
+      "vehicle_info": {
+        "type": "car",
+        "license": "K8T IPLT",
+        "make": "Toyota",
+        "model": "Solara",
+        "year": 1999,
+        "color": "red",
+        "engine": "ICE"
+      }
+    },
+    {
+      "value": "ecar_louis_backpack",
+      "bluetooth_major_minor": ["dfc0:fff7"],
+      "text": "Louis's Backpack",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.127,
+      "vehicle_info": {
+        "type": "car",
+        "license": "123 ****",
+        "make": "Ace High",
+        "model": "2",
+        "year": 2020,
+        "color": "black",
+        "engine": "PHEV"
+      }
     }
   ],
   "tracking": {
