@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 1,
+  "version": 2,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -84,6 +84,96 @@
       ]
     },
     "trip-labels": "ENKETO"
+  },
+  "vehicle_identities": [
+    {
+      "value": "car_jacks_mazda3",
+      "bluetooth_major_minor": ["dfc0:fff0"],
+      "text": "Jack's Mazda 3",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.22031,
+      "vehicle_info": {
+        "type": "car",
+        "license": "JHK ****",
+        "make": "Mazda",
+        "model": "3",
+        "year": 2014,
+        "color": "red",
+        "engine": "ICE"
+      }
+    },
+    {
+      "value": "car_abbys_prius",
+      "bluetooth_major_minor": ["dfc0:fff1"],
+      "text": "Abby's Prius",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.22031,
+      "vehicle_info": {
+        "type": "car",
+        "license": "ABI 1234",
+        "make": "Toyota",
+        "model": "Prius",
+        "year": 2011,
+        "color": "silver",
+        "engine": "HEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf1",
+      "bluetooth_major_minor": ["dfc0:fff2"],
+      "text": "GSA Leaf 1",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "???",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf2",
+      "bluetooth_major_minor": ["dfc0:fff3"],
+      "text": "GSA Leaf 2",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "???",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_pacifica",
+      "bluetooth_major_minor": ["dfc0:fff4"],
+      "text": "GSA Pacifica",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.127,
+      "vehicle_info": {
+        "type": "car",
+        "license": "??? ????",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 0,
+        "color": "???",
+        "engine": "PHEV"
+      }
+    }
+  ],
+  "tracking": {
+    "bluetooth_only": true
   },
   "display_config": {
     "use_imperial": true
