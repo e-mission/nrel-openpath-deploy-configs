@@ -169,8 +169,9 @@
         "year": 0,
         "color": "black",
         "engine": "PHEV"
-      },
-      {
+      }
+    },
+    {
       "value": "ecar_gsa_bolt",
       "bluetooth_major_minor": ["dfc0:fff5"],
       "text": "GSA Bolt",
