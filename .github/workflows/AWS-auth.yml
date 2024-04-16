@@ -38,14 +38,19 @@ jobs:
             changedfiles=()
             for file in ${{ steps.get-changed-files.outputs.all_changed_files }}; do
               if [[ "$file" == *nrel-op.json ]]; then
-              changedfiles+=${file}
+              changedfiles+=("${file}")
               echo "The name of the config file is: ${file}."
               echo "CONFIG_FILES=${changedfiles}" >> "$GITHUB_OUTPUT"
               echo "changedfiles array: ${changedfiles}"
               echo "github output ${GITHUB_OUTPUT}"
               fi
             done
-          
+
+      - name: Echoing github output
+        run: |
+          echo "output from above job: ${{ needs.changed_files.outputs.config-file-name }}"
+  #commenting out to minimize job failure emails
+
   # AssumeRoleAndCallIdentity:
   #   name: AWS Authentication + Sending Welcome Email
   #   needs: changed_files
