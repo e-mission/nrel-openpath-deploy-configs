@@ -2,10 +2,9 @@ name: AWS Auth + Welcome Email
 
 on:
   push:
-    branches:
-      - 'test_userpool_creation'
+    branches: [ test_userpool_creation ]
     paths:
-        '**.json'
+        'config/**.json'
 
 env:
   AWS_ACCT_ID: ${{  secrets.AWS_ACCT_ID  }}
@@ -35,12 +34,13 @@ jobs:
       - name: List all changed files
         id: config-file-name
         run: |
-          for file in ${{ steps.get-changed-files.outputs.all_changed_files }}; do
-            if [[ "$file" == *nrel-op.json ]]; then
-              echo "The name of the config file is: ${file}."
-              echo "CONFIG_FILE=${file}" >> "$GITHUB_OUTPUT"
-            fi
-          done
+            echo ${{ steps.get-changed-files.outputs.all_changed_files }}
+          # for file in ${{ steps.get-changed-files.outputs.all_changed_files }}; do
+          #   if [[ "$file" == *nrel-op.json ]]; then
+          #     echo "The name of the config file is: ${file}."
+          #     echo "CONFIG_FILE=${file}" >> "$GITHUB_OUTPUT"
+          #   fi
+          # done
           
   AssumeRoleAndCallIdentity:
     name: AWS Authentication + Sending Welcome Email
