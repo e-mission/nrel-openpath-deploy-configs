@@ -225,6 +225,24 @@
         "engine": "PHEV",
         "mpge": 100
       }
+    },
+    {
+      "value": "ecar_leidy_car",
+      "bluetooth_major_minor": ["dfc0:fff8"],
+      "text": "Leidy's Car",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.158,
+      "vehicle_info": {
+        "type": "car",
+        "license": "BEST 40",
+        "make": "BMW",
+        "model": "X5",
+        "year": 2018,
+        "color": "white",
+        "engine": "PHEV",
+        "mpge": 56
+      }
     }
   ],
   "tracking": {
