@@ -70,6 +70,8 @@ jobs:
 
       - name: Run email-config.py
         run: |
-          for config_file in ${{ needs.changed_files.outputs.config-file-name }}; do  
-            python email_automation/email-config.py -g config_file
+          echo "changed files string: ${{ needs.changed_files.outputs.config-file-name }}"
+          for config_file in ${{ needs.changed_files.outputs.config-file-name }}; do 
+            echo "config file name ${config_file}" 
+            python email_automation/email-config.py -g ${config_file}
           done
