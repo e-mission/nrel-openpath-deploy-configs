@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest  # windows-latest || macos-latest
     name: Get config file name
     outputs:
-      config-file-name: ${{ steps.config-file-name.outputs.CONFIG_FILE}}
+      config-file-name: ${{ steps.config-file-name.outputs.CONFIG_FILES}}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,7 +44,7 @@ jobs:
             done
             echo "final changedfiles array: ${changedfiles[*]}"
 
-            echo "CONFIG_FILES=${changedfiles[@]}" >> "$GITHUB_OUTPUT"
+            echo "CONFIG_FILES=${changedfiles[*]}" >> "$GITHUB_OUTPUT"
 
   AssumeRoleAndCallIdentity:
     name: AWS Authentication + Sending Welcome Email
