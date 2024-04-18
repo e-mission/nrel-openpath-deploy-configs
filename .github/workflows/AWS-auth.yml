@@ -46,32 +46,32 @@ jobs:
 
             echo "CONFIG_FILES=${changedfiles[*]}" >> "$GITHUB_OUTPUT"
 
-  AssumeRoleAndCallIdentity:
-    name: AWS Authentication + Sending Welcome Email
-    needs: changed_files
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - name: Git clone the repository
-        uses: actions/checkout@v3
-      - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1.7.0
-        with:
-          role-to-assume: arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.IAM_ROLE }}
-          role-session-name: GitHub_to_AWS_via_FederatedOIDC
-          aws-region: ${{ env.AWS_REGION }}
-      # Hello from AWS: WhoAmI
-      - name: Sts GetCallerIdentity
-        run: |
-          aws sts get-caller-identity --debug
+  # AssumeRoleAndCallIdentity:
+  #   name: AWS Authentication + Sending Welcome Email
+  #   needs: changed_files
+  #   if: always()
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Git clone the repository
+  #       uses: actions/checkout@v3
+  #     - name: configure aws credentials
+  #       uses: aws-actions/configure-aws-credentials@v1.7.0
+  #       with:
+  #         role-to-assume: arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.IAM_ROLE }}
+  #         role-session-name: GitHub_to_AWS_via_FederatedOIDC
+  #         aws-region: ${{ env.AWS_REGION }}
+  #     # Hello from AWS: WhoAmI
+  #     - name: Sts GetCallerIdentity
+  #       run: |
+  #         aws sts get-caller-identity --debug
 
-      - name: Install Boto3
-        run: pip install boto3
+  #     - name: Install Boto3
+  #       run: pip install boto3
 
-      - name: Run email-config.py
-        run: |
-          echo "changed files string: ${{ needs.changed_files.outputs.config-file-name }}"
-          for config_file in ${{ needs.changed_files.outputs.config-file-name }}; do 
-            echo "config file name ${config_file}" 
-            python email_automation/email-config.py -g ${config_file}
-          done
+  #     - name: Run email-config.py
+  #       run: |
+  #         echo "changed files string: ${{ needs.changed_files.outputs.config-file-name }}"
+  #         for config_file in ${{ needs.changed_files.outputs.config-file-name }}; do 
+  #           echo "config file name ${config_file}" 
+  #           python email_automation/email-config.py -g ${config_file}
+  #         done
