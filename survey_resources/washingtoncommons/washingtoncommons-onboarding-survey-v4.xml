@@ -448,6 +448,10 @@
         <label>Four or more </label>
         <value>option_4</value>
       </item>
+      <item>
+        <label>None </label>
+        <value>none</value>
+      </item>
     </select1>
     <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_many_current_wor_including_yourself">
       <label>How many current workers are there in your household (including yourself)?</label>
@@ -466,6 +470,10 @@
       <item>
         <label>Four or more</label>
         <value>option_4</value>
+      </item>
+      <item>
+        <label>None </label>
+        <value>none</value>
       </item>
     </select1>
     <group appearance="field-list" ref="/aTDERCsPrCNS8HKtRon8CL/Which_of_the_followi_es_of_transportation">
@@ -741,6 +749,10 @@
       <item>
         <label>Very likely</label>
         <value>very_likely</value>
+      </item>
+      <item>
+        <label>I already owne or lease an electric car.</label>
+        <value>i_already_owne_or_lease_an_electric_car</value>
       </item>
     </select1>
     <select1 ref="/aTDERCsPrCNS8HKtRon8CL/How_likely_are_you_t_c_bike_in_the_future">

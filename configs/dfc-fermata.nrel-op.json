@@ -1,0 +1,278 @@
+{
+  "url_abbreviation": "dfc-fermata",
+  "version": 4,
+  "ts": 1707714796485,
+  "server": {
+    "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "opcode": {
+    "autogen": true,
+    "subgroups": [
+      "test",
+      "default"
+    ]
+  },
+  "intro": {
+    "program_or_study": "study",
+    "start_month": "04",
+    "start_year": "2024",
+    "mode_studied": "",
+    "program_admin_contact": "leidy.boyce@nrel.gov",
+    "deployment_partner_name": "GSA",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "GSA",
+        "deployment_name": "Fermata",
+        "summary_line_1": "Examine the effect of perceived the challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
+        "summary_line_2": "",
+        "summary_line_3": "",
+        "short_textual_description": "EVSE tech validation",
+        "why_we_collect": "Gather user input on EVSE tech adoption",
+        "research_questions": []
+      }
+    }
+  },
+  "survey_info": {
+    "surveys": {
+      "UserProfileSurvey": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": { "en": "Answered" }
+      },
+      "DfcEvReturnTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
+      },
+      "DfcEvRoamingTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
+      },
+      "DfcGasTrip": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v0.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": { "en": "Answered" }
+      }
+    },
+    "buttons": {
+      "trip-label": [
+        {
+          "surveyName": "DfcGasTrip",
+          "not-filled-in-label": { "en": "Gas Car Survey" },
+          "showsIf": "confirmedMode?.baseMode == 'CAR'"
+        },
+        {
+          "surveyName": "DfcEvRoamingTrip",
+          "not-filled-in-label": { "en": "EV Survey" },
+          "showsIf": "confirmedMode?.baseMode == 'E_CAR' && !pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]])"
+        },
+        {
+          "surveyName": "DfcEvReturnTrip",
+          "not-filled-in-label": { "en": "EV Survey" },
+          "showsIf": "confirmedMode?.baseMode == 'E_CAR' && pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]])"
+        }
+      ]
+    },
+    "trip-labels": "ENKETO"
+  },
+  "vehicle_identities": [
+    {
+      "value": "car_jacks_mazda3",
+      "bluetooth_major_minor": ["dfc0:fff0"],
+      "text": "Jack's Mazda 3",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.16777,
+      "vehicle_info": {
+        "type": "car",
+        "license": "JHK ****",
+        "make": "Mazda",
+        "model": "3",
+        "year": 2014,
+        "color": "red",
+        "engine": "ICE",
+        "mpg": 33
+      }
+    },
+    {
+      "value": "car_abbys_prius",
+      "bluetooth_major_minor": ["dfc0:fff1"],
+      "text": "Abby's Prius",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.11534,
+      "vehicle_info": {
+        "type": "car",
+        "license": "ABI 1234",
+        "make": "Toyota",
+        "model": "Prius",
+        "year": 2011,
+        "color": "silver",
+        "engine": "HEV",
+        "mpg": 48
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf1",
+      "bluetooth_major_minor": ["dfc0:fff2"],
+      "text": "GSA Leaf 1",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G13 1991Z",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "silver",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_leaf2",
+      "bluetooth_major_minor": ["dfc0:fff3"],
+      "text": "GSA Leaf 2",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G13 1992Z",
+        "make": "Nissan",
+        "model": "Leaf",
+        "year": 0,
+        "color": "silver",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_pacifica",
+      "bluetooth_major_minor": ["dfc0:fff4"],
+      "text": "GSA Pacifica",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.127,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G41 4259Z",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 0,
+        "color": "black",
+        "engine": "PHEV"
+      }
+    },
+    {
+      "value": "ecar_gsa_bolt",
+      "bluetooth_major_minor": ["dfc0:fff5"],
+      "text": "GSA Bolt",
+      "baseMode": "E_CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm":0.08216,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G13 1361W",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 0,
+        "color": "silver",
+        "engine": "BEV"
+      }
+    },
+    {
+      "value": "car_katie_solara",
+      "bluetooth_major_minor": ["dfc0:fff6"],
+      "text": "Katie's Solara",
+      "baseMode": "CAR",
+      "met_equivalent": "IN_VEHICLE",
+      "kgCo2PerKm": 0.26364,
+      "vehicle_info": {
+        "type": "car",
+        "license": "K8T IPLT",
+        "make": "Toyota",
+        "model": "Solara",
+        "year": 1999,
+        "color": "red",
+        "engine": "ICE",
+        "mpg": 21
+      }
+    },
+    {
+      "value": "ecar_louis_backpack",
+      "bluetooth_major_minor": ["dfc0:fff7"],
+      "text": "Louis's Backpack",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.05536,
+      "vehicle_info": {
+        "type": "car",
+        "license": "123 ****",
+        "make": "Ace High",
+        "model": "2",
+        "year": 2020,
+        "color": "black",
+        "engine": "PHEV",
+        "mpge": 100
+      }
+    }
+  ],
+  "tracking": {
+    "bluetooth_only": true
+  },
+  "display_config": {
+    "use_imperial": true
+  },
+  "metrics": {
+    "include_test_users": false,
+    "phone_dashboard_ui": {
+      "sections": ["footprint", "summary", "engagement", "surveys"],
+      "footprint_options": {
+        "unlabeled_uncertainty": false
+      },
+      "summary_options": {
+        "metrics_list": ["distance", "count", "duration"]
+      },
+      "engagement_options": {
+        "leaderboard_metric": ["distance", "e_car"]
+      }
+    }
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": true
+  },
+  "admin_dashboard": {
+    "data_trips_columns_exclude": [],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_prefix": "nrelop",
+    "token_generate": "false",
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "admin_access": [
+      "leidy.boyce@nrel.gov",
+      "christie.edie@gsa.gov"
+    ]
+  }
+}

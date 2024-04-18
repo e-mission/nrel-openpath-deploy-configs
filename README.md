@@ -10,6 +10,18 @@ Automation has been introduced for creating new config files. New deployers can 
 Info for parthers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/use/start_a_project.md)
 Info for developers: [in the docs](https://github.com/e-mission/e-mission-docs/tree/master/docs/dev/future/more_custom_auto_config.md)
 
+Config file submission will begin the process of creating an admin dashboard and associated user pool for the project. In order to log in, users will need to generate an account. This process will be automated, but may occasionally need to be run manually if there are errors in the initial config submission. To generate an account, users will need to install boto3. Please install boto3 in your virtualenv, conda env, or local machine per your preferences:
+
+#Run the following command in terminal:
+
+`pip install boto3`  
+
+#Run the email-config.py script, and pass the path to the config file in as an argument:
+
+`python email-config.py -l /path/to/configfile.nrel-op.json`
+
+An email with instructions + admin dashboard link will be sent to all emails listed in the admin access section.
+
 ### Reviewing and testing
 - contact us by email at openpath@nrel.gov for access to staging apps (Android or IOS)
 - also reach out to recieve an OPcode for stage study or stage program

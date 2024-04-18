@@ -41,6 +41,7 @@ export async function issueToJson() {
     await mkdir(outputDir, { recursive: true });
     
     let abbrevKey = getInput("hash-property-name");
+    abbrevKey = abbrevKey.toLowerCase();
     let fileName = getFileName(configData[ abbrevKey ]);
     await writeFile(path.join(outputDir, fileName), JSON.stringify(configData, null, 2));
   } catch (error) {
