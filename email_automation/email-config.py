@@ -59,8 +59,9 @@ def get_userpool_name(pool_name, cognito_client):
     is_userpool_exist = False    
     user_pools = [user_pool["Name"] for user_pool in response["UserPools"]]
     is_userpool_exist = True if pool_name in user_pools else False
+    print("does the pool exist?", is_userpool_exist)
     user_pool_index = user_pools.index(pool_name) if is_userpool_exist else None
-    pool_id = response["UserPools"][user_pool_index]["Id"]
+    pool_id = response["UserPools"][user_pool_index]["Id"] if is_userpool_exist else None
     return is_userpool_exist, pool_id
 
 def get_users(pool_id, cognito_client):
