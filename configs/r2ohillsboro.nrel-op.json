@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "r2ohillsboro",
   "version": 1,
-  "ts": 1710791041169,
+  "ts": 1714080477080,
   "server": {
     "connectUrl": "https://r2ohillsboro-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
@@ -18,7 +18,7 @@
     "start_month": "5",
     "start_year": "2024",
     "mode_studied": "e-bike",
-    "program_admin_contact": "Madi Carlson (madi@thestreettrust.org), Burgin Utaski (burgin@thestreettrust.org), Maris Yurdana (maris@weallrisegroup.com)",
+    "program_admin_contact": "Madi Carlson (madi@thestreettrust.org), Burgin Utaski (burgin@thestreettrust.org)",
     "deployment_partner_name": "The Street Trust",
     "translated_text": {
       "en": {
@@ -83,8 +83,6 @@
     "admin_access": [
       "madi@thestreettrust.org",
       "burgin@thestreettrust.org",
-      "maris@weallrisegroup.com",
-      "quincy@weallrisegroup.com",
       "volunteer@thestreettrust.org"
     ]
   }
