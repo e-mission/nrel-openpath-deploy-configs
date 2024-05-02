@@ -1,0 +1,88 @@
+{
+  "url_abbreviation": "godcgo",
+  "version": 1,
+  "ts": 1714679651512,
+  "server": {
+    "connectUrl": "https://godcgo-openpath.nrel.gov/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "opcode": {
+    "autogen": true,
+    "subgroups": [
+      "default",
+      "test"
+    ]
+  },
+  "intro": {
+    "program_or_study": "program",
+    "start_month": "05",
+    "start_year": "2024",
+    "mode_studied": "bike",
+    "program_admin_contact": "Samantha Huff at goDCgo (samantha.huff@godcgo.com)",
+    "deployment_partner_name": "goDCgo",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "goDCgo",
+        "deployment_name": "goDCgo",
+        "summary_line_1": "goDCgo aims to decrease car usage and traffic by promoting sustainable and affordable options to get around this District.",
+        "summary_line_2": "goDCgo provides complimentary transit resources and services to DC organizations and commuters.",
+        "summary_line_3": "If you are a campaign participant, this app can help you track your sustainability metrics and provide valuable information to goDCg on how sustainable transportation is being used.",
+        "short_textual_description": "goDCgo is an initiative with the District Department of Transportation, that promotes the use of sustainable transportation. With the aim to decrease car usage and traffic with sustainable, affordable ways of getting around, goDCgo would like to experiment with an automated (\"passive\") trip tracking solution for understanding travel behavior. This program study can allow goDCgo and its partner NREL to understand mode shifts and transportation patterns without complex, time-consuming surveys.",
+        "why_we_collect": "The data collected during goDCgo's ongoing campaigns will be used to understand how sustainable transportation is being used by DC residents, including when and how, as well as distance traveled. It will help goDCgo understand VMT and carbon reductions as a result of recipients' subsituted travel.",
+        "research_questions": [
+          "How much VMT is reduced from campaign participants traveling by biking, walking, scooting, or taking public transit instead of driving?",
+          "What is the number, frequency, and duration of rides from campaign participants?",
+          "How do campaign travel patterns differ by demographics and/or location?"
+        ]
+      }
+    }
+  },
+  "survey_info": {
+    "surveys": {
+      "UserProfileSurvey": {
+        "formPath": "json/demo-survey-v2.json",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
+      }
+    },
+    "trip-labels": "MULTILABEL"
+  },
+  "display_config": {
+    "use_imperial": true
+  },
+  "metrics": {
+    "include_test_users": true
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": false
+  },
+  "admin_dashboard": {
+    "data_trips_columns_exclude": [],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_prefix": "nrelop",
+    "toekn_generate": "true",
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "admin_access": [
+      "samantha.huff@godcgo.com",
+      ""
+    ]
+  }
+}
