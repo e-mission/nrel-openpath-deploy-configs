@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>DFC Fleet EV Roaming Trip Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <a9S9PndiQSLC94ZgTM7bAU id="a9S9PndiQSLC94ZgTM7bAU">
+          <start/>
+          <end/>
+          <Was_an_electric_vehi_ehicle_for_this_trip/>
+          <You_are_satisfied_wi_an_EV_for_this_trip/>
+          <You_were_aware_of_th_e_you_made_this_trip/>
+          <Please_select_any_issues_you_f/>
+          <Other_Please_specify/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </a9S9PndiQSLC94ZgTM7bAU>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/a9S9PndiQSLC94ZgTM7bAU/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/a9S9PndiQSLC94ZgTM7bAU/end" type="dateTime"/>
+      <bind nodeset="/a9S9PndiQSLC94ZgTM7bAU/Was_an_electric_vehi_ehicle_for_this_trip" required="true()" type="string"/>
+      <bind nodeset="/a9S9PndiQSLC94ZgTM7bAU/You_are_satisfied_wi_an_EV_for_this_trip" required="true()" type="string"/>
+      <bind nodeset="/a9S9PndiQSLC94ZgTM7bAU/You_were_aware_of_th_e_you_made_this_trip" required="true()" type="string"/>
+      <bind nodeset="/a9S9PndiQSLC94ZgTM7bAU/Please_select_any_issues_you_f" required="true()" type="string"/>
+      <bind nodeset="/a9S9PndiQSLC94ZgTM7bAU/Other_Please_specify" relevant="selected( /a9S9PndiQSLC94ZgTM7bAU/Please_select_any_issues_you_f , 'other')" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/a9S9PndiQSLC94ZgTM7bAU/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/a9S9PndiQSLC94ZgTM7bAU/Was_an_electric_vehi_ehicle_for_this_trip">
+      <label>Was an electric vehicle (EV) your first choice of vehicle for this trip?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/a9S9PndiQSLC94ZgTM7bAU/You_are_satisfied_wi_an_EV_for_this_trip">
+      <label>You are satisfied with your choice to take an EV for this trip.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/a9S9PndiQSLC94ZgTM7bAU/You_were_aware_of_th_e_you_made_this_trip">
+      <label>You were aware of the available electric range before you made this trip.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select ref="/a9S9PndiQSLC94ZgTM7bAU/Please_select_any_issues_you_f">
+      <label>Please select any operational issues you faced during the trip:</label>
+      <item>
+        <label>Insufficient vehicle charge</label>
+        <value>insufficient_vehicle_charge</value>
+      </item>
+      <item>
+        <label>You were uncertain that you could make it to your final destination</label>
+        <value>you_were_uncertain_that_you_could_make_i</value>
+      </item>
+      <item>
+        <label>You could not find a public charging station</label>
+        <value>you_could_not_find_a_public_charging_sta</value>
+      </item>
+      <item>
+        <label>You attempted to charge but could not</label>
+        <value>you_attempted_to_charge_but_could_not</value>
+      </item>
+      <item>
+        <label>You did not have sufficient time to charge</label>
+        <value>you_did_not_have_sufficient_time_to_char</value>
+      </item>
+      <item>
+        <label>Mechanical issues with the car</label>
+        <value>mechanical_issues</value>
+      </item>
+      <item>
+        <label>Other...</label>
+        <value>other</value>
+      </item>
+      <item>
+        <label>You did not face any issues</label>
+        <value>none_of_the_above</value>
+      </item>
+    </select>
+    <input ref="/a9S9PndiQSLC94ZgTM7bAU/Other_Please_specify">
+      <label>Other – Please specify:</label>
+    </input>
+  </h:body>
+</h:html>

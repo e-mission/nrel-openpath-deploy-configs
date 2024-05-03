@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 5,
+  "version": 6,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -36,28 +36,28 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v0.xml",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
         "labelTemplate": { "en": "Answered" }
       },
       "DfcEvReturnTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v0.xml",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/trip_user_input",
         "labelTemplate": { "en": "Answered" }
       },
       "DfcEvRoamingTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v0.xml",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/trip_user_input",
         "labelTemplate": { "en": "Answered" }
       },
       "DfcGasTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v0.xml",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/trip_user_input",
