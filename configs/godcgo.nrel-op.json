@@ -64,7 +64,8 @@
         }
       }
     },
-    "trip-labels": "MULTILABEL"
+    "trip-labels": "MULTILABEL",
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/godcgo-label-options.json",
   },
   "display_config": {
     "use_imperial": true
