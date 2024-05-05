@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>DFC Fleet EV Return Trip Survey</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <aCZMbWXnabDqQQMnMT4AQU id="aCZMbWXnabDqQQMnMT4AQU">
+          <start/>
+          <end/>
+          <Was_an_electric_vehi_ehicle_for_this_trip/>
+          <You_are_satisfied_wi_an_EV_for_this_trip/>
+          <You_were_aware_of_th_e_you_made_this_trip/>
+          <Are_you_taking_another_trip_to/>
+          <Was_the_battery_stat_lfill_your_next_trip/>
+          <Did_you_attempt_to_charge_the_/>
+          <The_Fermata_charger_erface_was_intuitive/>
+          <The_color_coded_ligh_the_charging_status/>
+          <You_believe_that_the_Fermata_c/>
+          <Please_indicate_reason_s_you__001/>
+          <Other_Please_specify/>
+          <Please_indicate_reason_s_you__002/>
+          <_Other_please_specify/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aCZMbWXnabDqQQMnMT4AQU>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aCZMbWXnabDqQQMnMT4AQU/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aCZMbWXnabDqQQMnMT4AQU/end" type="dateTime"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Was_an_electric_vehi_ehicle_for_this_trip" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/You_are_satisfied_wi_an_EV_for_this_trip" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/You_were_aware_of_th_e_you_made_this_trip" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Was_the_battery_stat_lfill_your_next_trip" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to  = 'no'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/The_Fermata_charger_erface_was_intuitive" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/The_color_coded_ligh_the_charging_status" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/You_believe_that_the_Fermata_c" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__001" relevant=" /aCZMbWXnabDqQQMnMT4AQU/You_believe_that_the_Fermata_c  = '1' or  /aCZMbWXnabDqQQMnMT4AQU/You_believe_that_the_Fermata_c  = '2'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Other_Please_specify" relevant="selected( /aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__001 , 'other')" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__002" relevant=" /aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_  = 'no'" required="true()" type="string"/>
+      <bind nodeset="/aCZMbWXnabDqQQMnMT4AQU/_Other_please_specify" relevant="selected( /aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__002 , 'other')" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aCZMbWXnabDqQQMnMT4AQU/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Was_an_electric_vehi_ehicle_for_this_trip">
+      <label>Was an electric vehicle (EV) your first choice of vehicle for this trip?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/aCZMbWXnabDqQQMnMT4AQU/You_are_satisfied_wi_an_EV_for_this_trip">
+      <label>You are satisfied with your choice to take an EV for this trip.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/aCZMbWXnabDqQQMnMT4AQU/You_were_aware_of_th_e_you_made_this_trip">
+      <label>You were aware of the available electric range before you made this trip.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Are_you_taking_another_trip_to">
+      <label>Was this your final trip of the day?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Was_the_battery_stat_lfill_your_next_trip">
+      <label>Was the battery state of charge (displayed in EV dashboard) sufficient to fulfill your next trip?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+      <item>
+        <label>Unsure</label>
+        <value>unsure</value>
+      </item>
+    </select1>
+    <select1 ref="/aCZMbWXnabDqQQMnMT4AQU/Did_you_attempt_to_charge_the_">
+      <label>Did you attempt to charge the EV using the Fermata charger?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/aCZMbWXnabDqQQMnMT4AQU/The_Fermata_charger_erface_was_intuitive">
+      <label>The Fermata charger user interface was intuitive.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/aCZMbWXnabDqQQMnMT4AQU/The_color_coded_ligh_the_charging_status">
+      <label>The color-coded lights on the Fermata charger clearly indicate the charging status.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select1 appearance="likert" ref="/aCZMbWXnabDqQQMnMT4AQU/You_believe_that_the_Fermata_c">
+      <label>You believe that the Fermata charger connected properly and is working as expected.</label>
+      <hint>Please indicate the extent to which you agree or disagree.</hint>
+      <item>
+        <label>Disagree</label>
+        <value>1</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>2</value>
+      </item>
+      <item>
+        <label>Neutral</label>
+        <value>3</value>
+      </item>
+      <item>
+        <label>-</label>
+        <value>4</value>
+      </item>
+      <item>
+        <label>Agree</label>
+        <value>5</value>
+      </item>
+    </select1>
+    <select ref="/aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__001">
+      <label>Please indicate reason(s) you do not believe the Fermata charger is working as expected:</label>
+      <item>
+        <label>You were unable to plug or unplug the EV into/from the Fermata charger</label>
+        <value>you_were_unable_to_plug_or_unp</value>
+      </item>
+      <item>
+        <label>Your RFID card did not work</label>
+        <value>your_rfid_card_did_not_work</value>
+      </item>
+      <item>
+        <label>The plug was broken</label>
+        <value>the_plug_was_broken</value>
+      </item>
+      <item>
+        <label>Other...</label>
+        <value>other</value>
+      </item>
+    </select>
+    <input ref="/aCZMbWXnabDqQQMnMT4AQU/Other_Please_specify">
+      <label>Other – Please specify:</label>
+    </input>
+    <select ref="/aCZMbWXnabDqQQMnMT4AQU/Please_indicate_reason_s_you__002">
+      <label>Please indicate reason(s) you did not attempt to plug the EV into the Fermata charger:</label>
+      <item>
+        <label>You didn't have time</label>
+        <value>you_didn_t_have_time</value>
+      </item>
+      <item>
+        <label>It was too confusing</label>
+        <value>it_was_too_confusing</value>
+      </item>
+      <item>
+        <label>It was inconvenient</label>
+        <value>it_was_inconvenient</value>
+      </item>
+      <item>
+        <label>You could not find an operational charging station</label>
+        <value>you_could_not_find_an_operatio</value>
+      </item>
+      <item>
+        <label>Other...</label>
+        <value>other</value>
+      </item>
+    </select>
+    <input ref="/aCZMbWXnabDqQQMnMT4AQU/_Other_please_specify">
+      <label>Other – Please specify:</label>
+    </input>
+  </h:body>
+</h:html>
