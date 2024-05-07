@@ -252,7 +252,7 @@
     "use_imperial": true
   },
   "metrics": {
-    "include_test_users": false,
+    "include_test_users": true,
     "phone_dashboard_ui": {
       "sections": ["footprint", "summary", "engagement", "surveys"],
       "footprint_options": {
