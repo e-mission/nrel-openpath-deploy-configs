@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "name": "ebikethere-garfield-county",
     "ts": 1655143472,
     "server": {
@@ -16,7 +16,7 @@
         "start_month": "06",
         "start_year": "2023",
         "mode_studied": "e-bike",
-        "program_admin_contact": "Martín Bonzi, Transportation Program Manager at CLEER, at mbonzi@cleanenergyeconomy.netor 970-704-9300, ext. 100.",
+        "program_admin_contact": "Martín Bonzi, Transportation Program Manager at CLEER, at mbonzi@cleanenergyeconomy.net or 970-704-9300, ext. 100.",
         "deployment_partner_name": "Clean Energy Economy for the Region (CLEER)",
         "translated_text": {
             "en": {
