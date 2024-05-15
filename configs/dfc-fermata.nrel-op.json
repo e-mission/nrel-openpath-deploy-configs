@@ -24,12 +24,15 @@
       "en": {
         "deployment_partner_name": "GSA",
         "deployment_name": "Fermata",
-        "summary_line_1": "Examine the effect of perceived the challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
-        "summary_line_2": "",
+        "summary_line_1": "EV and EVSE Technology Acceptance and User Perception using NREL OpenPATH",
+        "summary_line_2": "This portion of the study is designed to examine the effect of perceived challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
         "summary_line_3": "",
-        "short_textual_description": "EVSE tech validation",
-        "why_we_collect": "Gather user input on EVSE tech adoption",
-        "research_questions": []
+        "short_textual_description": "The use of the app will gather user input and feedback for the Fermata Energy Bidirectional Technology Validation Project at DFC.",
+        "why_we_collect": "This study seeks to gather user input on EVSE tech adoption.",
+        "research_questions": ["Identify the potential barriers that may exist for the adoption of EVs in the fleet operations?",
+        "Understand user beliefs about ​Range anxiety?",
+        "Understand the performance expectancy and ease of use expectancy in connection with the electric vehicle charging infrastructure?", 
+        "Quantify users’ level of effort needed to adopt EVs?"]
       }
     }
   },
