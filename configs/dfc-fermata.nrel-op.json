@@ -399,7 +399,7 @@
     "use_imperial": true
   },
   "metrics": {
-    "include_test_users": true,
+    "include_test_users": false,
     "phone_dashboard_ui": {
       "sections": ["footprint", "summary", "engagement", "surveys"],
       "footprint_options": {
