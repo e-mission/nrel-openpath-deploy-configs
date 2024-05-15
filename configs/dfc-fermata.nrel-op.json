@@ -375,7 +375,7 @@
     },
     {
       "value": "car_gsa_ram2",
-      "bluetooth_major_minor": ["dfc0:ffff"],
+      "bluetooth_major_minor": ["dfc0:0000"],
       "text": "GSA Ram 2",
       "baseMode":"CAR",
       "met_equivalent":"IN_VEHICLE",
