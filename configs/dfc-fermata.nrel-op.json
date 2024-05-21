@@ -24,12 +24,15 @@
       "en": {
         "deployment_partner_name": "GSA",
         "deployment_name": "Fermata",
-        "summary_line_1": "Examine the effect of perceived the challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
-        "summary_line_2": "",
+        "summary_line_1": "EV and EVSE Technology Acceptance and User Perception using NREL OpenPATH",
+        "summary_line_2": "This portion of the study is designed to examine the effect of perceived challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
         "summary_line_3": "",
-        "short_textual_description": "EVSE tech validation",
-        "why_we_collect": "Gather user input on EVSE tech adoption",
-        "research_questions": []
+        "short_textual_description": "The use of the app will gather user input and feedback for the Fermata Energy Bidirectional Technology Validation Project at DFC.",
+        "why_we_collect": "This study seeks to gather user input on EVSE tech adoption.",
+        "research_questions": ["Identify the potential barriers that may exist for the adoption of EVs in the fleet operations?",
+        "Understand user beliefs about ​Range anxiety?",
+        "Understand the performance expectancy and ease of use expectancy in connection with the electric vehicle charging infrastructure?", 
+        "Quantify users’ level of effort needed to adopt EVs?"]
       }
     }
   },
@@ -157,9 +160,9 @@
       }
     },
     {
-      "value": "ecar_gsa_pacifica",
+      "value": "ecar_gsa_pacifica1",
       "bluetooth_major_minor": ["dfc0:fff4"],
-      "text": "GSA Pacifica",
+      "text": "GSA Pacifica 1",
       "baseMode": "E_CAR",
       "met_equivalent": "IN_VEHICLE",
       "kgCo2PerKm": 0.127,
@@ -168,7 +171,7 @@
         "license": "G41 4259Z",
         "make": "Chrysler",
         "model": "Pacifica",
-        "year": 0,
+        "year": 2023,
         "color": "black",
         "engine": "PHEV"
       }
@@ -243,6 +246,150 @@
         "engine": "PHEV",
         "mpge": 56
       }
+    },
+    {
+      "value": "ecar_gsa_escape",
+      "bluetooth_major_minor": ["dfc0:fffa"],
+      "text": "GSA Escape",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.052,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G413310Z",
+        "make": "Ford",
+        "model": "Escape Plug-in",
+        "year": 2023,
+        "color": "blue",
+        "engine": "PHEV",
+        "mpge": 101
+      }
+    },
+    {
+      "value": "ecar_gsa_pacifica2",
+      "bluetooth_major_minor": ["dfc0:fffb"],
+      "text": "GSA Pacifica 2",
+      "baseMode":"E_CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.119,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G41A2042",
+        "make": "Chrysler",
+        "model": "Pacifica",
+        "year": 2023,
+        "color": "white",
+        "engine": "PHEV",
+        "mpge": 82
+      }
+    },
+    {
+      "value": "car_gsa_inconiq",
+      "bluetooth_major_minor": ["dfc0:fff9"],
+      "text": "GSA Ioniq",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.113,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G134138X",
+        "make": "Hyundai",
+        "model": "Ioniq hev",
+        "year": 2023,
+        "color": "gray",
+        "engine": "HEV",
+        "mpge": 90
+      }
+    },
+    {
+      "value": "car_gsa_escape",
+      "bluetooth_major_minor": ["dfc0:fffc"],
+      "text": "GSA Escape",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.37,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G611136U",
+        "make": "Ford",
+        "model": "Escape",
+        "year": 2017,
+        "color": "white",
+        "engine": "ICE",
+        "mpge": 25
+      }
+    },
+    {
+      "value": "car_gsa_equinox",
+      "bluetooth_major_minor": ["dfc0:fffd"],
+      "text": "GSA Equinox",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.324,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G611197X",
+        "make": "Chevrolet",
+        "model": "Equinox",
+        "year": 2020,
+        "color": "black",
+        "engine": "ICE",
+        "mpge": 27
+      }
+    },
+    {
+      "value": "car_gsa_colorado",
+      "bluetooth_major_minor": ["dfc0:fffe"],
+      "text": "GSA Equinox",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.45,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G611856X",
+        "make": "Chevrolet",
+        "model": "Colorado",
+        "year": 2021,
+        "color": "blue",
+        "engine": "ICE",
+        "mpge": 20
+      }
+    },
+    {
+      "value": "car_gsa_ram1",
+      "bluetooth_major_minor": ["dfc0:ffff"],
+      "text": "GSA Ram 1",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.45,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G622093W",
+        "make": "Ram",
+        "model": "Ram 1500",
+        "year": 2019,
+        "color": "gray",
+        "engine": "ICE",
+        "mpge": 22
+      }
+    },
+    {
+      "value": "car_gsa_ram2",
+      "bluetooth_major_minor": ["dfc0:0000"],
+      "text": "GSA Ram 2",
+      "baseMode":"CAR",
+      "met_equivalent":"IN_VEHICLE",
+      "kgCo2PerKm": 0.45,
+      "vehicle_info": {
+        "type": "car",
+        "license": "G623058W",
+        "make": "Ram",
+        "model": "Ram 1500",
+        "year": 2019,
+        "color": "blue",
+        "engine": "ICE",
+        "mpge": 22
+      }
     }
   ],
   "tracking": {
@@ -252,7 +399,7 @@
     "use_imperial": true
   },
   "metrics": {
-    "include_test_users": true,
+    "include_test_users": false,
     "phone_dashboard_ui": {
       "sections": ["footprint", "summary", "engagement", "surveys"],
       "metric_list": {
