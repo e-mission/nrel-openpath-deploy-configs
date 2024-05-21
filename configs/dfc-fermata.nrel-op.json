@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 7,
+  "version": 8,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -255,11 +255,17 @@
     "include_test_users": true,
     "phone_dashboard_ui": {
       "sections": ["footprint", "summary", "engagement", "surveys"],
+      "metric_list": {
+        "count": [ "primary_ble_sensed_mode" ],
+        "distance": [ "primary_ble_sensed_mode" ],
+        "duration": [ "primary_ble_sensed_mode" ],
+        "response_count": [ "survey" ]
+      },
       "footprint_options": {
         "unlabeled_uncertainty": false
       },
       "summary_options": {
-        "metrics_list": ["distance", "count", "duration"]
+        "summary_metrics": ["distance", "count", "duration", "response_count"]
       },
       "engagement_options": {
         "leaderboard_metric": ["distance", "e_car"]
