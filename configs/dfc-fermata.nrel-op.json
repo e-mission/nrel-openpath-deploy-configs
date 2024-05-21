@@ -321,7 +321,7 @@
     },
     {
       "value": "car_gsa_equinox",
-      "bluetooth_major_minor": ["dfc0:fffc"],
+      "bluetooth_major_minor": ["dfc0:fffd"],
       "text": "GSA Equinox",
       "baseMode":"CAR",
       "met_equivalent":"IN_VEHICLE",
