@@ -419,6 +419,11 @@
       }
     }
   },
+  "push_notifications": {
+    "title": { "en": "Survey Responses Requested" },
+    "message": { "en": "Please answer surveys for your recent trips" },
+    "recent_user_input_threshold": 7
+  },
   "profile_controls": {
     "support_upload": false,
     "trip_end_notification": true
