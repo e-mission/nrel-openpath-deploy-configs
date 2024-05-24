@@ -401,7 +401,7 @@
   "metrics": {
     "include_test_users": false,
     "phone_dashboard_ui": {
-      "sections": ["footprint", "summary", "engagement", "surveys"],
+      "sections": ["summary", "surveys", "engagement"],
       "metric_list": {
         "count": [ "primary_ble_sensed_mode" ],
         "distance": [ "primary_ble_sensed_mode" ],
