@@ -57,6 +57,11 @@
     "metrics": {
         "include_test_users": true
     },
+    "push_notifications": {
+        "title": { "en": "Custom push notification title" },
+        "message": { "en": "Custom push notification message from the dynamic config" },
+        "recent_user_input_threshold": 7
+    },
     "profile_controls": {
         "support_upload": false,
         "trip_end_notification": false
