@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "dfc-fermata",
-  "version": 8,
+  "version": 9,
   "ts": 1707714796485,
   "server": {
     "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
@@ -401,17 +401,28 @@
   "metrics": {
     "include_test_users": false,
     "phone_dashboard_ui": {
-      "sections": ["footprint", "summary", "engagement", "surveys"],
+      "sections": ["summary", "surveys", "engagement"],
+      "metric_list": {
+        "count": [ "primary_ble_sensed_mode" ],
+        "distance": [ "primary_ble_sensed_mode" ],
+        "duration": [ "primary_ble_sensed_mode" ],
+        "response_count": [ "survey" ]
+      },
       "footprint_options": {
         "unlabeled_uncertainty": false
       },
       "summary_options": {
-        "metrics_list": ["distance", "count", "duration"]
+        "summary_metrics": ["distance", "count", "duration", "response_count"]
       },
       "engagement_options": {
         "leaderboard_metric": ["distance", "e_car"]
       }
     }
+  },
+  "push_notifications": {
+    "title": { "en": "Survey Responses Requested" },
+    "message": { "en": "Please answer surveys for your recent trips" },
+    "recent_user_input_threshold": 7
   },
   "profile_controls": {
     "support_upload": false,
