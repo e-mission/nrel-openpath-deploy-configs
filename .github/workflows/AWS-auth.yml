@@ -2,7 +2,7 @@ name: AWS Auth + Welcome Email
 
 on:
   push:
-    branches: [ test_userpool_creation ]
+    branches: [ main ]
     paths:
         'configs/**.json'
 
