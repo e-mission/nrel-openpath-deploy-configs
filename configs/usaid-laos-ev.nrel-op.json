@@ -61,7 +61,7 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": ["K.Shankari@nrel.gov", "awheelis@nrel.gov", "sebastian.barry@nrel.gov", "Sanjini.Nanayakkara@nrel.gov", "Kosol.Kiatreungwattana@nrel.gov", "Dustin.Weigl@nrel.gov", "thythavysiphachanh@gmail.com"],
+        "admin_access": ["K.Shankari@nrel.gov", "awheelis@nrel.gov", "sebastian.barry@nrel.gov", "Sanjini.Nanayakkara@nrel.gov", "Kosol.Kiatreungwattana@nrel.gov", "Dustin.Weigl@nrel.gov", "thythavysiphachanh@gmail.com", "bonnie.powell@nrel.gov"],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,
@@ -69,7 +69,7 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
