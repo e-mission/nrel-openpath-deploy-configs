@@ -61,7 +61,7 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": ["K.Shankari@nrel.gov", "awheelis@nrel.gov", "sebastian.barry@nrel.gov", "Sanjini.Nanayakkara@nrel.gov", "Kosol.Kiatreungwattana@nrel.gov", "Dustin.Weigl@nrel.gov", "thythavysiphachanh@gmail.com", "bonnie.powell@nrel.gov"],
+        "admin_access": ["K.Shankari@nrel.gov", "awheelis@nrel.gov", "sebastian.barry@nrel.gov", "Sanjini.Nanayakkara@nrel.gov", "Kosol.Kiatreungwattana@nrel.gov", "Dustin.Weigl@nrel.gov", "thythavysiphachanh@gmail.com", "bonnie.powell@nrel.gov", "Kevin.Xue@nrel.gov"],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,
