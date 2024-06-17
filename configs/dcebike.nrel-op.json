@@ -83,6 +83,10 @@
       "map_trip_lines": false,
       "push_send": false,
       "options_uuids": true,
-      "options_emails": true
+      "options_emails": true,
+       "admin_access": [
+          "kathryn.lang@dc.gov",
+          "Aaron.Goldbeck@dc.gov"
+       ]
   }
 }
