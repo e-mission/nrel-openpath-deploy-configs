@@ -1,0 +1,77 @@
+name: AWS Auth + Welcome Email
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+        'configs/**.json'
+
+env:
+  AWS_ACCT_ID: ${{  secrets.AWS_ACCT_ID  }}
+  AWS_REGION : 'us-west-2'
+  IAM_ROLE: ${{  secrets.ROLE_NAME  }}
+
+permissions:
+      id-token: write
+      contents: read
+jobs:
+  changed_files:
+    runs-on: ubuntu-latest  # windows-latest || macos-latest
+    name: Get config file name
+    outputs:
+      config-file-name: ${{ steps.config-file-name.outputs.CONFIG_FILES}}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
+      - name: Get changed files
+        id: get-changed-files
+        uses: tj-actions/changed-files@v40
+
+      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
+
+      - name: List all changed files
+        id: config-file-name
+        run: |
+            echo ${{ steps.get-changed-files.outputs.all_changed_files }}
+            changedfiles=()
+            for file in ${{ steps.get-changed-files.outputs.all_changed_files }}; do
+              if [[ "$file" == *nrel-op.json ]]; then
+              changedfiles+=("${file}")
+              echo "The name of the config file is: ${file}."
+              fi
+            done
+            echo "final changedfiles array: ${changedfiles[*]}"
+
+            echo "CONFIG_FILES=${changedfiles[*]}" >> "$GITHUB_OUTPUT"
+
+  AssumeRoleAndCallIdentity:
+    name: AWS Authentication + Sending Welcome Email
+    needs: changed_files
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1.7.0
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCT_ID }}:role/${{ env.IAM_ROLE }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ env.AWS_REGION }}
+      # Hello from AWS: WhoAmI
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity --debug
+
+      - name: Install Boto3
+        run: pip install boto3
+
+      - name: Run email-config.py
+        run: |
+          echo "changed files string: ${{ needs.changed_files.outputs.config-file-name }}"
+          for config_file in ${{ needs.changed_files.outputs.config-file-name }}; do 
+            echo "config file name ${config_file}" 
+            python email_automation/email-config.py -g ${config_file}
+          done
