@@ -80,7 +80,7 @@
     <input ref="/aKYC6Z2d4qDhnQ69i4jiEc/Other_Please_specify">
       <label>Other – Please specify:</label>
     </input>
-    <select1 ref="/aKYC6Z2d4qDhnQ69i4jiEc/You_are_satisfied_wi_ehicle_for_this_trip">
+    <select1 appearance="likert" ref="/aKYC6Z2d4qDhnQ69i4jiEc/You_are_satisfied_wi_ehicle_for_this_trip">
       <label>You are satisfied with your choice to take a gas vehicle for this trip.</label>
       <hint>Please indicate the extent to which you agree or disagree.</hint>
       <item>
