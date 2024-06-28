@@ -1,0 +1,102 @@
+{
+  "url_abbreviation": "unc-ebike",
+  "version": 1,
+  "ts": 1719593268395,
+  "server": {
+    "connectUrl": "https://unc-ebike-openpath.nrel.gov/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "opcode": {
+    "autogen": true,
+    "subgroups": [
+      "test",
+      "default"
+    ]
+  },
+  "intro": {
+    "program_or_study": "program",
+    "start_month": "08",
+    "start_year": "2024",
+    "mode_studied": "e-bike",
+    "program_admin_contact": "Matt Bhagat-Conway, UNC (email: mwbc@unc.edu)",
+    "deployment_partner_name": "University of North Carolina at Chapel Hill",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "University of North Carolina at Chapel Hill",
+        "deployment_name": "Ral-E-Bike evaluation",
+        "summary_line_1": "This study collects data on where you go and how you get there to understand what impact the Ral-e-Bike program has on travel.",
+        "summary_line_2": "Your participation is valuable even if you do not receive the Ral-E-Bike voucher. It will provide a baseline.",
+        "summary_line_3": "Participation does not affect your chances of receiving a voucher.",
+        "short_textual_description": "Thank you for agreeing to participate in the smartphone data collection portion of this study. Over the next several weeks, the OpenPATH app will log where you go, and ask you to “label” how you got there and why you went there. The data collected through this process will allow us to evaluate the impact of the Ral-E-Bike program on how people get around. The data collected does not impact your chances of receiving a voucher. Even if you do not receive a voucher, your data is valuable to establish a baseline.",
+        "why_we_collect": "The data we collect will help the City of Raleigh make decisions about future e-bike programs. It will also contribute to our understanding of how e-bikes affect transportation.",
+        "research_questions": [
+          "How much do e-bikes substitute for driving?",
+          "Do e-bikes enable users to travel to places they wouldn’t otherwise?",
+          ""
+        ]
+      },
+      "es": {
+        "deployment_partner_name": "Universidad de Carolina del Norte en Chapel Hill",
+        "deployment_name": "Evaluación de la programa Ral-E-Bike",
+        "summary_line_1": "Esto estudio junta datos sobre a donde usted va y como usted va a estas ubicaciones.",
+        "summary_line_2": "Su participación es importante incluso si usted no recibir un vale para una bicicleta electrica.",
+        "summary_line_3": "Su participación no se affecta su oportunidad para reciber un vale.",
+        "short_textual_description": "¡Gracias para su participación en el parte de esto estudio que usando smartphones para collectar información! En las proximas semanas, el app OpenPATH grabará a donde usted va, y se preguntará etiquetar como y por que se va a cada ubicación. Los datos se juntada permitiremos evaluar como Ral-E-Bike se afecta como la gente va a donde se necesaria. Los datos se juntada no se afecta su oportunidad para reciber un vale. Su participación es importante incluso si usted no recibir un vale para una bicicleta electrica, por que se crea una punto de referencia.",
+        "why_we_collect": "Los datos collectamos ayudarán la Ciudad de Raleigh decider como programs sobre bicicletas electricás en el future. También contribirán a nos entendimiento de como las bicletas electricás se afecta la transportación.",
+        "research_questions": [
+          "¿Cuanto las bicicletas electricás sustituyen para las coches?",
+          "¿Las bicicletas electricás permiten los usandos ir a lugares que ellos no van de lo contrario?",
+          ""
+        ]
+      }
+    }
+  },
+  "survey_info": {
+    "surveys": {
+      "UserProfileSurvey": {
+        "formPath": "json/demo-survey-v2.json",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
+      }
+    },
+    "trip-labels": "MULTILABEL"
+  },
+  "display_config": {
+    "use_imperial": true
+  },
+  "metrics": {
+    "include_test_users": true
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": false
+  },
+  "admin_dashboard": {
+    "data_trips_columns_exclude": [],
+    "additional_trip_columns": [],
+    "data_uuids_columns_exclude": [],
+    "token_prefix": "nrelop",
+    "toekn_generate": "true",
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "admin_access": [
+      "mwbc@unc.edu",
+      "palmmatt@unc.edu"
+    ]
+  }
+}
