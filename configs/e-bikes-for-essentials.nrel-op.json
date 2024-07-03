@@ -10,7 +10,7 @@
         "start_month": "2",
         "start_year": "2023",
         "mode_studied": "e-bike",
-        "program_admin_contact": "bmarkham@vailgov.com, 970-479-2333",
+        "program_admin_contact": "bmarkham@vail.gov, 970-479-2333",
         "deployment_partner_name": "Town of Vail, CO",
         "translated_text": {
             "en": {
@@ -80,6 +80,9 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": ["user_id"],
+        "admin_access": [
+          "bmarkham@vail.gov"
+        ]
     }
 }
