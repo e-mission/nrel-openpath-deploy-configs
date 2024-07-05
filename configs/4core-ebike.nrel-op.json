@@ -1,9 +1,9 @@
 {
-  "url_abbreviation": "4core-ebike-program",
+  "url_abbreviation": "4core-ebike",
   "version": 1,
   "ts": 1719435689601,
   "server": {
-    "connectUrl": "https://4core-ebike-program-openpath.nrel.gov/api/",
+    "connectUrl": "https://4core-ebike-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
   },
   "opcode": {
