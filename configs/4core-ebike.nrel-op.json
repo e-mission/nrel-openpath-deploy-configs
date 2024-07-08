@@ -10,7 +10,7 @@
     "autogen": false,
     "subgroups": [
       "test",
-      "default"
+      "pagosa"
     ]
   },
   "intro": {
