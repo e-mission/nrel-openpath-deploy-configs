@@ -38,7 +38,7 @@
     "survey_info": {
       "surveys": {
         "UserProfileSurvey": {
-          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/usaid-laos-ev/usaid-laos-ev-demo-survey-v2.xml",
+          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/usaid-laos-ev/usaid-laos-ev-demo-survey-v3.xml",
           "version": 1,
           "compatibleWith": 1,
           "dataKey": "manual/demographic_survey",
