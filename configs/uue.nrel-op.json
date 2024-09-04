@@ -6,18 +6,18 @@
         "aggregate_call_auth": "user_only"
     },
     "opcode": {
-        "autogen": true,
-        "subgroups": ["test", "default"]
+        "autogen": false,
+        "subgroups": ["test"]
     },
     "intro": {
         "program_or_study": "study",
-        "start_month": "08",
-        "start_year": "2023",
-        "program_admin_contact": "Gabriel Kreindler, Harvard (email: gkreindler@g.harvard.edu, phone: +1 857 284 9675).",
-        "deployment_partner_name": "Busara/Harvard University",
+        "start_month": "09",
+        "start_year": "2024",
+        "program_admin_contact": "Anders Jensen, Harvard (email: anders_jensen@hks.harvard.edu phone: +1 857 272 9833).",
+        "deployment_partner_name": "Harvard University",
         "translated_text": {
             "en": {
-                "deployment_partner_name": "Busara/Harvard University",
+                "deployment_partner_name": "Harvard University",
                 "deployment_name": "Urban Under-Exploration Study",
                 "summary_line_1": "This study aims to understand how people in Nairobi travel around the city.",
                 "summary_line_2": "As part of the study, we are collecting data on where participants travel within Nairobi.",
