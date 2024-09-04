@@ -52,14 +52,28 @@ if args.github:
     AWS_REGION = os.environ.get("AWS_REGION")
     cognito_client = boto3.client('cognito-idp', region_name=AWS_REGION)
     sts_client = ''
+
+def read_userpool_obj_list_on_all_pages(cognito_client):
+    # From https://stackoverflow.com/a/64698263
+    response = cognito_client.list_user_pools(MaxResults=60)
+    next_token = response.get("NextToken", None)
+    print(f'Received response with {len(response["UserPools"])=} and {next_token=}')
+    user_pool_obj_list = response["UserPools"]
+    while next_token is not None:
+        response = cognito_client.list_user_pools(NextToken=next_token, MaxResults=60)
+        next_token = response.get("NextToken", None)
+        print(f'Received response with {len(response["UserPools"])=} & {next_token=}')
+        user_pool_obj_list.extend(response["UserPools"])
+    return user_pool_obj_list
+
 # Functions 
 def get_userpool_name(pool_name, cognito_client):
-    response = cognito_client.list_user_pools(MaxResults=60)
-    is_userpool_exist = False    
-    user_pools = [user_pool["Name"] for user_pool in response["UserPools"]]
+    all_user_pools = read_userpool_obj_list_on_all_pages(cognito_client)
+    is_userpool_exist = False
+    user_pools = [user_pool["Name"] for user_pool in all_user_pools]
     is_userpool_exist = True if pool_name in user_pools else False
     user_pool_index = user_pools.index(pool_name) if is_userpool_exist else None
-    pool_id = response["UserPools"][user_pool_index]["Id"] if is_userpool_exist else None
+    pool_id = all_user_pools[user_pool_index]["Id"] if is_userpool_exist else None
     return is_userpool_exist, pool_id
 
 def get_users(pool_id, cognito_client):
@@ -182,4 +196,3 @@ if is_userpool_exist:
             print(email + " already in user pool!")
 else:
     print(pool_name + " does not exist! Try again later.")
-  
