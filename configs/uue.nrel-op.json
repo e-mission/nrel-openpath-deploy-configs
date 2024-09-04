@@ -70,7 +70,12 @@
         "map_trip_lines": false,
         "push_send": false,
         "options_uuids": true,
-        "options_emails": true
+        "options_emails": true,
+        "admin_access": [
+          "nikhil_kumar1@g.harvard.edu",
+          "anders_jensen@hks.harvard.edu",
+          "konstantinpoensgen@fas.harvard.edu"
+       ]
     },
     "reminderSchemes": {
         "passive": {
