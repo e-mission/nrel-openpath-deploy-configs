@@ -1,13 +1,13 @@
 {
   "url_abbreviation": "unc-ebike",
-  "version": 1,
-  "ts": 1719593268395,
+  "version": 2,
+  "ts": 1725639256133,
   "server": {
     "connectUrl": "https://unc-ebike-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
   },
   "opcode": {
-    "autogen": true,
+    "autogen": false,
     "subgroups": [
       "test",
       "default"
@@ -17,7 +17,7 @@
     "program_or_study": "program",
     "start_month": "08",
     "start_year": "2024",
-    "mode_studied": "e-bike",
+    "mode_studied": "ebike",
     "program_admin_contact": "Matt Bhagat-Conway, UNC (email: mwbc@unc.edu)",
     "deployment_partner_name": "University of North Carolina at Chapel Hill",
     "translated_text": {
@@ -54,7 +54,7 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/unc-ebike/onboarding-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
@@ -66,6 +66,7 @@
     },
     "trip-labels": "MULTILABEL"
   },
+  "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/unc-ebike-label-options.json",
   "display_config": {
     "use_imperial": true
   },
