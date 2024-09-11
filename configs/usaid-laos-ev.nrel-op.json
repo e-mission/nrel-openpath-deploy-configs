@@ -27,7 +27,7 @@
                 "deployment_name": "USAID-NREL Support for Electric Vehicle Readiness",
                 "summary_line_1": "NREL supports Lao PDR in meeting its target of having 1% of vehicles on the road be electric by 2025 and 30% by 2030.",
                 "summary_line_2": "Meeting Lao EV adoption goals will require adequate EVSE deployment to meet consumer demand and provide confidence that sufficient charging options exist.",
-                "summary_line_3": "This app is used as a trip tracking solution for understanding travel behavior of vehicle usage.",
+                "summary_line_3": "This app is used as a trip tracking solution for understanding travel behavior of vehicle usage. Please keep the app running for at least a month and label at least a one full week of trips.",
                 "short_textual_description": "For public electric vehicle supply equipment (EVSE) needs estimate for Lao PDR, NREL will model vehicle travel patterns, EV adoption, and future demand for public charging stations in Lao capital areas and strategically identify potential future EVSE needs and strategies for EVSE siting. NREL would use OPENPATH as a trip tracking solution for understanding travel behavior of vehicle usage.",
                 "why_we_collect": "NREL will use the data from OPENPATH and NREL EVI-Pro, electric vehicle infrastructure project tool to estimate how much electric vehicle (EV) charging infrastructure is needed in a designated area to meet a given demand.",
                 "research_questions": ["Travel behavior patterns to be used to model future EV adoption and infrastructure need to support the adoption.", "Data would be used with NREL EVI-Pro to estimate EVSE needed in a designated area."]
