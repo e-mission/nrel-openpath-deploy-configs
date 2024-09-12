@@ -322,7 +322,7 @@ body:
   attributes:
     label: Custom Labels
     description: If you chose false above, and want drowdown style labeling, please provide the file name for your custom labels. You will need to submit a PR to add it to our repo - https://github.com/e-mission/nrel-openpath-deploy-configs/tree/main/label_options
-    placeholder: example-program-label-options.json
+    placeholder: your-program-name-label-options.json
 
 - type: markdown
   attributes:
