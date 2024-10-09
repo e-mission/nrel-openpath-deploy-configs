@@ -7,23 +7,23 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test"]
+        "subgroups": ["test", "ghana"]
     },
     "intro": {
         "program_or_study": "study",
-        "start_month": "09",
+        "start_month": "10",
         "start_year": "2024",
         "program_admin_contact": "Anders Jensen, Harvard (email: anders_jensen@hks.harvard.edu phone: +1 857 272 9833).",
         "deployment_partner_name": "Harvard University",
         "translated_text": {
             "en": {
                 "deployment_partner_name": "Harvard University",
-                "deployment_name": "Urban Under-Exploration Study",
-                "summary_line_1": "This study aims to understand how people in Nairobi travel around the city.",
-                "summary_line_2": "As part of the study, we are collecting data on where participants travel within Nairobi.",
+                "deployment_name": "Property Taxpayer Education Study",
+                "summary_line_1": "This project studies a property taxpayer education campaign in Ghana and studies mobility patterns of frontline bureaucrats in Ablekuma Central.",
+                "summary_line_2": "As part of the study, we are collecting data on where participants travel within the .",
                 "summary_line_3": "As a program participant, you will contribute to this study by using the app to log your trips and travel mode.",
-                "short_textual_description": "The rapid urbanization of low and middle-income countries has created cities that are difficult to navigate, and where exploration may be both financially and mentally costly. This raises the question, to what extent might the potential benefits of these rapidly growing cities be limited by a reluctance to explore? The Urban Under-exploration study will look at how exposure to different neighborhoods changes where respondents choose to explore or travel to, and what modes of transportation they use to get there.",
-                "why_we_collect": "The data collected during the program will be used to study how exposure to different neighborhoods changes where respondents choose to travel to, and what modes of transportation they use to get there.",
+                "short_textual_description": "This project studies a property taxpayer education campaign in Ablekuma Central in the Greater Accra Region, Ghana through a randomized controlled trial. The intervention will educate taxpayers and tax collectors about the process of property tax collection as well as the rights and responsibilities of taxpayers. We study how this affects taxpayer knowledge, tax morale, and tax compliance. We also study how education affects these interactions between citizens and frontline bureaucrats..",
+                "why_we_collect": "The data collected during the program will be used to study how tax collectors interact with citizens e.g. where they choose to travel to meet taxpayers, how often and who they meet, and what modes of transportation they use to get there.",
                 "research_questions": []
             }
         }
