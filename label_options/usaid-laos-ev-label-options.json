@@ -37,7 +37,7 @@
       "bike": "Bicycle",
       "gas_car": "Car",
       "e_car": "Electric Car",
-      "taxi": "Taxi/Loca/inDrive",
+      "taxi": "Taxi",
       "public_transit": "Public Transportation",
       "air": "Airplane",
       "not_a_trip": "Not a trip",
