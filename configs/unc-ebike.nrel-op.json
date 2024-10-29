@@ -36,17 +36,16 @@
         ]
       },
       "es": {
-        "deployment_partner_name": "Universidad de Carolina del Norte en Chapel Hill",
-        "deployment_name": "Evaluación de la programa Ral-E-Bike",
-        "summary_line_1": "Esto estudio junta datos sobre a donde usted va y como usted va a estas ubicaciones.",
-        "summary_line_2": "Su participación es importante incluso si usted no recibir un vale para una bicicleta electrica.",
-        "summary_line_3": "Su participación no se affecta su oportunidad para reciber un vale.",
-        "short_textual_description": "¡Gracias para su participación en el parte de esto estudio que usando smartphones para collectar información! En las proximas semanas, el app OpenPATH grabará a donde usted va, y se preguntará etiquetar como y por que se va a cada ubicación. Los datos se juntada permitiremos evaluar como Ral-E-Bike se afecta como la gente va a donde se necesaria. Los datos se juntada no se afecta su oportunidad para reciber un vale. Su participación es importante incluso si usted no recibir un vale para una bicicleta electrica, por que se crea una punto de referencia.",
-        "why_we_collect": "Los datos collectamos ayudarán la Ciudad de Raleigh decider como programs sobre bicicletas electricás en el future. También contribirán a nos entendimiento de como las bicletas electricás se afecta la transportación.",
+        "deployment_partner_name": "La Universidad de carolina del norte en Chapel Hill",
+        "deployment_name": "Evaluación del programa Ral-E-Bike",
+        "summary_line_1": "Para entender el impacto del programa Ral-E-Bike, esta investigación recoge datos sobre sus viajes, donde y como va y viene.",
+        "summary_line_2": "Su participación es valiosa aunque no reciba el bono de Ral-E-Bike. Nos sirvirá de base para la investigación.",
+        "summary_line_3": "Su participación no afectara tus posibilidades de recibir un bono. ",
+        "short_textual_description": "Muchas gracias por participar en la collecion de datos de teléfono inteligente o \"smart phone.\" Durante las proximas semanas la aplicación de OpenPATH creara un registro de tus viajes. La aplicación tambien te pedirá que etiquetes como llegaste y porque fuiste al destino. Los datos que se colectaran nos ayudaran a evaluar el impacto del programa Ral-E-Bike sobre las decisiones de transport que hacen las personas. Estos datos no afectaran tus posibilidades de recibir un bono. Aunque no estes recibiendo un bono, tus datos son importantes para establecer una base para la investigación. ",
+        "why_we_collect": "Los datos que colectaremos ayudaran a la ciudad de Raleigh a hacer decisiones sobre los programs de bicicletas electricas en el futuro. Tambien nos ayudara a entender el impacto de las bicicletas electricas en los medios de transporte.",
         "research_questions": [
-          "¿Cuanto las bicicletas electricás sustituyen para las coches?",
-          "¿Las bicicletas electricás permiten los usandos ir a lugares que ellos no van de lo contrario?",
-          ""
+          "¿Qué proporcion de viajes por bicicleta electricas sustiyen viajes por carro?",
+          "¿Las bicicletas electricas permiten que los usuarios puedan viajar a destinos que usualmente no podrían?"
         ]
       }
     }
