@@ -333,7 +333,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       ),
       //unlikely to not be nrelop, could require manual changes
       token_prefix: "nrelop",
-      toekn_generate: combinedObject.autogen, //want to match the autogen above
+      token_generate: configObject['opcode']['autogen'], //want to match the autogen above
     };
 
     //list of all the boolean values in the admin dashboard section, add to issue template and list for new value
