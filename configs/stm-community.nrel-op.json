@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "stm-community",
   "version": 1,
-  "ts": 1720645300402,
+  "ts": 1720645300,
   "server": {
     "connectUrl": "https://stm-community-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
