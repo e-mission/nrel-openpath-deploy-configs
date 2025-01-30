@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "nc-transit-equity-study",
   "version": 1,
-  "ts": 1733948731794,
+  "ts": 1733948731,
   "server": {
     "connectUrl": "https://nc-transit-equity-study-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"

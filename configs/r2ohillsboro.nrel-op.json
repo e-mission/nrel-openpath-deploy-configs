@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "r2ohillsboro",
   "version": 1,
-  "ts": 1714080477080,
+  "ts": 1714080477,
   "server": {
     "connectUrl": "https://r2ohillsboro-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"

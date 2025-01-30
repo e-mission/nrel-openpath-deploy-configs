@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "r2omilwaukie",
   "version": 1,
-  "ts": 1714080442042,
+  "ts": 1714080442,
   "server": {
     "connectUrl": "https://r2omilwaukie-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
