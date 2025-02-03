@@ -1,6 +1,14 @@
 {
     "version": 1,
     "ts": 1655143472,
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+          "test",
+          "default"
+        ],
+        "suspended_subgroups": ["default"]
+    },
     "intro": {
         "program_or_study": "study",
         "start_month": "9",
