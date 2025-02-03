@@ -7,7 +7,6 @@
           "test",
           "default"
         ],
-        "suspended_subgroups": ["default"]
     },
     "intro": {
         "program_or_study": "study",
