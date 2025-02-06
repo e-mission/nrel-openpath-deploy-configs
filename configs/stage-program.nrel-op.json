@@ -11,7 +11,8 @@
           "test",
           "default",
           "temp"
-        ]
+        ],
+        "suspended_subgroups": ["temp"]
     },
     "intro": {
         "program_or_study": "program",
