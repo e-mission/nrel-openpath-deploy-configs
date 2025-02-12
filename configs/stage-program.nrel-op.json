@@ -5,14 +5,6 @@
         "connectUrl": "https://openpath-stage.nrel.gov/api/",
         "aggregate_call_auth": "user_only"
     },
-    "opcode": {
-        "autogen": false,
-        "subgroups": [
-          "test",
-          "default",
-          "temp"
-        ]
-    },
     "intro": {
         "program_or_study": "program",
         "start_month": "9",
