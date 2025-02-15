@@ -11,6 +11,10 @@
     "subgroups": [
       "test",
       "default"
+    ],
+    "suspended_subgroups": [
+      "default",
+      "test"
     ]
   },
   "intro": {
