@@ -273,7 +273,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
   try {
     configObject["url_abbreviation"] = combinedObject.url_abbreviation;
     configObject["version"] = 1;
-    configObject["ts"] = Date.now();
+    configObject["ts"] = Math.floor(Date.now() / 1000);
 
     let connect_url =
       "https://" + combinedObject.url_abbreviation + "-openpath.nrel.gov/api/";

@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "uw-prs",
   "version": 1,
-  "ts": 1707503923100,
+  "ts": 1707503923,
   "server": {
     "connectUrl": "https://uw-prs-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
