@@ -10,12 +10,12 @@
     "autogen": false,
     "subgroups": [
       "test",
-      "300_pretest",
-      "1200_pretest",
-      "300_control",
-      "300_treatment",
-      "1200_control",
-      "1200_treatment"
+      "300-pretest",
+      "1200-pretest",
+      "300-control",
+      "300-treatment",
+      "1200-control",
+      "1200-treatment"
     ]
   },
   "intro": {
