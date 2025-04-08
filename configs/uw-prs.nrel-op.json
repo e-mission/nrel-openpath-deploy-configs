@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "uw-prs",
   "version": 1,
-  "ts": 1707503923100,
+  "ts": 1707503923,
   "server": {
     "connectUrl": "https://uw-prs-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
@@ -84,7 +84,7 @@
     "additional_trip_columns": [],
     "data_uuids_columns_exclude": [],
     "token_prefix": "nrelop",
-    "toekn_generate": "true",
+    "token_generate": true,
     "overview_users": true,
     "overview_active_users": true,
     "overview_trips": true,

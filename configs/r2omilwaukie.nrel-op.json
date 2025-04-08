@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "r2omilwaukie",
   "version": 1,
-  "ts": 1714080442042,
+  "ts": 1714080442,
   "server": {
     "connectUrl": "https://r2omilwaukie-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
@@ -67,7 +67,7 @@
     "additional_trip_columns": [],
     "data_uuids_columns_exclude": [],
     "token_prefix": "nrelop",
-    "toekn_generate": "true",
+    "token_generate": true,
     "overview_users": true,
     "overview_active_users": true,
     "overview_trips": true,

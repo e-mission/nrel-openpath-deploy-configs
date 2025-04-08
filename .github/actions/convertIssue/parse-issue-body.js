@@ -273,7 +273,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
   try {
     configObject["url_abbreviation"] = combinedObject.url_abbreviation;
     configObject["version"] = 1;
-    configObject["ts"] = Date.now();
+    configObject["ts"] = Math.floor(Date.now() / 1000);
 
     let connect_url =
       "https://" + combinedObject.url_abbreviation + "-openpath.nrel.gov/api/";
@@ -333,7 +333,7 @@ export async function parseIssueBody(githubIssueTemplateFile, body) {
       ),
       //unlikely to not be nrelop, could require manual changes
       token_prefix: "nrelop",
-      toekn_generate: combinedObject.autogen, //want to match the autogen above
+      token_generate: !configObject['opcode']['autogen'], // only for pregen tokens
     };
 
     //list of all the boolean values in the admin dashboard section, add to issue template and list for new value

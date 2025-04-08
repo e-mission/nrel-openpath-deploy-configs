@@ -1,7 +1,7 @@
 {
   "url_abbreviation": "nc-transit-equity-study",
   "version": 1,
-  "ts": 1733948731794,
+  "ts": 1733948731,
   "server": {
     "connectUrl": "https://nc-transit-equity-study-openpath.nrel.gov/api/",
     "aggregate_call_auth": "user_only"
@@ -81,7 +81,7 @@
     "additional_trip_columns": [],
     "data_uuids_columns_exclude": [],
     "token_prefix": "nrelop",
-    "toekn_generate": "false",
+    "token_generate": false,
     "overview_users": true,
     "overview_active_users": true,
     "overview_trips": true,
