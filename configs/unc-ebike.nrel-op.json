@@ -10,7 +10,9 @@
     "autogen": false,
     "subgroups": [
       "test",
-      "default"
+      "default",
+      "w2test",
+      "w2"
     ],
     "suspended_subgroups": [
       "default",
