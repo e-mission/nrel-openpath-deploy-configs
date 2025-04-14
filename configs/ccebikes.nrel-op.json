@@ -8,7 +8,10 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default"]
+        "subgroups": [
+            "test",
+            "default"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -27,7 +30,10 @@
                 "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
                 "short_textual_description": "This program meets Community Cycles mission to support the use of bicycles for transportation with the goal of reducing carbon emissions. We seek new ways like this to encourage people who live and work in Boulder to switch their commuting habits towards regular or electric bikes.",
                 "why_we_collect": "With a grant from the Colorado Energy Office, we expect results of this study to show that with electric bikes (ebikes) are a viable way to commute to work over longer distances and more challenging terrain. Having participants use this app is an automated trip tracking solution that will help us demonstrate that concept. This comprehensive information will aid CC in its goal to reduce carbon emissions from transportation.",
-                "research_questions": ["Overall we seek to track the behavioral change ofconverting SOV trips into ebike trips.", "Monitor bike utilization and trends including frequency of use, total number of trips (per month), average trip length (per month), total e‐bike miles (per month) and estimated energy and emissions impacts."]
+                "research_questions": [
+                    "Overall we seek to track the behavioral change ofconverting SOV trips into ebike trips.",
+                    "Monitor bike utilization and trends including frequency of use, total number of trips (per month), average trip length (per month), total e‐bike miles (per month) and estimated energy and emissions impacts."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciclos de la comunidad",
@@ -37,24 +43,27 @@
                 "summary_line_3": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
                 "short_textual_description": "Este programa cumple con la misión de Community Cycles de apoyar el uso de bicicletas para el transporte con el objetivo de reducir las emisiones de carbono. Buscamos nuevas formas como esta para animar a las personas que viven y trabajan en Boulder a cambiar sus hábitos de desplazamiento hacia bicicletas regulares o eléctricas.",
                 "why_we_collect": "Con una subvención de la Oficina de Energía de Colorado, esperamos que los resultados de este estudio muestren que las bicicletas eléctricas (ebikes) son una forma viable de viajar al trabajo en distancias más largas y terrenos más desafiantes. Hacer que los participantes usen esta aplicación es una solución automatizada de seguimiento de viajes que nos ayudará a demostrar ese concepto. Esta información integral ayudará a CC en su objetivo de reducir las emisiones de carbono del transporte.",
-                "research_questions": ["En general, buscamos realizar un seguimiento del cambio de comportamiento al convertir los viajes SOV en viajes en bicicleta eléctrica.", "Millas totales de bicicletas eléctricas (por mes) e impactos estimados de energía y emisiones."]
+                "research_questions": [
+                    "En general, buscamos realizar un seguimiento del cambio de comportamiento al convertir los viajes SOV en viajes en bicicleta eléctrica.",
+                    "Millas totales de bicicletas eléctricas (por mes) e impactos estimados de energía y emisiones."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -74,7 +83,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -85,11 +97,13 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"],
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ],
         "admin_access": [
-          "janej@communitycycles.org",
-          "sandee@communitycycles.org",
-          "k.shankari@nrel.gov"
+            "janej@communitycycles.org",
+            "sandee@communitycycles.org",
+            "k.shankari@nrel.gov"
         ]
     }
 }

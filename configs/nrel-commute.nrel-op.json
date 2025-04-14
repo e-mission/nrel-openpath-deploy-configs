@@ -20,7 +20,10 @@
                 "summary_line_3": "allows the lab to track progress towards the <a href='https://www.nrel.gov/about/net-zero-labs.html'>Net-Zero Labs goal</a> in the transportation domain",
                 "short_textual_description": "As commute schedules get increasingly complex in our “Future of Work”, NREL would like to experiment with an automated trip tracking solution for understanding travel behavior. This Commuting Study (“Study”) can allow NREL to understand variations in travel across centers, days of the week and months of the year without complex, time-consuming surveys.",
                 "why_we_collect": "NREL can use this information to understand how people get to work, what their constraints are, and how to better provide alternative options to driving alone. This comprehensive information will aid NREL in its goal to reduce carbon emissions from transportation.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commuting programs.", "Analysis of the impact of post-pandemic telework on transportation energy efficiency and greenhouse gas emissions."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of potential commuting programs.",
+                    "Analysis of the impact of post-pandemic telework on transportation energy efficiency and greenhouse gas emissions."
+                ]
             }
         }
     },
@@ -39,7 +42,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -50,6 +56,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

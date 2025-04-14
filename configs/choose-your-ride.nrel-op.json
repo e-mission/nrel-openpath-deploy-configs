@@ -8,7 +8,11 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default", "bikebuddy"]
+        "subgroups": [
+            "test",
+            "default",
+            "bikebuddy"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -27,7 +31,10 @@
                 "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
                 "short_textual_description": "Choose Your Ride, Shift Your Ride is a project toprovide e-bikes or passes for shared micromobility (Spin passes) to people with low incomes, to shift trips from single-occupant vehicles to e-bikes and e-scootersand reduce emissions.A desired outcome of this program is to understand the impact on emissions of providing e-bikes or Spin passes to people with low income.",
                 "why_we_collect": "The data collected during the program will be used to understand how eBikes are usedincluding when and how often as well as distance travelled.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of various potential commute programs.", "The role of e-bikes to provide transportation access for people with low incomes."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of various potential commute programs.",
+                    "The role of e-bikes to provide transportation access for people with low incomes."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciudad de Fort Collins",
@@ -37,24 +44,27 @@
                 "summary_line_3": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
                 "short_textual_description": "Choose Your Ride, Shift Your Ride es un proyecto para proporcionar bicicletas eléctricas o pases para micromovilidad compartida (Spin pass) a personas con bajos ingresos, para cambiar los viajes de vehículos de un solo ocupante a bicicletas eléctricas y scooters electrónicos y reducir las emisiones. Un resultado deseado de este programa es comprender el impacto en las emisiones de proporcionar bicicletas eléctricas o pases Spin a personas con bajos ingresos.",
                 "why_we_collect": "Los datos recopilados durante el programa se usarán para comprender cómo se usan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, así como la distancia recorrida.",
-                "research_questions": ["Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de varios programas potenciales de viaje al trabajo.", "El papel de las bicicletas eléctricas para brindar acceso al transporte a personas con bajos ingresos."]
+                "research_questions": [
+                    "Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de varios programas potenciales de viaje al trabajo.",
+                    "El papel de las bicicletas eléctricas para brindar acceso al transporte a personas con bajos ingresos."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -74,7 +84,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -85,6 +98,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

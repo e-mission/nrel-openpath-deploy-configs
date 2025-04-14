@@ -17,95 +17,98 @@
                 "summary_line_3": "and ensure that end-to-end timeuse features work.",
                 "short_textual_description": "OpenPATH is the only open source platform for instrumenting mobility patterns. We welcome contributions and pull requests.",
                 "why_we_collect": "So that you can see how OpenPATH works",
-                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
+                "research_questions": [
+                    "Comparing the open-access group (no intervention) and programs that provide interventions.",
+                    "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "TripConfirmSurvey": {
-          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json",
-          "version": 1.2,
-          "compatibleWith": 1,
-          "dataKey": "manual/trip_user_input",
-          "labelVars": {
-            "modes": {
-              "key": "travel_mode",
-              "type": "length"
+        "surveys": {
+            "TripConfirmSurvey": {
+                "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/trip-end-survey-multiple-select.json",
+                "version": 1.2,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelVars": {
+                    "modes": {
+                        "key": "travel_mode",
+                        "type": "length"
+                    },
+                    "purposes": {
+                        "key": "destination_purpose",
+                        "type": "length"
+                    }
+                },
+                "labelTemplate": {
+                    "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+                    "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+                }
             },
-            "purposes": {
-              "key": "destination_purpose",
-              "type": "length"
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            },
+            "TimeUseSurvey": {
+                "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
+                "version": 9,
+                "compatibleWith": 1,
+                "labelVars": {
+                    "pca": {
+                        "key": "Personal_Care_activities",
+                        "type": "length"
+                    },
+                    "erea": {
+                        "key": "Employment_related_a_Education_activities",
+                        "type": "length"
+                    },
+                    "da": {
+                        "key": "Domestic_activities",
+                        "type": "length"
+                    },
+                    "ral": {
+                        "key": "Recreation_and_leisure",
+                        "type": "length"
+                    },
+                    "vwaca": {
+                        "key": "Voluntary_work_and_care_activities",
+                        "type": "length"
+                    },
+                    "other": {
+                        "key": "Other",
+                        "type": "length"
+                    }
+                },
+                "labelTemplate": {
+                    "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Domestic, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
+                    "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
+                }
             }
-          },
-          "labelTemplate": {
-            "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
-            "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
-          }
         },
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        },
-        "TimeUseSurvey": {
-          "formPath": "https://raw.githubusercontent.com/sebastianbarry/nrel-openpath-deploy-configs/surveys-info-and-surveys-data/survey-resources/data-json/time-use-survey-form-v9.json",
-          "version": 9,
-          "compatibleWith": 1,
-          "labelVars": {
-            "pca": {
-              "key": "Personal_Care_activities",
-              "type": "length"
+        "buttons": {
+            "trip-notes": {
+                "surveyName": "TimeUseSurvey",
+                "not-filled-in-label": {
+                    "en": "Add Activity",
+                    "es": "Añadir actividad"
+                }
             },
-            "erea": {
-              "key": "Employment_related_a_Education_activities",
-              "type": "length"
-            },
-            "da": {
-              "key": "Domestic_activities",
-              "type": "length"
-            },
-            "ral": {
-              "key": "Recreation_and_leisure",
-              "type": "length"
-            },
-            "vwaca": {
-              "key": "Voluntary_work_and_care_activities",
-              "type": "length"
-            },
-            "other": {
-              "key": "Other",
-              "type": "length"
+            "place-notes": {
+                "surveyName": "TimeUseSurvey",
+                "not-filled-in-label": {
+                    "en": "Add Activity",
+                    "es": "Añadir actividad"
+                }
             }
-          },
-          "labelTemplate": {
-            "en": "{ pca, plural, =0 {} other {# Personal Care, }}{ erea, plural, =0 {} other {# Employment/Education, } }{ da, plural, =0 {} other {# Domestic, } }{ ral, plural, =0 {} other {# Recreation/Leisure, } }{ vwaca, plural, =0 {} other {# Voluntary Work, } }{ other, plural, =0 {} other {# Other} }",
-            "es": "{ pca, plural, =0 {} other {# Cuidado Personal, }}{ erea, plural, =0 {} other {# Empleo/Educación, } }{ da, plural, =0 {} other {# Domésticas, } }{ ral, plural, =0 {} other {# Recreación/Ocio, } }{ vwaca, plural, =0 {} other {# Voluntariado, } }{ other, plural, =0 {} other {# Otro} }"
-          }
-        }
-      },
-      "buttons": {
-        "trip-notes": {
-          "surveyName": "TimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
         },
-        "place-notes": {
-          "surveyName": "TimeUseSurvey",
-          "not-filled-in-label": {
-            "en": "Add Activity",
-            "es": "Añadir actividad"
-          }
-        }
-      },
-      "trip-labels": "ENKETO"
+        "trip-labels": "ENKETO"
     },
     "reminderSchemes": {
         "weekly": {
@@ -118,8 +121,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "21:00"
         },
@@ -133,8 +144,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "22:00"
         },
@@ -148,8 +167,16 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 1, "intervalInDays": 1 },
-                { "start": 3, "end": 5, "intervalInDays": 2 }
+                {
+                    "start": 0,
+                    "end": 1,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 3,
+                    "end": 5,
+                    "intervalInDays": 2
+                }
             ],
             "defaultTime": "23:00"
         }

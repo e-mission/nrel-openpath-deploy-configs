@@ -8,7 +8,11 @@
     },
     "opcode": {
         "autogen": true,
-        "subgroups": ["test", "default", "second-cohort"]
+        "subgroups": [
+            "test",
+            "default",
+            "second-cohort"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -27,7 +31,11 @@
                 "summary_line_3": "The program will also assess how the City can maximize health and air quality benefits",
                 "short_textual_description": "This program provides eBikes to essential workers making at or below 80% area median income in two of the City of Grand Junction’s crucial business districts, and the City would like to use the OpenPATH trip-tracking solution in order to understand the effectiveness of the program.",
                 "why_we_collect": "OpenPATH will allow the City of Grand Junction to obtain detailed data revealing patterns and variations in participants’ use of the eBikes without complex, time-consuming surveys. The City can study this data to understand how eBikes function as a primary mode of transportation for program participants, how they might function for a larger subset of the community, and how to better provide alternative options to driving alone within the City. This comprehensive information will aid the City in its goals to improve accessibility of active transportation and to reduce carbon emissions from transportation.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential multimodal travel incentive programs.", "Travel behavior modeling to identify key connections and validate prioritization of impactful corridors for ongoing redesign efforts.", "Travel behavior modeling to understand program greenhouse gas emissions impacts."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of potential multimodal travel incentive programs.",
+                    "Travel behavior modeling to identify key connections and validate prioritization of impactful corridors for ongoing redesign efforts.",
+                    "Travel behavior modeling to understand program greenhouse gas emissions impacts."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciudad de Grand Junction",
@@ -37,24 +45,28 @@
                 "summary_line_3": "El programa también evaluará cómo la ciudad puede maximizar los beneficios para la salud y la calidad del aire",
                 "short_textual_description": "Este programa proporciona eBikes a los trabajadores esenciales que ganan el 80 % o menos del ingreso medio del área en dos de los distritos comerciales cruciales de la ciudad de Grand Junction, y a la ciudad le gustaría usar la solución de seguimiento de viajes OpenPATH para comprender la eficacia del programa.",
                 "why_we_collect": "OpenPATH permitirá a la ciudad de Grand Junction obtener datos detallados que revelen patrones y variaciones en el uso de las bicicletas eléctricas por parte de los participantes sin encuestas complejas que consumen mucho tiempo. La ciudad puede estudiar estos datos para comprender cómo funcionan las bicicletas eléctricas como un modo de transporte para los participantes del programa, cómo podrían funcionar para un subconjunto más grande de la comunidad y cómo brindar mejores opciones alternativas a conducir solo dentro de la Ciudad. Esta información integral ayudará a la Ciudad en sus objetivos de mejorar la accesibilidad del transporte activo y para reducir las emisiones de carbono del transporte.",
-                "research_questions": ["Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de posibles programas de incentivos de viaje multimodal.", "Modelado de comportamiento de viaje para identificar conexiones clave y validar la priorización de corredores impactantes para los esfuerzos de rediseño en curso.", "Modelado de comportamiento de viaje para comprender los impactos de las emisiones de gases de efecto invernadero del programa."]
+                "research_questions": [
+                    "Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de posibles programas de incentivos de viaje multimodal.",
+                    "Modelado de comportamiento de viaje para identificar conexiones clave y validar la priorización de corredores impactantes para los esfuerzos de rediseño en curso.",
+                    "Modelado de comportamiento de viaje para comprender los impactos de las emisiones de gases de efecto invernadero del programa."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -74,7 +86,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -85,6 +100,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

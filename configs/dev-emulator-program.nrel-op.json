@@ -17,7 +17,10 @@
                 "summary_line_3": "and ensure that end-to-end program features work.",
                 "short_textual_description": "OpenPATH is the only open source platform for instrumenting mobility patterns. We welcome contributions and pull requests.",
                 "why_we_collect": "So that you can see how OpenPATH works",
-                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
+                "research_questions": [
+                    "Comparing the open-access group (no intervention) and programs that provide interventions.",
+                    "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+                ]
             }
         }
     },
