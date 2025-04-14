@@ -1,449 +1,515 @@
 {
-  "url_abbreviation": "dfc-fermata",
-  "version": 9,
-  "ts": 1707714796,
-  "server": {
-    "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "test",
-      "default"
-    ]
-  },
-  "intro": {
-    "program_or_study": "study",
-    "start_month": "04",
-    "start_year": "2024",
-    "mode_studied": "",
-    "program_admin_contact": "leidy.boyce@nrel.gov",
-    "deployment_partner_name": "GSA",
-    "translated_text": {
-      "en": {
+    "url_abbreviation": "dfc-fermata",
+    "version": 9,
+    "ts": 1707714796,
+    "server": {
+        "connectUrl": "https://dfc-fermata-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
+    },
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "test",
+            "default"
+        ]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "04",
+        "start_year": "2024",
+        "mode_studied": "",
+        "program_admin_contact": "leidy.boyce@nrel.gov",
         "deployment_partner_name": "GSA",
-        "deployment_name": "Fermata",
-        "summary_line_1": "EV and EVSE Technology Acceptance and User Perception using NREL OpenPATH",
-        "summary_line_2": "This portion of the study is designed to examine the effect of perceived challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
-        "summary_line_3": "",
-        "short_textual_description": "The use of the app will gather user input and feedback for the Fermata Energy Bidirectional Technology Validation Project at DFC.",
-        "why_we_collect": "This study seeks to gather user input on EVSE tech adoption.",
-        "research_questions": ["Identify the potential barriers that may exist for the adoption of EVs in the fleet operations?",
-        "Understand user beliefs about ​Range anxiety?",
-        "Understand the performance expectancy and ease of use expectancy in connection with the electric vehicle charging infrastructure?", 
-        "Quantify users’ level of effort needed to adopt EVs?"]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": { "en": "Answered" }
-      },
-      "DfcEvReturnTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/trip_user_input",
-        "labelTemplate": { "en": "Answered" }
-      },
-      "DfcEvRoamingTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/trip_user_input",
-        "labelTemplate": { "en": "Answered" }
-      },
-      "DfcGasTrip": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/trip_user_input",
-        "labelTemplate": { "en": "Answered" }
-      }
-    },
-    "buttons": {
-      "trip-label": [
-        {
-          "surveyName": "DfcGasTrip",
-          "not-filled-in-label": { "en": "Gas Car Survey" },
-          "showsIf": "confirmedMode?.baseMode == 'CAR'"
-        },
-        {
-          "surveyName": "DfcEvReturnTrip",
-          "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "confirmedMode?.baseMode == 'E_CAR' && (pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]]) || pointIsWithinBounds(end_loc['coordinates'], [[-105.13, 39.853], [-105.11, 39.847]]))"
-        },
-        {
-          "surveyName": "DfcEvRoamingTrip",
-          "not-filled-in-label": { "en": "EV Survey" },
-          "showsIf": "confirmedMode?.baseMode == 'E_CAR'"
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "GSA",
+                "deployment_name": "Fermata",
+                "summary_line_1": "EV and EVSE Technology Acceptance and User Perception using NREL OpenPATH",
+                "summary_line_2": "This portion of the study is designed to examine the effect of perceived challenges and ease of use toward using electric vehicles and electric vehicle charging infrastructure",
+                "summary_line_3": "",
+                "short_textual_description": "The use of the app will gather user input and feedback for the Fermata Energy Bidirectional Technology Validation Project at DFC.",
+                "why_we_collect": "This study seeks to gather user input on EVSE tech adoption.",
+                "research_questions": [
+                    "Identify the potential barriers that may exist for the adoption of EVs in the fleet operations?",
+                    "Understand user beliefs about ​Range anxiety?",
+                    "Understand the performance expectancy and ease of use expectancy in connection with the electric vehicle charging infrastructure?",
+                    "Quantify users’ level of effort needed to adopt EVs?"
+                ]
+            }
         }
-      ]
     },
-    "trip-labels": "ENKETO"
-  },
-  "vehicle_identities": [
-    {
-      "value": "car_jacks_mazda3",
-      "bluetooth_major_minor": ["dfc0:fff0"],
-      "text": "Jack's Mazda 3",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.16777,
-      "vehicle_info": {
-        "type": "car",
-        "license": "JHK ****",
-        "make": "Mazda",
-        "model": "3",
-        "year": 2014,
-        "color": "red",
-        "engine": "ICE",
-        "mpge": 33
-      }
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-onboarding-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            },
+            "DfcEvReturnTrip": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-return-trip-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            },
+            "DfcEvRoamingTrip": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-ev-roaming-trip-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            },
+            "DfcGasTrip": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/dfc-fermata/dfc-gas-trip-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            }
+        },
+        "buttons": {
+            "trip-label": [
+                {
+                    "surveyName": "DfcGasTrip",
+                    "not-filled-in-label": {
+                        "en": "Gas Car Survey"
+                    },
+                    "showsIf": "confirmedMode?.baseMode == 'CAR'"
+                },
+                {
+                    "surveyName": "DfcEvReturnTrip",
+                    "not-filled-in-label": {
+                        "en": "EV Survey"
+                    },
+                    "showsIf": "confirmedMode?.baseMode == 'E_CAR' && (pointIsWithinBounds(end_loc['coordinates'], [[-105.118, 39.719], [-105.115, 39.717]]) || pointIsWithinBounds(end_loc['coordinates'], [[-105.13, 39.853], [-105.11, 39.847]]))"
+                },
+                {
+                    "surveyName": "DfcEvRoamingTrip",
+                    "not-filled-in-label": {
+                        "en": "EV Survey"
+                    },
+                    "showsIf": "confirmedMode?.baseMode == 'E_CAR'"
+                }
+            ]
+        },
+        "trip-labels": "ENKETO"
     },
-    {
-      "value": "car_abbys_prius",
-      "bluetooth_major_minor": ["dfc0:fff1"],
-      "text": "Abby's Prius",
-      "baseMode": "CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.11534,
-      "vehicle_info": {
-        "type": "car",
-        "license": "ABI 1234",
-        "make": "Toyota",
-        "model": "Prius",
-        "year": 2011,
-        "color": "silver",
-        "engine": "HEV",
-        "mpge": 48
-      }
+    "vehicle_identities": [
+        {
+            "value": "car_jacks_mazda3",
+            "bluetooth_major_minor": [
+                "dfc0:fff0"
+            ],
+            "text": "Jack's Mazda 3",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.16777,
+            "vehicle_info": {
+                "type": "car",
+                "license": "JHK ****",
+                "make": "Mazda",
+                "model": "3",
+                "year": 2014,
+                "color": "red",
+                "engine": "ICE",
+                "mpge": 33
+            }
+        },
+        {
+            "value": "car_abbys_prius",
+            "bluetooth_major_minor": [
+                "dfc0:fff1"
+            ],
+            "text": "Abby's Prius",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.11534,
+            "vehicle_info": {
+                "type": "car",
+                "license": "ABI 1234",
+                "make": "Toyota",
+                "model": "Prius",
+                "year": 2011,
+                "color": "silver",
+                "engine": "HEV",
+                "mpge": 48
+            }
+        },
+        {
+            "value": "ecar_gsa_leaf1",
+            "bluetooth_major_minor": [
+                "dfc0:fff2"
+            ],
+            "text": "GSA Leaf 1",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.08216,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G13 1991Z",
+                "make": "Nissan",
+                "model": "Leaf",
+                "year": 0,
+                "color": "silver",
+                "engine": "BEV"
+            }
+        },
+        {
+            "value": "ecar_gsa_leaf2",
+            "bluetooth_major_minor": [
+                "dfc0:fff3"
+            ],
+            "text": "GSA Leaf 2",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.08216,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G13 1992Z",
+                "make": "Nissan",
+                "model": "Leaf",
+                "year": 0,
+                "color": "silver",
+                "engine": "BEV"
+            }
+        },
+        {
+            "value": "ecar_gsa_pacifica1",
+            "bluetooth_major_minor": [
+                "dfc0:fff4"
+            ],
+            "text": "GSA Pacifica 1",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.127,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G41 4259Z",
+                "make": "Chrysler",
+                "model": "Pacifica",
+                "year": 2023,
+                "color": "black",
+                "engine": "PHEV"
+            }
+        },
+        {
+            "value": "ecar_gsa_bolt",
+            "bluetooth_major_minor": [
+                "dfc0:fff5"
+            ],
+            "text": "GSA Bolt",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.08216,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G13 1361W",
+                "make": "Chrysler",
+                "model": "Pacifica",
+                "year": 0,
+                "color": "silver",
+                "engine": "BEV"
+            }
+        },
+        {
+            "value": "car_katie_solara",
+            "bluetooth_major_minor": [
+                "dfc0:fff6"
+            ],
+            "text": "Katie's Solara",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.26364,
+            "vehicle_info": {
+                "type": "car",
+                "license": "K8T IPLT",
+                "make": "Toyota",
+                "model": "Solara",
+                "year": 1999,
+                "color": "red",
+                "engine": "ICE",
+                "mpge": 21
+            }
+        },
+        {
+            "value": "ecar_louis_backpack",
+            "bluetooth_major_minor": [
+                "dfc0:fff7"
+            ],
+            "text": "Louis's Backpack",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.05536,
+            "vehicle_info": {
+                "type": "car",
+                "license": "123 ****",
+                "make": "Ace High",
+                "model": "2",
+                "year": 2020,
+                "color": "black",
+                "engine": "PHEV",
+                "mpge": 100
+            }
+        },
+        {
+            "value": "ecar_leidy_car",
+            "bluetooth_major_minor": [
+                "dfc0:fff8"
+            ],
+            "text": "Leidy's Car",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.158,
+            "vehicle_info": {
+                "type": "car",
+                "license": "BEST 40",
+                "make": "BMW",
+                "model": "X5",
+                "year": 2018,
+                "color": "white",
+                "engine": "PHEV",
+                "mpge": 56
+            }
+        },
+        {
+            "value": "ecar_gsa_escape",
+            "bluetooth_major_minor": [
+                "dfc0:fffa"
+            ],
+            "text": "GSA Escape",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.052,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G413310Z",
+                "make": "Ford",
+                "model": "Escape Plug-in",
+                "year": 2023,
+                "color": "blue",
+                "engine": "PHEV",
+                "mpge": 101
+            }
+        },
+        {
+            "value": "ecar_gsa_pacifica2",
+            "bluetooth_major_minor": [
+                "dfc0:fffb"
+            ],
+            "text": "GSA Pacifica 2",
+            "baseMode": "E_CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.119,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G41A2042",
+                "make": "Chrysler",
+                "model": "Pacifica",
+                "year": 2023,
+                "color": "white",
+                "engine": "PHEV",
+                "mpge": 82
+            }
+        },
+        {
+            "value": "car_gsa_inconiq",
+            "bluetooth_major_minor": [
+                "dfc0:fff9"
+            ],
+            "text": "GSA Ioniq",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.113,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G134138X",
+                "make": "Hyundai",
+                "model": "Ioniq hev",
+                "year": 2023,
+                "color": "gray",
+                "engine": "HEV",
+                "mpge": 90
+            }
+        },
+        {
+            "value": "car_gsa_escape",
+            "bluetooth_major_minor": [
+                "dfc0:fffc"
+            ],
+            "text": "GSA Escape",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.37,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G611136U",
+                "make": "Ford",
+                "model": "Escape",
+                "year": 2017,
+                "color": "white",
+                "engine": "ICE",
+                "mpge": 25
+            }
+        },
+        {
+            "value": "car_gsa_equinox",
+            "bluetooth_major_minor": [
+                "dfc0:fffd"
+            ],
+            "text": "GSA Equinox",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.324,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G611197X",
+                "make": "Chevrolet",
+                "model": "Equinox",
+                "year": 2020,
+                "color": "black",
+                "engine": "ICE",
+                "mpge": 27
+            }
+        },
+        {
+            "value": "car_gsa_colorado",
+            "bluetooth_major_minor": [
+                "dfc0:fffe"
+            ],
+            "text": "GSA Equinox",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.45,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G611856X",
+                "make": "Chevrolet",
+                "model": "Colorado",
+                "year": 2021,
+                "color": "blue",
+                "engine": "ICE",
+                "mpge": 20
+            }
+        },
+        {
+            "value": "car_gsa_ram1",
+            "bluetooth_major_minor": [
+                "dfc0:ffff"
+            ],
+            "text": "GSA Ram 1",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.45,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G622093W",
+                "make": "Ram",
+                "model": "Ram 1500",
+                "year": 2019,
+                "color": "gray",
+                "engine": "ICE",
+                "mpge": 22
+            }
+        },
+        {
+            "value": "car_gsa_ram2",
+            "bluetooth_major_minor": [
+                "dfc0:0000"
+            ],
+            "text": "GSA Ram 2",
+            "baseMode": "CAR",
+            "met_equivalent": "IN_VEHICLE",
+            "kgCo2PerKm": 0.45,
+            "vehicle_info": {
+                "type": "car",
+                "license": "G623058W",
+                "make": "Ram",
+                "model": "Ram 1500",
+                "year": 2019,
+                "color": "blue",
+                "engine": "ICE",
+                "mpge": 22
+            }
+        }
+    ],
+    "tracking": {
+        "bluetooth_only": true
     },
-    {
-      "value": "ecar_gsa_leaf1",
-      "bluetooth_major_minor": ["dfc0:fff2"],
-      "text": "GSA Leaf 1",
-      "baseMode": "E_CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.08216,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G13 1991Z",
-        "make": "Nissan",
-        "model": "Leaf",
-        "year": 0,
-        "color": "silver",
-        "engine": "BEV"
-      }
+    "display_config": {
+        "use_imperial": true
     },
-    {
-      "value": "ecar_gsa_leaf2",
-      "bluetooth_major_minor": ["dfc0:fff3"],
-      "text": "GSA Leaf 2",
-      "baseMode": "E_CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.08216,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G13 1992Z",
-        "make": "Nissan",
-        "model": "Leaf",
-        "year": 0,
-        "color": "silver",
-        "engine": "BEV"
-      }
+    "metrics": {
+        "include_test_users": false,
+        "phone_dashboard_ui": {
+            "sections": [
+                "footprint",
+                "surveys",
+                "travel"
+            ],
+            "metric_list": {
+                "count": [
+                    "primary_ble_sensed_mode"
+                ],
+                "distance": [
+                    "primary_ble_sensed_mode"
+                ],
+                "duration": [
+                    "primary_ble_sensed_mode"
+                ],
+                "response_count": [
+                    "survey"
+                ]
+            },
+            "footprint_options": {
+                "unlabeled_uncertainty": false
+            }
+        }
     },
-    {
-      "value": "ecar_gsa_pacifica1",
-      "bluetooth_major_minor": ["dfc0:fff4"],
-      "text": "GSA Pacifica 1",
-      "baseMode": "E_CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.127,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G41 4259Z",
-        "make": "Chrysler",
-        "model": "Pacifica",
-        "year": 2023,
-        "color": "black",
-        "engine": "PHEV"
-      }
+    "push_notifications": {
+        "title": {
+            "en": "Survey Responses Requested"
+        },
+        "message": {
+            "en": "Please answer surveys for your recent trips"
+        },
+        "recent_user_input_threshold": 7
     },
-    {
-      "value": "ecar_gsa_bolt",
-      "bluetooth_major_minor": ["dfc0:fff5"],
-      "text": "GSA Bolt",
-      "baseMode": "E_CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm":0.08216,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G13 1361W",
-        "make": "Chrysler",
-        "model": "Pacifica",
-        "year": 0,
-        "color": "silver",
-        "engine": "BEV"
-      }
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": true
     },
-    {
-      "value": "car_katie_solara",
-      "bluetooth_major_minor": ["dfc0:fff6"],
-      "text": "Katie's Solara",
-      "baseMode": "CAR",
-      "met_equivalent": "IN_VEHICLE",
-      "kgCo2PerKm": 0.26364,
-      "vehicle_info": {
-        "type": "car",
-        "license": "K8T IPLT",
-        "make": "Toyota",
-        "model": "Solara",
-        "year": 1999,
-        "color": "red",
-        "engine": "ICE",
-        "mpge": 21
-      }
-    },
-    {
-      "value": "ecar_louis_backpack",
-      "bluetooth_major_minor": ["dfc0:fff7"],
-      "text": "Louis's Backpack",
-      "baseMode":"E_CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.05536,
-      "vehicle_info": {
-        "type": "car",
-        "license": "123 ****",
-        "make": "Ace High",
-        "model": "2",
-        "year": 2020,
-        "color": "black",
-        "engine": "PHEV",
-        "mpge": 100
-      }
-    },
-    {
-      "value": "ecar_leidy_car",
-      "bluetooth_major_minor": ["dfc0:fff8"],
-      "text": "Leidy's Car",
-      "baseMode":"E_CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.158,
-      "vehicle_info": {
-        "type": "car",
-        "license": "BEST 40",
-        "make": "BMW",
-        "model": "X5",
-        "year": 2018,
-        "color": "white",
-        "engine": "PHEV",
-        "mpge": 56
-      }
-    },
-    {
-      "value": "ecar_gsa_escape",
-      "bluetooth_major_minor": ["dfc0:fffa"],
-      "text": "GSA Escape",
-      "baseMode":"E_CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.052,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G413310Z",
-        "make": "Ford",
-        "model": "Escape Plug-in",
-        "year": 2023,
-        "color": "blue",
-        "engine": "PHEV",
-        "mpge": 101
-      }
-    },
-    {
-      "value": "ecar_gsa_pacifica2",
-      "bluetooth_major_minor": ["dfc0:fffb"],
-      "text": "GSA Pacifica 2",
-      "baseMode":"E_CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.119,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G41A2042",
-        "make": "Chrysler",
-        "model": "Pacifica",
-        "year": 2023,
-        "color": "white",
-        "engine": "PHEV",
-        "mpge": 82
-      }
-    },
-    {
-      "value": "car_gsa_inconiq",
-      "bluetooth_major_minor": ["dfc0:fff9"],
-      "text": "GSA Ioniq",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.113,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G134138X",
-        "make": "Hyundai",
-        "model": "Ioniq hev",
-        "year": 2023,
-        "color": "gray",
-        "engine": "HEV",
-        "mpge": 90
-      }
-    },
-    {
-      "value": "car_gsa_escape",
-      "bluetooth_major_minor": ["dfc0:fffc"],
-      "text": "GSA Escape",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.37,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G611136U",
-        "make": "Ford",
-        "model": "Escape",
-        "year": 2017,
-        "color": "white",
-        "engine": "ICE",
-        "mpge": 25
-      }
-    },
-    {
-      "value": "car_gsa_equinox",
-      "bluetooth_major_minor": ["dfc0:fffd"],
-      "text": "GSA Equinox",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.324,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G611197X",
-        "make": "Chevrolet",
-        "model": "Equinox",
-        "year": 2020,
-        "color": "black",
-        "engine": "ICE",
-        "mpge": 27
-      }
-    },
-    {
-      "value": "car_gsa_colorado",
-      "bluetooth_major_minor": ["dfc0:fffe"],
-      "text": "GSA Equinox",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.45,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G611856X",
-        "make": "Chevrolet",
-        "model": "Colorado",
-        "year": 2021,
-        "color": "blue",
-        "engine": "ICE",
-        "mpge": 20
-      }
-    },
-    {
-      "value": "car_gsa_ram1",
-      "bluetooth_major_minor": ["dfc0:ffff"],
-      "text": "GSA Ram 1",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.45,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G622093W",
-        "make": "Ram",
-        "model": "Ram 1500",
-        "year": 2019,
-        "color": "gray",
-        "engine": "ICE",
-        "mpge": 22
-      }
-    },
-    {
-      "value": "car_gsa_ram2",
-      "bluetooth_major_minor": ["dfc0:0000"],
-      "text": "GSA Ram 2",
-      "baseMode":"CAR",
-      "met_equivalent":"IN_VEHICLE",
-      "kgCo2PerKm": 0.45,
-      "vehicle_info": {
-        "type": "car",
-        "license": "G623058W",
-        "make": "Ram",
-        "model": "Ram 1500",
-        "year": 2019,
-        "color": "blue",
-        "engine": "ICE",
-        "mpge": 22
-      }
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": false,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "leidy.boyce@nrel.gov",
+            "abigail.wheelis@nrel.gov",
+            "jack.greenlee@nrel.gov"
+        ]
     }
-  ],
-  "tracking": {
-    "bluetooth_only": true
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": false,
-    "phone_dashboard_ui": {
-      "sections": ["footprint", "surveys", "travel"],
-      "metric_list": {
-        "count": [ "primary_ble_sensed_mode" ],
-        "distance": [ "primary_ble_sensed_mode" ],
-        "duration": [ "primary_ble_sensed_mode" ],
-        "response_count": [ "survey" ]
-      },
-      "footprint_options": {
-        "unlabeled_uncertainty": false
-      }
-    }
-  },
-  "push_notifications": {
-    "title": { "en": "Survey Responses Requested" },
-    "message": { "en": "Please answer surveys for your recent trips" },
-    "recent_user_input_threshold": 7
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": true
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": false,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "leidy.boyce@nrel.gov",
-      "abigail.wheelis@nrel.gov",
-      "jack.greenlee@nrel.gov"
-    ]
-  }
 }

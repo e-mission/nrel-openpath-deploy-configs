@@ -1,90 +1,90 @@
 {
-  "url_abbreviation": "la-mw-ii",
-  "version": 1,
-  "ts": 1733961166568,
-  "server": {
-    "connectUrl": "https://la-mw-ii-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "default",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "study",
-    "start_month": "01",
-    "start_year": "2024",
-    "mode_studied": "",
-    "program_admin_contact": "Madeline Brozen, mbrozen@ucla.edu",
-    "deployment_partner_name": "UCLA Lewis Center",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "UCLA Lewis Center",
-        "deployment_name": "LA Mobility Wallet Phase II evaluation",
-        "summary_line_1": "We are collecting travel data for mobility wallet recipients",
-        "summary_line_2": "in order to understand how the program affects how much people",
-        "summary_line_3": "travel and by which modes.",
-        "short_textual_description": "We are collecting travel data to understand how financial support for transportation affects travel patterns.",
-        "why_we_collect": "We are seeking to determine any bias in travel behavior reported in user surveys and more accurately capture people's overall travel patterns.",
-        "research_questions": [
-          "How does financial support for transportation affect participants travel behavior and short-term outcomes?",
-          "What is the relationship between ridehailing and transit use among participants?",
-          ""
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "la-mw-ii",
+    "version": 1,
+    "ts": 1733961166568,
+    "server": {
+        "connectUrl": "https://la-mw-ii-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": false,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "mbrozen@ucla.edu",
-      "eblumenb@ucla.edu",
-      "tamikabutler@ucla.edu",
-      "mwander@ucla.edu"
-    ]
-  }
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "default",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "01",
+        "start_year": "2024",
+        "mode_studied": "",
+        "program_admin_contact": "Madeline Brozen, mbrozen@ucla.edu",
+        "deployment_partner_name": "UCLA Lewis Center",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "UCLA Lewis Center",
+                "deployment_name": "LA Mobility Wallet Phase II evaluation",
+                "summary_line_1": "We are collecting travel data for mobility wallet recipients",
+                "summary_line_2": "in order to understand how the program affects how much people",
+                "summary_line_3": "travel and by which modes.",
+                "short_textual_description": "We are collecting travel data to understand how financial support for transportation affects travel patterns.",
+                "why_we_collect": "We are seeking to determine any bias in travel behavior reported in user surveys and more accurately capture people's overall travel patterns.",
+                "research_questions": [
+                    "How does financial support for transportation affect participants travel behavior and short-term outcomes?",
+                    "What is the relationship between ridehailing and transit use among participants?",
+                    ""
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": false,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "mbrozen@ucla.edu",
+            "eblumenb@ucla.edu",
+            "tamikabutler@ucla.edu",
+            "mwander@ucla.edu"
+        ]
+    }
 }

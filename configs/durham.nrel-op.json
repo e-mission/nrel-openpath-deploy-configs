@@ -21,7 +21,10 @@
                 "summary_line_3": "Program participants will use this app to log your trips . This information will be used to inform decisions about future investments in micromobility.",
                 "short_textual_description": "The City of Durham wants to learn more about the challenges commuters face, especially those that work downtown, beyond those on a typical nine-to-five schedule. Participants in the pilot will be asked to share information about their travel behavior through this app including the purpose of trips, modes used, modes they would have used otherwise, routes taken, and times.",
                 "why_we_collect": "The data collected will be used to understand how subsidized access toe-bikes might change travel behavior, especially  how e-bikes could help improve transportation experience, impact the use of cars (especially downtown), and how exposure to e-bikes might have lasting impacts on mode choice.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commute programs.", "Determining the impact of e-bike commuting on transportation energy efficiency and greenhouse gas emissions."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of potential commute programs.",
+                    "Determining the impact of e-bike commuting on transportation energy efficiency and greenhouse gas emissions."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciudad de Durham, Carolina del Norte",
@@ -32,7 +35,10 @@
                 "short_textual_description": "La ciudad de Durham quiere aprender más sobre los desafíos que enfrentan los viajeros, especialmente aquellos que trabajan en el centro de la ciudad, más allá de los horarios típicos de nueve a cinco. Se les pedirá a los participantes en el piloto que compartan información sobre su comportamiento de viaje a través de esta aplicación, incluido el propósito de los viajes, los modos utilizados, los modos que habrían utilizado de otra manera, las rutas tomadas y los tiempos.",
                 "why_we_collect_es": "Los datos recopilados se utilizarán para comprender cómo las bicicletas de pie con acceso subsidiado podrían cambiar el comportamiento de viaje, especialmente cómo las bicicletas eléctricas podrían ayudar a mejorar la experiencia de transporte, afectar el uso de automóviles (especialmente en el centro) y cómo la exposición a las bicicletas eléctricas podría tener efectos duraderos. impactos en la elección del modo.",
                 "why_we_collect": "Los datos recopilados se utilizarán para comprender cómo las bicicletas de pie con acceso subsidiado podrían cambiar el comportamiento de viaje, especialmente cómo las bicicletas eléctricas podrían ayudar a mejorar la experiencia de transporte, afectar el uso de automóviles (especialmente en el centro) y cómo la exposición a las bicicletas eléctricas podría tener efectos duraderos. impactos en la elección del modo.",
-                "research_questions": ["Modelado del comportamiento de viaje para respaldar los análisis de costo-beneficio de los posibles programas de viaje.", "Determinar el impacto de los desplazamientos en bicicleta eléctrica en la eficiencia energética del transporte y las emisiones de gases de efecto invernadero."]
+                "research_questions": [
+                    "Modelado del comportamiento de viaje para respaldar los análisis de costo-beneficio de los posibles programas de viaje.",
+                    "Determinar el impacto de los desplazamientos en bicicleta eléctrica en la eficiencia energética del transporte y las emisiones de gases de efecto invernadero."
+                ]
             }
         }
     },
@@ -51,7 +57,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -62,6 +71,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }
