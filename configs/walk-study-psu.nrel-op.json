@@ -1,85 +1,85 @@
 {
-  "url_abbreviation": "walk-study-psu",
-  "version": 1,
-  "ts": 1741122104,
-  "server": {
-    "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": false,
-    "subgroups": [
-      "default",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "study",
-    "start_month": "01",
-    "start_year": "2025",
-    "mode_studied": "",
-    "program_admin_contact": "Sirisha Kothuri, PSU (skothuri@pdx.edu)",
-    "deployment_partner_name": "PSU",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "PSU",
-        "deployment_name": "Walk Study",
-        "summary_line_1": "Study to collect walk trips",
-        "summary_line_2": "",
-        "summary_line_3": "",
-        "short_textual_description": "Study to collect walk trips",
-        "why_we_collect": "Collect walk trips to understand crossing behavior",
-        "research_questions": []
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "walk-study-psu",
+    "version": 1,
+    "ts": 1741122104,
+    "server": {
+        "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "skothuri@pdx.edu",
-      "jbroach@pdx.edu",
-      "nmcneil@pdx.edu"
-    ]
-  }
+    "opcode": {
+        "autogen": false,
+        "subgroups": [
+            "default",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "01",
+        "start_year": "2025",
+        "mode_studied": "",
+        "program_admin_contact": "Sirisha Kothuri, PSU (skothuri@pdx.edu)",
+        "deployment_partner_name": "PSU",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "PSU",
+                "deployment_name": "Walk Study",
+                "summary_line_1": "Study to collect walk trips",
+                "summary_line_2": "",
+                "summary_line_3": "",
+                "short_textual_description": "Study to collect walk trips",
+                "why_we_collect": "Collect walk trips to understand crossing behavior",
+                "research_questions": []
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "skothuri@pdx.edu",
+            "jbroach@pdx.edu",
+            "nmcneil@pdx.edu"
+        ]
+    }
 }

@@ -7,8 +7,13 @@
     },
     "opcode": {
         "autogen": true,
-        "subgroups": ["test", "qualified-cargo", "qualified-regular",
-            "standard-cargo", "standard-regular"]
+        "subgroups": [
+            "test",
+            "qualified-cargo",
+            "qualified-regular",
+            "standard-cargo",
+            "standard-regular"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -28,7 +33,11 @@
                 "short_textual_description": "Denver is interested in gathering data on e-bike usage from participants in its Climate Action Rebate program which offers incentives for Denver residents to purchase and e-bike.",
                 "why_we_collect": "Denver hopes to use this information to better understand how e-bikes are used including distance traveled, trips made, the associated emissions reduction and potential equity impacts.",
                 "raw_data_use": "monitor the program, plan program modifications, and drive future infrastructure investments",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of e-bike incentive programs.", "The GHG emissions impact of an individually owned e-bike.", "Understanding of how e-bikes are being used by program participants."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of e-bike incentive programs.",
+                    "The GHG emissions impact of an individually owned e-bike.",
+                    "Understanding of how e-bikes are being used by program participants."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Oficina de Acción Climática, Sostenibilidad y Resiliencia de Denver",
@@ -38,26 +47,30 @@
                 "summary_line_3": "Si es un participante del programa, esta aplicación puede ayudarlo a registrar sus viajes y competir contra otros para beneficiar nuestro medio ambiente y proporcionar información importante de Denver que nos permita evaluar la efectividad y el impacto del programa de incentivos de bicicletas eléctricas.",
                 "short_textual_description": "Denver está interesada en recopilar datos sobre el uso de bicicletas eléctricas de los participantes en su programa de reembolso de acción climática que ofrece incentivos para que los residentes de Denver compren bicicletas eléctricas.",
                 "why_we_collect_es": "Denver espera usar esta información para comprender mejor cómo se usan las bicicletas eléctricas, incluida la distancia recorrida, los viajes realizados, la reducción de emisiones asociada y los posibles impactos en la equidad.",
-                "why_we_collect" : "Denver espera usar esta información para comprender mejor cómo se usan las bicicletas eléctricas, incluida la distancia recorrida, los viajes realizados, la reducción de emisiones asociada y los posibles impactos en la equidad.",
+                "why_we_collect": "Denver espera usar esta información para comprender mejor cómo se usan las bicicletas eléctricas, incluida la distancia recorrida, los viajes realizados, la reducción de emisiones asociada y los posibles impactos en la equidad.",
                 "raw_data_use": "monitorear el programa, planificar modificaciones al programa e impulsar futuras inversiones en infraestructura",
-                "research_questions": ["Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de los programas de incentivos de bicicletas eléctricas.", "El impacto de las emisiones de GEI de una bicicleta eléctrica de propiedad individual.", "Comprensión de cómo los participantes del programa utilizan las bicicletas eléctricas."]
+                "research_questions": [
+                    "Modelado de comportamiento de viaje para respaldar los análisis de costo-beneficio de los programas de incentivos de bicicletas eléctricas.",
+                    "El impacto de las emisiones de GEI de una bicicleta eléctrica de propiedad individual.",
+                    "Comprensión de cómo los participantes del programa utilizan las bicicletas eléctricas."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-short-v1.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-short-v1.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "reminderSchemes": {
         "weekly": {
@@ -70,8 +83,15 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 13, "intervalInDays": 1 },
-                { "start": 14, "intervalInDays": 8 }
+                {
+                    "start": 0,
+                    "end": 13,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 14,
+                    "intervalInDays": 8
+                }
             ],
             "defaultTime": "21:00"
         },
@@ -85,10 +105,26 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 13, "intervalInDays": 1 },
-                { "start": 91, "end": 97, "intervalInDays": 1 },
-                { "start": 182, "end": 188, "intervalInDays": 1 },
-                { "start": 273, "end": 279, "intervalInDays": 1 }
+                {
+                    "start": 0,
+                    "end": 13,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 91,
+                    "end": 97,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 182,
+                    "end": 188,
+                    "intervalInDays": 1
+                },
+                {
+                    "start": 273,
+                    "end": 279,
+                    "intervalInDays": 1
+                }
             ],
             "defaultTime": "22:00"
         },
@@ -102,7 +138,11 @@
                 "es": "Haga clic para abrir la aplicación y ver los viajes sin etiquetar"
             },
             "schedule": [
-                { "start": 0, "end": 13, "intervalInDays": 1 }
+                {
+                    "start": 0,
+                    "end": 13,
+                    "intervalInDays": 1
+                }
             ],
             "defaultTime": "23:00"
         }
@@ -118,7 +158,11 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": ["K.Shankari@nrel.gov", "sue.baldwin@denvergov.org", "Mike.Salisbury@denvergov.org"],
+        "admin_access": [
+            "K.Shankari@nrel.gov",
+            "sue.baldwin@denvergov.org",
+            "Mike.Salisbury@denvergov.org"
+        ],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,
@@ -126,7 +170,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -137,6 +184,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

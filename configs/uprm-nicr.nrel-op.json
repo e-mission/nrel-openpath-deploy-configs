@@ -21,7 +21,9 @@
                 "summary_line_3": "If you are a program Participant, this app can help you log your trips and help the research team understand the travel behavior and needs of your community.",
                 "short_textual_description": "Communities in Puerto Rico have limited transportation alternatives. Most have a single travel option: private gas vehicles. The NICR 3-2 project – a collaboration between NREL and UPRM – will leverage OpenPATH to study the impact of economic incentives on travel behavior.",
                 "why_we_collect": "The data collected through OpenPATH will provide insights into the travel patterns and associated energy consumption of the NICR 3-2 project participants. This data will help researchers identify opportunities for the development of policies that could incentivize the use of clean modes of travel.",
-                "research_questions": ["Can positive financial incentives in an auto-centric community increase the use of transit and micromobility alternatives?"]
+                "research_questions": [
+                    "Can positive financial incentives in an auto-centric community increase the use of transit and micromobility alternatives?"
+                ]
             },
             "es": {
                 "deployment_partner_name": "Universidad de Puerto Rico en Mayaguez",
@@ -31,7 +33,9 @@
                 "summary_line_3": "Si es un participante del programa, esta aplicación puede ayudarlo a registrar sus viajes y ayudar al equipo de investigación a comprender el comportamiento de viaje y las necesidades de su comunidad.",
                 "short_textual_description": "Las comunidades en Puerto Rico tienen alternativas de transporte limitadas. La mayoría tiene una única opción de viaje: vehículos privados a gas. El proyecto NICR 3-2, una colaboración entre NREL y UPRM, aprovechará OpenPATH para estudiar el impacto de los incentivos económicos en el comportamiento de viaje.",
                 "why_we_collect": "Los datos recopilados a través de OpenPATH proporcionarán información sobre los patrones de viaje y el consumo de energía asociado de los participantes del proyecto NICR 3-2. Estos datos ayudarán a los investigadores a identificar oportunidades para el desarrollo de políticas que podrían incentivar el uso de modos de viaje limpios.",
-                "research_questions": ["¿Pueden los incentivos financieros positivos en una comunidad autocéntrica aumentar el uso de alternativas de tránsito y micromovilidad?"]
+                "research_questions": [
+                    "¿Pueden los incentivos financieros positivos en una comunidad autocéntrica aumentar el uso de alternativas de tránsito y micromovilidad?"
+                ]
             }
         }
     },
@@ -53,7 +57,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,

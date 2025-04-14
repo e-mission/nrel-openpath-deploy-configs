@@ -7,7 +7,10 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default"]
+        "subgroups": [
+            "test",
+            "default"
+        ]
     },
     "intro": {
         "program_or_study": "study",
@@ -24,7 +27,9 @@
                 "summary_line_3": "",
                 "short_textual_description": "The proposed project is a longitudinal study of residents of Washington Commons, a cohousing community currently under development in Sacramento, CA. Residents will participate in a two-week travel survey before and after moving in to the community to quantify the impact of relocation to a collaborative neighborhood on vehicle miles traveled, car ownership, travel mode choice, fuel consumption, emissions, and studying impacts on mobility for the aging population.",
                 "why_we_collect": "The data collected during the program will be used to estimate the impact of collaborative neighborhoods on travel behavior, including mode choice, vehicle ownership, and vehicle miles traveled.",
-                "research_questions": ["The impact of impact of collaborative neighborhoods on travel behavior, including mode choice, vehicle ownership, and vehicle miles traveled."]
+                "research_questions": [
+                    "The impact of impact of collaborative neighborhoods on travel behavior, including mode choice, vehicle ownership, and vehicle miles traveled."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Universidad de California Davis",
@@ -33,46 +38,47 @@
                 "summary_line_2": "En esta encuesta, puede registrar sus viajes para comprender el impacto de su reciente mudanza en el comportamiento de viaje.",
                 "summary_line_3": "",
                 "short_textual_description": "El proyecto propuesto es un estudio longitudinal de los residentes de Washington Commons, una comunidad de covivienda actualmente en desarrollo en Sacramento, CA. Los residentes participarán en una encuesta de viajes de dos semanas antes y después de mudarse a la comunidad para cuantificar el impacto de la reubicación en un vecindario colaborativo en las millas recorridas por vehículos, la propiedad de automóviles, la elección del modo de viaje, el consumo de combustible, las emisiones y el estudio de los impactos en la movilidad. para la población que envejece.",
-                "why_we_collect" : "Los datos recopilados durante el programa se utilizarán para estimar el impacto de los vecindarios colaborativos en el comportamiento de viaje, incluida la elección de modo, la propiedad de vehículos y las millas recorridas por vehículos.",
-                "research_questions": ["El impacto de los vecindarios colaborativos en el comportamiento de viaje, incluida la elección de modo, la propiedad de vehículos y las millas recorridas por vehículos."]
+                "why_we_collect": "Los datos recopilados durante el programa se utilizarán para estimar el impacto de los vecindarios colaborativos en el comportamiento de viaje, incluida la elección de modo, la propiedad de vehículos y las millas recorridas por vehículos.",
+                "research_questions": [
+                    "El impacto de los vecindarios colaborativos en el comportamiento de viaje, incluida la elección de modo, la propiedad de vehículos y las millas recorridas por vehículos."
+                ]
             }
-
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey-v4.xml",
-          "version": 1.3,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        },
-        "TripConfirmSurvey": {
-            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey-v2.json",
-            "version": 1.2,
-            "compatibleWith": 1,
-            "dataKey": "manual/trip_user_input",
-            "labelVars": {
-              "modes": {
-                "key": "What_was_the_main_pu_f_this_trip_trip_leg",
-                "type": "length"
-              },
-              "purposes": {
-                "key": "_2_What_was_the_mode_of_transp",
-                "type": "length"
-              }
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-onboarding-survey-v4.xml",
+                "version": 1.3,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
             },
-            "labelTemplate": {
-              "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
-              "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+            "TripConfirmSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/washingtoncommons/washingtoncommons-trip-survey-v2.json",
+                "version": 1.2,
+                "compatibleWith": 1,
+                "dataKey": "manual/trip_user_input",
+                "labelVars": {
+                    "modes": {
+                        "key": "What_was_the_main_pu_f_this_trip_trip_leg",
+                        "type": "length"
+                    },
+                    "purposes": {
+                        "key": "_2_What_was_the_mode_of_transp",
+                        "type": "length"
+                    }
+                },
+                "labelTemplate": {
+                    "en": "{ purposes, plural, =0 {No purposes} one {1 purpose} other {# purposes} }, { modes, plural, =0 {No modes} one {1 mode} other {# modes} }",
+                    "es": "{ purposes, plural, =0 {No propósitos} one {1 propósito} other {# propósitos} }, { modes, plural, =0 {No modos} one {1 modo} other {# modos} }"
+                }
             }
-          }
-      },
-      "trip-labels": "ENKETO"
+        },
+        "trip-labels": "ENKETO"
     },
     "display_config": {
         "use_imperial": true
@@ -92,7 +98,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,

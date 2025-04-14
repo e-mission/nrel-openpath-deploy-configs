@@ -1,101 +1,101 @@
 {
-  "url_abbreviation": "cosa-ebike-project",
-  "version": 1,
-  "ts": 1710526862,
-  "server": {
-    "connectUrl": "https://cosa-ebike-project-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "default",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "02",
-    "start_year": "2024",
-    "mode_studied": "e-bike",
-    "program_admin_contact": "Ricardo Ambriz, ricardo.ambriz2@sanantonio.gov, 210-207-6888",
-    "deployment_partner_name": "City of San Antonio",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "City of San Antonio",
-        "deployment_name": "Low-Income E-bike Rebate Pilot Program",
-        "summary_line_1": "The City of San Antonio's Office of Sustainability (OS) is interested in promoting sustainable transportation choices for San Antonio residents, including e-bikes to reduce greenhouse gas emissions.",
-        "summary_line_2": "The City of San Antonio’s Low-Income E-bike Rebate Pilot Program will promote sustainable transportation in San Antonio and help achieve the goal of decreasing greenhouse gas emissions in the transportation sector while increasing community resiliency, prioritizing disadvantaged communities, consistent with the Justice40 Initiative, which seeks to build a clean and equitable energy economy.",
-        "summary_line_3": "The Low-Income E-bike Rebate Pilot Program will increase access to reliable transportation for residents of disadvantaged communities in San Antonio by subsidizing the cost of an electric bicycle, or e-bike. Lowering the barrier to access reliable transportation will help these new e-bike owners to use the transportation system to access economically, socially, and environmentally valuable locations.",
-        "short_textual_description": "The City of San Antonio is interested in gathering data on e-bike usage from participants in its Low-Income E-bike Rebate Pilot Program which offers incentives for San Antonio residents to affordably purchase e-bikes.",
-        "why_we_collect": "The City of San Antonio hopes to use this information to better understand how e-bikes are used including distance traveled, trips made, the associated emissions reduction and potential equity impacts.",
-        "research_questions": [
-          "How will these e-bikes be used by the study participants?",
-          "What trips (mode of transportation, length of trip) will be replaced with the e-bike by the participant?",
-          "Will participant be able to utilize the e-bike for trips that otherwise would not be taken?"
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "Ciudad de San Antonio",
-        "deployment_name": "Programa piloto de reembolso de bicicletas eléctricas para personas de bajos ingresos",
-        "summary_line_1": "La Oficina de Sostenibilidad (OS) de la ciudad de San Antonio está interesada en promover opciones de transporte sostenible para los residentes de San Antonio, incluidas bicicletas eléctricas para reducir las emisiones de gases de efecto invernadero.",
-        "summary_line_2": "El Programa Piloto de Reembolso de Bicicletas Eléctricas para Personas de Bajos Ingresos de la Ciudad de San Antonio promoverá el transporte sostenible en San Antonio y ayudará a lograr el objetivo de disminuir las emisiones de gases de efecto invernadero en el sector del transporte mientras aumenta la resiliencia de la comunidad, dando prioridad a las comunidades desfavorecidas, en consonancia con la Iniciativa Justice40. que busca construir una economía energética limpia y equitativa.",
-        "summary_line_3": "El Programa Piloto de Reembolso de Bicicletas Eléctricas para Personas de Bajos Ingresos aumentará el acceso a transporte confiable para los residentes de comunidades desfavorecidas en San Antonio al subsidiar el costo de una bicicleta eléctrica o bicicleta eléctrica. Reducir la barrera para acceder a un transporte confiable ayudará a estos nuevos propietarios de bicicletas eléctricas a utilizar el sistema de transporte para acceder a lugares valiosos desde el punto de vista económico, social y ambiental.",
-        "short_textual_description": "La ciudad de San Antonio está interesada en recopilar datos sobre el uso de bicicletas eléctricas de los participantes en su Programa piloto de reembolso de bicicletas eléctricas para personas de bajos ingresos, que ofrece incentivos para que los residentes de San Antonio compren bicicletas eléctricas a precios asequibles.",
-        "why_we_collect": "La ciudad de San Antonio espera utilizar esta información para comprender mejor cómo se utilizan las bicicletas eléctricas, incluida la distancia recorrida, los viajes realizados, la reducción de emisiones asociada y los posibles impactos en la equidad.",
-        "research_questions": [
-          "¿Cómo utilizarán estas bicicletas eléctricas los participantes del estudio?",
-          "¿Qué viajes (modo de transporte, duración del viaje) sustituirá el participante por la bicicleta eléctrica?",
-          "¿Podrá el participante utilizar la bicicleta eléctrica para viajes que de otro modo no se realizarían?"
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "cosa-ebike-project",
+    "version": 1,
+    "ts": 1710526862,
+    "server": {
+        "connectUrl": "https://cosa-ebike-project-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "ricardo.ambriz2@sanantonio.gov"
-    ]
-  }
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "default",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "02",
+        "start_year": "2024",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Ricardo Ambriz, ricardo.ambriz2@sanantonio.gov, 210-207-6888",
+        "deployment_partner_name": "City of San Antonio",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "City of San Antonio",
+                "deployment_name": "Low-Income E-bike Rebate Pilot Program",
+                "summary_line_1": "The City of San Antonio's Office of Sustainability (OS) is interested in promoting sustainable transportation choices for San Antonio residents, including e-bikes to reduce greenhouse gas emissions.",
+                "summary_line_2": "The City of San Antonio’s Low-Income E-bike Rebate Pilot Program will promote sustainable transportation in San Antonio and help achieve the goal of decreasing greenhouse gas emissions in the transportation sector while increasing community resiliency, prioritizing disadvantaged communities, consistent with the Justice40 Initiative, which seeks to build a clean and equitable energy economy.",
+                "summary_line_3": "The Low-Income E-bike Rebate Pilot Program will increase access to reliable transportation for residents of disadvantaged communities in San Antonio by subsidizing the cost of an electric bicycle, or e-bike. Lowering the barrier to access reliable transportation will help these new e-bike owners to use the transportation system to access economically, socially, and environmentally valuable locations.",
+                "short_textual_description": "The City of San Antonio is interested in gathering data on e-bike usage from participants in its Low-Income E-bike Rebate Pilot Program which offers incentives for San Antonio residents to affordably purchase e-bikes.",
+                "why_we_collect": "The City of San Antonio hopes to use this information to better understand how e-bikes are used including distance traveled, trips made, the associated emissions reduction and potential equity impacts.",
+                "research_questions": [
+                    "How will these e-bikes be used by the study participants?",
+                    "What trips (mode of transportation, length of trip) will be replaced with the e-bike by the participant?",
+                    "Will participant be able to utilize the e-bike for trips that otherwise would not be taken?"
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "Ciudad de San Antonio",
+                "deployment_name": "Programa piloto de reembolso de bicicletas eléctricas para personas de bajos ingresos",
+                "summary_line_1": "La Oficina de Sostenibilidad (OS) de la ciudad de San Antonio está interesada en promover opciones de transporte sostenible para los residentes de San Antonio, incluidas bicicletas eléctricas para reducir las emisiones de gases de efecto invernadero.",
+                "summary_line_2": "El Programa Piloto de Reembolso de Bicicletas Eléctricas para Personas de Bajos Ingresos de la Ciudad de San Antonio promoverá el transporte sostenible en San Antonio y ayudará a lograr el objetivo de disminuir las emisiones de gases de efecto invernadero en el sector del transporte mientras aumenta la resiliencia de la comunidad, dando prioridad a las comunidades desfavorecidas, en consonancia con la Iniciativa Justice40. que busca construir una economía energética limpia y equitativa.",
+                "summary_line_3": "El Programa Piloto de Reembolso de Bicicletas Eléctricas para Personas de Bajos Ingresos aumentará el acceso a transporte confiable para los residentes de comunidades desfavorecidas en San Antonio al subsidiar el costo de una bicicleta eléctrica o bicicleta eléctrica. Reducir la barrera para acceder a un transporte confiable ayudará a estos nuevos propietarios de bicicletas eléctricas a utilizar el sistema de transporte para acceder a lugares valiosos desde el punto de vista económico, social y ambiental.",
+                "short_textual_description": "La ciudad de San Antonio está interesada en recopilar datos sobre el uso de bicicletas eléctricas de los participantes en su Programa piloto de reembolso de bicicletas eléctricas para personas de bajos ingresos, que ofrece incentivos para que los residentes de San Antonio compren bicicletas eléctricas a precios asequibles.",
+                "why_we_collect": "La ciudad de San Antonio espera utilizar esta información para comprender mejor cómo se utilizan las bicicletas eléctricas, incluida la distancia recorrida, los viajes realizados, la reducción de emisiones asociada y los posibles impactos en la equidad.",
+                "research_questions": [
+                    "¿Cómo utilizarán estas bicicletas eléctricas los participantes del estudio?",
+                    "¿Qué viajes (modo de transporte, duración del viaje) sustituirá el participante por la bicicleta eléctrica?",
+                    "¿Podrá el participante utilizar la bicicleta eléctrica para viajes que de otro modo no se realizarían?"
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "ricardo.ambriz2@sanantonio.gov"
+        ]
+    }
 }

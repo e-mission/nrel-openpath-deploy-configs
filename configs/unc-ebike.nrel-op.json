@@ -1,107 +1,107 @@
 {
-  "url_abbreviation": "unc-ebike",
-  "version": 3,
-  "ts": 1730230434,
-  "server": {
-    "connectUrl": "https://unc-ebike-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": false,
-    "subgroups": [
-      "test",
-      "default"
-    ],
-    "suspended_subgroups": [
-      "default",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "08",
-    "start_year": "2024",
-    "mode_studied": "ebike",
-    "program_admin_contact": "Matt Bhagat-Conway, UNC (email: mwbc@unc.edu)",
-    "deployment_partner_name": "University of North Carolina at Chapel Hill",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "University of North Carolina at Chapel Hill",
-        "deployment_name": "Ral-E-Bike evaluation",
-        "summary_line_1": "This study collects data on where you go and how you get there to understand what impact the Ral-e-Bike program has on travel.",
-        "summary_line_2": "Your participation is valuable even if you do not receive the Ral-E-Bike voucher. It will provide a baseline.",
-        "summary_line_3": "Participation does not affect your chances of receiving a voucher.",
-        "short_textual_description": "Thank you for agreeing to participate in the smartphone data collection portion of this study. Over the next several weeks, the OpenPATH app will log where you go, and ask you to “label” how you got there and why you went there. The data collected through this process will allow us to evaluate the impact of the Ral-E-Bike program on how people get around. The data collected does not impact your chances of receiving a voucher. Even if you do not receive a voucher, your data is valuable to establish a baseline.",
-        "why_we_collect": "The data we collect will help the City of Raleigh make decisions about future e-bike programs. It will also contribute to our understanding of how e-bikes affect transportation.",
-        "research_questions": [
-          "How much do e-bikes substitute for driving?",
-          "Do e-bikes enable users to travel to places they wouldn’t otherwise?",
-          ""
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "La Universidad de carolina del norte en Chapel Hill",
-        "deployment_name": "Evaluación del programa Ral-E-Bike",
-        "summary_line_1": "Para entender el impacto del programa Ral-E-Bike, esta investigación recoge datos sobre sus viajes, donde y como va y viene.",
-        "summary_line_2": "Su participación es valiosa aunque no reciba el bono de Ral-E-Bike. Nos sirvirá de base para la investigación.",
-        "summary_line_3": "Su participación no afectara tus posibilidades de recibir un bono. ",
-        "short_textual_description": "Muchas gracias por participar en la collecion de datos de teléfono inteligente o \"smart phone.\" Durante las proximas semanas la aplicación de OpenPATH creara un registro de tus viajes. La aplicación tambien te pedirá que etiquetes como llegaste y porque fuiste al destino. Los datos que se colectaran nos ayudaran a evaluar el impacto del programa Ral-E-Bike sobre las decisiones de transport que hacen las personas. Estos datos no afectaran tus posibilidades de recibir un bono. Aunque no estes recibiendo un bono, tus datos son importantes para establecer una base para la investigación. ",
-        "why_we_collect": "Los datos que colectaremos ayudaran a la ciudad de Raleigh a hacer decisiones sobre los programs de bicicletas electricas en el futuro. Tambien nos ayudara a entender el impacto de las bicicletas electricas en los medios de transporte.",
-        "research_questions": [
-          "¿Qué proporcion de viajes por bicicleta electricas sustiyen viajes por carro?",
-          "¿Las bicicletas electricas permiten que los usuarios puedan viajar a destinos que usualmente no podrían?"
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/unc-ebike/onboarding-v1.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "unc-ebike",
+    "version": 3,
+    "ts": 1730230434,
+    "server": {
+        "connectUrl": "https://unc-ebike-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/unc-ebike-label-options.json",
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": false
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": false,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "mwbc@unc.edu",
-      "palmmatt@unc.edu",
-      "k.shankari@nrel.gov"
-    ]
-  }
+    "opcode": {
+        "autogen": false,
+        "subgroups": [
+            "test",
+            "default"
+        ],
+        "suspended_subgroups": [
+            "default",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "08",
+        "start_year": "2024",
+        "mode_studied": "ebike",
+        "program_admin_contact": "Matt Bhagat-Conway, UNC (email: mwbc@unc.edu)",
+        "deployment_partner_name": "University of North Carolina at Chapel Hill",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "University of North Carolina at Chapel Hill",
+                "deployment_name": "Ral-E-Bike evaluation",
+                "summary_line_1": "This study collects data on where you go and how you get there to understand what impact the Ral-e-Bike program has on travel.",
+                "summary_line_2": "Your participation is valuable even if you do not receive the Ral-E-Bike voucher. It will provide a baseline.",
+                "summary_line_3": "Participation does not affect your chances of receiving a voucher.",
+                "short_textual_description": "Thank you for agreeing to participate in the smartphone data collection portion of this study. Over the next several weeks, the OpenPATH app will log where you go, and ask you to “label” how you got there and why you went there. The data collected through this process will allow us to evaluate the impact of the Ral-E-Bike program on how people get around. The data collected does not impact your chances of receiving a voucher. Even if you do not receive a voucher, your data is valuable to establish a baseline.",
+                "why_we_collect": "The data we collect will help the City of Raleigh make decisions about future e-bike programs. It will also contribute to our understanding of how e-bikes affect transportation.",
+                "research_questions": [
+                    "How much do e-bikes substitute for driving?",
+                    "Do e-bikes enable users to travel to places they wouldn’t otherwise?",
+                    ""
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "La Universidad de carolina del norte en Chapel Hill",
+                "deployment_name": "Evaluación del programa Ral-E-Bike",
+                "summary_line_1": "Para entender el impacto del programa Ral-E-Bike, esta investigación recoge datos sobre sus viajes, donde y como va y viene.",
+                "summary_line_2": "Su participación es valiosa aunque no reciba el bono de Ral-E-Bike. Nos sirvirá de base para la investigación.",
+                "summary_line_3": "Su participación no afectara tus posibilidades de recibir un bono. ",
+                "short_textual_description": "Muchas gracias por participar en la collecion de datos de teléfono inteligente o \"smart phone.\" Durante las proximas semanas la aplicación de OpenPATH creara un registro de tus viajes. La aplicación tambien te pedirá que etiquetes como llegaste y porque fuiste al destino. Los datos que se colectaran nos ayudaran a evaluar el impacto del programa Ral-E-Bike sobre las decisiones de transport que hacen las personas. Estos datos no afectaran tus posibilidades de recibir un bono. Aunque no estes recibiendo un bono, tus datos son importantes para establecer una base para la investigación. ",
+                "why_we_collect": "Los datos que colectaremos ayudaran a la ciudad de Raleigh a hacer decisiones sobre los programs de bicicletas electricas en el futuro. Tambien nos ayudara a entender el impacto de las bicicletas electricas en los medios de transporte.",
+                "research_questions": [
+                    "¿Qué proporcion de viajes por bicicleta electricas sustiyen viajes por carro?",
+                    "¿Las bicicletas electricas permiten que los usuarios puedan viajar a destinos que usualmente no podrían?"
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/unc-ebike/onboarding-v1.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/unc-ebike-label-options.json",
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": false
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": false,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "mwbc@unc.edu",
+            "palmmatt@unc.edu",
+            "k.shankari@nrel.gov"
+        ]
+    }
 }

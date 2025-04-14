@@ -1,106 +1,106 @@
 {
-  "url_abbreviation": "uw-prs",
-  "version": 1,
-  "ts": 1707503923,
-  "server": {
-    "connectUrl": "https://uw-prs-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "test",
-      "default"
-    ]
-  },
-  "intro": {
-    "program_or_study": "study",
-    "start_month": "02",
-    "start_year": "2024",
-    "mode_studied": "",
-    "program_admin_contact": "For questions about the study, please contact Congjing Zhang at the University of Washington (email: congjing@uw.edu).",
-    "deployment_partner_name": "University of Washington",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "University of Washington",
-        "deployment_name": "UW Personalized Recommendation Systems Study",
-        "summary_line_1": "UW is focused on using rewards to encourage commuters to switch to energy- efficient and environment-friendly transportation options, with the goal of enhancing air quality.",
-        "summary_line_2": "This APP can help you record your trips, including time, locations, and travel purpose.",
-        "summary_line_3": "In this study, it is providing users with personalized recommendations (e.g., restaurants and museums) to change people’s lifestyle.",
-        "short_textual_description": "To make better personalized recommendation, the data collection is very important. The APP can prioritize data collection tasks and identify crucial time points for data collection with the help of incorporation of latest developments in adaptive sensing, uncertainty quantification, and predictive science. On the other hand, the better personalized recommendation the APP can offer, the better user engagement, that will ultimately translate into a long-term adaption of the APP by a wide range of users.",
-        "why_we_collect": "UW can use the information in the APP to create tool and methods to better collect data. Then UW can build data-driven personalized recommendation models for responsive, data-driven decision-making. The APP can change travel behavior improvement of transit and micromobility by reducing car dependency and encouraging walking, biking, and transit use.",
-        "research_questions": [
-          "Conducting travel behavior modeling to aid in making accurate travel demand prediction and personalized recommendation.",
-          "The impact of rewards on people’s willingness to change the transportation mode.",
-          ""
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "Universidad de Washington",
-        "deployment_name": "Estudio de sistemas de recomendación personalizados de la Universidad de Washington",
-        "summary_line_1": "La Universidad de Washington se centra en el uso de recompensas para alentar a los viajeros a cambiar a opciones de transporte energéticamente eficientes y respetuosas con el medio ambiente, con el objetivo de mejorar la calidad del aire.",
-        "summary_line_2": "Esta aplicación puede ayudarle a registrar sus viajes, incluida la hora, los lugares y el motivo del viaje.",
-        "summary_line_3": "En este estudio, proporciona a los usuarios recomendaciones personalizadas (por ejemplo, restaurantes y museos) para cambiar el estilo de vida de las personas.",
-        "short_textual_description": "Para hacer una recomendación mejor personalizada, la recopilación de datos es muy importante. La aplicación puede priorizar las tareas de recopilación de datos e identificar momentos cruciales para la recopilación de datos con la ayuda de la incorporación de los últimos avances en detección adaptativa, cuantificación de incertidumbre y ciencia predictiva. Por otro lado, cuanto mejor sea la recomendación personalizada que pueda ofrecer la aplicación, mayor será la participación del usuario, lo que en última instancia se traducirá en una adaptación a largo plazo de la aplicación por parte de una amplia gama de usuarios.",
-        "why_we_collect": "UW puede utilizar la información de la APLICACIÓN para crear herramientas y métodos para recopilar mejor datos. Luego, la Universidad de Washington puede crear modelos de recomendación personalizados basados en datos para una toma de decisiones responsiva y basada en datos. La aplicación puede cambiar el comportamiento de viaje, mejorar el transporte público y la micromovilidad al reducir la dependencia del automóvil y fomentar el uso de caminar, andar en bicicleta y el transporte público.",
-        "research_questions": [
-          "Realizar modelos de comportamiento de viaje para ayudar a realizar predicciones precisas de la demanda de viajes y recomendaciones personalizadas.",
-          "El impacto de las recompensas en la voluntad de las personas de cambiar el modo de transporte.",
-          ""
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "uw-prs",
+    "version": 1,
+    "ts": 1707503923,
+    "server": {
+        "connectUrl": "https://uw-prs-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [
-      "data.start_loc.coordinates",
-      "data.end_loc.coordinates"
-    ],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "congjing@uw.edu",
-      "ryanflin@uw.edu",
-      "ugurel@uw.edu"
-    ]
-  }
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "test",
+            "default"
+        ]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "02",
+        "start_year": "2024",
+        "mode_studied": "",
+        "program_admin_contact": "For questions about the study, please contact Congjing Zhang at the University of Washington (email: congjing@uw.edu).",
+        "deployment_partner_name": "University of Washington",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "University of Washington",
+                "deployment_name": "UW Personalized Recommendation Systems Study",
+                "summary_line_1": "UW is focused on using rewards to encourage commuters to switch to energy- efficient and environment-friendly transportation options, with the goal of enhancing air quality.",
+                "summary_line_2": "This APP can help you record your trips, including time, locations, and travel purpose.",
+                "summary_line_3": "In this study, it is providing users with personalized recommendations (e.g., restaurants and museums) to change people’s lifestyle.",
+                "short_textual_description": "To make better personalized recommendation, the data collection is very important. The APP can prioritize data collection tasks and identify crucial time points for data collection with the help of incorporation of latest developments in adaptive sensing, uncertainty quantification, and predictive science. On the other hand, the better personalized recommendation the APP can offer, the better user engagement, that will ultimately translate into a long-term adaption of the APP by a wide range of users.",
+                "why_we_collect": "UW can use the information in the APP to create tool and methods to better collect data. Then UW can build data-driven personalized recommendation models for responsive, data-driven decision-making. The APP can change travel behavior improvement of transit and micromobility by reducing car dependency and encouraging walking, biking, and transit use.",
+                "research_questions": [
+                    "Conducting travel behavior modeling to aid in making accurate travel demand prediction and personalized recommendation.",
+                    "The impact of rewards on people’s willingness to change the transportation mode.",
+                    ""
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "Universidad de Washington",
+                "deployment_name": "Estudio de sistemas de recomendación personalizados de la Universidad de Washington",
+                "summary_line_1": "La Universidad de Washington se centra en el uso de recompensas para alentar a los viajeros a cambiar a opciones de transporte energéticamente eficientes y respetuosas con el medio ambiente, con el objetivo de mejorar la calidad del aire.",
+                "summary_line_2": "Esta aplicación puede ayudarle a registrar sus viajes, incluida la hora, los lugares y el motivo del viaje.",
+                "summary_line_3": "En este estudio, proporciona a los usuarios recomendaciones personalizadas (por ejemplo, restaurantes y museos) para cambiar el estilo de vida de las personas.",
+                "short_textual_description": "Para hacer una recomendación mejor personalizada, la recopilación de datos es muy importante. La aplicación puede priorizar las tareas de recopilación de datos e identificar momentos cruciales para la recopilación de datos con la ayuda de la incorporación de los últimos avances en detección adaptativa, cuantificación de incertidumbre y ciencia predictiva. Por otro lado, cuanto mejor sea la recomendación personalizada que pueda ofrecer la aplicación, mayor será la participación del usuario, lo que en última instancia se traducirá en una adaptación a largo plazo de la aplicación por parte de una amplia gama de usuarios.",
+                "why_we_collect": "UW puede utilizar la información de la APLICACIÓN para crear herramientas y métodos para recopilar mejor datos. Luego, la Universidad de Washington puede crear modelos de recomendación personalizados basados en datos para una toma de decisiones responsiva y basada en datos. La aplicación puede cambiar el comportamiento de viaje, mejorar el transporte público y la micromovilidad al reducir la dependencia del automóvil y fomentar el uso de caminar, andar en bicicleta y el transporte público.",
+                "research_questions": [
+                    "Realizar modelos de comportamiento de viaje para ayudar a realizar predicciones precisas de la demanda de viajes y recomendaciones personalizadas.",
+                    "El impacto de las recompensas en la voluntad de las personas de cambiar el modo de transporte.",
+                    ""
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "congjing@uw.edu",
+            "ryanflin@uw.edu",
+            "ugurel@uw.edu"
+        ]
+    }
 }

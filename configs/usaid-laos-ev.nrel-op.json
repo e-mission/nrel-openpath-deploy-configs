@@ -20,7 +20,10 @@
                 "summary_line_3": "ລະບົບນີ້ຈະນໍາໃຊ້ ເພື່ອເປັນການເກັບກໍາຂໍ້ມູນໃນການຕິດຕາມ ການເດີນທາງ ເພື່ອໃຫ້ເຂົ້າເຖີງຮູບແບບການເດີນທາງຂອງການນໍາໃຊ້ພາຫະນະ.",
                 "short_textual_description": "ເພື່ອຕອບສະໜອງຄວາມຕ້ອງການກ່ຽວກັບສະຖານີສາກສາທາລະນະ ສໍາລັບ ສປປ ລາວ, ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈຶ່ງສ້າງແບບຈໍາລອງການຕິດຕາມ ພຶດຕິການການນໍາໃຊ້ພາຫະນະ ໃນຮູບແບບການເດີນທາງ ເພື່ອເປັນຂໍ້ມູນໃນການຂະຫຍາຍຄວາມຕ້ອງການສະຖານີສາກໄຟສາທາລະນະ ໃນອະນາຄົດ ຢູ່ ໃນເຂດຕົວເມືອງໃຫ່ຍ ຂອງ ສ ປປ ລາວ ນີ້ກໍເພື່ອກໍານົດຍຸດທະສາດການຂະຫຍາຍສະຖານີສາກ ແລະ ກໍານົດພື້ນທີ່ສະຖານີສາກ. ດັ່ງນັ້ນ, ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈະນໍາໃຊ້ ລະບົບ (OPENPATH) ເພື່ອເປັນການເກັບກໍາ ແລະ ຕິດຕາມຂໍ້ມູນ ການເດີນທາງຂອງຜູ້ນໍາໃຊ້ພາຫະນະ.",
                 "why_we_collect": "ສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ຈະນໍາໃຊ້ຂໍ້ມູນຈາກ OPENPATH ແລະ  EVI-Pro ທີ່ເປັນເຄື່ອງມືຂັ້ນພື້ນຖານໃນການປະເມີນ ຄວາມຕ້ອງການການນໍາໃຊ້ ສະຖານີສາກໄຟລົດໄຟຟ້າ ເພື່ອເຮັດໃຫ້ການຂະຫຍາຍສະຖານີສາກສາມາດ ຕອບສະໜອງຕາມຄວາມຕ້ອງການຂອງຜູ້ນໍາໃຊ້ລົດໄຟຟ້າ.",
-                "research_questions": ["ຮູບແບບພຶດຕິກໍາການເດີນທາງທີ່ຈະນໍາໃຊ້ເພື່ອເປັນຮູບແບບໃນການຮອງຮັບລົດໄຟຟ້າໃນອະນາຄົດ ແລະ ໂຄງລ່າງພື້ນຖານຈໍາເປັນຕ້ອງສະຫນັບສະຫນູນໃນການນໍາໃຊ້ລົດໄຟຟ້າ.", "ຂໍ້ມູນຈະນໍາໃຊ້ ກັບລະບົບ EVI-Pro ຂອງສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ເພື່ອຄາດຄະເນ ສະຖານີສາກ ທີ່ຕ້ອງການໃນພື້ນທີ່ ທີ່ກຳນົດໄວ້."]
+                "research_questions": [
+                    "ຮູບແບບພຶດຕິກໍາການເດີນທາງທີ່ຈະນໍາໃຊ້ເພື່ອເປັນຮູບແບບໃນການຮອງຮັບລົດໄຟຟ້າໃນອະນາຄົດ ແລະ ໂຄງລ່າງພື້ນຖານຈໍາເປັນຕ້ອງສະຫນັບສະຫນູນໃນການນໍາໃຊ້ລົດໄຟຟ້າ.",
+                    "ຂໍ້ມູນຈະນໍາໃຊ້ ກັບລະບົບ EVI-Pro ຂອງສະຖາບັນຄົ້ນຄ້ວາພະລັງງານທົດແທນ (NREL) ເພື່ອຄາດຄະເນ ສະຖານີສາກ ທີ່ຕ້ອງການໃນພື້ນທີ່ ທີ່ກຳນົດໄວ້."
+                ]
             },
             "en": {
                 "deployment_partner_name": "USAID - Laos",
@@ -30,25 +33,28 @@
                 "summary_line_3": "This app is used as a trip tracking solution for understanding travel behavior of vehicle usage.",
                 "short_textual_description": "For public electric vehicle supply equipment (EVSE) needs estimate for Lao PDR, NREL will model vehicle travel patterns, EV adoption, and future demand for public charging stations in Lao capital areas and strategically identify potential future EVSE needs and strategies for EVSE siting. NREL would use OPENPATH as a trip tracking solution for understanding travel behavior of vehicle usage.",
                 "why_we_collect": "NREL will use the data from OPENPATH and NREL EVI-Pro, electric vehicle infrastructure project tool to estimate how much electric vehicle (EV) charging infrastructure is needed in a designated area to meet a given demand.",
-                "research_questions": ["Travel behavior patterns to be used to model future EV adoption and infrastructure need to support the adoption.", "Data would be used with NREL EVI-Pro to estimate EVSE needed in a designated area."]
+                "research_questions": [
+                    "Travel behavior patterns to be used to model future EV adoption and infrastructure need to support the adoption.",
+                    "Data would be used with NREL EVI-Pro to estimate EVSE needed in a designated area."
+                ]
             }
         }
     },
     "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/usaid-laos-ev-label-options.json",
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/usaid-laos-ev/usaid-laos-ev-demo-survey-v4.xml",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "lo": "ຕອບ",
-            "en": "Answered"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/usaid-laos-ev/usaid-laos-ev-demo-survey-v4.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "lo": "ຕອບ",
+                    "en": "Answered"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": false
@@ -61,7 +67,16 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": ["K.Shankari@nrel.gov", "awheelis@nrel.gov", "Jack.Greenlee@nrel.gov", "Sanjini.Nanayakkara@nrel.gov", "Kosol.Kiatreungwattana@nrel.gov", "thythavysiphachanh@gmail.com", "bonnie.powell@nrel.gov", "Kevin.Xue@nrel.gov"],
+        "admin_access": [
+            "K.Shankari@nrel.gov",
+            "awheelis@nrel.gov",
+            "Jack.Greenlee@nrel.gov",
+            "Sanjini.Nanayakkara@nrel.gov",
+            "Kosol.Kiatreungwattana@nrel.gov",
+            "thythavysiphachanh@gmail.com",
+            "bonnie.powell@nrel.gov",
+            "Kevin.Xue@nrel.gov"
+        ],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,

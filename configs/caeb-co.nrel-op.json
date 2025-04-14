@@ -21,7 +21,10 @@
                 "summary_line_3": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
                 "short_textual_description": "The growing popularity of eBikes aligns well with the State of Colorado’s climate and equity goals. eBikes, while the cost of which is still out of reach for some, are becoming more affordable as battery costs come down and new manufacturers enter the market. With most motor vehicle trips under 10 miles, eBikes are well-suited to replace those trips typically taken in a car.",
                 "why_we_collect": "The data collected during the program will be used to understand how eBikes are used including when and how often as well as distance travelled.",
-                "research_questions": ["This program will track eBike trips completed by program participants.", "Projects that participate will have participants required to track their trips through the app."]
+                "research_questions": [
+                    "This program will track eBike trips completed by program participants.",
+                    "Projects that participate will have participants required to track their trips through the app."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Oficina de Energía de Colorado",
@@ -30,25 +33,28 @@
                 "summary_line_2": "En este programa, proporciona bicicletas eléctricas a personas de bajos ingresos en comunidades de todo el estado.",
                 "summary_line_3": "Si es un participante del programa, esta aplicación puede ayudarlo a registrar sus viajes y competir contra otros para beneficiar nuestro medio ambiente.",
                 "short_textual_description": "La creciente popularidad de las bicicletas eléctricas se alinea bien con los objetivos climáticos y de equidad del Estado de Colorado. Las eBikes, aunque su costo todavía está fuera del alcance de algunos, se están volviendo más asequibles a medida que bajan los costos de las baterías y nuevos fabricantes ingresan al mercado. Con la mayoría de los viajes en vehículos motorizados de menos de 10 millas, las bicicletas eléctricas son adecuadas para reemplazar los viajes que normalmente se realizan en un automóvil.",
-                "why_we_collect" : "Los datos recopilados durante el programa se utilizarán para comprender cómo se utilizan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, así como la distancia recorrida.",
-                "research_questions": ["Este programa hará un seguimiento de los viajes en eBike completados por los participantes del programa", "Los proyectos que participen requerirán que los participantes realicen un seguimiento de sus viajes a través de la aplicación."]
+                "why_we_collect": "Los datos recopilados durante el programa se utilizarán para comprender cómo se utilizan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, así como la distancia recorrida.",
+                "research_questions": [
+                    "Este programa hará un seguimiento de los viajes en eBike completados por los participantes del programa",
+                    "Los proyectos que participen requerirán que los participantes realicen un seguimiento de sus viajes a través de la aplicación."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -68,7 +74,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -79,6 +88,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

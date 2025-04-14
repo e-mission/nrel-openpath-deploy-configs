@@ -1,105 +1,105 @@
 {
-  "url_abbreviation": "uw-ebike",
-  "version": 2,
-  "ts": 1741377085,
-  "server": {
-    "connectUrl": "https://uw-ebike-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": false,
-    "subgroups": [
-      "test",
-      "300-pretest",
-      "1200-pretest",
-      "300-control",
-      "300-treatment",
-      "1200-control",
-      "1200-treatment"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "03",
-    "start_year": "2025",
-    "mode_studied": "e-bike",
-    "program_admin_contact": "Don MacKenzie, University of Washington (email: dwhm@uw.edu)",
-    "deployment_partner_name": "The University of Washington",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "The University of Washington",
-        "deployment_name": "WSDOT E-Bike Incentive Evaluation Program",
-        "summary_line_1": "Evaluation of the Washington State Department of Transportation (WSDOT) e-bike incentive program",
-        "summary_line_2": "",
-        "summary_line_3": "",
-        "short_textual_description": "Evaluation of the Washington State Department of Transportation (WSDOT) e-bike incentive program",
-        "why_we_collect": "To evaluate the effectiveness of the WSDOT e-bike incentive program on reducing GHG emissions",
-        "research_questions": []
-      },
-      "es": {
-        "deployment_partner_name": "",
-        "deployment_name": "",
-        "summary_line_1": "",
-        "summary_line_2": "",
-        "summary_line_3": "",
-        "short_textual_description": "",
-        "why_we_collect": "",
-        "research_questions": []
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uw-ebike/uw-ebike-onboarding-v0.xml",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "uw-ebike",
+    "version": 2,
+    "ts": 1741377085,
+    "server": {
+        "connectUrl": "https://uw-ebike-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "rs49742@uw.edu",
-      "dwhm@uw.edu",
-      "djmalark@uw.edu"
-    ]
-  },
-  "reminderSchemes": {
-    "passive": {
-      "schedule": []
+    "opcode": {
+        "autogen": false,
+        "subgroups": [
+            "test",
+            "300-pretest",
+            "1200-pretest",
+            "300-control",
+            "300-treatment",
+            "1200-control",
+            "1200-treatment"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "03",
+        "start_year": "2025",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Don MacKenzie, University of Washington (email: dwhm@uw.edu)",
+        "deployment_partner_name": "The University of Washington",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "The University of Washington",
+                "deployment_name": "WSDOT E-Bike Incentive Evaluation Program",
+                "summary_line_1": "Evaluation of the Washington State Department of Transportation (WSDOT) e-bike incentive program",
+                "summary_line_2": "",
+                "summary_line_3": "",
+                "short_textual_description": "Evaluation of the Washington State Department of Transportation (WSDOT) e-bike incentive program",
+                "why_we_collect": "To evaluate the effectiveness of the WSDOT e-bike incentive program on reducing GHG emissions",
+                "research_questions": []
+            },
+            "es": {
+                "deployment_partner_name": "",
+                "deployment_name": "",
+                "summary_line_1": "",
+                "summary_line_2": "",
+                "summary_line_3": "",
+                "short_textual_description": "",
+                "why_we_collect": "",
+                "research_questions": []
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uw-ebike/uw-ebike-onboarding-v0.xml",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "rs49742@uw.edu",
+            "dwhm@uw.edu",
+            "djmalark@uw.edu"
+        ]
+    },
+    "reminderSchemes": {
+        "passive": {
+            "schedule": []
+        }
     }
-  }
 }

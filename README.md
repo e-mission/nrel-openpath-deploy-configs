@@ -44,20 +44,20 @@ If you are here to test out the app on your personal phone, please use the open-
 
 In general, if you are planning to keep the app installed for less than a day, please use stage so you don't pollute the real dataset.
 
-#### Testing configs
+#### Testing local configs on e-mission-phone
 
-As we test more config options, we sometimes need to be able to edit and load configs locally without pushing to github
-and waiting for a PR to be approved.
+As we test more config options, we sometimes need to be able to test local config changes without pushing to GitHub and waiting for a PR to be approved.
 
 To accomplish this:
-- Change the download URL in `www/js/config/dynamic_config.js` to `"http://localhost:9090/configs/"+label+".nrel-op.json"`
-- Modify one of the existing configs **OR** create a new config and add it to `docs/index.html`
-- `docker-compose -f docker-compose.dev.yml up -d`
-- In the emulator, go to http://localhost:9090 and click on the appropriate link
+- Modify one of the existing configs in your local repo or create a new one (e.g. my-deployment.nrel-op.json)
+- `docker-compose -f docker-compose.dev.yml up -d` to serve your local configs on localhost:9090
+- With an emulator running e-mission-phone, log in with an opcode for that deployment (e.g. nrelop_my-deployment_1234)
+- As long as you are not using a 'production' build of e-mission-phone, the app will check localhost:9090 before it checks GitHub
+- You can use "Profile" > "Refresh App Configuration" to quickly test additional changes as long as "version" is incremented in your new version of the config
 
-### File format
+### Config options
 
-Config format (with default values) is:
+Example config format (with default values) is:
 
 ```
 {
@@ -95,13 +95,4 @@ Config format (with default values) is:
 }
 ```
 
-### Development
-
-This repo has some simple GitHub pages in the `docs` repo
-
-If you want to experiment with them (e.g. by changing the format or the URL
-prefix), you can use the attached `docker-compose.yml` to serve the pages
-locally at http://localhost:9090
-
-I found this useful while testing the QR code functionality on the devapp,
-which responds to the `emission` URL prefix, not `nrelopenpath`
+A TypeScript specification of all the available config options is available in `index.d.ts`.

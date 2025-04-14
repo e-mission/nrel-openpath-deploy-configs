@@ -1,96 +1,96 @@
 {
-  "url_abbreviation": "stm-community",
-  "version": 1,
-  "ts": 1720645300,
-  "server": {
-    "connectUrl": "https://stm-community-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "default",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "study",
-    "start_month": "07",
-    "start_year": "2024",
-    "mode_studied": "",
-    "program_admin_contact": "Abigail Wheelis (openPATH@nrel.gov)",
-    "deployment_partner_name": "NREL Open House",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "NREL Open House",
-        "deployment_name": "South Table Mountain Community",
-        "summary_line_1": "OpenPATH is an NREL application that allows individuals to record their travel patterns.",
-        "summary_line_2": "The application can provide insight into the impacts of your travel behavior.",
-        "summary_line_3": "By joining this study, you can see how your habits stack up against your neighbors!",
-        "short_textual_description": "As a part of community outreach, we are creating a dedicated study group for the South Table Mountain area community. You will have the opportunity to see your transportation carbon footprint, active travel minutes, and other summaries of your travel diary.",
-        "why_we_collect": "OpenPATH is a research project, anonymously collected data may be used in research efforts.",
-        "research_questions": []
-      },
-      "es": {
-        "deployment_partner_name": "Día de Puertas Abiertas de NREL",
-        "deployment_name": "Comunidad de STM",
-        "summary_line_1": "OpenPATH es una aplicación NREL que permite a las personas registrar sus patrones de viaje.",
-        "summary_line_2": "La aplicación puede proporcionar información sobre los impactos de su comportamiento de viaje.",
-        "summary_line_3": "Al unirte a este estudio, podrás ver cómo tus hábitos se comparan con los de tus vecinos.",
-        "short_textual_description": "Como parte del alcance comunitario, estamos creando un grupo de estudio dedicado a la comunidad del área de South Table Mountain. Tendrá la oportunidad de ver su huella de carbono en el transporte, minutos de viaje activos y otros resúmenes de su diario de viaje.",
-        "why_we_collect": "OpenPATH es un proyecto de estudio; los datos recopilados de forma anónima pueden usarse estudios futuros.",
-        "research_questions": []
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "stm-community",
+    "version": 1,
+    "ts": 1720645300,
+    "server": {
+        "connectUrl": "https://stm-community-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [
-      "data.start_loc.coordinates",
-      "data.end_loc.coordinates"
-    ],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "abigail.wheelis@nrel.gov"
-    ]
-  }
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "default",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "study",
+        "start_month": "07",
+        "start_year": "2024",
+        "mode_studied": "",
+        "program_admin_contact": "Abigail Wheelis (openPATH@nrel.gov)",
+        "deployment_partner_name": "NREL Open House",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "NREL Open House",
+                "deployment_name": "South Table Mountain Community",
+                "summary_line_1": "OpenPATH is an NREL application that allows individuals to record their travel patterns.",
+                "summary_line_2": "The application can provide insight into the impacts of your travel behavior.",
+                "summary_line_3": "By joining this study, you can see how your habits stack up against your neighbors!",
+                "short_textual_description": "As a part of community outreach, we are creating a dedicated study group for the South Table Mountain area community. You will have the opportunity to see your transportation carbon footprint, active travel minutes, and other summaries of your travel diary.",
+                "why_we_collect": "OpenPATH is a research project, anonymously collected data may be used in research efforts.",
+                "research_questions": []
+            },
+            "es": {
+                "deployment_partner_name": "Día de Puertas Abiertas de NREL",
+                "deployment_name": "Comunidad de STM",
+                "summary_line_1": "OpenPATH es una aplicación NREL que permite a las personas registrar sus patrones de viaje.",
+                "summary_line_2": "La aplicación puede proporcionar información sobre los impactos de su comportamiento de viaje.",
+                "summary_line_3": "Al unirte a este estudio, podrás ver cómo tus hábitos se comparan con los de tus vecinos.",
+                "short_textual_description": "Como parte del alcance comunitario, estamos creando un grupo de estudio dedicado a la comunidad del área de South Table Mountain. Tendrá la oportunidad de ver su huella de carbono en el transporte, minutos de viaje activos y otros resúmenes de su diario de viaje.",
+                "why_we_collect": "OpenPATH es un proyecto de estudio; los datos recopilados de forma anónima pueden usarse estudios futuros.",
+                "research_questions": []
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "abigail.wheelis@nrel.gov"
+        ]
+    }
 }

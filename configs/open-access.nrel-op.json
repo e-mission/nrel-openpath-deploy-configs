@@ -20,7 +20,10 @@
                 "summary_line_3": "serves as a control group while evaluating behavior change of programs.",
                 "short_textual_description": "Transportation is the largest contributor to US greenhouse gas emissions. As the nation's premier facility for energy-efficient transportation R&D solutions, NREL’s sustainable transportation and mobility research takes a whole-system, human-centric approach to solve complex energy challenges and slash greenhouse gas emissions. As part of this approach we collect long-term travel behavior data that tells us how, where and why people travel.",
                 "why_we_collect": "NREL can use this information to understand how travel patterns change in response to federal, state and local interventions. These interventions can include programs, incentives and infrastructure changes. Since the data will be collected for a long time, changes can be directly observed instead of inferred from other data sources. The data can also serve as a control of unmodified behavior for programs that target a small sample of the population.",
-                "research_questions": ["Comparing the open-access group (no intervention) and programs that provide interventions.", "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."]
+                "research_questions": [
+                    "Comparing the open-access group (no intervention) and programs that provide interventions.",
+                    "General monitoring of mobility trends for travel behavior, including shifts to travel behavior and the introduction of new mobility modes."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)",
@@ -31,7 +34,10 @@
                 "short_textual_description": "El transporte es el mayor contribuyente a las emisiones de gases de efecto invernadero de EE. UU. Como la principal instalación del país para soluciones de investigación y desarrollo de transporte eficiente en energía, la investigación de movilidad y transporte sostenible de NREL adopta un enfoque de sistema completo centrado en el ser humano para resolver desafíos energéticos complejos y reducir las emisiones de gases de efecto invernadero. Como parte de este enfoque, recopilamos datos de comportamiento de viaje a largo plazo que nos digan cómo, dónde y por qué viaja la gente.",
                 "why_we_collect_es": "NREL puede usar esta información para comprender cómo cambian los patrones de viaje en respuesta a las intervenciones federales, estatales y locales. Estas intervenciones pueden incluyen programas, incentivos y cambios de infraestructura. Dado que los datos serán recopilarse durante mucho tiempo, los cambios se pueden observar directamente en lugar de inferido de otras fuentes de datos. Estos datos también pueden servir como control de comportamiento no modificado para programas que se dirigen a una pequeña muestra de la población.",
                 "why_we_collect": "NREL puede usar esta información para comprender cómo cambian los patrones de viaje en respuesta a las intervenciones federales, estatales y locales. Las intervenciones pueden incluyen programas, incentivos y cambios de infraestructura. Dado que estos datos serán recopilarse durante mucho tiempo, los cambios se pueden observar directamente en lugar de inferido de otras fuentes de datos. Estos datos también pueden servir como control de comportamiento no modificado para programas que se dirigen a una pequeña muestra de la población.",
-                "research_questions": ["Comparando el grupo de acceso abierto (sin intervención) y los programas que brindan intervenciones.", "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."]
+                "research_questions": [
+                    "Comparando el grupo de acceso abierto (sin intervención) y los programas que brindan intervenciones.",
+                    "Monitoreo general de las tendencias de movilidad para el comportamiento de viaje, incluidos los cambios en el comportamiento de viaje y la introducción de nuevos modos de movilidad."
+                ]
             }
         }
     },
@@ -50,7 +56,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -61,6 +70,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

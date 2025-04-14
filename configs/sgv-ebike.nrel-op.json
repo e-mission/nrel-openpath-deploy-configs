@@ -1,109 +1,109 @@
 {
-  "url_abbreviation": "sgv-ebike",
-  "version": 1,
-  "ts": 1741368160,
-  "server": {
-    "connectUrl": "https://sgv-ebike-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": false,
-    "subgroups": [
-      "reap-2-bikeshare-ebike",
-      "reap-2-cargo-bikeshare-ebike",
-      "reap-2-cargo-ebike-purchase-incentive",
-      "epa-cargo-ebike-purchase-incentive",
-      "i-10-bikeshare-ebike",
-      "i-10-cargo-ebike-purchase-incentive",
-      "doe-bikeshare-ebike",
-      "test"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "03",
-    "start_year": "2025",
-    "mode_studied": "e-bike",
-    "program_admin_contact": "Aaron Fellhoelter (email: aaronf1@vols.utk.edu)",
-    "deployment_partner_name": "University of Tennessee, Knoxville and Portland State University",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "University of Tennessee, Knoxville and Portland State University",
-        "deployment_name": "San Gabriel Valley E-bike Study",
-        "summary_line_1": "The San Gabriel Valley Council of Governments (SGVCOG) and Active San Gabriel Valley (ASGV) are developing and administering multiple e-bike strategies. The program focuses on removing cost barriers to e-bike use.",
-        "summary_line_2": "If you are a program Participant, this app can help you log your trips and allow the San Gabriel Valley Council of Governments to understand travel patterns.",
-        "summary_line_3": "",
-        "short_textual_description": "The San Gabriel Valley Council of Governments and Active San Gabriel Valley (ASGV) are developing policy for e-bike bikeshares and incentives to promote more sustainable and equitable forms of travel. This OpenPath application helps us to understand the travel patterns of participants.",
-        "why_we_collect": "As a participant of the study, the OpenPath app will collect data on your travel modes, distance, and frequency. This data will help us to gain a better understanding of the travel characteristics of participants, and how we can improve the program to make the San Gabriel Valley a more livable and healthier place for its citizens.",
-        "research_questions": [
-          "How much greenhouse gasses can be expected to be substituted for each e-bike rebate?",
-          "How did having an incentivized e-bike change travel behavior?",
-          "How many miles does an e-bike substitute?"
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "University of Tennessee, Knoxville y Portland State University",
-        "deployment_name": "San Gabriel Valley E-bike Study",
-        "summary_line_1": "The San Gabriel Valley Council of Governments (SGVCOG) y Active San Gabriel Valley (ASGV) están desarrollando y administrando múltiples estrategias para bicicletas eléctricas. El programa se centra en eliminar las barreras economicas para el uso de bicicletas eléctricas.",
-        "summary_line_2": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y permitir que The San Gabriel Valley Council of Governments comprenda los patrones de viaje.",
-        "summary_line_3": "",
-        "short_textual_description": "The San Gabriel Valley Council of Governments y Active San Gabriel Valley (ASGV) están desarrollando políticas para el uso compartido de biciletas electicas y e incentivar la compra de las mimsas, con el fin de promover formas de transporte más sostenibles y equitativas. Esta aplicación de OpenPath nos ayuda a comprender los patrones de viaje de los participantes.",
-        "why_we_collect": "Como participante del estudio, la aplicación OpenPath recopilará datos sobre tus modos de viaje, distancia y frecuencia. Estos datos nos ayudarán a comprender mejor las características de viaje de los participantes y a mejorar el programa para hacer de San Gabriel Valley un lugar más habitable y saludable para sus ciudadanos.",
-        "research_questions": [
-          "¿Cuántos gases de efecto invernadero se espera que se sustituyan por cada bicicleta eléctrica adquirida por reembolso?",
-          "¿Cómo cambió su comportamiento de viaje al recibir una bicicleta eléctrica incentivada?",
-          "¿Cuántas millas sustituye una bicicleta eléctrica?"
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "sgv-ebike",
+    "version": 1,
+    "ts": 1741368160,
+    "server": {
+        "connectUrl": "https://sgv-ebike-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": false,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": true,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "aaronf1@vols.utk.edu",
-      "cherry@utk.edu",
-      "jhmacart@pdx.edu"
-    ]
-  }
+    "opcode": {
+        "autogen": false,
+        "subgroups": [
+            "reap-2-bikeshare-ebike",
+            "reap-2-cargo-bikeshare-ebike",
+            "reap-2-cargo-ebike-purchase-incentive",
+            "epa-cargo-ebike-purchase-incentive",
+            "i-10-bikeshare-ebike",
+            "i-10-cargo-ebike-purchase-incentive",
+            "doe-bikeshare-ebike",
+            "test"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "03",
+        "start_year": "2025",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Aaron Fellhoelter (email: aaronf1@vols.utk.edu)",
+        "deployment_partner_name": "University of Tennessee, Knoxville and Portland State University",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "University of Tennessee, Knoxville and Portland State University",
+                "deployment_name": "San Gabriel Valley E-bike Study",
+                "summary_line_1": "The San Gabriel Valley Council of Governments (SGVCOG) and Active San Gabriel Valley (ASGV) are developing and administering multiple e-bike strategies. The program focuses on removing cost barriers to e-bike use.",
+                "summary_line_2": "If you are a program Participant, this app can help you log your trips and allow the San Gabriel Valley Council of Governments to understand travel patterns.",
+                "summary_line_3": "",
+                "short_textual_description": "The San Gabriel Valley Council of Governments and Active San Gabriel Valley (ASGV) are developing policy for e-bike bikeshares and incentives to promote more sustainable and equitable forms of travel. This OpenPath application helps us to understand the travel patterns of participants.",
+                "why_we_collect": "As a participant of the study, the OpenPath app will collect data on your travel modes, distance, and frequency. This data will help us to gain a better understanding of the travel characteristics of participants, and how we can improve the program to make the San Gabriel Valley a more livable and healthier place for its citizens.",
+                "research_questions": [
+                    "How much greenhouse gasses can be expected to be substituted for each e-bike rebate?",
+                    "How did having an incentivized e-bike change travel behavior?",
+                    "How many miles does an e-bike substitute?"
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "University of Tennessee, Knoxville y Portland State University",
+                "deployment_name": "San Gabriel Valley E-bike Study",
+                "summary_line_1": "The San Gabriel Valley Council of Governments (SGVCOG) y Active San Gabriel Valley (ASGV) están desarrollando y administrando múltiples estrategias para bicicletas eléctricas. El programa se centra en eliminar las barreras economicas para el uso de bicicletas eléctricas.",
+                "summary_line_2": "Si eres un participante del programa, esta aplicación puede ayudarte a registrar tus viajes y permitir que The San Gabriel Valley Council of Governments comprenda los patrones de viaje.",
+                "summary_line_3": "",
+                "short_textual_description": "The San Gabriel Valley Council of Governments y Active San Gabriel Valley (ASGV) están desarrollando políticas para el uso compartido de biciletas electicas y e incentivar la compra de las mimsas, con el fin de promover formas de transporte más sostenibles y equitativas. Esta aplicación de OpenPath nos ayuda a comprender los patrones de viaje de los participantes.",
+                "why_we_collect": "Como participante del estudio, la aplicación OpenPath recopilará datos sobre tus modos de viaje, distancia y frecuencia. Estos datos nos ayudarán a comprender mejor las características de viaje de los participantes y a mejorar el programa para hacer de San Gabriel Valley un lugar más habitable y saludable para sus ciudadanos.",
+                "research_questions": [
+                    "¿Cuántos gases de efecto invernadero se espera que se sustituyan por cada bicicleta eléctrica adquirida por reembolso?",
+                    "¿Cómo cambió su comportamiento de viaje al recibir una bicicleta eléctrica incentivada?",
+                    "¿Cuántas millas sustituye una bicicleta eléctrica?"
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": false,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": true,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "aaronf1@vols.utk.edu",
+            "cherry@utk.edu",
+            "jhmacart@pdx.edu"
+        ]
+    }
 }

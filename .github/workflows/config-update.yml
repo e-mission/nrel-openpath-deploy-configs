@@ -1,0 +1,68 @@
+name: Update Deployment Config
+
+on:
+  workflow_dispatch:
+    inputs:
+      deployment:
+        required: true
+        type: string
+        description: Name of the deployment to update config for (e.g. nrel-commute)
+      script_name:
+        required: true
+        type: choice
+        options:
+          - update_admin_access
+      script_args:
+        required: false
+        type: string
+        description: Additional arguments for the script (space-separated)
+      token:
+        required: false
+        type: string
+        description: GitHub token for authentication. If not provided, the workflow will use the default token.
+
+env:
+  GITHUB_TOKEN: ${{ inputs.token || secrets.GITHUB_TOKEN }}
+
+jobs:
+  update_config:
+    runs-on: ubuntu-latest
+
+    outputs:
+      PR_URL: ${{ steps.commit_and_pr.outputs.PR_URL }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Create update branch
+        id: create_branch
+        run: |
+          BRANCH_NAME="config-update-${{ github.event.inputs.script_name }}-${{ github.run_id }}"
+          git checkout -b $BRANCH_NAME
+          echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Run config update script
+        run: |
+          python bin/config_update/${{ inputs.script_name }}.py ${{ inputs.deployment }} ${{ inputs.script_args }}
+
+      - name: Commit and PR changes if needed
+        id: commit_and_pr
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit \
+            -m "\`${{ inputs.deployment }}\`: ${{ inputs.script_name }}" \
+            -m "Updated \`${{ inputs.deployment }}\` configuration using \`${{ inputs.script_name }}\` with args \`${{ inputs.script_args }}\`" \
+            -m "This commit was triggered by the \`config-update\` workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git push --set-upstream origin ${{ steps.create_branch.outputs.BRANCH_NAME }}
+          echo "Creating PR..."
+          PR_URL=$(gh pr create --base main --head ${{ steps.create_branch.outputs.BRANCH_NAME }} --fill)
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr merge "$PR_URL" --auto --squash
+          echo "PR created and will merge if checks pass: $PR_URL"

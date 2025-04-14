@@ -21,7 +21,10 @@
                 "summary_line_3": "If you are a program participant, this app can help you log your trips and compete against others to benefit our environment.",
                 "short_textual_description": "Ground transportation accounts for 64% of all greenhouse gas emissions  in Teton County, the most out of any sector. Of these emissions, 40% are attributed to driving on state highways and 10% on local roads. 3,200 individuals commute from Teton County, ID to Teton County, Wyoming approximately 5 days a week.    There is consistent traffic congestion throughout the summer months between the intersection Highway 89 and Highway 22 to Teton Pass. Wyoming Department of Transportation traffic data shows this to be one of the busiest stretches in the state. The study will allow Yellowstone-Teton Clean Cities, Teton County and associated organizations to understand commuters shift to electric bikes with the offering of covered overnight parking and e-bike rental and group buy programs.",
                 "why_we_collect": "The information from this study will better inform Yellowstone-Teton Clean Cities, Teton county and associated organizations where best to focus energy and resources when working to reduce single occupancy vehicles and greenhouse gas emissions when traveling popular commuter routes.  The data collected through this app will unlock useful information to understand if the use of e-bikes effectively reduces greenhouse gas emissions and congestion.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commute programs.", "The impact of e-bike commuting on transportion energy offices and GHG emissions."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of potential commute programs.",
+                    "The impact of e-bike commuting on transportion energy offices and GHG emissions."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciudades limpias de Yellowstone-Teton",
@@ -32,7 +35,10 @@
                 "short_textual_description": "El transporte terrestre representa el 64% de todas las emisiones de gases de efecto invernadero en el condado de Teton, la mayor parte de cualquier sector. De estas emisiones, el 40% se atribuyen a la conducción en carreteras estatales y el 10% en carreteras locales. 3200 personas viajan desde el condado de Teton, ID al condado de Teton, Wyoming aproximadamente 5 días a la semana. Hay una congestión de tráfico constante durante los meses de verano entre la intersección de la autopista 89 y la autopista 22 hasta Teton Pass. Los datos de tráfico del Departamento de Transporte de Wyoming muestran que este es uno de los tramos más concurridos del estado. El estudio permitirá que Yellowstone-Teton Clean Cities, el condado de Teton y las organizaciones asociadas entiendan el cambio de los viajeros a las bicicletas eléctricas con la oferta de estacionamiento nocturno cubierto y alquiler de bicicletas eléctricas y programas de compra grupal.",
                 "why_we_collect_es": "La información de este estudio informará mejor a las Ciudades Limpias de Yellowstone-Teton, el condado de Teton y las organizaciones asociadas dónde concentrar mejor la energía y los recursos cuando se trabaja para reducir los vehículos de ocupación individual y las emisiones de gases de efecto invernadero cuando se viaja en rutas populares. Los datos recopilados a través de esta aplicación desbloquearán información útil para comprender si el uso de bicicletas eléctricas reduce efectivamente las emisiones de gases de efecto invernadero y la congestión.",
                 "why_we_collect": "La información de este estudio informará mejor a las Ciudades Limpias de Yellowstone-Teton, el condado de Teton y las organizaciones asociadas dónde concentrar mejor la energía y los recursos cuando se trabaja para reducir los vehículos de ocupación individual y las emisiones de gases de efecto invernadero cuando se viaja en rutas populares. Los datos recopilados a través de esta aplicación desbloquearán información útil para comprender si el uso de bicicletas eléctricas reduce efectivamente las emisiones de gases de efecto invernadero y la congestión.",
-                "research_questions": ["Modelado del comportamiento de viaje para respaldar los análisis de costo-beneficio de los posibles programas de viaje.", "El impacto de los desplazamientos en bicicleta eléctrica en las oficinas de energía del transporte y las emisiones de GEI."]
+                "research_questions": [
+                    "Modelado del comportamiento de viaje para respaldar los análisis de costo-beneficio de los posibles programas de viaje.",
+                    "El impacto de los desplazamientos en bicicleta eléctrica en las oficinas de energía del transporte y las emisiones de GEI."
+                ]
             }
         }
     },
@@ -51,7 +57,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -62,6 +71,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

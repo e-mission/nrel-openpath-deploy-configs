@@ -21,7 +21,11 @@
                 "summary_line_3": "If you are a program Participant, this app will allow you to log your trips. The information you provide through this app will be anonymized for reporting purposes (not tied to your name or identifying information)",
                 "short_textual_description": "The ACT4All e-bike program will provide participants with pedal-assist electric bikes at a subsidized cost. Metro Mobility would like to utilize a trip tracking solution for understanding how these e-bikes are used. Since we expect participants to take multiple trips a day, a mostly automated tracking solution like that offered by the OpenPATH app would relieve much of the burden of reporting for participants and ensure the most complete data possible.",
                 "why_we_collect": "The data collected during the program will be used to understand how participants are using their e-bikes including when, where, how often and distance travelled. By combining this data with additional data collected through surveys and participant interviews, Metro Mobility can determine what factors affect e-bike adoption and usage, and the impact that e-bike access has on transportation mode choice and GHG emissions.",
-                "research_questions": ["Cost-benefit analysis of programs to subsidize e-bike usage among low-income populations.", "The impact of e-bike access on transportation mode choice and GHG emissions.", "Comparison of e-bike adoption rates for different deployment models, including ownership, ownership with charging station access, and rentals from a shared charging station based fleet."]
+                "research_questions": [
+                    "Cost-benefit analysis of programs to subsidize e-bike usage among low-income populations.",
+                    "The impact of e-bike access on transportation mode choice and GHG emissions.",
+                    "Comparison of e-bike adoption rates for different deployment models, including ownership, ownership with charging station access, and rentals from a shared charging station based fleet."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Metro Movilidad en asociación con MassCEC",
@@ -32,7 +36,11 @@
                 "short_textual_description": "El programa de bicicletas eléctricas ACT4All proporcionará a los participantes bicicletas eléctricas con pedaleo asistido a un costo subsidiado. A Metro Mobility le gustaría utilizar una solución de seguimiento de viajes para comprender cómo se utilizan estas bicicletas eléctricas. Dado que esperamos que los participantes realicen varios viajes al día, una solución de seguimiento mayoritariamente automatizada como la que ofrece la aplicación OpenPATH aliviaría gran parte de la carga de informar a los participantes y garantizaría la información más completa posible.",
                 "why_we_collect_es": "Los datos recopilados durante el programa se utilizarán para comprender cómo los participantes usan sus bicicletas eléctricas, incluido cuándo, dónde, con qué frecuencia y la distancia recorrida. Al combinar estos datos con datos adicionales recopilados a través de encuestas y entrevistas a participantes, Metro Mobility puede determinar qué factores afectan la adopción y el uso de bicicletas eléctricas, y el impacto que tiene el acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.",
                 "why_we_collect": "Los datos recopilados durante el programa se utilizarán para comprender cómo los participantes usan sus bicicletas eléctricas, incluido cuándo, dónde, con qué frecuencia y la distancia recorrida. Al combinar estos datos con datos adicionales recopilados a través de encuestas y entrevistas a participantes, Metro Mobility puede determinar qué factores afectan la adopción y el uso de bicicletas eléctricas, y el impacto que tiene el acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.",
-                "research_questions": ["Análisis costo-beneficio de programas para subsidiar el uso de bicicletas eléctricas en poblaciones de bajos ingresos.", "El impacto del acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.", "Comparación de las tasas de adopción de bicicletas eléctricas para diferentes modelos de implementación, incluida la propiedad, la propiedad con acceso a la estación de carga y el alquiler de una flota basada en una estación de carga compartida."]
+                "research_questions": [
+                    "Análisis costo-beneficio de programas para subsidiar el uso de bicicletas eléctricas en poblaciones de bajos ingresos.",
+                    "El impacto del acceso a bicicletas eléctricas en la elección del modo de transporte y las emisiones de GEI.",
+                    "Comparación de las tasas de adopción de bicicletas eléctricas para diferentes modelos de implementación, incluida la propiedad, la propiedad con acceso a la estación de carga y el alquiler de una flota basada en una estación de carga compartida."
+                ]
             }
         }
     },
@@ -51,7 +59,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -62,6 +73,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

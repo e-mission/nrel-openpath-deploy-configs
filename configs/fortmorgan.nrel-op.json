@@ -7,7 +7,10 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default"]
+        "subgroups": [
+            "test",
+            "default"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -25,7 +28,11 @@
                 "summary_line_3": "Through this app, participants can track their trips and engage in a collective effort to contribute to improved air quality and a greener future.",
                 "short_textual_description": " To gain a comprehensive understanding of commuting patterns in Fort Morgan, the City of Fort Morgan, in collaboration with Northern Colorado Clean Cities and Morgan Community College, plans to implement an automated trip tracking solution. This study aims to analyze travel behavior variations across different areas, weekdays, and seasons, eliminating the need for extensive surveys. By adopting this approach, Fort Morgan can effectively adapt to the evolving commuting dynamics and make informed decisions regarding transportation planning and improvements.",
                 "why_we_collect": "By implementing the automated trip tracking solution in Fort Morgan, the City aims to gain insights into the commuting habits of its residents, identify constraints they face, and explore alternative transportation options to reduce reliance on single-occupancy vehicles. The comprehensive information gathered will assist in developing strategies to minimize carbon emissions from transportation and promote sustainable commuting practices in the city. The data collected through this program will provide valuable insights into the usage patterns of eBikes, including frequency, duration, and distance traveled. This information will help in understanding the effectiveness of eBikes as a sustainable transportation option and guide future initiatives to promote their usage, thereby contributing to reducing carbon emissions and enhancing environmentally friendly transportation alternatives.",
-                "research_questions": ["How does the adoption of alternative transportation options, such as e-bikes, impact commuting patterns and the economic implications of different commuting patterns in Fort Morgan? This research can analyze the cost-effectiveness and potential benefits for local businesses, job opportunities, and overall economic development.", "How can transportation infrastructure and services be optimized to support the unique needs of rural residents in Fort Morgan, such as agricultural transport, access to essential services, or transportation for elderly or disabled individuals?", "How do different factors, such as location, day of the week, and season, influence travel behavior in Fort Morgan? Analyzing these variations can provide valuable insights into the dynamics of commuting and assist in developing targeted interventions to promote sustainable transportation choices."]
+                "research_questions": [
+                    "How does the adoption of alternative transportation options, such as e-bikes, impact commuting patterns and the economic implications of different commuting patterns in Fort Morgan? This research can analyze the cost-effectiveness and potential benefits for local businesses, job opportunities, and overall economic development.",
+                    "How can transportation infrastructure and services be optimized to support the unique needs of rural residents in Fort Morgan, such as agricultural transport, access to essential services, or transportation for elderly or disabled individuals?",
+                    "How do different factors, such as location, day of the week, and season, influence travel behavior in Fort Morgan? Analyzing these variations can provide valuable insights into the dynamics of commuting and assist in developing targeted interventions to promote sustainable transportation choices."
+                ]
             },
             "es": {
                 "deployment_partner_name": "Ciudades Limpias del Norte de Colorado",
@@ -34,25 +41,28 @@
                 "summary_line_2": "Para apoyar a los participantes del programa, se ha desarrollado una aplicación para fomentar la competencia amistosa entre los usuarios, todo en un esfuerzo por maximizar los beneficios de las opciones de transporte sostenible.",
                 "summary_line_3": "A través de esta aplicación, los participantes pueden realizar un seguimiento de sus viajes y participar en un esfuerzo colectivo para contribuir a mejorar la calidad del aire y un futuro más verde.",
                 "short_textual_description": " Para obtener una comprensión integral de patrones de transporte en Fort Morgan, la ciudad de Fort Morgan, en colaboración con Northern Colorado Clean Cities y Morgan Community College, planea implementar un solución automatizada de seguimiento de viajes. Este estudio tiene como objetivo analizar las variaciones en el comportamiento de viaje a través de diferentes áreas, días de la semana y estaciones, eliminando la necesidad de encuestas extensas. Al adoptar este enfoque, Fort Morgan puede adaptarse efectivamente a la evolución de los desplazamientos dinámica y tomar decisiones informadas con respecto a la planificación del transporte y mejoras",
-                "why_we_collect" : "Al implementar la solución de seguimiento de viajes automatizado en Fort Morgan, la ciudad tiene como objetivo obtener información sobre los hábitos de viaje de sus residentes, identificar las limitaciones que enfrentan y explorar opciones de transporte alternativas para reducir la dependencia de vehículos de una sola ocupación. La información completa reunida ayudará a desarrollar estrategias para minimizar las emisiones de carbono del transporte y promover prácticas sostenibles de transporte en la ciudad. Los datos recopilados a través de este programa proporcionarán información valiosa sobre los patrones de uso de las bicicletas eléctricas, incluida la frecuencia, la duración y la distancia recorrida. Esta información ayudará a comprender la efectividad de las eBikes como una opción de transporte sostenible y guiará futuras iniciativas para promover su uso, contribuyendo así a reducir las emisiones de carbono y mejorando las alternativas de transporte ecológicas.",
-                "research_questions": ["¿Cómo impacta la adopción de opciones de transporte alternativas, como bicicletas eléctricas, en los patrones de transporte y las implicaciones económicas de los diferentes patrones de transporte en Fort Morgan? Esta investigación puede analizar la rentabilidad y los beneficios potenciales para los negocios locales, las oportunidades laborales y el desarrollo económico en general.", "¿Cómo se pueden optimizar la infraestructura y los servicios de transporte para satisfacer las necesidades únicas de los residentes rurales de Fort Morgan, como el transporte agrícola, el acceso a servicios esenciales o el transporte para personas mayores o discapacitadas?”, “¿Cómo influyen los diferentes factores, como la ubicación, el día de la semana y la temporada, en el comportamiento de viaje en Fort Morgan? El análisis de estas variaciones puede proporcionar información valiosa sobre la dinámica de los desplazamientos y ayudar a desarrollar intervenciones específicas para promover opciones de transporte sostenibles."]
+                "why_we_collect": "Al implementar la solución de seguimiento de viajes automatizado en Fort Morgan, la ciudad tiene como objetivo obtener información sobre los hábitos de viaje de sus residentes, identificar las limitaciones que enfrentan y explorar opciones de transporte alternativas para reducir la dependencia de vehículos de una sola ocupación. La información completa reunida ayudará a desarrollar estrategias para minimizar las emisiones de carbono del transporte y promover prácticas sostenibles de transporte en la ciudad. Los datos recopilados a través de este programa proporcionarán información valiosa sobre los patrones de uso de las bicicletas eléctricas, incluida la frecuencia, la duración y la distancia recorrida. Esta información ayudará a comprender la efectividad de las eBikes como una opción de transporte sostenible y guiará futuras iniciativas para promover su uso, contribuyendo así a reducir las emisiones de carbono y mejorando las alternativas de transporte ecológicas.",
+                "research_questions": [
+                    "¿Cómo impacta la adopción de opciones de transporte alternativas, como bicicletas eléctricas, en los patrones de transporte y las implicaciones económicas de los diferentes patrones de transporte en Fort Morgan? Esta investigación puede analizar la rentabilidad y los beneficios potenciales para los negocios locales, las oportunidades laborales y el desarrollo económico en general.",
+                    "¿Cómo se pueden optimizar la infraestructura y los servicios de transporte para satisfacer las necesidades únicas de los residentes rurales de Fort Morgan, como el transporte agrícola, el acceso a servicios esenciales o el transporte para personas mayores o discapacitadas?”, “¿Cómo influyen los diferentes factores, como la ubicación, el día de la semana y la temporada, en el comportamiento de viaje en Fort Morgan? El análisis de estas variaciones puede proporcionar información valiosa sobre la dinámica de los desplazamientos y ayudar a desarrollar intervenciones específicas para promover opciones de transporte sostenibles."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered",
-            "es": "Contestada"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -72,7 +82,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -83,6 +96,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }
