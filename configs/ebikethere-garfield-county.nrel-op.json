@@ -1,6 +1,6 @@
 {
+    "url_abbreviation": "ebikethere-garfield-county",
     "version": 2,
-    "name": "ebikethere-garfield-county",
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://ebikethere-garfield-county-openpath.nrel.gov/api/",
