@@ -1,6 +1,6 @@
 {
+    "url_abbreviation": "cortezebikes",
     "version": 1,
-    "name": "cortezebikes",
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://cortezebikes-openpath.nrel.gov/api/",

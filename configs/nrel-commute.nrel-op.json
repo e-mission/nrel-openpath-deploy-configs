@@ -21,9 +21,6 @@
                 "short_textual_description": "As commute schedules get increasingly complex in our “Future of Work”, NREL would like to experiment with an automated trip tracking solution for understanding travel behavior. This Commuting Study (“Study”) can allow NREL to understand variations in travel across centers, days of the week and months of the year without complex, time-consuming surveys.",
                 "why_we_collect": "NREL can use this information to understand how people get to work, what their constraints are, and how to better provide alternative options to driving alone. This comprehensive information will aid NREL in its goal to reduce carbon emissions from transportation.",
                 "research_questions": ["Travel behavior modeling to support cost-benefit analyses of potential commuting programs.", "Analysis of the impact of post-pandemic telework on transportation energy efficiency and greenhouse gas emissions."]
-            },
-            "es":{
-                "deployment_partner_name": "Laboratorio Nacional de Energías Renovables (NREL)"
             }
         }
     },

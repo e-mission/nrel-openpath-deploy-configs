@@ -1,6 +1,6 @@
 {
+    "url_abbreviation": "choose-your-ride",
     "version": 1,
-    "name": "choose-your-ride",
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://choose-your-ride-openpath.nrel.gov/api/",
