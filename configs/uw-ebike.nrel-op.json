@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "uw-ebike",
-  "version": 1,
+  "version": 2,
   "ts": 1741377085,
   "server": {
     "connectUrl": "https://uw-ebike-openpath.nrel.gov/api/",
@@ -10,12 +10,12 @@
     "autogen": false,
     "subgroups": [
       "test",
-      "300_pretest",
-      "1200_pretest",
-      "300_control",
-      "300_treatment",
-      "1200_control",
-      "1200_treatment"
+      "300-pretest",
+      "1200-pretest",
+      "300-control",
+      "300-treatment",
+      "1200-control",
+      "1200-treatment"
     ]
   },
   "intro": {
@@ -51,7 +51,7 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uw-ebike/uw-ebike-onboarding-v0.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
@@ -78,7 +78,7 @@
     "additional_trip_columns": [],
     "data_uuids_columns_exclude": [],
     "token_prefix": "nrelop",
-    "token_generate": false,
+    "token_generate": true,
     "overview_users": true,
     "overview_active_users": true,
     "overview_trips": true,
@@ -96,5 +96,10 @@
       "dwhm@uw.edu",
       "djmalark@uw.edu"
     ]
+  },
+  "reminderSchemes": {
+    "passive": {
+      "schedule": []
+    }
   }
 }
