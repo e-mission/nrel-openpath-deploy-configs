@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>PSU-Walk-Study-onboarding-v0</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="English (en)" default="true()">
+          <text id="rx6rk05-0">
+            <value>Yes</value>
+          </text>
+          <text id="rx6rk05-1">
+            <value>No</value>
+          </text>
+          <text id="yt8um36-0">
+            <value>Yes</value>
+          </text>
+          <text id="yt8um36-1">
+            <value>No</value>
+          </text>
+          <text id="yt8um36-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="nz0dh32-0">
+            <value>Yes</value>
+          </text>
+          <text id="nz0dh32-1">
+            <value>No</value>
+          </text>
+          <text id="nz0dh32-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="pg1xy44-0">
+            <value>Full-time</value>
+          </text>
+          <text id="pg1xy44-1">
+            <value>Part-time</value>
+          </text>
+          <text id="pg1xy44-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="ut7sl96-0">
+            <value>Yes</value>
+          </text>
+          <text id="ut7sl96-1">
+            <value>No</value>
+          </text>
+          <text id="ut7sl96-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="ta8gq97-0">
+            <value>Yes</value>
+          </text>
+          <text id="ta8gq97-1">
+            <value>No</value>
+          </text>
+          <text id="ta8gq97-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="oo2kr52-0">
+            <value>0</value>
+          </text>
+          <text id="oo2kr52-1">
+            <value>1</value>
+          </text>
+          <text id="oo2kr52-2">
+            <value>2</value>
+          </text>
+          <text id="oo2kr52-3">
+            <value>3</value>
+          </text>
+          <text id="oo2kr52-4">
+            <value>4</value>
+          </text>
+          <text id="oo2kr52-5">
+            <value>5</value>
+          </text>
+          <text id="oo2kr52-6">
+            <value>6</value>
+          </text>
+          <text id="oo2kr52-7">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="kx58f44-0">
+            <value>No, not a student</value>
+          </text>
+          <text id="kx58f44-1">
+            <value>Part-time student</value>
+          </text>
+          <text id="kx58f44-2">
+            <value>Full-time student</value>
+          </text>
+          <text id="mp7cx58-0">
+            <value>Public transportation (bus, subway, light rail, etc.)</value>
+          </text>
+          <text id="mp7cx58-1">
+            <value>Get a ride from a friend or family member</value>
+          </text>
+          <text id="mp7cx58-2">
+            <value>Rental car (including Zipcar/Car2Go)</value>
+          </text>
+          <text id="mp7cx58-3">
+            <value>Bicycle</value>
+          </text>
+          <text id="mp7cx58-4">
+            <value>Walk</value>
+          </text>
+          <text id="mp7cx58-5">
+            <value>Taxi (regular taxi, Uber, Lyft, etc.)</value>
+          </text>
+          <text id="mp7cx58-6">
+            <value>None</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25:label">
+            <value>All Questions</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/license:label">
+            <value>Do you have a valid driver's license?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker:label">
+            <value>Are you a paid worker?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_more_than_one_job:label">
+            <value>Do you have more than one job?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job:label">
+            <value>Do you work full-time or part-time at the primary job?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job:hint">
+            <value>A full time job is at least 35 hours per week</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/At_your_primary_job_your_own_start_time:label">
+            <value>At your primary job, do you have the ability to set or change your own start time?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_the_option_of_work:label">
+            <value>Do you have the option of working from home or an alternate location instead of going into your primary work place?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week:label">
+            <value>How many days you do you usually work from home or an alternate location per week</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week:hint">
+            <value>Please round up to the next integer (i.e. one day), if you only work from home or alternate locations half a day.</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student:label">
+            <value>Are you currently a student?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student:hint">
+            <value>(Question 11/13)</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize:label">
+            <value>How many people live in your household* including yourself?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize:hint">
+            <value>*Your household includes people living with you and sharing income with you (e.g. spouse, partner, or dependents)</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/children:label">
+            <value>Of the people in your household, how many are children under 18?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/ZIP:label">
+            <value>What is the ZIP code where you currently live?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh:label">
+            <value>How many passenger vehicles are owned, leased, or available for regular use by the people who live in your household*?</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh:hint">
+            <value>*Your household includes people living with you and sharing income with you (e.g. spouse, partner, or dependents)</value>
+          </text>
+          <text id="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/altmodesavail:label">
+            <value>If you were unable to use your household motor vehicle(s) (or if none are available to you), which of the following options are available to you to get from place to place?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aRMYJxrk9E2Dj3nCKcFPD5 id="aRMYJxrk9E2Dj3nCKcFPD5">
+          <start/>
+          <end/>
+          <group_hg4zz25>
+            <license/>
+            <Are_you_a_paid_worker/>
+            <Do_you_have_more_than_one_job/>
+            <Do_you_work_full_tim_e_at_the_primary_job/>
+            <At_your_primary_job_your_own_start_time/>
+            <Do_you_have_the_option_of_work/>
+            <How_many_days_you_do_te_location_per_week/>
+            <student/>
+            <hhsize/>
+            <children/>
+            <ZIP/>
+            <numveh/>
+            <altmodesavail/>
+          </group_hg4zz25>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aRMYJxrk9E2Dj3nCKcFPD5>
+      </instance>
+      <instance id="rx6rk05">
+        <root>
+          <item>
+            <itextId>rx6rk05-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>rx6rk05-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yt8um36">
+        <root>
+          <item>
+            <itextId>yt8um36-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yt8um36-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>yt8um36-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="nz0dh32">
+        <root>
+          <item>
+            <itextId>nz0dh32-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>nz0dh32-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>nz0dh32-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pg1xy44">
+        <root>
+          <item>
+            <itextId>pg1xy44-0</itextId>
+            <name>full_time</name>
+          </item>
+          <item>
+            <itextId>pg1xy44-1</itextId>
+            <name>part_time</name>
+          </item>
+          <item>
+            <itextId>pg1xy44-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ut7sl96">
+        <root>
+          <item>
+            <itextId>ut7sl96-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>ut7sl96-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>ut7sl96-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ta8gq97">
+        <root>
+          <item>
+            <itextId>ta8gq97-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>ta8gq97-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>ta8gq97-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="oo2kr52">
+        <root>
+          <item>
+            <itextId>oo2kr52-0</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-1</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-2</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-3</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-4</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-5</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-6</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>oo2kr52-7</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="kx58f44">
+        <root>
+          <item>
+            <itextId>kx58f44-0</itextId>
+            <name>no__not_a_student</name>
+          </item>
+          <item>
+            <itextId>kx58f44-1</itextId>
+            <name>part_time_student</name>
+          </item>
+          <item>
+            <itextId>kx58f44-2</itextId>
+            <name>full_time_student</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="mp7cx58">
+        <root>
+          <item>
+            <itextId>mp7cx58-0</itextId>
+            <name>public_transportation__bus__subway__ligh</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-1</itextId>
+            <name>get_a_ride_from_a_friend_or_family_membe</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-2</itextId>
+            <name>rental_car__including_zipcar_car2go</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-3</itextId>
+            <name>bicycle</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-4</itextId>
+            <name>walk</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-5</itextId>
+            <name>taxi__regular_taxi__uber__lyft__etc</name>
+          </item>
+          <item>
+            <itextId>mp7cx58-6</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/start" jr:preload="timestamp" type="dateTime" jr:preloadParams="start"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/end" jr:preload="timestamp" type="dateTime" jr:preloadParams="end"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/license" type="string" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker" type="string" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_more_than_one_job" type="string" relevant=" /aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker  = 'yes'" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job" type="string" relevant=" /aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker  = 'yes'" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/At_your_primary_job_your_own_start_time" type="string" relevant=" /aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker  = 'yes'" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_the_option_of_work" type="string" relevant=" /aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/license  = 'yes'" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week" type="string" relevant=" /aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_the_option_of_work  = 'yes'" required="false()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student" type="string" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize" type="int" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/children" type="int" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/ZIP" type="int" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh" type="int" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/altmodesavail" type="string" required="true()"/>
+      <bind nodeset="/aRMYJxrk9E2Dj3nCKcFPD5/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25">
+      <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25:label')"/>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/license">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/license:label')"/>
+        <itemset nodeset="instance('rx6rk05')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Are_you_a_paid_worker:label')"/>
+        <itemset nodeset="instance('yt8um36')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_more_than_one_job">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_more_than_one_job:label')"/>
+        <itemset nodeset="instance('nz0dh32')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job:label')"/>
+        <hint ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_work_full_tim_e_at_the_primary_job:hint')"/>
+        <itemset nodeset="instance('pg1xy44')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/At_your_primary_job_your_own_start_time">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/At_your_primary_job_your_own_start_time:label')"/>
+        <itemset nodeset="instance('ut7sl96')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_the_option_of_work">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/Do_you_have_the_option_of_work:label')"/>
+        <itemset nodeset="instance('ta8gq97')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week:label')"/>
+        <hint ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/How_many_days_you_do_te_location_per_week:hint')"/>
+        <itemset nodeset="instance('oo2kr52')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student:label')"/>
+        <hint ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/student:hint')"/>
+        <itemset nodeset="instance('kx58f44')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize:label')"/>
+        <hint ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/hhsize:hint')"/>
+      </input>
+      <input ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/children">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/children:label')"/>
+      </input>
+      <input ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/ZIP">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/ZIP:label')"/>
+      </input>
+      <input ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh:label')"/>
+        <hint ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/numveh:hint')"/>
+      </input>
+      <select ref="/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/altmodesavail">
+        <label ref="jr:itext('/aRMYJxrk9E2Dj3nCKcFPD5/group_hg4zz25/altmodesavail:label')"/>
+        <itemset nodeset="instance('mp7cx58')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+  </h:body>
+</h:html>
