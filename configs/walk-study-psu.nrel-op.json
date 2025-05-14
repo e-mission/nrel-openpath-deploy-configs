@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "walk-study-psu",
-  "version": 1,
+  "version": 2,
   "ts": 1741122104,
   "server": {
     "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
@@ -36,7 +36,7 @@
   "survey_info": {
     "surveys": {
       "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/walk-study-psu/walkstudypsu-onboarding-v1.xml",
         "version": 1,
         "compatibleWith": 1,
         "dataKey": "manual/demographic_survey",
@@ -44,9 +44,19 @@
           "en": "Answered",
           "es": "Contestada"
         }
+      },
+      "TripConfirmSurvey": {
+        "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/walk-study-psu/walkstudypsu-trip-v1.xml",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/trip_user_input",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
       }
     },
-    "trip-labels": "MULTILABEL"
+    "trip-labels": "ENKETO"
   },
   "display_config": {
     "use_imperial": true
