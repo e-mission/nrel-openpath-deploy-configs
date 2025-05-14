@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "sgv-ebike",
-  "version": 1,
+  "version": 2,
   "ts": 1741368160,
   "server": {
     "connectUrl": "https://sgv-ebike-openpath.nrel.gov/api/",
@@ -16,7 +16,8 @@
       "i-10-bikeshare-ebike",
       "i-10-cargo-ebike-purchase-incentive",
       "doe-bikeshare-ebike",
-      "test"
+      "test",
+      "general"
     ]
   },
   "intro": {
