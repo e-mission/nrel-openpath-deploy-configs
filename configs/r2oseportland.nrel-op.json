@@ -10,7 +10,8 @@
     "autogen": true,
     "subgroups": [
       "default",
-      "test"
+      "test",
+      "staff"
     ]
   },
   "intro": {
