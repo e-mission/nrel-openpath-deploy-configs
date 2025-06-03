@@ -1,6 +1,6 @@
 {
   "url_abbreviation": "sgv-ebike",
-  "version": 1,
+  "version": 2,
   "ts": 1741368160,
   "server": {
     "connectUrl": "https://sgv-ebike-openpath.nrel.gov/api/",
@@ -16,7 +16,8 @@
       "i-10-bikeshare-ebike",
       "i-10-cargo-ebike-purchase-incentive",
       "doe-bikeshare-ebike",
-      "test"
+      "test",
+      "general"
     ]
   },
   "intro": {
@@ -87,7 +88,7 @@
     "additional_trip_columns": [],
     "data_uuids_columns_exclude": [],
     "token_prefix": "nrelop",
-    "token_generate": false,
+    "token_generate": true,
     "overview_users": true,
     "overview_active_users": true,
     "overview_trips": true,

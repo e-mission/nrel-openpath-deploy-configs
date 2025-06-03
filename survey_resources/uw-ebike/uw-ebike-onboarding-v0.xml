@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>OpenPATH Demographics Survey - UW</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation default="true()" lang="English (en)">
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25:label">
+            <value>All Questions</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age:label">
+            <value>How old are you?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age:hint">
+            <value>(Question 1/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender:label">
+            <value>What is your gender?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender:hint">
+            <value>(Question 2/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/non_binary:label">
+            <value>Non-binary</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/not_listed_here:label">
+            <value>Not listed here</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race:label">
+            <value>What is your race?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race:hint">
+            <value>(Question 3/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/white:label">
+            <value>White</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/black_or_african_american:label">
+            <value>Black or African American</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/american_indian_or_alaska_native:label">
+            <value>American Indian or Alaska Native</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/asian:label">
+            <value>Asian</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/native_hawaiian_or_other_pacific_islande:label">
+            <value>Native Hawaiian or Other Pacific Islander</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/middle_eastern_or_north_african:label">
+            <value>Middle Eastern or North African</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/hispanic_or_latino:label">
+            <value>Hispanic or Latino</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/not_listed_here:label">
+            <value>Not listed here</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize:label">
+            <value>How many people live in your household* including yourself?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize:hint">
+            <value>*Your household includes people living with you and sharing income with you (e.g. spouse, partner, or dependents)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children:label">
+            <value>Of the people in your household, how many are children under 18?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children:hint">
+            <value>(Question 5/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP:label">
+            <value>What is the ZIP code where you currently live?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP:hint">
+            <value>(Question 6 of 13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license:label">
+            <value>Do you have a valid driver's license?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license:hint">
+            <value>(Question 7/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license/no:label">
+            <value>No</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh:label">
+            <value>How many passenger vehicles are owned, leased, or available for regular use by the people who live in your household*?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh:hint">
+            <value>*Your household includes people living with you and sharing income with you (e.g. spouse, partner, or dependents)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail:label">
+            <value>If you were unable to use your household motor vehicle(s) (or if none are available to you), which of the following options are available to you to get from place to place?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail:hint">
+            <value>(Question 9/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/public_transportation__bus__subway__ligh:label">
+            <value>Public transportation (bus, subway, light rail, etc.)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/get_a_ride_from_a_friend_or_family_membe:label">
+            <value>Get a ride from a friend or family member</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/rental_car__including_zipcar_car2go:label">
+            <value>Rental car (including Zipcar/Car2Go)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/bicycle:label">
+            <value>Bicycle</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/walk:label">
+            <value>Walk</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/taxi__regular_taxi__uber__lyft__etc:label">
+            <value>Taxi (regular taxi, Uber, Lyft, etc.)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/none:label">
+            <value>None</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education:label">
+            <value>What is the highest degree or level of school you have completed?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education:hint">
+            <value>(Question 10/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/less_than_high_school:label">
+            <value>Less than High School</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/high_school_graduate_or_ged:label">
+            <value>High School Graduate or GED</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/some_college_technical_school_training:label">
+            <value>Some College/Technical School Training</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/college_degree:label">
+            <value>College Degree</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/graduate_or_professional_degree:label">
+            <value>Graduate or Professional Degree</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student:label">
+            <value>Are you currently a student?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student:hint">
+            <value>(Question 11/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/no__not_a_student:label">
+            <value>No, not a student</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/part_time_student:label">
+            <value>Part-time student</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/full_time_student:label">
+            <value>Full-time student</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ:label">
+            <value>Which of the following best describes your current employment status?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ:hint">
+            <value>(Question 12/13)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/employed__full_time__35__hours_week:label">
+            <value>Employed, Full-Time (35+ hours/week)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/employed__part_time__fewer_than_35_hours:label">
+            <value>Employed, Part-Time (Fewer than 35 hours/week)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/homemaker:label">
+            <value>Homemaker</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/looking_for_work:label">
+            <value>Looking for work</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/unable_to_work_due_to_a_disability:label">
+            <value>Unable to work due to a disability</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/retired:label">
+            <value>Retired</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/unemployed:label">
+            <value>Unemployed</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/another:label">
+            <value>Another</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome:label">
+            <value>Which category best describes your household* income before taxes from the last calendar year?</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome:hint">
+            <value>*Your household includes people living with you and sharing income with you (e.g. spouse, partner, or dependents)</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/under__10_000:label">
+            <value>Under $10,000</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_10_000____19_999:label">
+            <value>$10,000 – $19,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_20_000____34_999:label">
+            <value>$20,000 – $34,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_35_000____49_999:label">
+            <value>$35,000 – $49,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_50_000____74_999:label">
+            <value>$50,000 – $74,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_75_000____99_999:label">
+            <value>$75,000 – $99,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_100_000____149_999:label">
+            <value>$100,000 – $199,999</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/prefer_not_to_answer:label">
+            <value>$200,000 or more</value>
+          </text>
+          <text id="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/prefer_not_to_answer_1:label">
+            <value>Prefer not to answer</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aKFS4vBmsE6seMgzuBF3em id="aKFS4vBmsE6seMgzuBF3em">
+          <start/>
+          <end/>
+          <group_hg4zz25>
+            <age/>
+            <gender/>
+            <race/>
+            <hhsize/>
+            <children/>
+            <ZIP/>
+            <license/>
+            <numveh/>
+            <altmodesavail/>
+            <education/>
+            <student/>
+            <employ/>
+            <hhincome/>
+          </group_hg4zz25>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aKFS4vBmsE6seMgzuBF3em>
+      </instance>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/aKFS4vBmsE6seMgzuBF3em/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/aKFS4vBmsE6seMgzuBF3em/end" type="dateTime"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25" required="false()"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age" required="true()" type="int"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize" required="true()" type="int"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children" required="true()" type="int"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP" required="true()" type="int"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh" required="true()" type="int"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ" required="true()" type="string"/>
+      <bind nodeset="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome" required="true()" type="string"/>
+      <bind jr:preload="uid" nodeset="/aKFS4vBmsE6seMgzuBF3em/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25">
+      <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25:label')"/>
+      <input ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/age:hint')"/>
+      </input>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/non_binary:label')"/>
+          <value>non_binary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/gender/not_listed_here:label')"/>
+          <value>not_listed_here</value>
+        </item>
+      </select1>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/white:label')"/>
+          <value>white</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/black_or_african_american:label')"/>
+          <value>black_or_african_american</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/american_indian_or_alaska_native:label')"/>
+          <value>american_indian_or_alaska_native</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/asian:label')"/>
+          <value>asian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/native_hawaiian_or_other_pacific_islande:label')"/>
+          <value>native_hawaiian_or_other_pacific_islande</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/middle_eastern_or_north_african:label')"/>
+          <value>middle_eastern_or_north_african</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/hispanic_or_latino:label')"/>
+          <value>hispanic_or_latino</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/race/not_listed_here:label')"/>
+          <value>not_listed_here</value>
+        </item>
+      </select1>
+      <input ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhsize:hint')"/>
+      </input>
+      <input ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/children:hint')"/>
+      </input>
+      <input ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/ZIP:hint')"/>
+      </input>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/license/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/numveh:hint')"/>
+      </input>
+      <select ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/public_transportation__bus__subway__ligh:label')"/>
+          <value>public_transportation__bus__subway__ligh</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/get_a_ride_from_a_friend_or_family_membe:label')"/>
+          <value>get_a_ride_from_a_friend_or_family_membe</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/rental_car__including_zipcar_car2go:label')"/>
+          <value>rental_car__including_zipcar_car2go</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/bicycle:label')"/>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/walk:label')"/>
+          <value>walk</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/taxi__regular_taxi__uber__lyft__etc:label')"/>
+          <value>taxi__regular_taxi__uber__lyft__etc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/altmodesavail/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/less_than_high_school:label')"/>
+          <value>less_than_high_school</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/high_school_graduate_or_ged:label')"/>
+          <value>high_school_graduate_or_ged</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/some_college_technical_school_training:label')"/>
+          <value>some_college_technical_school_training</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/college_degree:label')"/>
+          <value>college_degree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/education/graduate_or_professional_degree:label')"/>
+          <value>graduate_or_professional_degree</value>
+        </item>
+      </select1>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/no__not_a_student:label')"/>
+          <value>no__not_a_student</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/part_time_student:label')"/>
+          <value>part_time_student</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/student/full_time_student:label')"/>
+          <value>full_time_student</value>
+        </item>
+      </select1>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/employed__full_time__35__hours_week:label')"/>
+          <value>employed__full_time__35__hours_week</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/employed__part_time__fewer_than_35_hours:label')"/>
+          <value>employed__part_time__fewer_than_35_hours</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/homemaker:label')"/>
+          <value>homemaker</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/looking_for_work:label')"/>
+          <value>looking_for_work</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/unable_to_work_due_to_a_disability:label')"/>
+          <value>unable_to_work_due_to_a_disability</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/retired:label')"/>
+          <value>retired</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/unemployed:label')"/>
+          <value>unemployed</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/employ/another:label')"/>
+          <value>another</value>
+        </item>
+      </select1>
+      <select1 ref="/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome">
+        <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome:label')"/>
+        <hint ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome:hint')"/>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/under__10_000:label')"/>
+          <value>under__10_000</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_10_000____19_999:label')"/>
+          <value>_10_000____19_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_20_000____34_999:label')"/>
+          <value>_20_000____34_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_35_000____49_999:label')"/>
+          <value>_35_000____49_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_50_000____74_999:label')"/>
+          <value>_50_000____74_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_75_000____99_999:label')"/>
+          <value>_75_000____99_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/_100_000____149_999:label')"/>
+          <value>_100_000____149_999</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/prefer_not_to_answer:label')"/>
+          <value>prefer_not_to_answer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/aKFS4vBmsE6seMgzuBF3em/group_hg4zz25/hhincome/prefer_not_to_answer_1:label')"/>
+          <value>prefer_not_to_answer_1</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>
