@@ -1,0 +1,108 @@
+{
+  "url_abbreviation": "arlingtonebike",
+  "version": 1,
+  "ts": 1750960868,
+  "server": {
+    "connectUrl": "https://arlingtonebike-openpath.nrel.gov/api/",
+    "aggregate_call_auth": "user_only"
+  },
+  "opcode": {
+    "autogen": true,
+    "subgroups": [
+      "test"
+    ]
+  },
+  "intro": {
+    "program_or_study": "program",
+    "start_month": "08",
+    "start_year": "2025",
+    "mode_studied": "e-bike",
+    "program_admin_contact": "ebikevouchers@arlingtonva.us",
+    "deployment_partner_name": "Arlington County",
+    "translated_text": {
+      "en": {
+        "deployment_partner_name": "Arlington County",
+        "deployment_name": "Arlington County E-Bike Voucher Program",
+        "summary_line_1": "Arlington County aims to incentivize residents to adopt energy-efficient, non-polluting modes of transportation to reduce the County’s greenhouse gas emissions and improve local air quality.",
+        "summary_line_2": "Through the Program, the County is providing vouchers to residents to offset a portion of the cost of an e-bike.",
+        "summary_line_3": "This app helps the County understand how e-bikes are being used in Arlington, evaluate the benefits of e-bikes, and design future programs.",
+        "short_textual_description": "The Arlington County E-Bike Voucher Program will offer vouchers to Arlington residents to purchase an e-bike from a local retailer. This program will support the County’s efforts to incentivize residents to adopt lower emissions transportation options and shift from using single occupancy vehicles to e-bikes. As part of this program, voucher recipients and other residents will use the OpenPath tool to track their trips so the County can study the usage of e-bikes, evaluate the effectiveness of the Program, and support future investment into the program.",
+        "why_we_collect": "The County will use the data from OpenPath to better understand how and when voucher recipients use their e-bikes and which trips and transportation modes are replaced with e-bikes. The County will also use the data to evaluate the GHG, energy, and cost impacts of transitioning to e-bikes.",
+        "research_questions": [
+          "Which trips and transportation modes do users replace with e-bikes?",
+          "What are the estimated greenhouse gas, air pollution, and cost impacts of e-bike trips?",
+          ""
+        ]
+      },
+      "es": {
+        "deployment_partner_name": "Condado de Arlington",
+        "deployment_name": "Programa de vales para bicicletas eléctricas del condado de Arlington",
+        "summary_line_1": "El condado de Arlington tiene como objetivo incentivar a los residentes a adoptar modos de transporte energéticamente eficientes y no contaminantes para reducir las emisiones de gases de efecto invernadero del condado y mejorar la calidad del aire local.",
+        "summary_line_2": "A través del Programa, el Condado está proporcionando vales a los residentes para compensar una parte del costo de una bicicleta eléctrica.",
+        "summary_line_3": "Esta aplicación ayuda al condado a comprender cómo se utilizan las bicicletas eléctricas en Arlington, evaluar los beneficios de las bicicletas eléctricas y diseñar programas futuros.",
+        "short_textual_description": "El Programa de Cupones para Bicicletas Eléctricas del Condado de Arlington ofrecerá cupones a los residentes de Arlington para comprar una bicicleta eléctrica en un minorista local. Este programa apoyará los esfuerzos del Condado para incentivar a los residentes a adoptar opciones de transporte con menores emisiones y a cambiar el uso de vehículos individuales por bicicletas eléctricas. Como parte de este programa, los beneficiarios de los cupones y otros residentes utilizarán la herramienta OpenPath para registrar sus viajes, de modo que el Condado pueda estudiar el uso de las bicicletas eléctricas, evaluar la eficacia del Programa y apoyar futuras inversiones.",
+        "why_we_collect": "El Condado utilizará los datos de OpenPath para comprender mejor cómo y cuándo los beneficiarios de los cupones usan sus bicicletas eléctricas, y qué viajes y medios de transporte se sustituyen por bicicletas eléctricas. El Condado también utilizará los datos para evaluar el impacto de la transición a las bicicletas eléctricas en las emisiones de gases de efecto invernadero (GEI), la energía y los costos.",
+        "research_questions": [
+          "¿Qué viajes y modos de transporte sustituyen los usuarios por bicicletas eléctricas?",
+          "¿Cuáles son los impactos estimados en los gases de efecto invernadero, la contaminación del aire y los costos de los viajes en bicicleta eléctrica?",
+          ""
+        ]
+      }
+    }
+  },
+  "survey_info": {
+    "surveys": {
+      "UserProfileSurvey": {
+        "formPath": "json/demo-survey-v2.json",
+        "version": 1,
+        "compatibleWith": 1,
+        "dataKey": "manual/demographic_survey",
+        "labelTemplate": {
+          "en": "Answered",
+          "es": "Contestada"
+        }
+      }
+    },
+    "trip-labels": "MULTILABEL"
+  },
+  "display_config": {
+    "use_imperial": true
+  },
+  "metrics": {
+    "include_test_users": true
+  },
+  "profile_controls": {
+    "support_upload": false,
+    "trip_end_notification": false
+  },
+  "admin_dashboard": {
+    "data_trips_columns_exclude": [
+      "Any PII"
+    ],
+    "additional_trip_columns": [
+      "TBD"
+    ],
+    "data_uuids_columns_exclude": [
+      "Any PII"
+    ],
+    "token_prefix": "nrelop",
+    "token_generate": false,
+    "overview_users": true,
+    "overview_active_users": true,
+    "overview_trips": true,
+    "overview_signup_trends": true,
+    "overview_trips_trend": true,
+    "data_uuids": true,
+    "data_trips": true,
+    "map_heatmap": true,
+    "map_bubble": true,
+    "map_trip_lines": false,
+    "options_uuids": true,
+    "options_emails": true,
+    "admin_access": [
+      "ashepard@arlingtonva.us",
+      "astilson@arlingtonva.us",
+      "sburr@arlingtonva.us"
+    ]
+  }
+}
