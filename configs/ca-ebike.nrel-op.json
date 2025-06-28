@@ -95,6 +95,13 @@
         "map_trip_lines": false,
         "push_send": false,
         "options_uuids": true,
-        "options_emails": true
+        "options_emails": true,
+        "admin_access": [
+          "dtfitch@ucdavis.edu",
+          "k.shankari@nrel.gov",
+          "siagarwal@ucdavis.edu",
+          "tfukushige@ucdavis.edu",
+          "jack.greenlee@nrel.gov"
+        ]
     }
 }
