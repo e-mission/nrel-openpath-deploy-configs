@@ -10,6 +10,7 @@
         "autogen": true,
         "subgroups": [
             "default",
+            "summer2025",
             "test"
         ]
     },
@@ -83,8 +84,8 @@
         "admin_access": [
             "mbrozen@ucla.edu",
             "eblumenb@ucla.edu",
-            "tamikabutler@ucla.edu",
-            "mwander@ucla.edu"
+            "jikailong1@g.ucla.edu",
+            "sangokim@ucla.edu"
         ]
     }
 }
