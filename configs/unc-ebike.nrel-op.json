@@ -16,7 +16,9 @@
         ],
         "suspended_subgroups": [
             "default",
-            "test"
+            "test",
+            "w2",
+            "w2test"
         ]
     },
     "intro": {
