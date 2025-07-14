@@ -10,7 +10,11 @@
         "autogen": false,
         "subgroups": [
             "default",
-            "test"
+            "test",
+            "powell",
+            "stark",
+            "lomas",
+            "is"
         ]
     },
     "intro": {
