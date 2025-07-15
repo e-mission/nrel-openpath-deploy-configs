@@ -443,7 +443,7 @@
         }
     ],
     "tracking": {
-        "bluetooth_only": true
+        "is_fleet": true
     },
     "display_config": {
         "use_imperial": true
