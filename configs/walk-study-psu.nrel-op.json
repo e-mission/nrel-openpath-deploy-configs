@@ -62,6 +62,9 @@
         },
         "trip-labels": "ENKETO"
     },
+    "tracking": {
+        "filter_distance": -1
+    },
     "display_config": {
         "use_imperial": true
     },
