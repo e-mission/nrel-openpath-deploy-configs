@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "ts": 1655143472,
     "server": {
         "connectUrl": "https://ca-ebike-openpath.nrel.gov/api/",
