@@ -15,9 +15,8 @@ export type DeploymentConfig = {
   label_options?: `https://${string}`;
   vehicle_identities?: VehicleIdentity[];
   reminderSchemes?: ReminderSchemesConfig;
-  tracking?: {
-    bluetooth_only: boolean;
-  };
+  tracking?: Partial<TrackingConfig>;
+  sync?: Partial<SyncConfig>;
   display_config: {
     use_imperial: boolean;
   };
@@ -115,6 +114,27 @@ export type ReminderSchemesConfig = {
     text?: { [lang: string]: string };
     defaultTime?: string; // format is HH:MM in 24 hour time
   };
+};
+
+// corresponds to LocationTrackingConfig in e-mission-data-collection
+export type TrackingConfig = {
+  is_duty_cycling: boolean;
+  simulate_user_interaction: boolean;
+  accuracy: number;
+  accuracy_threshold: number;
+  filter_distance: number;
+  filter_time: number;
+  geofence_radius: number;
+  ios_use_visit_notifications_for_detection: boolean;
+  ios_use_remote_push_for_sync: boolean;
+  android_geofence_responsiveness: number;
+  is_fleet: boolean;
+};
+
+// corresponds to ServerSyncConfig in cordova-server-sync
+export type SyncConfig = {
+  sync_interval: number; // seconds
+  ios_use_remote_push: boolean;
 };
 
 // the available metrics that can be displayed in the phone dashboard
