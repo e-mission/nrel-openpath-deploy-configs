@@ -63,7 +63,8 @@
         "trip-labels": "ENKETO"
     },
     "tracking": {
-        "filter_distance": -1
+        "filter_distance": -1,
+        "filter_time": 1000
     },
     "display_config": {
         "use_imperial": true
