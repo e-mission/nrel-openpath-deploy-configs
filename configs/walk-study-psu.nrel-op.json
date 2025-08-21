@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "walk-study-psu",
-    "version": 4,
+    "version": 5,
     "ts": 1741122104,
     "server": {
         "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
@@ -50,7 +50,7 @@
                 }
             },
             "TripConfirmSurvey": {
-                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/walk-study-psu/walkstudypsu-trip-v2.xml",
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/walk-study-psu/walkstudypsu-trip-v3.xml",
                 "version": 1,
                 "compatibleWith": 1,
                 "dataKey": "manual/trip_user_input",
