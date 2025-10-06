@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "arlingtonebike",
-    "version": 1,
+    "version": 2,
     "ts": 1751298857,
     "server": {
         "connectUrl": "https://arlingtonebike-openpath.nrel.gov/api/",
@@ -37,14 +37,14 @@
             "es": {
                 "deployment_partner_name": "Condado de Arlington",
                 "deployment_name": "Programa de vales para bicicletas eléctricas del condado de Arlington",
-                "summary_line_1": "El condado de Arlington tiene como objetivo incentivar a los residentes a adoptar modos de transporte energéticamente eficientes y no contaminantes para reducir las emisiones de gases de efecto invernadero del condado y mejorar la calidad del aire local.",
-                "summary_line_2": "A través del Programa, el Condado está proporcionando vales a los residentes para compensar una parte del costo de una bicicleta eléctrica.",
-                "summary_line_3": "Esta aplicación ayuda al condado a comprender cómo se utilizan las bicicletas eléctricas en Arlington, evaluar los beneficios de las bicicletas eléctricas y diseñar programas futuros.",
-                "short_textual_description": "El Programa de Cupones para Bicicletas Eléctricas del Condado de Arlington ofrecerá cupones a los residentes de Arlington para comprar una bicicleta eléctrica en un minorista local. Este programa apoyará los esfuerzos del Condado para incentivar a los residentes a adoptar opciones de transporte con menores emisiones y a cambiar el uso de vehículos individuales por bicicletas eléctricas. Como parte de este programa, los beneficiarios de los cupones y otros residentes utilizarán la herramienta NREL OpenPath para registrar sus viajes, de modo que el Condado pueda estudiar el uso de las bicicletas eléctricas, evaluar la eficacia del Programa y apoyar futuras inversiones.",
-                "why_we_collect": "El Condado utilizará los datos de NREL OpenPath para comprender mejor cómo y cuándo los beneficiarios de los cupones usan sus bicicletas eléctricas, y qué viajes y medios de transporte se sustituyen por bicicletas eléctricas. El Condado también utilizará los datos para evaluar el impacto de la transición a las bicicletas eléctricas en las emisiones de gases de efecto invernadero (GEI), la energía y los costos.",
+                "summary_line_1": "El Condado de Arlington busca incentivar a los residentes a adoptar medios de transporte energéticamente eficientes y no contaminantes para reducir las emisiones de gases de efecto invernadero del Condado y mejorar la calidad del aire local.",
+                "summary_line_2": "A través del Programa, el Condado ofrece cupones residentes para compensar una parte del costo de una bicicleta eléctrica.",
+                "summary_line_3": "Esta aplicación ayuda al Condado a comprender cómo se utilizan las bicicletas eléctricas en Arlington, evaluar sus beneficios y diseñar futuros programas.",
+                "short_textual_description": "El Programa de Cupones para Bicicletas Eléctricas del Condado de Arlington ofrecerá cupones a los residentes de Arlington para comprar una bicicleta eléctrica en un minorista local. Este programa apoyará los esfuerzos del Condado para incentivar a los residentes a adoptar opciones de transporte con menores emisiones y a cambiar el uso de vehículos individuales por bicicletas eléctricas. Como parte de este programa, los beneficiarios de los cupones y otros residentes utilizarán la herramienta OpenPath de NREL para realizar un seguimiento de sus viajes, de modo que el Condado pueda estudiar el uso de las bicicletas eléctricas, evaluar la eficacia del Programa y apoyar futuras inversiones en el mismo.",
+                "why_we_collect": "El Condado utilizará los datos de NREL OpenPath para comprender mejor cómo y cuándo los beneficiarios de los cupones usan sus bicicletas eléctricas, y qué viajes y medios de transporte se reemplazan por bicicletas eléctricas. El Condado también utilizará los datos para evaluar el impacto en los GEI, la energía y los costos de la transición a las bicicletas eléctricas.",
                 "research_questions": [
-                    "¿Qué viajes y modos de transporte sustituyen los usuarios por bicicletas eléctricas?",
-                    "¿Cuáles son los impactos estimados en los gases de efecto invernadero, la contaminación del aire y los costos de los viajes en bicicleta eléctrica?",
+                    "¿Qué viajes y medios de transporte reemplazan los usuarios por bicicletas eléctricas?",
+                    "¿Cuáles son los impactos estimados en los gases de efecto invernadero, la contaminación atmosférica y los costos de los viajes en bicicleta eléctrica?",
                     ""
                 ]
             }
@@ -53,7 +53,7 @@
     "survey_info": {
         "surveys": {
             "UserProfileSurvey": {
-                "formPath": "json/demo-survey-v2.json",
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/arlingtonebike/arlingtonebike-onboarding-v0.xml",
                 "version": 1,
                 "compatibleWith": 1,
                 "dataKey": "manual/demographic_survey",
@@ -65,6 +65,7 @@
         },
         "trip-labels": "MULTILABEL"
     },
+    "label_options": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/label_options/arlingtonebike-label-options.json",
     "display_config": {
         "use_imperial": true
     },
@@ -76,15 +77,9 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "data_trips_columns_exclude": [
-            "Any PII"
-        ],
-        "additional_trip_columns": [
-            "TBD"
-        ],
-        "data_uuids_columns_exclude": [
-            "Any PII"
-        ],
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
         "token_prefix": "nrelop",
         "token_generate": false,
         "overview_users": true,
