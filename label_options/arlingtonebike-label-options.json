@@ -1,0 +1,83 @@
+{
+  "MODE": [
+    {"value":"walk", "base_mode": "WALKING",
+      "baseMode":"WALKING", "met_equivalent":"WALKING", "kgCo2PerKm": 0},
+    {"value":"bike", "base_mode": "BICYCLING",
+      "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
+    {"value":"e_bike", "base_mode": "BICYCLING",
+      "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
+    {"value":"e_bikeshare", "base_mode": "BICYCLING",
+      "baseMode":"BICYCLING", "met_equivalent":"BICYCLING", "kgCo2PerKm": 0},
+    {"value":"scootershare", "base_mode": "E_SCOOTER",
+      "baseMode":"E_SCOOTER", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.00894},
+    {"value":"drove_alone", "base_mode": "CAR",
+      "baseMode":"CAR", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.22031},
+    {"value":"taxi", "base_mode": "TAXI",
+      "baseMode":"TAXI", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.30741},
+    {"value":"bus", "base_mode": "BUS",
+      "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
+    {"value":"train", "base_mode": "TRAIN",
+      "baseMode":"TRAIN", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.12256},
+    {"value":"free_shuttle", "base_mode": "BUS",
+      "baseMode":"BUS", "met_equivalent":"IN_VEHICLE", "kgCo2PerKm": 0.20727},
+    {"value":"not_a_trip", "base_mode": "NONE",
+      "baseMode":"UNKNOWN", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0},
+    {"value":"other", "base_mode": "OTHER",
+      "baseMode":"OTHER", "met_equivalent":"UNKNOWN", "kgCo2PerKm": 0}
+  ],
+  "PURPOSE": [
+    {"value":"home"},
+    {"value":"work"},
+    {"value":"personal"},
+    {"value":"not_a_trip"},
+    {"value":"other"}
+  ],
+  "REPLACED_MODE": [
+    {"value":"walk"},
+    {"value":"bike"},
+    {"value":"e_bike"},
+    {"value":"e_bikeshare"},
+    {"value":"scootershare"},
+    {"value":"drove_alone"},
+    {"value":"taxi"},
+    {"value":"bus"},
+    {"value":"train"},
+    {"value":"not_a_trip"},
+    {"value":"other"}
+  ],
+  "translations": {
+    "en": {
+      "walk": "Walk",
+      "bike": "Personal bike",
+      "e_bike": "Personal e-bike",
+      "e_bikeshare": "Bikeshare e-bike",
+      "scootershare": "Bikeshare or scooter",
+      "drove_alone": "Drive",
+      "taxi": "Taxi/Uber/Lyft",
+      "bus": "Bus",
+      "train": "Metro (train)",
+      "not_a_trip": "Not a trip",
+      "other": "Other",
+      "home": "Commute to home",
+      "work": "Commute to work",
+      "personal": "Personal"
+
+    },
+    "es": {
+      "walk": "Caminando",
+      "bike": "Bicicleta personal",
+      "e_bike": "Bicicleta electrica personal",
+      "e_bikeshare": "Bicicletas eléctricas compartidas",
+      "scootershare": "Bicicletas compartidas o scooters",
+      "drove_alone": "Conducir",
+      "taxi": "Taxi/Uber/Lyft",
+      "bus": "Autobus",
+      "train": "Metro (tren)",
+      "not_a_trip": "No es un viaje",
+      "other": "Otros",
+      "home": "Viaje a casa",
+      "work": "Viaje a trabajo",
+      "personal": "Personal"
+    }
+  }
+}
