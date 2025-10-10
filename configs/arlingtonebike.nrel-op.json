@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "arlingtonebike",
-    "version": 2,
+    "version": 3,
     "ts": 1751298857,
     "server": {
         "connectUrl": "https://arlingtonebike-openpath.nrel.gov/api/",
@@ -9,6 +9,9 @@
     "opcode": {
         "autogen": true,
         "subgroups": [
+            "resident",
+            "standard",
+            "enhanced",
             "test"
         ]
     },
