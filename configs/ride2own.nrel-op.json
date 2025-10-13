@@ -7,7 +7,10 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "default"]
+        "subgroups": [
+            "test",
+            "default"
+        ]
     },
     "intro": {
         "program_or_study": "program",
@@ -25,23 +28,27 @@
                 "summary_line_3": "If you are a program participant, this app can help you log your trips.",
                 "short_textual_description": "TST would like to pilot the demand-shift potential for eBike ownership in the Portland area by hosting a yearlong “ride to own” program where participants receive a free eBike, gear, accessories, and bike education in exchange for one year of qualitative and quantitative trip data sharing. To gather the data needed, this pilot requires an automated trip tracking solution for understanding travel behavior. The pilot will allow TST to understand variations in travel across days of the week and months of the year without complex, time-consuming surveys.",
                 "why_we_collect": "The data collected during the program will be used to understand how eBikes are used, including when and how often as well as distance traveled. TST can use this information to understand how people are using eBikes, what their constraints are, and will help policymakers and decisionmakers in Oregon understand how to better provide bike infrastructure to the area. This comprehensive information will aid TST in its mission to help build a complete, safe, low-carbon, multimodal transportation system that contributes to equity in access, opportunity, health, and prosperity for people and communities across the Portland Metro Region and beyond.",
-                "research_questions": ["Travel behavior modeling to support cost-benefit analyses of other ride-to-own eBike programs as well as eBike ownership for low-income individuals.", "Travel behavior modeling to inform local and regional bike infrastructure investments.", "The impact of demand shifts towards eBike use on transportation energy efficiency and GHG emissions."]
+                "research_questions": [
+                    "Travel behavior modeling to support cost-benefit analyses of other ride-to-own eBike programs as well as eBike ownership for low-income individuals.",
+                    "Travel behavior modeling to inform local and regional bike infrastructure investments.",
+                    "The impact of demand shifts towards eBike use on transportation energy efficiency and GHG emissions."
+                ]
             }
         }
     },
     "survey_info": {
-      "surveys": {
-        "UserProfileSurvey": {
-          "formPath": "json/demo-survey-v2.json",
-          "version": 1,
-          "compatibleWith": 1,
-          "dataKey": "manual/demographic_survey",
-          "labelTemplate": {
-            "en": "Answered"
-          }
-        }
-      },
-      "trip-labels": "MULTILABEL"
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
     },
     "display_config": {
         "use_imperial": true
@@ -54,7 +61,13 @@
         "trip_end_notification": false
     },
     "admin_dashboard": {
-        "admin_access": ["burgin@thestreettrust.org", "quincy@weallrisegroup.com", "madi@thestreettrust.org", "sophie@thestreettrust.org", "k.shankari@nrel.gov"],
+        "admin_access": [
+            "burgin@thestreettrust.org",
+            "quincy@weallrisegroup.com",
+            "madi@thestreettrust.org",
+            "sophie@thestreettrust.org",
+            "k.shankari@nrel.gov"
+        ],
         "overview_users": true,
         "overview_active_users": true,
         "overview_trips": true,
@@ -62,7 +75,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,
@@ -73,6 +89,8 @@
         "push_send": false,
         "options_uuids": true,
         "options_emails": true,
-        "data_trajectories_columns_exclude": ["user_id"]
+        "data_trajectories_columns_exclude": [
+            "user_id"
+        ]
     }
 }

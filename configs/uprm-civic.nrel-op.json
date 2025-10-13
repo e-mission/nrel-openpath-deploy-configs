@@ -13,17 +13,19 @@
         "deployment_partner_name": "University of Puerto Rico at Mayagüez",
         "translated_text": {
             "en": {
-                "deployment_partner_name":"University of Puerto Rico at Mayagüez",
+                "deployment_partner_name": "University of Puerto Rico at Mayagüez",
                 "deployment_name": "UPRM CIVIC project",
                 "summary_line_1": "UPRM aims to develop collaborative mobility strategies that address the needs of rural communities.",
                 "summary_line_2": "In this pilot program, it will collect travel data to understand the travel patterns in your community.",
                 "summary_line_3": "If you are a program Participant, this app can help you log your trips and help the research team understand the travel needs of the community.",
                 "short_textual_description": "Low-income rural communities in Puerto Rico have limited transportation alternatives. Most have a single travel option: private gas vehicles. The CIVIC project a collaboration between NREL and UPRM will leverage OpenPATH to support an effort to develop innovative share mobility strategies that address the needs of rural communities in the island.",
                 "why_we_collect": "The data collected through OpenPATH will provide insights into the travel patterns and associated energy consumption of the CIVIC project participants. This data will help researchers identify opportunities for the development of collaborative ride-sharing programs that could address the mobility needs of individuals in rural communities. Also, the ride-sharing programs could contribute to reducing the environmental impacts of transport activities in these communities.",
-                "research_questions": ["How strong is the clustering of trips in rural communities?"]
+                "research_questions": [
+                    "How strong is the clustering of trips in rural communities?"
+                ]
             },
             "es": {
-                "deployment_partner_name":"Universidad de Puerto Rico Recinto de Mayagüez",
+                "deployment_partner_name": "Universidad de Puerto Rico Recinto de Mayagüez",
                 "deployment_name": "Proyecto UPRM CIVIC",
                 "summary_line_1": "UPRM tiene como objetivo desarrollar estrategias de movilidad colaborativa que aborden las necesidades de las comunidades rurales.",
                 "summary_line_2": "En este programa piloto, recopilará datos de viaje para comprender los patrones de viaje en su comunidad.",
@@ -31,7 +33,9 @@
                 "short_textual_description": "Las comunidades rurales de bajos ingresos en Puerto Rico tienen alternativas de transporte limitadas. La mayoría tiene una única opción de viaje: vehículos privados a gas. El proyecto CIVIC, una colaboración entre NREL y UPRM, aprovechará OpenPATH para respaldar un esfuerzo por desarrollar estrategias innovadoras de movilidad compartida que aborden las necesidades de las comunidades rurales de la isla.",
                 "why_we_collect_es": "Los datos recopilados a través de OpenPATH proporcionarán información sobre los patrones de viaje y el consumo de energía asociado de los participantes del proyecto CIVIC. Estos datos ayudarán a los investigadores a identificar oportunidades para el desarrollo de programas colaborativos de viajes compartidos que podrían abordar las necesidades de movilidad de las personas en las comunidades rurales. Además, los programas de viajes compartidos podrían contribuir a reducir los impactos ambientales de las actividades de transporte en estas comunidades.",
                 "why_we_collect": "Los datos recopilados a través de OpenPATH proporcionarán información sobre los patrones de viaje y el consumo de energía asociado de los participantes del proyecto CIVIC. Estos datos ayudarán a los investigadores a identificar oportunidades para el desarrollo de programas colaborativos de viajes compartidos que podrían abordar las necesidades de movilidad de las personas en las comunidades rurales. Además, los programas de viajes compartidos podrían contribuir a reducir los impactos ambientales de las actividades de transporte en estas comunidades.",
-                "research_questions": ["¿Qué tan fuerte es la agrupación de viajes en las comunidades rurales?"]
+                "research_questions": [
+                    "¿Qué tan fuerte es la agrupación de viajes en las comunidades rurales?"
+                ]
             }
         }
     },
@@ -53,7 +57,10 @@
         "overview_trips_trend": true,
         "data_uuids": true,
         "data_trips": true,
-        "data_trips_columns_exclude": ["data.start_loc.coordinates", "data.end_loc.coordinates"],
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
         "additional_trip_columns": [],
         "data_uuids_columns_exclude": [],
         "token_generate": false,

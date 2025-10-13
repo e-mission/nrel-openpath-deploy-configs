@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Trip Details</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="English (en)" default="true()">
+          <text id="sn0kp12-0">
+            <value>Walk</value>
+          </text>
+          <text id="sn0kp12-1">
+            <value>Transit (bus, train, etc.)</value>
+          </text>
+          <text id="sn0kp12-2">
+            <value>Car - driver</value>
+          </text>
+          <text id="sn0kp12-3">
+            <value>Car - passenger</value>
+          </text>
+          <text id="sn0kp12-4">
+            <value>Personal bike or e-bike</value>
+          </text>
+          <text id="sn0kp12-5">
+            <value>Bike or scooter share</value>
+          </text>
+          <text id="sn0kp12-6">
+            <value>Not a trip</value>
+          </text>
+          <text id="sn0kp12-7">
+            <value>Other</value>
+          </text>
+          <text id="wq0sb84-0">
+            <value>Yes</value>
+          </text>
+          <text id="wq0sb84-1">
+            <value>No</value>
+          </text>
+          <text id="wq0sb84-2">
+            <value>Other</value>
+          </text>
+          <text id="hz9cw41-0">
+            <value>Trip included at least 1 block of walking</value>
+          </text>
+          <text id="qv2bo94-0">
+            <value>Just myself</value>
+          </text>
+          <text id="qv2bo94-1">
+            <value>With 1 or more other adults</value>
+          </text>
+          <text id="qv2bo94-2">
+            <value>With 1 or more young children (8 or younger)</value>
+          </text>
+          <text id="qv2bo94-3">
+            <value>With 1 or more older children (9 to 17)</value>
+          </text>
+          <text id="af3ra52-0">
+            <value>Nothing </value>
+          </text>
+          <text id="af3ra52-1">
+            <value>Heavy or bulky bags</value>
+          </text>
+          <text id="af3ra52-2">
+            <value>Light / easy to carry bags</value>
+          </text>
+          <text id="af3ra52-3">
+            <value>Other</value>
+          </text>
+          <text id="kp9dy71-0">
+            <value>To home</value>
+          </text>
+          <text id="kp9dy71-1">
+            <value>To work</value>
+          </text>
+          <text id="kp9dy71-2">
+            <value>Other work related</value>
+          </text>
+          <text id="kp9dy71-3">
+            <value>Drop off or Pick up someone</value>
+          </text>
+          <text id="kp9dy71-4">
+            <value>Recreation / Exercise</value>
+          </text>
+          <text id="kp9dy71-5">
+            <value>Shop/buy/pick-up or return goods (groceries, clothes, etc)</value>
+          </text>
+          <text id="kp9dy71-6">
+            <value>Buy meals (go out for a meal, carryout, drive thru)</value>
+          </text>
+          <text id="kp9dy71-7">
+            <value>Health care visit (medical, dental, therapy, hospitalization, rehabilitation) </value>
+          </text>
+          <text id="kp9dy71-8">
+            <value>Other family/personal errands (banking, dry cleaners, service a car, pet care, post office, library) </value>
+          </text>
+          <text id="kp9dy71-9">
+            <value>Visit friends or relatives </value>
+          </text>
+          <text id="kp9dy71-10">
+            <value>Change type of transportation</value>
+          </text>
+          <text id="kp9dy71-11">
+            <value>Other</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Mode:label">
+            <value>What type of transportation did you use for the majority of this trip?</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Please_fill_in_the_other_mode:label">
+            <value>Please fill in the other mode</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin:label">
+            <value>Was a part of this trip walking (for example to access the primary mode, or to get to your final destination)?</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/If_other_please_explain:label">
+            <value>If other, please explain:</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Check_box_if_trip_in_on_at_least_1_block:label">
+            <value>Check box if trip included a walking portion (at least 1 block)</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Were_you_walking_with_any_other_people:label">
+            <value>Were you walking with any other people?</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Were_you_carrying_th_groceries_bags_etc:label">
+            <value>Were you carrying things (e.g. groceries, bags, etc.)?</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/What_was_the_trip_purpose:label">
+            <value>What was the trip purpose</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Other:label">
+            <value>Other:</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Other:hint">
+            <value form="guidance">If other, enter trip purpose here</value>
+          </text>
+          <text id="/aeTw4Ygte76Ea4PBcZYNER/Is_there_anything_el_know_about_this_trip:label">
+            <value>Is there anything else you would like to let us know about this trip?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aeTw4Ygte76Ea4PBcZYNER id="aeTw4Ygte76Ea4PBcZYNER">
+          <start/>
+          <end/>
+          <Mode/>
+          <Please_fill_in_the_other_mode/>
+          <Was_a_part_of_this_trip_walkin/>
+          <If_other_please_explain/>
+          <Check_box_if_trip_in_on_at_least_1_block/>
+          <Were_you_walking_with_any_other_people/>
+          <Were_you_carrying_th_groceries_bags_etc/>
+          <What_was_the_trip_purpose/>
+          <Other/>
+          <Is_there_anything_el_know_about_this_trip/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aeTw4Ygte76Ea4PBcZYNER>
+      </instance>
+      <instance id="sn0kp12">
+        <root>
+          <item>
+            <itextId>sn0kp12-0</itextId>
+            <name>walk</name>
+            <order>0</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-1</itextId>
+            <name>bus</name>
+            <order>1</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-2</itextId>
+            <name>car</name>
+            <order>2</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-3</itextId>
+            <name>car___passenger</name>
+            <order>3</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-4</itextId>
+            <name>regular_bike</name>
+            <order>4</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-5</itextId>
+            <name>bikeshare</name>
+            <order>5</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-6</itextId>
+            <name>not_a_trip</name>
+            <order>6</order>
+          </item>
+          <item>
+            <itextId>sn0kp12-7</itextId>
+            <name>other</name>
+            <order>7</order>
+          </item>
+        </root>
+      </instance>
+      <instance id="wq0sb84">
+        <root>
+          <item>
+            <itextId>wq0sb84-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>wq0sb84-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>wq0sb84-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="hz9cw41">
+        <root>
+          <item>
+            <itextId>hz9cw41-0</itextId>
+            <name>trip_included_at_least_1_block_of_walkin</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="qv2bo94">
+        <root>
+          <item>
+            <itextId>qv2bo94-0</itextId>
+            <name>just_myself</name>
+          </item>
+          <item>
+            <itextId>qv2bo94-1</itextId>
+            <name>with_1_or_more_other_adults</name>
+          </item>
+          <item>
+            <itextId>qv2bo94-2</itextId>
+            <name>with_1_or_more_young_children__8_or_youn</name>
+          </item>
+          <item>
+            <itextId>qv2bo94-3</itextId>
+            <name>with_1_or_more_older_children__9_to_17</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="af3ra52">
+        <root>
+          <item>
+            <itextId>af3ra52-0</itextId>
+            <name>nothing</name>
+          </item>
+          <item>
+            <itextId>af3ra52-1</itextId>
+            <name>heavy_or_bulky_bags</name>
+          </item>
+          <item>
+            <itextId>af3ra52-2</itextId>
+            <name>light___easy_to_carry_bags</name>
+          </item>
+          <item>
+            <itextId>af3ra52-3</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="kp9dy71">
+        <root>
+          <item>
+            <itextId>kp9dy71-0</itextId>
+            <name>to_home</name>
+            <order>0</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-1</itextId>
+            <name>to_work</name>
+            <order>1</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-2</itextId>
+            <name>other_work_related</name>
+            <order>2</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-3</itextId>
+            <name>pick_up_or_drop_off_someone</name>
+            <order>3</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-4</itextId>
+            <name>recreation</name>
+            <order>4</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-5</itextId>
+            <name>grocery_store</name>
+            <order>5</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-6</itextId>
+            <name>restaurant__cafe__bar</name>
+            <order>6</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-7</itextId>
+            <name>personal_business___appointmen</name>
+            <order>7</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-8</itextId>
+            <name>other_family_personal_errands_</name>
+            <order>8</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-9</itextId>
+            <name>social</name>
+            <order>10</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-10</itextId>
+            <name>change_mode__e_g__access_bus</name>
+            <order>11</order>
+          </item>
+          <item>
+            <itextId>kp9dy71-11</itextId>
+            <name>other</name>
+            <order>12</order>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/start" jr:preload="timestamp" type="dateTime" jr:preloadParams="start"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/end" jr:preload="timestamp" type="dateTime" jr:preloadParams="end"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Mode" type="string" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Please_fill_in_the_other_mode" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'other'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'bus' or  /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'bikeshare'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/If_other_please_explain" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin  = 'other'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Check_box_if_trip_in_on_at_least_1_block" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'car' or  /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'car___passenger' or  /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'regular_bike' or  /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'other'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Were_you_walking_with_any_other_people" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'walk' or  /aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin  = 'yes'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Were_you_carrying_th_groceries_bags_etc" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'walk' or  /aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin  = 'yes'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/What_was_the_trip_purpose" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'walk' or  /aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin  = 'yes'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Other" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/What_was_the_trip_purpose  = 'other'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/Is_there_anything_el_know_about_this_trip" type="string" relevant=" /aeTw4Ygte76Ea4PBcZYNER/Mode  = 'walk' or  /aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin  = 'yes'" required="false()"/>
+      <bind nodeset="/aeTw4Ygte76Ea4PBcZYNER/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select1 ref="/aeTw4Ygte76Ea4PBcZYNER/Mode">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Mode:label')"/>
+      <itemset nodeset="instance('sn0kp12')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <input ref="/aeTw4Ygte76Ea4PBcZYNER/Please_fill_in_the_other_mode">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Please_fill_in_the_other_mode:label')"/>
+    </input>
+    <select1 ref="/aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Was_a_part_of_this_trip_walkin:label')"/>
+      <itemset nodeset="instance('wq0sb84')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <input ref="/aeTw4Ygte76Ea4PBcZYNER/If_other_please_explain">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/If_other_please_explain:label')"/>
+    </input>
+    <select ref="/aeTw4Ygte76Ea4PBcZYNER/Check_box_if_trip_in_on_at_least_1_block">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Check_box_if_trip_in_on_at_least_1_block:label')"/>
+      <itemset nodeset="instance('hz9cw41')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select ref="/aeTw4Ygte76Ea4PBcZYNER/Were_you_walking_with_any_other_people">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Were_you_walking_with_any_other_people:label')"/>
+      <itemset nodeset="instance('qv2bo94')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select ref="/aeTw4Ygte76Ea4PBcZYNER/Were_you_carrying_th_groceries_bags_etc">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Were_you_carrying_th_groceries_bags_etc:label')"/>
+      <itemset nodeset="instance('af3ra52')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select1 ref="/aeTw4Ygte76Ea4PBcZYNER/What_was_the_trip_purpose">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/What_was_the_trip_purpose:label')"/>
+      <itemset nodeset="instance('kp9dy71')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <input ref="/aeTw4Ygte76Ea4PBcZYNER/Other">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Other:label')"/>
+      <hint ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Other:hint')"/>
+    </input>
+    <input ref="/aeTw4Ygte76Ea4PBcZYNER/Is_there_anything_el_know_about_this_trip">
+      <label ref="jr:itext('/aeTw4Ygte76Ea4PBcZYNER/Is_there_anything_el_know_about_this_trip:label')"/>
+    </input>
+  </h:body>
+</h:html>

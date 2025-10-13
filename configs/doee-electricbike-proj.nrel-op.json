@@ -1,108 +1,108 @@
 {
-  "url_abbreviation": "doee-electricbike-proj",
-  "version": 1,
-  "ts": 1707330356,
-  "server": {
-    "connectUrl": "https://doee-electricbike-proj-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": true,
-    "subgroups": [
-      "test",
-      "default"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "01",
-    "start_year": "2024",
-    "mode_studied": "e-bike",
-    "program_admin_contact": "For questions about the program, please contact Robera Tasissa (robera.tasissa@dc.gov) or Laura Pimentel (laura.pimentel@dc.gov).",
-    "deployment_partner_name": "Energy Administration at District of Columbia Department of Energy and Environment",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "Energy Administration at District of Columbia Department of Energy and Environment",
-        "deployment_name": "E-bike library project",
-        "summary_line_1": "The EA at DOEE aims to incentivize commuters to adopt energy-efficient, non- polluting modes of transportation and maximize air quality benefits.",
-        "summary_line_2": "This pilot program is providing e-bikes to low-income program participants in Southwest DC.",
-        "summary_line_3": "If you are a program participant, this app can help you log your trips and compete against others to benefit our environment.",
-        "short_textual_description": "The pilot will allow District residents to try out various types of e-bikes at no-cost and encourage a mode shift that reduces emissions, increases mobility for low-income residents, and demonstrates an e-bike library concept applicable to everyday life. At the end of the pilot, the data tracked using the NREL Openpath app will be used to understand e-bike use behavior, mode-shift, and any barriers to adoption.",
-        "why_we_collect": "The data collected during the program will be used to understand: how e-bikes are used, including when and how often, distance travelled, and the preferred type of e- bikes.",
-        "research_questions": [
-          "Travel behavior using e-bikes?",
-          "Barriers to e-bike use and adoption in Southwest DC?",
-          ""
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "Administración de Energía en el Departamento de Energía y Medio Ambiente del Distrito de Columbia",
-        "deployment_name": "Proyecto de biblioteca de bicicletas eléctricas",
-        "summary_line_1": "La EA en DOEE tiene como objetivo incentivar a los viajeros a adoptar modos de transporte no contaminantes y energéticamente eficientes y maximizar los beneficios de la calidad del aire.",
-        "summary_line_2": "Este programa piloto proporciona bicicletas eléctricas a participantes del programa de bajos ingresos en el suroeste de DC.",
-        "summary_line_3": "Si participa en el programa, esta aplicación puede ayudarle a registrar sus viajes y competir contra otros en beneficio de nuestro medio ambiente.",
-        "short_textual_description": "El piloto permitirá a los residentes del distrito probar varios tipos de bicicletas eléctricas sin costo y fomentará un cambio de modo que reduzca las emisiones, aumente la movilidad de los residentes de bajos ingresos y demuestre un concepto de biblioteca de bicicletas eléctricas aplicable a la vida cotidiana. Al final del piloto, los datos rastreados mediante la aplicación NREL Openpath se utilizarán para comprender el comportamiento de uso de bicicletas eléctricas, el cambio de modo y cualquier barrera para la adopción.",
-        "why_we_collect": "Los datos recopilados durante el programa se utilizarán para comprender: cómo se utilizan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, la distancia recorrida y el tipo preferido de bicicletas eléctricas.",
-        "research_questions": [
-          "¿Comportamiento de viaje con bicicletas eléctricas?",
-          "¿Barreras para el uso y la adopción de bicicletas eléctricas en el suroeste de DC?",
-          ""
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "doee-electricbike-proj",
+    "version": 1,
+    "ts": 1707330356,
+    "server": {
+        "connectUrl": "https://doee-electricbike-proj-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [
-      "data.start_loc.coordinates",
-      "data.end_loc.coordinates"
-    ],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "laura.pimentel@dc.gov",
-      "robera.tasissa@dc.gov",
-      "zbaldwin@swbid.org",
-      "lalbe@swbid.org",
-      "schoi@swbid.org"
-    ]
-  }
+    "opcode": {
+        "autogen": true,
+        "subgroups": [
+            "test",
+            "default"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "01",
+        "start_year": "2024",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "For questions about the program, please contact Robera Tasissa (robera.tasissa@dc.gov) or Laura Pimentel (laura.pimentel@dc.gov).",
+        "deployment_partner_name": "Energy Administration at District of Columbia Department of Energy and Environment",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Energy Administration at District of Columbia Department of Energy and Environment",
+                "deployment_name": "E-bike library project",
+                "summary_line_1": "The EA at DOEE aims to incentivize commuters to adopt energy-efficient, non- polluting modes of transportation and maximize air quality benefits.",
+                "summary_line_2": "This pilot program is providing e-bikes to low-income program participants in Southwest DC.",
+                "summary_line_3": "If you are a program participant, this app can help you log your trips and compete against others to benefit our environment.",
+                "short_textual_description": "The pilot will allow District residents to try out various types of e-bikes at no-cost and encourage a mode shift that reduces emissions, increases mobility for low-income residents, and demonstrates an e-bike library concept applicable to everyday life. At the end of the pilot, the data tracked using the NREL Openpath app will be used to understand e-bike use behavior, mode-shift, and any barriers to adoption.",
+                "why_we_collect": "The data collected during the program will be used to understand: how e-bikes are used, including when and how often, distance travelled, and the preferred type of e- bikes.",
+                "research_questions": [
+                    "Travel behavior using e-bikes?",
+                    "Barriers to e-bike use and adoption in Southwest DC?",
+                    ""
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "Administración de Energía en el Departamento de Energía y Medio Ambiente del Distrito de Columbia",
+                "deployment_name": "Proyecto de biblioteca de bicicletas eléctricas",
+                "summary_line_1": "La EA en DOEE tiene como objetivo incentivar a los viajeros a adoptar modos de transporte no contaminantes y energéticamente eficientes y maximizar los beneficios de la calidad del aire.",
+                "summary_line_2": "Este programa piloto proporciona bicicletas eléctricas a participantes del programa de bajos ingresos en el suroeste de DC.",
+                "summary_line_3": "Si participa en el programa, esta aplicación puede ayudarle a registrar sus viajes y competir contra otros en beneficio de nuestro medio ambiente.",
+                "short_textual_description": "El piloto permitirá a los residentes del distrito probar varios tipos de bicicletas eléctricas sin costo y fomentará un cambio de modo que reduzca las emisiones, aumente la movilidad de los residentes de bajos ingresos y demuestre un concepto de biblioteca de bicicletas eléctricas aplicable a la vida cotidiana. Al final del piloto, los datos rastreados mediante la aplicación NREL Openpath se utilizarán para comprender el comportamiento de uso de bicicletas eléctricas, el cambio de modo y cualquier barrera para la adopción.",
+                "why_we_collect": "Los datos recopilados durante el programa se utilizarán para comprender: cómo se utilizan las bicicletas eléctricas, incluido cuándo y con qué frecuencia, la distancia recorrida y el tipo preferido de bicicletas eléctricas.",
+                "research_questions": [
+                    "¿Comportamiento de viaje con bicicletas eléctricas?",
+                    "¿Barreras para el uso y la adopción de bicicletas eléctricas en el suroeste de DC?",
+                    ""
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [
+            "data.start_loc.coordinates",
+            "data.end_loc.coordinates"
+        ],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "laura.pimentel@dc.gov",
+            "robera.tasissa@dc.gov",
+            "zbaldwin@swbid.org",
+            "lalbe@swbid.org",
+            "schoi@swbid.org"
+        ]
+    }
 }

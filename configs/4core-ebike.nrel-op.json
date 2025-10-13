@@ -1,103 +1,103 @@
 {
-  "url_abbreviation": "4core-ebike",
-  "version": 1,
-  "ts": 1719435689,
-  "server": {
-    "connectUrl": "https://4core-ebike-openpath.nrel.gov/api/",
-    "aggregate_call_auth": "user_only"
-  },
-  "opcode": {
-    "autogen": false,
-    "subgroups": [
-      "test",
-      "pagosa"
-    ]
-  },
-  "intro": {
-    "program_or_study": "program",
-    "start_month": "05",
-    "start_year": "2024",
-    "mode_studied": "e-bike",
-    "program_admin_contact": "Rebekah Huehnel, Clean Transportation Program Manager, rebekah@fourcore.org",
-    "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
-    "translated_text": {
-      "en": {
-        "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
-        "deployment_name": "Community Access to Electric Bicycles Program",
-        "summary_line_1": "4CORE works to promote the adoption of clean transportation through the support of the Colorado Energy Office by providing free eBikes for vulnerable sectors and increasing zero emission transportation across Southern Colorado. The Community Access to Electric Bicycles Grant Program will increase access to eBikes and eTrikes as a healthy, zero emission mode of transportation for older adults in an underserved community of Colorado.",
-        "summary_line_2": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
-        "summary_line_3": "",
-        "short_textual_description": "As the state of Colorado looks towards alternative modes of transportation besides driving, 4CORE and the state would like to observe the use of an electric bicycle by older adults. This program will give 25 electric bicycles/tricycles to income-qualified older adults, many of which have physical and financial limitations.",
-        "why_we_collect": "4CORE and the CEO can use the program to understand how often older adults use an electric bicycle,the distance of their trips, and what they use it for (leisure, errands, etc.). This will help us understand the use-case of micro mobility in small, more rural towns in Colorado. It also gives insight to a micro-mobility transportation option for an older demographic - which will provide unique data and observations.",
-        "research_questions": [
-          "How effective are electric bicycles, as a form of micro-mobility transportation, in small, rural towns?",
-          "Are electric bicycles a solution to clean transportation for an older demographic?",
-          "What are the limitations as well as strong points of electric bicycle use for adults over the age of 55?"
-        ]
-      },
-      "es": {
-        "deployment_partner_name": "Oficina de Cuatro Esquinas para la Eficiencia de los Recursos (4CORE)",
-        "deployment_name": "Programa de Acceso Comunitario a Bicicletas Eléctricas",
-        "summary_line_1": "4CORE trabaja para promover la adopción de transporte limpio a través del apoyo de la Oficina de Energía de Colorado al proporcionar bicicletas eléctricas gratuitas para sectores vulnerables y aumentar el transporte con cero emisiones en todo el sur de Colorado. El Programa de subvenciones para acceso comunitario a bicicletas eléctricas aumentará el acceso a eBikes y eTrikes como un modo de transporte saludable y sin emisiones para adultos mayores en una comunidad desatendida de Colorado.",
-        "summary_line_2": "Si participa en el programa, esta aplicación puede ayudarle a registrar sus viajes y competir contra otros en beneficio de nuestro medio ambiente.",
-        "summary_line_3": "",
-        "short_textual_description": "Mientras el estado de Colorado busca modos de transporte alternativos además de conducir, a 4CORE y al estado les gustaría observar el uso de bicicletas eléctricas por parte de adultos mayores. Este programa entregará 25 bicicletas/triciclos eléctricos a adultos mayores con ingresos calificados, muchos de los cuales tienen limitaciones físicas y financieras.",
-        "why_we_collect": "4CORE y el CEO pueden utilizar el programa para comprender con qué frecuencia los adultos mayores usan una bicicleta eléctrica, la distancia de sus viajes y para qué la usan (ocio, recados, etc.). Esto nos ayudará a comprender el caso de uso de la micromovilidad en pueblos pequeños y más rurales de Colorado. También brinda información sobre una opción de transporte de micromovilidad para un grupo demográfico de mayor edad, que proporcionará datos y observaciones únicos.",
-        "research_questions": [
-          "¿Cuán efectivas son las bicicletas eléctricas, como forma de transporte de micromovilidad, en ciudades pequeñas y rurales?",
-          "¿Son las bicicletas eléctricas una solución para el transporte limpio para un grupo demográfico de mayor edad?",
-          "¿Cuáles son las limitaciones y los puntos fuertes de ¿Uso de bicicleta eléctrica para adultos mayores de 55 años?"
-        ]
-      }
-    }
-  },
-  "survey_info": {
-    "surveys": {
-      "UserProfileSurvey": {
-        "formPath": "json/demo-survey-v2.json",
-        "version": 1,
-        "compatibleWith": 1,
-        "dataKey": "manual/demographic_survey",
-        "labelTemplate": {
-          "en": "Answered",
-          "es": "Contestada"
-        }
-      }
+    "url_abbreviation": "4core-ebike",
+    "version": 1,
+    "ts": 1719435689,
+    "server": {
+        "connectUrl": "https://4core-ebike-openpath.nrel.gov/api/",
+        "aggregate_call_auth": "user_only"
     },
-    "trip-labels": "MULTILABEL"
-  },
-  "display_config": {
-    "use_imperial": true
-  },
-  "metrics": {
-    "include_test_users": true
-  },
-  "profile_controls": {
-    "support_upload": false,
-    "trip_end_notification": false
-  },
-  "admin_dashboard": {
-    "data_trips_columns_exclude": [],
-    "additional_trip_columns": [],
-    "data_uuids_columns_exclude": [],
-    "token_prefix": "nrelop",
-    "token_generate": true,
-    "overview_users": true,
-    "overview_active_users": true,
-    "overview_trips": true,
-    "overview_signup_trends": true,
-    "overview_trips_trend": true,
-    "data_uuids": true,
-    "data_trips": true,
-    "map_heatmap": true,
-    "map_bubble": true,
-    "map_trip_lines": false,
-    "options_uuids": true,
-    "options_emails": true,
-    "admin_access": [
-      "jenny@fourcore.org",
-      "rebekah@fourcore.org",
-      "kathleen@fourcore.org"
-    ]
-  }
+    "opcode": {
+        "autogen": false,
+        "subgroups": [
+            "test",
+            "pagosa"
+        ]
+    },
+    "intro": {
+        "program_or_study": "program",
+        "start_month": "05",
+        "start_year": "2024",
+        "mode_studied": "e-bike",
+        "program_admin_contact": "Rebekah Huehnel, Clean Transportation Program Manager, rebekah@fourcore.org",
+        "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
+        "translated_text": {
+            "en": {
+                "deployment_partner_name": "Four Corners Office for Resource Efficiency (4CORE)",
+                "deployment_name": "Community Access to Electric Bicycles Program",
+                "summary_line_1": "4CORE works to promote the adoption of clean transportation through the support of the Colorado Energy Office by providing free eBikes for vulnerable sectors and increasing zero emission transportation across Southern Colorado. The Community Access to Electric Bicycles Grant Program will increase access to eBikes and eTrikes as a healthy, zero emission mode of transportation for older adults in an underserved community of Colorado.",
+                "summary_line_2": "If you are a program Participant, this app can help you log your trips and compete against others to benefit our environment.",
+                "summary_line_3": "",
+                "short_textual_description": "As the state of Colorado looks towards alternative modes of transportation besides driving, 4CORE and the state would like to observe the use of an electric bicycle by older adults. This program will give 25 electric bicycles/tricycles to income-qualified older adults, many of which have physical and financial limitations.",
+                "why_we_collect": "4CORE and the CEO can use the program to understand how often older adults use an electric bicycle,the distance of their trips, and what they use it for (leisure, errands, etc.). This will help us understand the use-case of micro mobility in small, more rural towns in Colorado. It also gives insight to a micro-mobility transportation option for an older demographic - which will provide unique data and observations.",
+                "research_questions": [
+                    "How effective are electric bicycles, as a form of micro-mobility transportation, in small, rural towns?",
+                    "Are electric bicycles a solution to clean transportation for an older demographic?",
+                    "What are the limitations as well as strong points of electric bicycle use for adults over the age of 55?"
+                ]
+            },
+            "es": {
+                "deployment_partner_name": "Oficina de Cuatro Esquinas para la Eficiencia de los Recursos (4CORE)",
+                "deployment_name": "Programa de Acceso Comunitario a Bicicletas Eléctricas",
+                "summary_line_1": "4CORE trabaja para promover la adopción de transporte limpio a través del apoyo de la Oficina de Energía de Colorado al proporcionar bicicletas eléctricas gratuitas para sectores vulnerables y aumentar el transporte con cero emisiones en todo el sur de Colorado. El Programa de subvenciones para acceso comunitario a bicicletas eléctricas aumentará el acceso a eBikes y eTrikes como un modo de transporte saludable y sin emisiones para adultos mayores en una comunidad desatendida de Colorado.",
+                "summary_line_2": "Si participa en el programa, esta aplicación puede ayudarle a registrar sus viajes y competir contra otros en beneficio de nuestro medio ambiente.",
+                "summary_line_3": "",
+                "short_textual_description": "Mientras el estado de Colorado busca modos de transporte alternativos además de conducir, a 4CORE y al estado les gustaría observar el uso de bicicletas eléctricas por parte de adultos mayores. Este programa entregará 25 bicicletas/triciclos eléctricos a adultos mayores con ingresos calificados, muchos de los cuales tienen limitaciones físicas y financieras.",
+                "why_we_collect": "4CORE y el CEO pueden utilizar el programa para comprender con qué frecuencia los adultos mayores usan una bicicleta eléctrica, la distancia de sus viajes y para qué la usan (ocio, recados, etc.). Esto nos ayudará a comprender el caso de uso de la micromovilidad en pueblos pequeños y más rurales de Colorado. También brinda información sobre una opción de transporte de micromovilidad para un grupo demográfico de mayor edad, que proporcionará datos y observaciones únicos.",
+                "research_questions": [
+                    "¿Cuán efectivas son las bicicletas eléctricas, como forma de transporte de micromovilidad, en ciudades pequeñas y rurales?",
+                    "¿Son las bicicletas eléctricas una solución para el transporte limpio para un grupo demográfico de mayor edad?",
+                    "¿Cuáles son las limitaciones y los puntos fuertes de ¿Uso de bicicleta eléctrica para adultos mayores de 55 años?"
+                ]
+            }
+        }
+    },
+    "survey_info": {
+        "surveys": {
+            "UserProfileSurvey": {
+                "formPath": "json/demo-survey-v2.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered",
+                    "es": "Contestada"
+                }
+            }
+        },
+        "trip-labels": "MULTILABEL"
+    },
+    "display_config": {
+        "use_imperial": true
+    },
+    "metrics": {
+        "include_test_users": true
+    },
+    "profile_controls": {
+        "support_upload": false,
+        "trip_end_notification": false
+    },
+    "admin_dashboard": {
+        "data_trips_columns_exclude": [],
+        "additional_trip_columns": [],
+        "data_uuids_columns_exclude": [],
+        "token_prefix": "nrelop",
+        "token_generate": true,
+        "overview_users": true,
+        "overview_active_users": true,
+        "overview_trips": true,
+        "overview_signup_trends": true,
+        "overview_trips_trend": true,
+        "data_uuids": true,
+        "data_trips": true,
+        "map_heatmap": true,
+        "map_bubble": true,
+        "map_trip_lines": false,
+        "options_uuids": true,
+        "options_emails": true,
+        "admin_access": [
+            "jenny@fourcore.org",
+            "rebekah@fourcore.org",
+            "kathleen@fourcore.org"
+        ]
+    }
 }

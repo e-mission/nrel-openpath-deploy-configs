@@ -7,7 +7,10 @@
     },
     "opcode": {
         "autogen": false,
-        "subgroups": ["test", "ghana"]
+        "subgroups": [
+            "test",
+            "ghana"
+        ]
     },
     "intro": {
         "program_or_study": "study",
@@ -30,18 +33,18 @@
     },
     "survey_info": {
         "surveys": {
-          "UserProfileSurvey": {
-            "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uue/uue-survey.json",
-            "version": 1,
-            "compatibleWith": 1,
-            "dataKey": "manual/demographic_survey",
-            "labelTemplate": {
-              "en": "Answered"
+            "UserProfileSurvey": {
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/uue/uue-survey.json",
+                "version": 1,
+                "compatibleWith": 1,
+                "dataKey": "manual/demographic_survey",
+                "labelTemplate": {
+                    "en": "Answered"
+                }
             }
-          }
         },
         "trip-labels": "MULTILABEL"
-      },
+    },
     "display_config": {
         "use_imperial": true
     },
@@ -72,10 +75,10 @@
         "options_uuids": true,
         "options_emails": true,
         "admin_access": [
-          "nikhil_kumar1@g.harvard.edu",
-          "anders_jensen@hks.harvard.edu",
-          "konstantinpoensgen@fas.harvard.edu"
-       ]
+            "nikhil_kumar1@g.harvard.edu",
+            "anders_jensen@hks.harvard.edu",
+            "konstantinpoensgen@fas.harvard.edu"
+        ]
     },
     "reminderSchemes": {
         "passive": {
