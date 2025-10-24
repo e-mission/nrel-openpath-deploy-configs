@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "clip-pilot",
-    "version": 1,
+    "version": 2,
     "ts": 1760371251,
     "server": {
         "connectUrl": "https://clip-pilot-openpath.nrel.gov/api/",
@@ -23,22 +23,22 @@
         "translated_text": {
             "en": {
                 "deployment_partner_name": "CLIP",
-                "deployment_name": "CLIP Pilot with BAT",
+                "deployment_name": "CLIP Pilot with NYCEDC",
                 "summary_line_1": "This is an e-bike pilot conducted by CLIP.bike INC or CLIP on City-owned property managed by NYCEDC.",
                 "summary_line_2": "",
                 "summary_line_3": "",
-                "short_textual_description": "CLIP Explorer is the world’s first and only Plug & Play e-bike device to upgrade any bike into an e-bike without tools or pre-installation. Despite its commercial success, CLIP has received limited feedback from the units sold as the team is scaling sales in 2025. CLIP is interested in gathering precise product feedback, as well as understanding accurate commuter behavior and impact. NYCEDC is working with CLIP to allow the startup to participate in a pilot at BAT.",
-                "why_we_collect": "With the pilot at BAT with NYCEDC, CLIP aims to collect real-world data in a controlled environment, allowing the team to fine-tune and enhance their fleet model as well as getting a better understanding of the impact of large-scale deployment on commuters and their communities. CLIP will share collected data with NYCEDC after the pilot, informing the team of commuter behavior at BAT.",
+                "short_textual_description": "CLIP Explorer is the world’s first and only Plug & Play e-bike device to upgrade any bike into an e-bike without tools or pre-installation. Despite its commercial success, CLIP has received limited feedback from the units sold as the team is scaling sales in 2025. CLIP is interested in gathering precise product feedback, as well as understanding accurate commuter behavior and impact. NYCEDC is working with CLIP to allow the startup to participate in a pilot at BAT and Governor’s Island.",
+                "why_we_collect": "With the pilot with NYCEDC, CLIP aims to collect real-world data in a controlled environment, allowing the team to fine-tune and enhance their fleet model as well as getting a better understanding of the impact of large-scale deployment on commuters and their communities. CLIP will share collected data with NYCEDC after the pilot, informing the team of commuter behavior at BAT and Governor's Island.",
                 "research_questions": []
             },
             "es": {
-                "deployment_partner_name": "",
-                "deployment_name": "",
-                "summary_line_1": "",
+                "deployment_partner_name": "CLIP",
+                "deployment_name": "Piloto de CLIP con NYCEDC",
+                "summary_line_1": "Este es un piloto de bicicletas eléctricas realizado por CLIP.bike INC o CLIP en una propiedad de la ciudad gestionada por NYCEDC.",
                 "summary_line_2": "",
                 "summary_line_3": "",
-                "short_textual_description": "",
-                "why_we_collect": "",
+                "short_textual_description": "CLIP Explorer es el primer y único dispositivo de bicicleta eléctrica Plug & Play del mundo para actualizar cualquier bicicleta a una bicicleta eléctrica sin herramientas ni preinstalación. A pesar de su éxito comercial, CLIP ha recibido comentarios limitados de las unidades vendidas mientras el equipo amplía las ventas en 2025. CLIP está interesado en recopilar comentarios precisos sobre el producto, así como en comprender el comportamiento y el impacto precisos de los viajeros. NYCEDC está trabajando con CLIP para permitir que la startup participe en un piloto en BAT y Governor's Island.",
+                "why_we_collect": "Con el piloto con NYCEDC, CLIP tiene como objetivo recopilar datos del mundo real en un entorno controlado, lo que permite al equipo afinar y mejorar su modelo de flota, así como obtener una mejor comprensión del impacto del despliegue a gran escala en los viajeros y sus comunidades. CLIP compartirá los datos recopilados con NYCEDC después del piloto, informando al equipo sobre el comportamiento de los viajeros en BAT y Governor's Island.",
                 "research_questions": []
             }
         }
@@ -46,7 +46,7 @@
     "survey_info": {
         "surveys": {
             "UserProfileSurvey": {
-                "formPath": "json/demo-survey-v2.json",
+                "formPath": "https://raw.githubusercontent.com/e-mission/nrel-openpath-deploy-configs/main/survey_resources/clip-pilot/clip-pilot-onboarding-v0.xml",
                 "version": 1,
                 "compatibleWith": 1,
                 "dataKey": "manual/demographic_survey",

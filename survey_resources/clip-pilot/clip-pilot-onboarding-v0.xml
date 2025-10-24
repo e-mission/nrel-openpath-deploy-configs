@@ -1,0 +1,1842 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>NREL BAT/GI CLIP SURVEY (Onboarding)</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="English (en)" default="true()">
+          <text id="hw0nf66-0">
+            <value>1 day</value>
+          </text>
+          <text id="hw0nf66-1">
+            <value>2 days</value>
+          </text>
+          <text id="hw0nf66-2">
+            <value>3 days</value>
+          </text>
+          <text id="hw0nf66-3">
+            <value>4 days</value>
+          </text>
+          <text id="hw0nf66-4">
+            <value>5 days – I commute every weekday</value>
+          </text>
+          <text id="qu2yl87-0">
+            <value>Personal bike</value>
+          </text>
+          <text id="qu2yl87-1">
+            <value>Personal e-bike</value>
+          </text>
+          <text id="qu2yl87-2">
+            <value>Personal electric scooter</value>
+          </text>
+          <text id="qu2yl87-3">
+            <value>Citibike</value>
+          </text>
+          <text id="qu2yl87-4">
+            <value>Subway</value>
+          </text>
+          <text id="qu2yl87-5">
+            <value>Bus</value>
+          </text>
+          <text id="qu2yl87-6">
+            <value>Ferry</value>
+          </text>
+          <text id="qu2yl87-7">
+            <value>Car (personal or ride share)</value>
+          </text>
+          <text id="qu2yl87-8">
+            <value>Truck</value>
+          </text>
+          <text id="qu2yl87-9">
+            <value>Walking</value>
+          </text>
+          <text id="qu2yl87-10">
+            <value>Other (please specify):</value>
+          </text>
+          <text id="ch2kq65-0">
+            <value>Less than 15 minutes</value>
+          </text>
+          <text id="ch2kq65-1">
+            <value>15–30 minutes</value>
+          </text>
+          <text id="ch2kq65-2">
+            <value>31–45 minutes</value>
+          </text>
+          <text id="ch2kq65-3">
+            <value>46–60 minutes</value>
+          </text>
+          <text id="ch2kq65-4">
+            <value>More than 60 minutes</value>
+          </text>
+          <text id="ch2kq65-5">
+            <value>I did not commute</value>
+          </text>
+          <text id="ao2oh11-0">
+            <value>$0 (e.g., walked or biked)</value>
+          </text>
+          <text id="ao2oh11-1">
+            <value>$1–5</value>
+          </text>
+          <text id="ao2oh11-2">
+            <value>$5–10</value>
+          </text>
+          <text id="ao2oh11-3">
+            <value>$10-15</value>
+          </text>
+          <text id="ao2oh11-4">
+            <value>More than $15</value>
+          </text>
+          <text id="fv7dy30-0">
+            <value>Speed</value>
+          </text>
+          <text id="fv7dy30-1">
+            <value>Cost</value>
+          </text>
+          <text id="fv7dy30-2">
+            <value>Convenience</value>
+          </text>
+          <text id="fv7dy30-3">
+            <value>Safety</value>
+          </text>
+          <text id="fv7dy30-4">
+            <value>Environmental impact</value>
+          </text>
+          <text id="fv7dy30-5">
+            <value>Lack of alternatives</value>
+          </text>
+          <text id="ua48m61-0">
+            <value>Less than 1 mile</value>
+          </text>
+          <text id="ua48m61-1">
+            <value>1-3 miles</value>
+          </text>
+          <text id="ua48m61-2">
+            <value>4-6 miles</value>
+          </text>
+          <text id="ua48m61-3">
+            <value>7-10 miles</value>
+          </text>
+          <text id="ua48m61-4">
+            <value>11-15 miles</value>
+          </text>
+          <text id="ua48m61-5">
+            <value>16-20 miles</value>
+          </text>
+          <text id="gh2uz73-0">
+            <value>Work</value>
+          </text>
+          <text id="gh2uz73-1">
+            <value>School</value>
+          </text>
+          <text id="gh2uz73-2">
+            <value>Grocery store or errands</value>
+          </text>
+          <text id="gh2uz73-3">
+            <value>Social or recreational activities</value>
+          </text>
+          <text id="gh2uz73-4">
+            <value>All of the above</value>
+          </text>
+          <text id="pu5fn06-0">
+            <value>Personal bicycle</value>
+          </text>
+          <text id="pu5fn06-1">
+            <value>Personal e-bike</value>
+          </text>
+          <text id="pu5fn06-2">
+            <value>Personal electric scooter</value>
+          </text>
+          <text id="pu5fn06-3">
+            <value>Car</value>
+          </text>
+          <text id="pu5fn06-4">
+            <value>Truck</value>
+          </text>
+          <text id="pu5fn06-5">
+            <value>Public transit pass (MTA, OMNY, etc.)</value>
+          </text>
+          <text id="pu5fn06-6">
+            <value>Citi Bike Membership</value>
+          </text>
+          <text id="pu5fn06-7">
+            <value>Rideshare</value>
+          </text>
+          <text id="fy7gr36-0">
+            <value>18–24</value>
+          </text>
+          <text id="fy7gr36-1">
+            <value>25–34</value>
+          </text>
+          <text id="fy7gr36-2">
+            <value>35–44</value>
+          </text>
+          <text id="fy7gr36-3">
+            <value>45–54</value>
+          </text>
+          <text id="fy7gr36-4">
+            <value>55–64</value>
+          </text>
+          <text id="fy7gr36-5">
+            <value>65+</value>
+          </text>
+          <text id="fy7gr36-6">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="yl4zv77-0">
+            <value>Male</value>
+          </text>
+          <text id="yl4zv77-1">
+            <value>Female</value>
+          </text>
+          <text id="yl4zv77-2">
+            <value>Nonbinary</value>
+          </text>
+          <text id="yl4zv77-3">
+            <value>Transgender</value>
+          </text>
+          <text id="yl4zv77-4">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="yl4zv77-5">
+            <value>Other (please specify):</value>
+          </text>
+          <text id="tu6uh33-0">
+            <value>Black or African American</value>
+          </text>
+          <text id="tu6uh33-1">
+            <value>White or Caucasian</value>
+          </text>
+          <text id="tu6uh33-2">
+            <value>Hispanic, Latino/a/x, or Spanish</value>
+          </text>
+          <text id="tu6uh33-3">
+            <value>East Asian</value>
+          </text>
+          <text id="tu6uh33-4">
+            <value>South Asian</value>
+          </text>
+          <text id="tu6uh33-5">
+            <value>American Indian or Alaska Native</value>
+          </text>
+          <text id="tu6uh33-6">
+            <value>Native Hawaiian or Other Pacific Islander</value>
+          </text>
+          <text id="tu6uh33-7">
+            <value>Multiracial/Multiethnic</value>
+          </text>
+          <text id="tu6uh33-8">
+            <value>Other (please specify):</value>
+          </text>
+          <text id="tu6uh33-9">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="qq6fl41-0">
+            <value>Under $25,000</value>
+          </text>
+          <text id="qq6fl41-1">
+            <value>$25,000–$49,999</value>
+          </text>
+          <text id="qq6fl41-2">
+            <value>$50,000–$74,999</value>
+          </text>
+          <text id="qq6fl41-3">
+            <value>$75,000–$99,999</value>
+          </text>
+          <text id="qq6fl41-4">
+            <value>$100,000–$149,999</value>
+          </text>
+          <text id="qq6fl41-5">
+            <value>$150,000–$199,999</value>
+          </text>
+          <text id="qq6fl41-6">
+            <value>$200,000 and above</value>
+          </text>
+          <text id="qq6fl41-7">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="nb3mz63-0">
+            <value>Less than a high school graduate</value>
+          </text>
+          <text id="nb3mz63-1">
+            <value>High school graduate or GED</value>
+          </text>
+          <text id="nb3mz63-2">
+            <value>Some college or associate's degree</value>
+          </text>
+          <text id="nb3mz63-3">
+            <value>Bachelor's degree</value>
+          </text>
+          <text id="nb3mz63-4">
+            <value>Graduate or professional degree</value>
+          </text>
+          <text id="nb3mz63-5">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="bz0iy56-0">
+            <value>Yes</value>
+          </text>
+          <text id="bz0iy56-1">
+            <value>No</value>
+          </text>
+          <text id="bz0iy56-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="yr3we65-0">
+            <value>Personal bicycle</value>
+          </text>
+          <text id="yr3we65-1">
+            <value>Personal e-bike</value>
+          </text>
+          <text id="yr3we65-2">
+            <value>Personal electric scooter</value>
+          </text>
+          <text id="yr3we65-3">
+            <value>Car</value>
+          </text>
+          <text id="yr3we65-4">
+            <value>Truck</value>
+          </text>
+          <text id="yr3we65-5">
+            <value>Public transit pass (MTA, OMNY, etc.)</value>
+          </text>
+          <text id="yr3we65-6">
+            <value>Citi Bike Membership</value>
+          </text>
+          <text id="yr3we65-7">
+            <value>Rideshare</value>
+          </text>
+          <text id="yr3we65-8">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="ht04r09-0">
+            <value>Yes</value>
+          </text>
+          <text id="ht04r09-1">
+            <value>No</value>
+          </text>
+          <text id="ht04r09-2">
+            <value>Prefer not to say</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below:label">
+            <value>Providing demographic information is optional. It is being obtained for statistical purposes only and individual information will not be made public nor impact your ability to participate in any way. Demographics are for internal purposes only and will be monitored as aggregated indicators of the success of this program in achieving diversity, equity, and inclusion. If you would do not want to report any demographic information, you can skip questions 10-17 below.</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one:label">
+            <value>1. How many days a week do you typically commute to BAT or Governors Island? (Select one)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di:label">
+            <value>2. Prior to this pilot, how did you typically commute to and from BAT or Governors Island? (Select all that apply)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here:label">
+            <value>Write Here</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i:label">
+            <value>3. Out of the modes selected in Question 2, what was your primary commute mode? (Select one)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001:label">
+            <value>Write Here</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode:label">
+            <value>4. What was your average one-way commute time to BAT or Governors Island using your primary commute mode?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode:label">
+            <value>5. What was your typical commute cost (e.g., Metrocard swipe, gas, tolls) for your primary commute mode?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons:label">
+            <value>6. What were the primary reasons for choosing your primary commute mode? (Select top 2 reasons)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply:label">
+            <value>7. With CLIP e-bike, what trip distances would you consider using it for? (Select all that apply)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply:label">
+            <value>8. What types of destinations would you consider traveling to using a CLIP e-bike? (Select all that apply)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one:label">
+            <value>9. If CLIP e-bike were not available in the future, which mode of transportation would you most likely use for trips of 1-3 miles? (Select one)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range:label">
+            <value>10. What is your age range?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi:label">
+            <value>11. What is your gender identity?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002:label">
+            <value>Write Here</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit:label">
+            <value>12. What is your race/ethnicity?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003:label">
+            <value>Write Here</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income:label">
+            <value>13. What is your estimated annual household income?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed:label">
+            <value>14. What is the highest level of education you have completed?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker:label">
+            <value>15. Are you a paid worker?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply:label">
+            <value>16. Do you currently own or have regular access to: (Select all that apply)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license:label">
+            <value>17. Do you have a valid driver's license?</value>
+          </text>
+        </translation>
+        <translation lang="Spanish (es)">
+          <text id="hw0nf66-0">
+            <value>1 día</value>
+          </text>
+          <text id="hw0nf66-1">
+            <value>2 días</value>
+          </text>
+          <text id="hw0nf66-2">
+            <value>3 días</value>
+          </text>
+          <text id="hw0nf66-3">
+            <value>4 días</value>
+          </text>
+          <text id="hw0nf66-4">
+            <value>5 días – Viajo todos los días de la semana</value>
+          </text>
+          <text id="qu2yl87-0">
+            <value>Bicicleta personal</value>
+          </text>
+          <text id="qu2yl87-1">
+            <value>Bicicleta eléctrica personal</value>
+          </text>
+          <text id="qu2yl87-2">
+            <value>Scooter eléctrico personal</value>
+          </text>
+          <text id="qu2yl87-3">
+            <value>Citibike</value>
+          </text>
+          <text id="qu2yl87-4">
+            <value>Metro</value>
+          </text>
+          <text id="qu2yl87-5">
+            <value>Autobús</value>
+          </text>
+          <text id="qu2yl87-6">
+            <value>Ferry</value>
+          </text>
+          <text id="qu2yl87-7">
+            <value>Auto (personal o compartido)</value>
+          </text>
+          <text id="qu2yl87-8">
+            <value>Camión</value>
+          </text>
+          <text id="qu2yl87-9">
+            <value>Caminando</value>
+          </text>
+          <text id="qu2yl87-10">
+            <value>Otro (por favor especifique):</value>
+          </text>
+          <text id="ch2kq65-0">
+            <value>Menos de 15 minutos</value>
+          </text>
+          <text id="ch2kq65-1">
+            <value>15–30 minutos</value>
+          </text>
+          <text id="ch2kq65-2">
+            <value>31–45 minutos</value>
+          </text>
+          <text id="ch2kq65-3">
+            <value>46–60 minutos</value>
+          </text>
+          <text id="ch2kq65-4">
+            <value>Más de 60 minutos</value>
+          </text>
+          <text id="ch2kq65-5">
+            <value>No viajé</value>
+          </text>
+          <text id="ao2oh11-0">
+            <value>$0 (por ejemplo, caminó o usó bicicleta)</value>
+          </text>
+          <text id="ao2oh11-1">
+            <value>$1–5</value>
+          </text>
+          <text id="ao2oh11-2">
+            <value>$5–10</value>
+          </text>
+          <text id="ao2oh11-3">
+            <value>$10-15</value>
+          </text>
+          <text id="ao2oh11-4">
+            <value>Más de $15</value>
+          </text>
+          <text id="fv7dy30-0">
+            <value>Velocidad</value>
+          </text>
+          <text id="fv7dy30-1">
+            <value>Costo</value>
+          </text>
+          <text id="fv7dy30-2">
+            <value>Comodidad</value>
+          </text>
+          <text id="fv7dy30-3">
+            <value>Seguridad</value>
+          </text>
+          <text id="fv7dy30-4">
+            <value>Impacto ambiental</value>
+          </text>
+          <text id="fv7dy30-5">
+            <value>Falta de alternativas</value>
+          </text>
+          <text id="ua48m61-0">
+            <value>Menos de 1 milla</value>
+          </text>
+          <text id="ua48m61-1">
+            <value>1–3 millas</value>
+          </text>
+          <text id="ua48m61-2">
+            <value>4–6 millas</value>
+          </text>
+          <text id="ua48m61-3">
+            <value>7–10 millas</value>
+          </text>
+          <text id="ua48m61-4">
+            <value>11–15 millas</value>
+          </text>
+          <text id="ua48m61-5">
+            <value>16–20 millas</value>
+          </text>
+          <text id="gh2uz73-0">
+            <value>Trabajo</value>
+          </text>
+          <text id="gh2uz73-1">
+            <value>Escuela</value>
+          </text>
+          <text id="gh2uz73-2">
+            <value>Supermercado o diligencias</value>
+          </text>
+          <text id="gh2uz73-3">
+            <value>Actividades sociales o recreativas</value>
+          </text>
+          <text id="gh2uz73-4">
+            <value>Todas las anteriores</value>
+          </text>
+          <text id="pu5fn06-0">
+            <value>Bicicleta personal</value>
+          </text>
+          <text id="pu5fn06-1">
+            <value>Bicicleta eléctrica personal</value>
+          </text>
+          <text id="pu5fn06-2">
+            <value>Scooter eléctrico personal</value>
+          </text>
+          <text id="pu5fn06-3">
+            <value>Auto</value>
+          </text>
+          <text id="pu5fn06-4">
+            <value>Camión</value>
+          </text>
+          <text id="pu5fn06-5">
+            <value>Pase de transporte público (MTA, OMNY, etc.)</value>
+          </text>
+          <text id="pu5fn06-6">
+            <value>Membresía de Citi Bike</value>
+          </text>
+          <text id="pu5fn06-7">
+            <value>Servicio de transporte compartido (rideshare)</value>
+          </text>
+          <text id="fy7gr36-0">
+            <value>18–24</value>
+          </text>
+          <text id="fy7gr36-1">
+            <value>25–34</value>
+          </text>
+          <text id="fy7gr36-2">
+            <value>35–44</value>
+          </text>
+          <text id="fy7gr36-3">
+            <value>45–54</value>
+          </text>
+          <text id="fy7gr36-4">
+            <value>55–64</value>
+          </text>
+          <text id="fy7gr36-5">
+            <value>65+</value>
+          </text>
+          <text id="fy7gr36-6">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="yl4zv77-0">
+            <value>Masculino</value>
+          </text>
+          <text id="yl4zv77-1">
+            <value>Femenino</value>
+          </text>
+          <text id="yl4zv77-2">
+            <value>No binario</value>
+          </text>
+          <text id="yl4zv77-3">
+            <value>Transgénero</value>
+          </text>
+          <text id="yl4zv77-4">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="yl4zv77-5">
+            <value>Otro (por favor especifique):</value>
+          </text>
+          <text id="tu6uh33-0">
+            <value>Negro o afroamericano</value>
+          </text>
+          <text id="tu6uh33-1">
+            <value>Blanco o caucásico</value>
+          </text>
+          <text id="tu6uh33-2">
+            <value>Hispano, latino/a/x o de origen español</value>
+          </text>
+          <text id="tu6uh33-3">
+            <value>Asiático oriental</value>
+          </text>
+          <text id="tu6uh33-4">
+            <value>Asiático del sur</value>
+          </text>
+          <text id="tu6uh33-5">
+            <value>Indígena americano o nativo de Alaska</value>
+          </text>
+          <text id="tu6uh33-6">
+            <value>Nativo hawaiano u otra isla del Pacífico</value>
+          </text>
+          <text id="tu6uh33-7">
+            <value>Multirracial/Multiétnico</value>
+          </text>
+          <text id="tu6uh33-8">
+            <value>Otro</value>
+          </text>
+          <text id="tu6uh33-9">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="qq6fl41-0">
+            <value>Menos de $25,000</value>
+          </text>
+          <text id="qq6fl41-1">
+            <value>$25,000–$49,999</value>
+          </text>
+          <text id="qq6fl41-2">
+            <value>$50,000–$74,999</value>
+          </text>
+          <text id="qq6fl41-3">
+            <value>$75,000–$99,999</value>
+          </text>
+          <text id="qq6fl41-4">
+            <value>$100,000–$149,999</value>
+          </text>
+          <text id="qq6fl41-5">
+            <value>$150,000–$199,999</value>
+          </text>
+          <text id="qq6fl41-6">
+            <value>$200,000 o más</value>
+          </text>
+          <text id="qq6fl41-7">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="nb3mz63-0">
+            <value>Menos que graduado de secundaria</value>
+          </text>
+          <text id="nb3mz63-1">
+            <value>Graduado de secundaria o GED</value>
+          </text>
+          <text id="nb3mz63-2">
+            <value>Algo de universidad o título de asociado</value>
+          </text>
+          <text id="nb3mz63-3">
+            <value>Título universitario (licenciatura)</value>
+          </text>
+          <text id="nb3mz63-4">
+            <value>Título de posgrado o profesional</value>
+          </text>
+          <text id="nb3mz63-5">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="bz0iy56-0">
+            <value>Sí</value>
+          </text>
+          <text id="bz0iy56-1">
+            <value>No</value>
+          </text>
+          <text id="bz0iy56-2">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="yr3we65-0">
+            <value>Bicicleta personal</value>
+          </text>
+          <text id="yr3we65-1">
+            <value>Bicicleta eléctrica personal</value>
+          </text>
+          <text id="yr3we65-2">
+            <value>Scooter eléctrico personal</value>
+          </text>
+          <text id="yr3we65-3">
+            <value>Auto</value>
+          </text>
+          <text id="yr3we65-4">
+            <value>Camión</value>
+          </text>
+          <text id="yr3we65-5">
+            <value>Pase de transporte público (MTA, OMNY, etc.)</value>
+          </text>
+          <text id="yr3we65-6">
+            <value>Membresía de Citi Bike</value>
+          </text>
+          <text id="yr3we65-7">
+            <value>Servicio de transporte compartido (rideshare)</value>
+          </text>
+          <text id="yr3we65-8">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="ht04r09-0">
+            <value>Sí</value>
+          </text>
+          <text id="ht04r09-1">
+            <value>No</value>
+          </text>
+          <text id="ht04r09-2">
+            <value>Prefiero no decirlo</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below:label">
+            <value>Proporcionar información demográfica es opcional. Se obtiene únicamente con fines estadísticos y la información individual no se será divulgada ni afectará su capacidad para participar de ninguna manera. Los datos demográficos son solo para fines internos y se supervisarán como indicadores agregados del éxito de este programa en lograr diversidad, equidad e inclusión. Si no desea proporcionar ninguna información demográfica, puede omitir las preguntas 10 a 17 a continuación.</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one:label">
+            <value>1. ¿Cuántos días a la semana suele viajar al BAT o a Governors Island? (Seleccione uno)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di:label">
+            <value>2. Antes de este programa piloto, ¿cómo solía viajar hacia y desde el BAT o Governors Island? (Seleccione todas las opciones que correspondan)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i:label">
+            <value>3. De los medios seleccionados en la Pregunta 2, ¿cuál era su medio principal de transporte para el viaje? (Seleccione uno)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode:label">
+            <value>4. ¿Cuál era su tiempo promedio de viaje en un solo sentido hacia el BAT o Governors Island utilizando su medio principal de transporte?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode:label">
+            <value>5. ¿Cuál era el costo típico de su viaje (por ejemplo, pase de Metrocard, gasolina, peajes) utilizando su medio principal de transporte?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons:label">
+            <value>6. ¿Cuáles fueron las principales razones para elegir su medio principal de transporte para el viaje? (Seleccione las 2 razones principales)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply:label">
+            <value>7. ¿Para qué distancias de viaje consideraría usar la bicicleta eléctrica CLIP? (Seleccione todas las opciones que correspondan)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply:label">
+            <value>8. ¿A qué tipos de destinos consideraría viajar usando una bicicleta eléctrica CLIP? (Seleccione todas las opciones que correspondan)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one:label">
+            <value>9. Si la bicicleta eléctrica CLIP no estuviera disponible en el futuro, ¿qué medio de transporte usaría con mayor probabilidad para viajes de 1 a 3 millas? (Seleccione uno)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range:label">
+            <value>10. ¿Cuál es su rango de edad?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi:label">
+            <value>11. ¿Cuál es su identidad de género?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit:label">
+            <value>12. ¿Cuál es su raza/etnia?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income:label">
+            <value>13. ¿Cuál es el ingreso anual estimado de su hogar?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed:label">
+            <value>14. ¿Cuál es el nivel más alto de educación que ha completado?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker:label">
+            <value>15. ¿Tiene un empleo remunerado?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply:label">
+            <value>16. ¿Actualmente posee o tiene acceso regular a: (Seleccione todas las opciones que correspondan)</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license:label">
+            <value>17. ¿Tiene una licencia de conducir válida?</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="Mandarin (cmn)">
+          <text id="hw0nf66-0">
+            <value>1天</value>
+          </text>
+          <text id="hw0nf66-1">
+            <value>2天</value>
+          </text>
+          <text id="hw0nf66-2">
+            <value>3天</value>
+          </text>
+          <text id="hw0nf66-3">
+            <value>4天</value>
+          </text>
+          <text id="hw0nf66-4">
+            <value>5天 – 我每个工作日都通勤</value>
+          </text>
+          <text id="qu2yl87-0">
+            <value>私人自行车</value>
+          </text>
+          <text id="qu2yl87-1">
+            <value>私人电动自行车</value>
+          </text>
+          <text id="qu2yl87-2">
+            <value>私人电动滑板车</value>
+          </text>
+          <text id="qu2yl87-3">
+            <value>Citibike共享单车</value>
+          </text>
+          <text id="qu2yl87-4">
+            <value>地铁</value>
+          </text>
+          <text id="qu2yl87-5">
+            <value>公交车</value>
+          </text>
+          <text id="qu2yl87-6">
+            <value>渡轮</value>
+          </text>
+          <text id="qu2yl87-7">
+            <value>汽车（私人或拼车）</value>
+          </text>
+          <text id="qu2yl87-8">
+            <value>卡车</value>
+          </text>
+          <text id="qu2yl87-9">
+            <value>步行</value>
+          </text>
+          <text id="qu2yl87-10">
+            <value>其他（请注明）</value>
+          </text>
+          <text id="ch2kq65-0">
+            <value>少于15分钟</value>
+          </text>
+          <text id="ch2kq65-1">
+            <value>15–30分钟</value>
+          </text>
+          <text id="ch2kq65-2">
+            <value>31–45分钟</value>
+          </text>
+          <text id="ch2kq65-3">
+            <value>46–60分钟</value>
+          </text>
+          <text id="ch2kq65-4">
+            <value>超过60分钟</value>
+          </text>
+          <text id="ch2kq65-5">
+            <value>我没有通勤</value>
+          </text>
+          <text id="ao2oh11-0">
+            <value>$0（例如：步行或骑车）</value>
+          </text>
+          <text id="ao2oh11-1">
+            <value>$1–5</value>
+          </text>
+          <text id="ao2oh11-2">
+            <value>$5–10</value>
+          </text>
+          <text id="ao2oh11-3">
+            <value>$10–15</value>
+          </text>
+          <text id="ao2oh11-4">
+            <value>超过$15</value>
+          </text>
+          <text id="fv7dy30-0">
+            <value>速度</value>
+          </text>
+          <text id="fv7dy30-1">
+            <value>成本</value>
+          </text>
+          <text id="fv7dy30-2">
+            <value>便利性</value>
+          </text>
+          <text id="fv7dy30-3">
+            <value>安全性</value>
+          </text>
+          <text id="fv7dy30-4">
+            <value>环境影响</value>
+          </text>
+          <text id="fv7dy30-5">
+            <value>缺乏其他选择</value>
+          </text>
+          <text id="ua48m61-0">
+            <value>少于1英里</value>
+          </text>
+          <text id="ua48m61-1">
+            <value>1–3英里</value>
+          </text>
+          <text id="ua48m61-2">
+            <value>4–6英里</value>
+          </text>
+          <text id="ua48m61-3">
+            <value>7–10英里</value>
+          </text>
+          <text id="ua48m61-4">
+            <value>11–15英里</value>
+          </text>
+          <text id="ua48m61-5">
+            <value>16–20英里</value>
+          </text>
+          <text id="gh2uz73-0">
+            <value>工作</value>
+          </text>
+          <text id="gh2uz73-1">
+            <value>学校</value>
+          </text>
+          <text id="gh2uz73-2">
+            <value>杂货店或日常事务</value>
+          </text>
+          <text id="gh2uz73-3">
+            <value>社交或休闲活动</value>
+          </text>
+          <text id="gh2uz73-4">
+            <value>以上全部</value>
+          </text>
+          <text id="pu5fn06-0">
+            <value>私人自行车</value>
+          </text>
+          <text id="pu5fn06-1">
+            <value>私人电动自行车</value>
+          </text>
+          <text id="pu5fn06-2">
+            <value>私人电动滑板车</value>
+          </text>
+          <text id="pu5fn06-3">
+            <value>汽车</value>
+          </text>
+          <text id="pu5fn06-4">
+            <value>卡车</value>
+          </text>
+          <text id="pu5fn06-5">
+            <value>公共交通通行证（MTA、OMNY等）</value>
+          </text>
+          <text id="pu5fn06-6">
+            <value>Citi Bike会员</value>
+          </text>
+          <text id="pu5fn06-7">
+            <value>拼车服务</value>
+          </text>
+          <text id="fy7gr36-0">
+            <value>18–24岁</value>
+          </text>
+          <text id="fy7gr36-1">
+            <value>25–34岁</value>
+          </text>
+          <text id="fy7gr36-2">
+            <value>35–44岁</value>
+          </text>
+          <text id="fy7gr36-3">
+            <value>45–54岁</value>
+          </text>
+          <text id="fy7gr36-4">
+            <value>55–64岁</value>
+          </text>
+          <text id="fy7gr36-5">
+            <value>65岁以上</value>
+          </text>
+          <text id="fy7gr36-6">
+            <value>不愿透露</value>
+          </text>
+          <text id="yl4zv77-0">
+            <value>男性</value>
+          </text>
+          <text id="yl4zv77-1">
+            <value>女性</value>
+          </text>
+          <text id="yl4zv77-2">
+            <value>非二元性别</value>
+          </text>
+          <text id="yl4zv77-3">
+            <value>跨性别者</value>
+          </text>
+          <text id="yl4zv77-4">
+            <value>不愿透露</value>
+          </text>
+          <text id="yl4zv77-5">
+            <value>其他（请注明）</value>
+          </text>
+          <text id="tu6uh33-0">
+            <value>黑人或非裔美国人</value>
+          </text>
+          <text id="tu6uh33-1">
+            <value>白人或高加索人</value>
+          </text>
+          <text id="tu6uh33-2">
+            <value>西班牙裔、拉丁裔或西班牙族裔</value>
+          </text>
+          <text id="tu6uh33-3">
+            <value>东亚人</value>
+          </text>
+          <text id="tu6uh33-4">
+            <value>南亚人</value>
+          </text>
+          <text id="tu6uh33-5">
+            <value>美洲原住民或阿拉斯加原住民</value>
+          </text>
+          <text id="tu6uh33-6">
+            <value>夏威夷原住民或其他太平洋岛民</value>
+          </text>
+          <text id="tu6uh33-7">
+            <value>多种族/多族裔</value>
+          </text>
+          <text id="tu6uh33-8">
+            <value>其他</value>
+          </text>
+          <text id="tu6uh33-9">
+            <value>不愿透露</value>
+          </text>
+          <text id="qq6fl41-0">
+            <value>少于$25,000</value>
+          </text>
+          <text id="qq6fl41-1">
+            <value>$25,000–$49,999</value>
+          </text>
+          <text id="qq6fl41-2">
+            <value>$50,000–$74,999</value>
+          </text>
+          <text id="qq6fl41-3">
+            <value>$75,000–$99,999</value>
+          </text>
+          <text id="qq6fl41-4">
+            <value>$100,000–$149,999</value>
+          </text>
+          <text id="qq6fl41-5">
+            <value>$150,000–$199,999</value>
+          </text>
+          <text id="qq6fl41-6">
+            <value>$200,000及以上</value>
+          </text>
+          <text id="qq6fl41-7">
+            <value>不愿透露</value>
+          </text>
+          <text id="nb3mz63-0">
+            <value>未完成高中</value>
+          </text>
+          <text id="nb3mz63-1">
+            <value>高中毕业或GED证书</value>
+          </text>
+          <text id="nb3mz63-2">
+            <value>一些大学课程或副学士学位</value>
+          </text>
+          <text id="nb3mz63-3">
+            <value>学士学位</value>
+          </text>
+          <text id="nb3mz63-4">
+            <value>研究生或专业学位</value>
+          </text>
+          <text id="nb3mz63-5">
+            <value>不愿透露</value>
+          </text>
+          <text id="bz0iy56-0">
+            <value>是</value>
+          </text>
+          <text id="bz0iy56-1">
+            <value>否</value>
+          </text>
+          <text id="bz0iy56-2">
+            <value>不愿透露</value>
+          </text>
+          <text id="yr3we65-0">
+            <value>私人自行车</value>
+          </text>
+          <text id="yr3we65-1">
+            <value>私人电动自行车</value>
+          </text>
+          <text id="yr3we65-2">
+            <value>私人电动滑板车</value>
+          </text>
+          <text id="yr3we65-3">
+            <value>汽车</value>
+          </text>
+          <text id="yr3we65-4">
+            <value>卡车</value>
+          </text>
+          <text id="yr3we65-5">
+            <value>公共交通通行证（MTA、OMNY等）</value>
+          </text>
+          <text id="yr3we65-6">
+            <value>Citi Bike会员</value>
+          </text>
+          <text id="yr3we65-7">
+            <value>拼车服务</value>
+          </text>
+          <text id="yr3we65-8">
+            <value>不愿透露</value>
+          </text>
+          <text id="ht04r09-0">
+            <value>是</value>
+          </text>
+          <text id="ht04r09-1">
+            <value>否</value>
+          </text>
+          <text id="ht04r09-2">
+            <value>不愿透露</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below:label">
+            <value>提供人口统计信息是可选的。此信息仅用于统计目的，个人信息不会被公开，也不会影响您参与本项目的能力。人口统计数据仅供内部使用，并将作为衡量本项目在实现多样性、公平性和包容性方面成效的汇总指标进行监测。如果您不希望提供任何人口统计信息，可以跳过下面第10至第17题。</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one:label">
+            <value>1. 您每周通常有几天通勤至BAT或总督岛？（请选择一项）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di:label">
+            <value>2. 在本试点项目之前，您通常如何通勤至BAT或总督岛？（可多选）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i:label">
+            <value>3. 在第2题中选择的通勤方式中，您的主要通勤方式是哪一种？（请选择一项）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode:label">
+            <value>4. 使用主要通勤方式，您平均单程通勤至BAT或总督岛的时间是多少？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode:label">
+            <value>5. 您主要通勤方式的平均通勤成本是多少？（例如：地铁卡刷卡、汽油、过路费）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons:label">
+            <value>6. 您选择主要通勤方式的主要原因是什么？（请选择最重要的两个原因）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply:label">
+            <value>7. 使用CLIP电动自行车时，您愿意用于哪些距离的出行？（可多选）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply:label">
+            <value>8. 您愿意使用CLIP电动自行车前往哪些类型的目的地？（可多选）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one:label">
+            <value>9. 如果未来无法使用CLIP电动自行车，您最可能选择哪种交通方式进行1至3英里的出行？（请选择一项）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range:label">
+            <value>10. 您的年龄范围是？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi:label">
+            <value>11. 您的性别认同是？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit:label">
+            <value>12. 您的种族/族裔是？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income:label">
+            <value>13. 您估计的家庭年收入是多少？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed:label">
+            <value>14. 您完成的最高教育程度是？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker:label">
+            <value>15. 您是否为有薪工作者？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply:label">
+            <value>16. 您目前是否拥有或能定期使用以下物品：（可多选）</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license:label">
+            <value>17. 您是否拥有有效的驾驶执照？</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002:label">
+            <value>-</value>
+          </text>
+          <text id="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <aLadnXqbdLEYwoi8VcFGjU id="aLadnXqbdLEYwoi8VcFGjU">
+          <start/>
+          <end/>
+          <Providing_demographi_uestions_10_17_below/>
+          <_1_How_many_days_a_w_Island_Select_one/>
+          <_2_Prior_to_this_pilot_how_di/>
+          <Write_Here/>
+          <_3_Out_of_the_modes_selected_i/>
+          <Write_Here_001/>
+          <_4_What_was_your_ave_primary_commute_mode/>
+          <_5_What_was_your_typ_primary_commute_mode/>
+          <_6_What_were_the_pri_Select_top_2_reasons/>
+          <_7_With_CLIP_e_bike_elect_all_that_apply/>
+          <_8_What_types_of_des_elect_all_that_apply/>
+          <_9_If_CLIP_e_bike_we_3_miles_Select_one/>
+          <_10_What_is_your_age_range/>
+          <_11_What_is_your_gender_identi/>
+          <Write_Here_002/>
+          <_12_What_is_your_race_ethnicit/>
+          <Write_Here_003/>
+          <_13_What_is_your_est_ual_household_income/>
+          <_14_What_is_the_high_n_you_have_completed/>
+          <_15_Are_you_a_paid_worker/>
+          <_16_Do_you_currently_elect_all_that_apply/>
+          <_17_Do_you_have_a_valid_driver_s_license/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </aLadnXqbdLEYwoi8VcFGjU>
+      </instance>
+      <instance id="hw0nf66">
+        <root>
+          <item>
+            <itextId>hw0nf66-0</itextId>
+            <name>1_day</name>
+          </item>
+          <item>
+            <itextId>hw0nf66-1</itextId>
+            <name>2_days</name>
+          </item>
+          <item>
+            <itextId>hw0nf66-2</itextId>
+            <name>3_days</name>
+          </item>
+          <item>
+            <itextId>hw0nf66-3</itextId>
+            <name>4_days</name>
+          </item>
+          <item>
+            <itextId>hw0nf66-4</itextId>
+            <name>5_days___i_commute_every_weekday</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="qu2yl87">
+        <root>
+          <item>
+            <itextId>qu2yl87-0</itextId>
+            <name>personal_bike</name>
+            <order>0</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-1</itextId>
+            <name>personal_e_bike</name>
+            <order>1</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-2</itextId>
+            <name>personal_electric_scooter</name>
+            <order>2</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-3</itextId>
+            <name>citibike</name>
+            <order>3</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-4</itextId>
+            <name>subway</name>
+            <order>4</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-5</itextId>
+            <name>bus</name>
+            <order>5</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-6</itextId>
+            <name>ferry</name>
+            <order>6</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-7</itextId>
+            <name>car__personal_or_ride_share</name>
+            <order>7</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-8</itextId>
+            <name>truck</name>
+            <order>8</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-9</itextId>
+            <name>walking</name>
+            <order>9</order>
+          </item>
+          <item>
+            <itextId>qu2yl87-10</itextId>
+            <name>other__please_specify</name>
+            <order>10</order>
+          </item>
+        </root>
+      </instance>
+      <instance id="ch2kq65">
+        <root>
+          <item>
+            <itextId>ch2kq65-0</itextId>
+            <name>less_than_15_minutes</name>
+          </item>
+          <item>
+            <itextId>ch2kq65-1</itextId>
+            <name>15_30_minutes</name>
+          </item>
+          <item>
+            <itextId>ch2kq65-2</itextId>
+            <name>31_45_minutes</name>
+          </item>
+          <item>
+            <itextId>ch2kq65-3</itextId>
+            <name>46_60_minutes</name>
+          </item>
+          <item>
+            <itextId>ch2kq65-4</itextId>
+            <name>more_than_60_minutes</name>
+          </item>
+          <item>
+            <itextId>ch2kq65-5</itextId>
+            <name>i_did_not_commute_to_bat</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ao2oh11">
+        <root>
+          <item>
+            <itextId>ao2oh11-0</itextId>
+            <name>_0__e_g__walked_or_biked</name>
+          </item>
+          <item>
+            <itextId>ao2oh11-1</itextId>
+            <name>_1_5</name>
+          </item>
+          <item>
+            <itextId>ao2oh11-2</itextId>
+            <name>_5_10</name>
+          </item>
+          <item>
+            <itextId>ao2oh11-3</itextId>
+            <name>_10_15</name>
+          </item>
+          <item>
+            <itextId>ao2oh11-4</itextId>
+            <name>more_than__15</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="fv7dy30">
+        <root>
+          <item>
+            <itextId>fv7dy30-0</itextId>
+            <name>speed</name>
+          </item>
+          <item>
+            <itextId>fv7dy30-1</itextId>
+            <name>cost</name>
+          </item>
+          <item>
+            <itextId>fv7dy30-2</itextId>
+            <name>convenience</name>
+          </item>
+          <item>
+            <itextId>fv7dy30-3</itextId>
+            <name>safety</name>
+          </item>
+          <item>
+            <itextId>fv7dy30-4</itextId>
+            <name>environmental_impact</name>
+          </item>
+          <item>
+            <itextId>fv7dy30-5</itextId>
+            <name>lack_of_alternatives</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ua48m61">
+        <root>
+          <item>
+            <itextId>ua48m61-0</itextId>
+            <name>less_than_1_mile</name>
+          </item>
+          <item>
+            <itextId>ua48m61-1</itextId>
+            <name>1_3_miles</name>
+          </item>
+          <item>
+            <itextId>ua48m61-2</itextId>
+            <name>4_6_miles</name>
+          </item>
+          <item>
+            <itextId>ua48m61-3</itextId>
+            <name>7_10_miles</name>
+          </item>
+          <item>
+            <itextId>ua48m61-4</itextId>
+            <name>11_15_miles</name>
+          </item>
+          <item>
+            <itextId>ua48m61-5</itextId>
+            <name>16_20_miles</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="gh2uz73">
+        <root>
+          <item>
+            <itextId>gh2uz73-0</itextId>
+            <name>work</name>
+          </item>
+          <item>
+            <itextId>gh2uz73-1</itextId>
+            <name>school</name>
+          </item>
+          <item>
+            <itextId>gh2uz73-2</itextId>
+            <name>grocery_store_or_errands</name>
+          </item>
+          <item>
+            <itextId>gh2uz73-3</itextId>
+            <name>social_or_recreational_activities</name>
+          </item>
+          <item>
+            <itextId>gh2uz73-4</itextId>
+            <name>all_of_the_above</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pu5fn06">
+        <root>
+          <item>
+            <itextId>pu5fn06-0</itextId>
+            <name>personal_bicycle</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-1</itextId>
+            <name>personal_e_bike</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-2</itextId>
+            <name>personal_electric_scooter</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-3</itextId>
+            <name>car</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-4</itextId>
+            <name>truck</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-5</itextId>
+            <name>public_transit_pass__mta__omny__etc</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-6</itextId>
+            <name>citi_bike_membership</name>
+          </item>
+          <item>
+            <itextId>pu5fn06-7</itextId>
+            <name>rideshare</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="fy7gr36">
+        <root>
+          <item>
+            <itextId>fy7gr36-0</itextId>
+            <name>18_24</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-1</itextId>
+            <name>25_34</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-2</itextId>
+            <name>35_44</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-3</itextId>
+            <name>45_54</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-4</itextId>
+            <name>55_64</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-5</itextId>
+            <name>65</name>
+          </item>
+          <item>
+            <itextId>fy7gr36-6</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yl4zv77">
+        <root>
+          <item>
+            <itextId>yl4zv77-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>yl4zv77-1</itextId>
+            <name>female</name>
+          </item>
+          <item>
+            <itextId>yl4zv77-2</itextId>
+            <name>nonbinary</name>
+          </item>
+          <item>
+            <itextId>yl4zv77-3</itextId>
+            <name>transgender</name>
+          </item>
+          <item>
+            <itextId>yl4zv77-4</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+          <item>
+            <itextId>yl4zv77-5</itextId>
+            <name>other__please_specify</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="tu6uh33">
+        <root>
+          <item>
+            <itextId>tu6uh33-0</itextId>
+            <name>black_or_african_american</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-1</itextId>
+            <name>white_or_caucasian</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-2</itextId>
+            <name>hispanic__latino_a_x__or_spanish</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-3</itextId>
+            <name>east_asian</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-4</itextId>
+            <name>south_asian</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-5</itextId>
+            <name>american_indian_or_alaska_native</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-6</itextId>
+            <name>native_hawaiian_or_other_pacific_islande</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-7</itextId>
+            <name>multiracial_multiethnic</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-8</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>tu6uh33-9</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="qq6fl41">
+        <root>
+          <item>
+            <itextId>qq6fl41-0</itextId>
+            <name>under__25_000</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-1</itextId>
+            <name>_25_000_49_999</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-2</itextId>
+            <name>_50_000_74_999</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-3</itextId>
+            <name>_75_000_99_999</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-4</itextId>
+            <name>over__100_000</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-5</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-6</itextId>
+            <name>_200_000_and_above</name>
+          </item>
+          <item>
+            <itextId>qq6fl41-7</itextId>
+            <name>prefer_not_to_say_1</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="nb3mz63">
+        <root>
+          <item>
+            <itextId>nb3mz63-0</itextId>
+            <name>less_than_a_high_school_graduate</name>
+          </item>
+          <item>
+            <itextId>nb3mz63-1</itextId>
+            <name>high_school_graduate_or_ged</name>
+          </item>
+          <item>
+            <itextId>nb3mz63-2</itextId>
+            <name>some_college_or_associate_s_degree</name>
+          </item>
+          <item>
+            <itextId>nb3mz63-3</itextId>
+            <name>bachelor_s_degree</name>
+          </item>
+          <item>
+            <itextId>nb3mz63-4</itextId>
+            <name>graduate_or_professional_degree</name>
+          </item>
+          <item>
+            <itextId>nb3mz63-5</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="bz0iy56">
+        <root>
+          <item>
+            <itextId>bz0iy56-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>bz0iy56-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>bz0iy56-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yr3we65">
+        <root>
+          <item>
+            <itextId>yr3we65-0</itextId>
+            <name>personal_bicycle</name>
+            <order>0</order>
+          </item>
+          <item>
+            <itextId>yr3we65-1</itextId>
+            <name>personal_e_bike</name>
+            <order>1</order>
+          </item>
+          <item>
+            <itextId>yr3we65-2</itextId>
+            <name>personal_electric_scooter</name>
+            <order>2</order>
+          </item>
+          <item>
+            <itextId>yr3we65-3</itextId>
+            <name>car</name>
+            <order>3</order>
+          </item>
+          <item>
+            <itextId>yr3we65-4</itextId>
+            <name>truck</name>
+            <order>4</order>
+          </item>
+          <item>
+            <itextId>yr3we65-5</itextId>
+            <name>public_transit_pass__mta__omny__etc</name>
+            <order>5</order>
+          </item>
+          <item>
+            <itextId>yr3we65-6</itextId>
+            <name>citi_bike_membership</name>
+            <order>6</order>
+          </item>
+          <item>
+            <itextId>yr3we65-7</itextId>
+            <name>rideshare</name>
+            <order>7</order>
+          </item>
+          <item>
+            <itextId>yr3we65-8</itextId>
+            <name>prefer_not_to_say</name>
+            <order>8</order>
+          </item>
+        </root>
+      </instance>
+      <instance id="ht04r09">
+        <root>
+          <item>
+            <itextId>ht04r09-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>ht04r09-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>ht04r09-2</itextId>
+            <name>prefer_not_to_say</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/start" jr:preload="timestamp" type="dateTime" jr:preloadParams="start"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/end" jr:preload="timestamp" type="dateTime" jr:preloadParams="end"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below" readonly="true()" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/Write_Here" type="string" relevant="selected( /aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di , 'other__please_specify')" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001" type="string" relevant="selected( /aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i , 'other__please_specify')" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one" type="string" required="true()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002" type="string" relevant="selected( /aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi , 'other__please_specify')" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003" type="string" relevant="selected( /aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit , 'other')" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license" type="string" required="false()"/>
+      <bind nodeset="/aLadnXqbdLEYwoi8VcFGjU/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/Providing_demographi_uestions_10_17_below:label')"/>
+    </input>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_1_How_many_days_a_w_Island_Select_one:label')"/>
+      <itemset nodeset="instance('hw0nf66')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_2_Prior_to_this_pilot_how_di:label')"/>
+      <itemset nodeset="instance('qu2yl87')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <input ref="/aLadnXqbdLEYwoi8VcFGjU/Write_Here">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/Write_Here:label')"/>
+    </input>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_3_Out_of_the_modes_selected_i:label')"/>
+      <itemset nodeset="instance('qu2yl87')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <input ref="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/Write_Here_001:label')"/>
+    </input>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_4_What_was_your_ave_primary_commute_mode:label')"/>
+      <itemset nodeset="instance('ch2kq65')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_5_What_was_your_typ_primary_commute_mode:label')"/>
+      <itemset nodeset="instance('ao2oh11')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_6_What_were_the_pri_Select_top_2_reasons:label')"/>
+      <itemset nodeset="instance('fv7dy30')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_7_With_CLIP_e_bike_elect_all_that_apply:label')"/>
+      <itemset nodeset="instance('ua48m61')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_8_What_types_of_des_elect_all_that_apply:label')"/>
+      <itemset nodeset="instance('gh2uz73')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_9_If_CLIP_e_bike_we_3_miles_Select_one:label')"/>
+      <itemset nodeset="instance('pu5fn06')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_10_What_is_your_age_range:label')"/>
+      <itemset nodeset="instance('fy7gr36')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_11_What_is_your_gender_identi:label')"/>
+      <itemset nodeset="instance('yl4zv77')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <input ref="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/Write_Here_002:label')"/>
+    </input>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_12_What_is_your_race_ethnicit:label')"/>
+      <itemset nodeset="instance('tu6uh33')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <input ref="/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/Write_Here_003:label')"/>
+    </input>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_13_What_is_your_est_ual_household_income:label')"/>
+      <itemset nodeset="instance('qq6fl41')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_14_What_is_the_high_n_you_have_completed:label')"/>
+      <itemset nodeset="instance('nb3mz63')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_15_Are_you_a_paid_worker:label')"/>
+      <itemset nodeset="instance('bz0iy56')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+    <select ref="/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_16_Do_you_currently_elect_all_that_apply:label')"/>
+      <itemset nodeset="instance('yr3we65')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select>
+    <select1 ref="/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license">
+      <label ref="jr:itext('/aLadnXqbdLEYwoi8VcFGjU/_17_Do_you_have_a_valid_driver_s_license:label')"/>
+      <itemset nodeset="instance('ht04r09')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
+  </h:body>
+</h:html>
