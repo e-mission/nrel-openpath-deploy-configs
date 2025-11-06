@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "walk-study-psu",
-    "version": 5,
+    "version": 6,
     "ts": 1741122104,
     "server": {
         "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
@@ -15,7 +15,9 @@
             "stark",
             "lomas",
             "is",
-            "82nd"
+            "82nd",
+            "abq",
+            "pdx"
         ]
     },
     "intro": {
