@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "cosa-ebike-project",
-    "version": 1,
+    "version": 2,
     "ts": 1710526862,
     "server": {
         "connectUrl": "https://cosa-ebike-project-openpath.nrel.gov/api/",
@@ -96,7 +96,8 @@
         "options_emails": true,
         "admin_access": [
             "ricardo.ambriz2@sanantonio.gov",
-            "cameron.cosey@sanantonio.gov"
+            "cameron.cosey@sanantonio.gov",
+            "richard.bautista-vazquez@sanantonio.gov"
         ]
     }
 }
