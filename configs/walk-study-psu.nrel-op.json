@@ -1,6 +1,6 @@
 {
     "url_abbreviation": "walk-study-psu",
-    "version": 6,
+    "version": 7,
     "ts": 1741122104,
     "server": {
         "connectUrl": "https://walk-study-psu-openpath.nrel.gov/api/",
@@ -18,6 +18,11 @@
             "82nd",
             "abq",
             "pdx"
+        ],
+        "suspended_subgroups": [
+            "powell",
+            "lomas",
+            "abq"
         ]
     },
     "intro": {
